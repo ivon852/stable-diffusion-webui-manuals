@@ -119,7 +119,7 @@ cd stable-diffusion-webui
 ./webui-user.bat
 ```
 
-2. 初次啟動會下載依賴套件，大概要等個30分鐘安裝。如果在此步驟遇到錯誤，請先看[常見問題](https://ivonblog.com/posts/stable-diffusion-webui-manuals/1/1.7/)。
+2. 初次啟動會下載依賴套件，大概要等個30分鐘安裝。如果在此步驟遇到錯誤，請先看[常見問題](https://ivonblog.com/posts/stable-diffusion-webui-manuals/installation/errors/)。
 
 <img src=/posts/stable-diffusion-webui-manuals/images/k7zpeWV.webp alt=""  width=500 loading="lazy">
 

@@ -7,11 +7,6 @@ weight: 7
 
 <img src=/posts/stable-diffusion-webui-manuals/images/00040-3462613574.png width=300 loading="lazy" alt="">
 
-安裝Stable Diffusion WebUI時請確實按照作業系統的步驟安裝：[Windows版](https://ivonblog.com/posts/windows-stable-diffusion-webui/)、[Linux版](https://ivonblog.com/posts/linux-stable-diffusion-webui/)、[macOS版](https://ivonblog.com/posts/macos-stable-diffusion-webui/)
-
-
-無法解決再附上你的作業系統版本、Python版本、顯示卡型號至文章下面的留言板發問。
-
 
 # 0. 如何回報錯誤
 

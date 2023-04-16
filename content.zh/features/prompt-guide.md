@@ -9,7 +9,7 @@ weight: 1
 
 Ivon使用的AI繪圖軟體為ATOMATIC1111開發的Stable Diffusion WebUI，非他開發的版本也可以參考此教學，但要注意哪些是ATOMATIC1111版獨有的語法。
 
-我們來看提示詞要怎麼寫，以文生圖模式的提示詞為主。若要邊看邊練習的話，可以搭配這篇[文生圖用法](https://ivonblog.com/posts/stable-diffusion-webui-manuals/2/2.2/)操作。
+我們來看提示詞要怎麼寫，以文生圖模式的提示詞為主。若要邊看邊練習的話，可以搭配這篇[文生圖用法](https://ivonblog.com/posts/stable-diffusion-webui-manuals/features/text-to-image)操作。
 
 不論用哪個模式繪圖，Stable Diffusion都是吃「正向」與「負向」提示詞 (prompt，通俗的講法叫關鍵字、咒語)，並且要用英文輸入。
 
@@ -95,7 +95,7 @@ asuka_langley_souryuu from neon_genesis_evangelion, masterpiece, beach, ocean
 
 除非日後有蒐羅全部各種網路圖片主題的模型出現，否則下提示詞須配合模型種類來決定。
 
-如果AI怎樣都繪製不出你要的風格或人物，請考慮換個模型，或是[自行訓練模型](https://ivonblog.com/posts/stable-diffusion-webui-manuals/4/)。
+如果AI怎樣都繪製不出你要的風格或人物，請考慮換個模型，或是[自行訓練模型](https://ivonblog.com/posts/stable-diffusion-webui-manuals/training/)。
 
 
 # 2. 負向提示詞 Negative Prompts
@@ -173,7 +173,7 @@ orange AND apple
 orange :1.5 AND apple :2.5
 ```
 
-此語法適合搭配[ControlNet和Latent Couple](https://ivonblog.com/posts/stable-diffusion-webui-manuals/3/3.8/)，可以準確控制圖中物件的位置。
+此語法適合搭配[ControlNet和Latent Couple](https://ivonblog.com/posts/stable-diffusion-webui-manuals/extensions/latent-couple/)，可以準確控制圖中物件的位置。
 
 
 # 4. 提示詞範例
