@@ -1,8 +1,9 @@
 ---
-title: "1.6. 部署至Google Colab"
+title: "部署至Google Colab"
 weight: 5
 ---
 
+Google Colab是Google Research推出的免費線上服務，可用伺服器等級的高級顯示卡跑Python程式。
 
 如果你想自己寫Stable Diffusion筆記本，這邊提供我的範本程式。
 
@@ -14,7 +15,7 @@ weight: 5
 1. 至[Google Colab](https://colab.research.google.com/)，點選新增筆記本。
 <img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_113248.webp alt=""  width=500 loading="lazy">
 
-2. 於儲存格填入以下內容。Google Colab的Python不需要指定版本也能跑SD WebUI。另外在啟動時加上`--enable-insecure-extension-access`引數，就可以在網頁界面`Install from URL`直接安裝擴充功能，無需用git指令。
+2. 於儲存格填入以下內容。Google Colab的Python不需要指定版本也能跑SD WebUI。另外在啟動時加上`--enable-insecure-extension-access`引數，就可以在網頁界面`Install from URL`直接安裝擴充功能，無需用git指令。其餘引數請參閱[命令行引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)頁面。
 ```python
 # 掛載雲端硬碟
 from google.colab import drive

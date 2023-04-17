@@ -1,5 +1,5 @@
 ---
-title: "1.5. 安裝至macOS"
+title: "安裝至macOS"
 weight: 5
 ---
 
@@ -75,6 +75,8 @@ conda activate sdwebui
 參考上圖框起來的地方，填入`export COMMANDLINE_ARGS=--medvram --opt-split-attention`引數，降低VRAM使用量。有8GB以上VRAM不加也可以。
 
 額外加上`--listen`參數讓其他電腦能以IP存取網頁界面，`--share`則是產生一組Gradio網址。
+
+其餘引數請參閱[命令行引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)頁面。
 
 
 # 5. 啟動Stable Diffusion WebUI

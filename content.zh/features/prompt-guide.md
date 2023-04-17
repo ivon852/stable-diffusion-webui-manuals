@@ -9,7 +9,7 @@ weight: 1
 
 Ivon使用的AI繪圖軟體為ATOMATIC1111開發的Stable Diffusion WebUI，非他開發的版本也可以參考此教學，但要注意哪些是ATOMATIC1111版獨有的語法。
 
-我們來看提示詞要怎麼寫，以文生圖模式的提示詞為主。若要邊看邊練習的話，可以搭配這篇[文生圖用法](https://ivonblog.com/posts/stable-diffusion-webui-manuals/features/text-to-image)操作。
+我們來看提示詞要怎麼寫，以文生圖模式的提示詞為主。若要邊看邊練習的話，可以搭配[文生圖用法](/posts/stable-diffusion-webui-manuals/features/text-to-image)操作。
 
 不論用哪個模式繪圖，Stable Diffusion都是吃「正向」與「負向」提示詞 (prompt，通俗的講法叫關鍵字、咒語)，並且要用英文輸入。
 

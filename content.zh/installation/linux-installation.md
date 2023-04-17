@@ -1,7 +1,9 @@
 ---
-title: "1.3. 安裝至Linux"
+title: "安裝至Linux"
 weight: 3
 ---
+
+以Ubuntu 22.04為例子。
 
 # 1 安裝顯示卡驅動
 
@@ -97,7 +99,7 @@ conda activate sdwebui
 
 GPU晶片為Nvidia且VRAM大於8GB的可跳過此步驟。
 
-根據[Wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings)，有些GPU需要修改啟動引數才能正常啟動WebUI。
+有些GPU需要修改[啟動引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)才能正常啟動WebUI。
 
 用VIM編輯`webui-user.sh`。
 
@@ -108,8 +110,6 @@ AMD顯示卡需要另外加上` --precision full --no-half`引數，否則繪製
 額外加上`--listen`參數讓其他電腦能以IP存取網頁界面，`--share`則是產生一組Gradio網址。
 
 加上`--enable-insecure-extension-access`讓你在網頁界面直接裝擴充功能。加上`--nowebui`則不會啟動網頁界面，單純接收WebUI API之用。
-
-如果執行`webui-user.sh`出現`can't open file '/stable-diffusion-webui/launch.py'`的錯誤，則編輯`webui-user.sh`，將`install_dir`後面改成`$(pwd)`。
 
 
 # 5. 啟動Stable Diffusion WebUI

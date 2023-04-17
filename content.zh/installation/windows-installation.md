@@ -1,5 +1,5 @@
 ---
-title: "1.4. 安裝至Windows"
+title: "安裝至Windows"
 weight: 4
 ---
 
@@ -90,9 +90,7 @@ git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml.git
 
 # 4. 設定啟動引數
 
-顯示卡晶片為Nvidia且VRAM大於8GB的可跳過此步驟。
-
-根據[Wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings)，有些顯示卡需要修改啟動引數才能正常啟動WebUI。對`stable-diffusion-webui`資料夾裡面的`webui-user.bat`按右鍵，以記事本開啟，編輯`COMMANDLINE_ARGS=`這一行後面的啟動引數。(看不到.bat請點選檔案總管檢視 → 顯示/隱藏 → 顯示副檔名)
+有些顯示卡需要修改[啟動引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)才能正常啟動WebUI。對`stable-diffusion-webui`資料夾裡面的`webui-user.bat`按右鍵，以記事本開啟，編輯`COMMANDLINE_ARGS=`這一行後面的啟動引數。(看不到.bat請點選檔案總管檢視 → 顯示/隱藏 → 顯示副檔名)
 
 <img src=/posts/stable-diffusion-webui-manuals/images/Z56oZMe.webp alt=""  width=500 loading="lazy">
 
@@ -119,7 +117,7 @@ cd stable-diffusion-webui
 ./webui-user.bat
 ```
 
-2. 初次啟動會下載依賴套件，大概要等個30分鐘安裝。如果在此步驟遇到錯誤，請先看[常見問題](https://ivonblog.com/posts/stable-diffusion-webui-manuals/installation/errors/)。
+2. 初次啟動會下載依賴套件，大概要等個30分鐘安裝。如果在此步驟遇到錯誤，請先看[常見問題](/posts/stable-diffusion-webui-manuals/installation/errors/)。
 
 <img src=/posts/stable-diffusion-webui-manuals/images/k7zpeWV.webp alt=""  width=500 loading="lazy">
 

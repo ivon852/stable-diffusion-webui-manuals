@@ -1,5 +1,5 @@
 baseURL = 'https://ivonblog.com/posts/stable-diffusion-webui-manuals'
-title = 'Ivon的Stable Diffusion WebUI使用手冊'
+title = 'Ivon的Stable Diffusion WebUI使用手冊(正體中文)'
 theme = 'hugo-book'
 defaultContentLanguage = "zh"
 
@@ -44,15 +44,21 @@ enableGitInfo = true
    url = "https://ivonblog.com/"
    weight = 10
 
+[[menu.before]]
+  name = "【檢視此手冊的原始碼】"
+  url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
+  weight = 20
+
 #[[menu.after]]
-  #name = "Hugo Themes"
-  #url = "https://themes.gohugo.io/hugo-book/"
+  #name = "ATOMATIC1111的Stable Diffsion WebUI儲存庫"
+  #url = "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
   #weight = 20
+
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
-  BookTheme = 'light'
+  BookTheme = 'auto'
 
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
@@ -102,7 +108,7 @@ enableGitInfo = true
   # By default partals/docs/comments.html includes Disqus template
   # See https://gohugo.io/content-management/comments/#configure-disqus
   # Can be overwritten by same param in page frontmatter
-  BookComments = true
+  BookComments = false
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.

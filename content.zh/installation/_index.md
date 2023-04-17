@@ -5,4 +5,4 @@ bookCollapseSection: true
 weight: 1
 ---
 
-本章Ivon將教你Stable Diffusion WebUI的安裝方法。
+本章解說Stable Diffusion WebUI的安裝方法。

@@ -119,3 +119,8 @@ weight: 8
 這不是錯誤，單純是還在下載而已。
 
 有時候Github下載會比較慢，要耐心等。如果下載失敗，刪除`venv`資料夾，並晚點重新執行`webui-user.bat`試試。
+
+
+# can't open file '/stable-diffusion-webui/launch.py
+
+如果執行`webui-user.sh`出現此錯誤，則編輯`webui-user.sh`，將`install_dir`後面改成`$(pwd)`。
