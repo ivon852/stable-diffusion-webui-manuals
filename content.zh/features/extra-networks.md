@@ -1,5 +1,5 @@
 ---
-title: "2.5. 額外網路改善畫風 Extra Networks"
+title: "2.5. 額外網路 Extra Networks"
 weight: 5
 ---
 
