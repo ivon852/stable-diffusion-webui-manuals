@@ -3,6 +3,8 @@ title: "安裝至Windows"
 weight: 4
 ---
 
+Stable Diffusion WebUI支援Windows 10和Windows 11。
+
 
 # 1. 安裝顯示卡驅動程式
 

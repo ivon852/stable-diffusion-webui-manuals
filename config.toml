@@ -41,7 +41,7 @@ enableGitInfo = true
 
  [[menu.before]]
    name = "【回Ivon的部落格】"
-   url = "https://ivonblog.com/"
+   url = "https://ivonblog.com/categories/stable-diffusion%E7%9B%B8%E9%97%9C%E6%95%99%E5%AD%B8/"
    weight = 10
 
 [[menu.before]]

@@ -5,7 +5,7 @@ weight: 2
 
 存檔點模型(checkpoint，勿跟LoRA搞混)是AI算圖的重要依據，算圖用的模型可以安裝很多個。
 
-Stable Diffusion WebUI在初次啟動時，若模型資料夾(`models`)為空，則會自動下載原始版的Stable Diffuson V2模型(`sd-v2-768-v-ema.ckpt`)。
+Stable Diffusion WebUI在初次啟動時，若模型資料夾(`models`)為空，則會自動下載原始版的Stable Diffuson v1.5模型。
 
 但是，不同人玩AI繪圖有不同的需求，下載以寫實風格為主的Stable Diffusion模型可能無法滿足所有人。因此你可以先下載自己想要使用的模型。
 

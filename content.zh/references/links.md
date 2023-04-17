@@ -4,16 +4,18 @@ weight: 1
 ---
 
 本手冊的參考來源
+
 - [AUTOMATIC1111/stable-diffusion-webui Wiki - Github](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/)
 - [Voldy's Retard Guide The definitive Stable Diffusion experience ™](https://rentry.org/voldy)
+- [Rombach, R., Blattmann, A., Lorenz, D., Esser, P., & Ommer, B. (2022). High-resolution image synthesis with latent diffusion models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 10684-10695).](https://arxiv.org/abs/2112.10752)
 
-Stable Diffusion社群
-- [StableDiffusion - Reddit](https://www.reddit.com/r/StableDiffusion/)
+Stable Diffusion討論社群
+
+- [r/StableDiffusion - Reddit](https://www.reddit.com/r/StableDiffusion/)
 - [看板AI_Art 文章列表- 批踢踢實業坊](https://www.ptt.cc/bbs/AI_Art/index.html)
 
 模型訓練參考資料
 
-- [Stable Diffusion web UI Wiki - GitHub](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki)
 - [Hypernetwork training for dummies - Rentry.co](https://rentry.co/hypernetwork4dumdums)
 - [【Novel AI】手把手教你Textual Inversion神经网络训练详细操作](https://www.bilibili.com/read/cv19088146)
 - [NovelAI hypernetwork 自训练教程 - 知乎专栏](https://zhuanlan.zhihu.com/p/576041621)

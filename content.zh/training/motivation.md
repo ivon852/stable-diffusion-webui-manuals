@@ -13,19 +13,18 @@ weight: 1
 
 如果硬體條件許可的話，蒐集大量圖片訓練特定領域的checkpoint大模型，再上傳到HuggingFace造福他人也是不錯的選項，只不過此任務過於龐大。要知道Stable Diffusion 1.5版的模型可是輸入了23億張圖片訓練出來的！網路上其他人訓練的模型至少也準備了幾萬張圖片。因此要繪製特定的人物/物件/畫風，訓練小模型對一般人來說比較划算。
 
-各個模型的原理差異請參考下圖。技術原理以及訓練參數設定請參閱文末的「參考資料」，礙於篇幅Ivon無法一一細講，本文以操作過程為主。
+各個模型的原理差異請參考下圖。技術原理以及訓練參數設定請參閱「參考資料」一章，礙於篇幅Ivon無法一一細講，本章以操作過程為主。
 
 <img src=/posts/stable-diffusion-webui-manuals/images/bakeFoV.avif alt=""  width=500 loading="lazy">
 
 就訓練時間與實用度而言，目前應是 LoRA > HyperNetwork > Embedding
 
-訓練模型至少需要10GB的VRAM，也就是RTX3060等級以上的GPU。硬體不夠力的可以考慮用雲端來跑，下面Ivon會介紹免費雲端方案。
-
-
-本章節以ATOMATIC1111開發的Stable Diffusion WebUI為中心撰寫，因其圖形化且好操作。下面簡稱SD WebUI。
+本章節以ATOMATIC1111開發的Stable Diffusion WebUI為中心撰寫，因其圖形化且好操作。後面簡稱SD WebUI。
 
 接著選擇部署在本機或是雲端？
 
-如果你有Nvidia RTX3060以上等級的GPU，那就參考前面的教學部署在本機，想訓練多久就訓練多久。訓練資料不到50張圖片的小模型訓練時間約只要1~3個小時。
+訓練模型至少需要10GB的VRAM，也就是RTX3060等級以上的GPU。
 
-如果沒有強力的GPU，那就用雲端訓練，例如[Google Colab](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)。
+如果你有Nvidia RTX3060以上等級的GPU，那就參考[安裝教學](/posts/stable-diffusion-webui-manuals/installation/)部署在本機，想訓練多久就訓練多久。訓練資料不到50張圖片的小模型訓練時間約只要1~3個小時。
+
+如果沒有強力的GPU，那就用雲端訓練，例如[Google Colab](/posts/stable-diffusion-webui-manuals/installation/deploy-to-google-colab/)。

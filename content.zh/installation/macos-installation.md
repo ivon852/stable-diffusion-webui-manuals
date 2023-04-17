@@ -3,6 +3,9 @@ title: "安裝至macOS"
 weight: 5
 ---
 
+以macOS Ventura作示範。
+
+
 # 1. 安裝套件管理員Homebrew
 
 Brew是安裝下面的東西所需要的必備工具，需要用到終端機指令。
@@ -72,7 +75,7 @@ conda activate sdwebui
 
 ![](/posts/stable-diffusion-webui-manuals/images/0nkVg73.avif)
 
-參考上圖框起來的地方，填入`export COMMANDLINE_ARGS=--medvram --opt-split-attention`引數，降低VRAM使用量。有8GB以上VRAM不加也可以。
+參考上圖框起來的地方，填入`export COMMANDLINE_ARGS=--medvram --opt-split-attention`引數，降低VRAM使用量。
 
 額外加上`--listen`參數讓其他電腦能以IP存取網頁界面，`--share`則是產生一組Gradio網址。
 

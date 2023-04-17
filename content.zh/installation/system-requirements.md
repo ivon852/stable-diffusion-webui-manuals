@@ -10,7 +10,7 @@ Stable Difssusion WebUI支援Linux/Windows/macOS。
 - 記憶體： 最低8GB，建議16GB
 - 顯示卡：需配備獨立顯示卡，VRAM最低4GB，建議8GB
 - 硬碟空間：20GB
-- 處理器：近代的Intel或AMD處理器皆可，若為Mac建議是搭載M系列晶片的機型
+- 處理器：x86架構的Intel或AMD處理器皆可。若為Mac電腦建議使用搭載M系列晶片的機型
 
 儘管可以[用CPU跑Stable Diffusion WebUI](https://ivonblog.com/posts/stable-diffusion-running-on-cpu/)，但是速度會非常慢。一張顯示卡30秒就能算好的圖，CPU要算10分鐘。因此用獨立顯示卡跑Stable Diffsuion仍是比較好的選擇。
 
