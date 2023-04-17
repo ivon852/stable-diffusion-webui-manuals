@@ -76,7 +76,7 @@ conda activate sdwebui
 
 額外加上`--listen`參數讓其他電腦能以IP存取網頁界面，`--share`則是產生一組Gradio網址。
 
-其餘引數請參閱[命令行引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)頁面。
+其餘引數請參閱[命令列引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)頁面。
 
 
 # 5. 啟動Stable Diffusion WebUI
