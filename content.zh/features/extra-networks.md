@@ -8,7 +8,7 @@ weight: 5
 例如使用Anything模型繪圖，再搭配"Taiwan-doll-likeness LoRA"就能轉成真人風格而不用依賴許多提示詞，並且可以一次疊很多個，就像套多層濾鏡一般。
 <img src=/posts/stable-diffusion-webui-manuals/images/GJ7CJT5.webp alt=""  width=500 loading="lazy">
 
-跟ckpt大模型比起來，這類模型檔案都很小，主要用來微調現有的模型。小模型有嵌入(Embedding)、超網路(HyperNetwork)、LoRA三種，副檔名以`.pt`或`.safetensors`結尾，目前最熱門的為"LoRA"。更棒的是因為檔案小，自行[訓練喜歡的人物模型](https://ivonblog.com/posts/stable-diffusion-webui-manuals/4/)成本並不高。
+跟ckpt大模型比起來，這類模型檔案都很小，主要用來微調現有的模型。小模型有嵌入(Embedding)、超網路(HyperNetwork)、LoRA三種，副檔名以`.pt`或`.safetensors`結尾，目前最熱門的為"LoRA"。更棒的是因為檔案小，自行[訓練喜歡的人物模型](/posts/stable-diffusion-webui-manuals/training/)成本並不高。
 
 
 # 1. 安裝小模型
