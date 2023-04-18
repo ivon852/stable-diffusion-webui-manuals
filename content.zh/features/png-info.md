@@ -9,4 +9,4 @@ SD WebUI繪製的圖片都是PNG檔，並會記載繪製圖片所使用的模型
 
 ![](/posts/stable-diffusion-webui-manuals/images/FgnyaOB.webp)
 
-不過有些模型會使用[LoRA](http://localhost:1313/posts/stable-diffusion-webui-manuals/features/extra-networks/)和其他的小模型，這點可從提示詞有無`< >`來判斷。因此有時候完全照抄提示詞是不夠的，缺少的東西要手動下載。
+不過有些模型會使用[LoRA](/posts/stable-diffusion-webui-manuals/features/extra-networks/)和其他的小模型，這點可從提示詞有無`< >`來判斷。因此有時候完全照抄提示詞是不夠的，缺少的東西要手動下載。

@@ -45,7 +45,7 @@ enableGitInfo = true
    weight = 10
 
 [[menu.before]]
-  name = "【檢視此手冊的原始碼】"
+  name = "【意見回饋】"
   url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
   weight = 20
 

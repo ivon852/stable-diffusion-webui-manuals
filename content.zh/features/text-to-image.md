@@ -29,16 +29,20 @@ weight: 2
 
 ## Sampling Methods 取樣方法
 
-Sampling Methods即為取樣方法，各種方法得出的結果不太一樣，建議先試試最快的「UniPC」，其次是「Euler a」。
+Sampling Methods即為取樣方法，各種方法得出的結果不太一樣。
 
-DPM Fast和DDIM要算更久，不過出圖品質會更好一些。
+UniPC是2023年發表的取樣方法。
+
+DDIM和PLMS是2021年隨Stable Diffusion v1發表的取樣方法。
+
+若要兼顧品質與速度，請優先試試這三種取樣方法：UniPC、DPM++ 2M Karras、Euler a。
 
 
 ## Sampling Steps 取樣步數
 
-取樣步數建議值至少為20，在使用Euler和UniPC取樣方法的時候就有很好效果。
+取樣步數建議值至少為20，在使用Euler a和UniPC取樣方法的時候就有很好效果。
 
-相對的DPM Fast和DDIM需要80以上的取樣步數才會有好結果。
+相對的和DDIM需要80以上的取樣步數才會有好結果。
 
 
 ## Restore faces 臉部修復
@@ -91,7 +95,7 @@ AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內
 載入使用者撰寫的指令稿。
 
 
-## 儲存提示詞供下次使用
+## 儲存提示詞
 
 右上角可以儲存與載入生圖提示詞。
 
@@ -114,7 +118,7 @@ Stable Diffusion WebUI正上方可看到現在使用的是哪個模型。切換�
 
 <img src=/posts/stable-diffusion-webui-manuals/images/kG3Bn21.webp alt=""  width=500 loading="lazy">
 
-2. Sampling Methods選UniPC，Sampling Steps設20，`Width`x`Height`設定為512x512。
+2. Sampling Methods建議先試試最快的「UniPC」，其次是「Euler a」。，Sampling Steps設20，`Width`x`Height`設定為512x512。
 
 <img src=/posts/stable-diffusion-webui-manuals/images/vUevujL.webp alt=""  width=500 loading="lazy">
 
