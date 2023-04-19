@@ -5,9 +5,11 @@ weight: 2
 
 文生圖(txt2image)即為讓AI按照文字敘述繪圖。
 
-開啟Stable Diffusion WebUI網頁後，會看到以下畫面。流程為在左上角填入提示詞，勾選左下角的生圖參數，再點選右上角生成圖片。其餘SD WebUI的功能用法大抵都按照此邏輯設計。
+開啟Stable Diffusion WebUI網頁後，會看到以下畫面。流程為在左上角填入提示詞，勾選左下角的生圖參數，再點選右上角生成圖片。
 
 <img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_181020.webp alt=""  width=500 loading="lazy">
+
+其餘SD WebUI的功能用法大抵都按照此邏輯設計，有些參數是通用的。
 
 需要中文界面的可以先裝[正體中文/雙語擴充功能](/posts/stable-diffusion-webui-manuals/extensions/localization-zh_tw/)。
 
@@ -15,7 +17,6 @@ weight: 2
 # 2.2.1. 參數解說
 
 不想看參數原理的請直接跳下面的「實際操作」小節，進行教學演練。
-
 
 ## Stable Diffusion checkpoint
 

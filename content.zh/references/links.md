@@ -3,17 +3,26 @@ title: "外部連結"
 weight: 1
 ---
 
+感謝原始AI繪圖工具的開發者CompVis、StabilityAI、RunwayAI、ATOMATIC1111，以及全世界大大小小開發者的付出，才有了這本手冊。
+
+
 本手冊的參考來源
 
 - [AUTOMATIC1111/stable-diffusion-webui Wiki - Github](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/)
+- [Diffusers - Hugging Face](https://huggingface.co/docs/diffusers/index)
 - [Voldy's Retard Guide The definitive Stable Diffusion experience ™](https://rentry.org/voldy)
 - [Stable Diffusion Art - tutorials, prompts, resources](https://stable-diffusion-art.com)
 - [Rombach, R., Blattmann, A., Lorenz, D., Esser, P., & Ommer, B. (2022). High-resolution image synthesis with latent diffusion models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 10684-10695).](https://arxiv.org/abs/2112.10752)
+
+正體中文術語翻譯參考自benlisquare正體中文的擴充功能。
+
+- [benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)
 
 Stable Diffusion討論社群
 
 - [r/StableDiffusion - Reddit](https://www.reddit.com/r/StableDiffusion/)
 - [看板AI_Art 文章列表- 批踢踢實業坊](https://www.ptt.cc/bbs/AI_Art/index.html)
+
 
 模型訓練參考資料
 

@@ -53,3 +53,7 @@ hugo server -D
 ```bash
 hugo --gc --minify
 ```
+
+## 致謝
+
+感謝原始AI繪圖工具的開發者CompVis、StabilityAI、RunwayAI、ATOMATIC1111，以及全世界大大小小開發者的付出，才有了這本手冊。

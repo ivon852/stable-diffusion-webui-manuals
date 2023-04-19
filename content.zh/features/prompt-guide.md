@@ -7,7 +7,7 @@ weight: 1
 
 ![](/posts/stable-diffusion-webui-manuals/images/title-2.1.webp)
 
-Ivon使用的AI繪圖軟體為ATOMATIC1111開發的Stable Diffusion WebUI，非他開發的版本也可以參考此教學，但要注意哪些是ATOMATIC1111版獨有的語法。
+非ATOMATIC1111開發的Stable Diffusion也可以參考此教學，但要注意哪些是ATOMATIC1111版獨有的語法。
 
 我們來看提示詞要怎麼寫，以文生圖模式的提示詞為主。若要邊看邊練習的話，可以搭配[文生圖用法](/posts/stable-diffusion-webui-manuals/features/text-to-image)操作。
 

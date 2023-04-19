@@ -8,6 +8,35 @@ weight: 4
 此功能位於圖生圖的頁面。
 
 
+# 參數解說
+
+## Mask blur
+
+圖片上的筆刷毛邊柔和程度。
+
+## Mask mode
+
+選擇要讓AI填滿塗黑區域(Inpaint masked)，或是填滿未塗黑區域(Inpaint not masked)。
+
+## Masked content
+
+要填充的內容。
+
+- Fill：讓AI參考塗黑附近的顏色填滿區域。
+- Original：在填滿區域的時候參考原圖底下的內容。
+- latent noise：使用潛在空間填滿，可能會生出跟原圖完全不相關的內容。
+- latent nothing：使用潛在空間填滿，不加入噪聲。
+
+
+## Inpaint area
+
+選擇要填滿整張圖片(Whole picture)或是只填滿塗黑的區域(Only masked)
+
+`Only masked padding, pixels`是像素內距。
+
+Only masked即外補繪製模式。
+
+
 # 實際操作
 
 1. 上傳圖片，點選圖片，用滑鼠將要替換的部份塗黑。
