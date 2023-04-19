@@ -3,7 +3,7 @@ title: "2.2. 文生圖 Text to image"
 weight: 2
 ---
 
-文生圖(txt2image)即為讓AI按照文字敘述繪圖。
+文生圖(txt2image)即為讓AI按照文字敘述生圖。
 
 開啟Stable Diffusion WebUI網頁後，會看到以下畫面。流程為在左上角填入提示詞，勾選左下角的生圖參數，再點選右上角生成圖片。
 
