@@ -51,7 +51,7 @@ HuggingFace為儲存庫 → Files and versions，選擇下載副檔名為`.ckpt`
 
 <img src=/posts/stable-diffusion-webui-manuals/images/RvclOoa.webp alt=""  width=500 loading="lazy">
 
-Citvitai則是點選Download按鈕下載模型。
+Civitai則是點選Download按鈕下載模型。
 
 
 如果要用指令下載，可以用wget或git，例如：

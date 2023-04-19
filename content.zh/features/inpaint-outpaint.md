@@ -39,7 +39,7 @@ Only masked即外補繪製模式。
 
 # 2.4.2. 實際操作
 
-1. 上傳圖片，點選圖片，用滑鼠將要替換的部份塗黑。
+1. 上傳圖片，點選圖片，用滑鼠將要替換的部份塗黑。或者也可以直接上傳塗好遮罩的圖片。
 
 <img src=/posts/stable-diffusion-webui-manuals/images/ZU9XkZU.webp alt=""  width=500 loading="lazy">
 

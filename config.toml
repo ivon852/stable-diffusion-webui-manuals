@@ -3,6 +3,8 @@ title = 'Ivon的Stable Diffusion WebUI使用手冊(正體中文)'
 theme = 'hugo-book'
 defaultContentLanguage = "zh"
 
+googleAnalytics = 'G-NYE962575Q'
+
 # Book configuration
 disablePathToLower = true
 enableGitInfo = true
