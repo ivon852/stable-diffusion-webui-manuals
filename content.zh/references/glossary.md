@@ -6,54 +6,61 @@ weight: 2
 本手冊中有關於Stable Diffusion的專有名詞，附上中文翻譯與註釋。
 
 - artificial intelligence generated content (AIGC): 生成式人工智慧
+- ancestral sampling: 祖先取樣，又稱向前取樣
 - batch count: 批次數量
 - batch size: 批次大小
-- checkpoint: 存檔點模型
-- classifier-free guidance scale (CFG scale)
-- CodeFormer
-- ControlNet
+- checkpoint: 存檔點，模型格式，附檔名為`.ckpt`。
+- classifier-free guidance scale (CFG scale): 事前訓練的條件控制生成方法。
+- CodeFormer: 2022年由Shangchen Zhou等人發表的臉部修復模型。
+- ControlNet: 2022年由Lvmin Zhang發表，通過加入額外條件來控制擴散模型的神經網路結構。
 - cross-attention: 分散注意
 - dataset: 資料集
-- deforum
-- denoising: 降噪
+- denoising: 去噪，降噪
 - diffusion: 擴散
-- Dreambooth
+- Denoising Diffusion Implicit Models (DDIM): 去噪擴散隱式模型，2022年由Jiaming Song等人發表的取樣方法。
+- Dreambooth: Google Research和波士頓大學於2022年發表的深度學習模型，用於調整現有的文生圖模型。
 - embedding: 嵌入
 - epoch: 時期
-- Euler a
+- Euler Ancestral (Euler a): 基於k-diffusion的取樣方法，使用祖父取樣與歐拉方法步數。可在20~30步數生出好結果。
+- Euler: 基於k-diffusion的取樣方法，使用歐拉方法步數。可在20~30步數生出好結果。
 - fine-tune: 微調
-- float16 (fp16)
-- float32 (fp32)
-- GFPGAN
+- float16 (fp16): 半精度浮點數
+- float32 (fp32): 單精度浮點數
+- GFPGAN: 騰訊於2021年發表的臉部修復模型。
 - hypernetwork: 超網路
 - image to image: 圖生圖
+- inference: 模型推理
 - inpaint: 內補繪製
-- interrogator
+- interrogator: 圖像理解
+- k-diffusion: Karras等人於2022年發表的PyTorch擴散模型，基於論文〈Elucidating the Design Space of Diffusion-Based Generative Models〉所實作。
 - latent diffusion: 潛在擴散
 - latent space: 潛在空間
 - learning rate: 學習率
 - Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion (LyCORIS)
-- low-rank adaptation (LoRA): 低秩自適應
+- low-rank adaptation (LoRA): 低秩自適應，2023年由Microsoft發表，用於微調大模型的技術。
 - machine learning: 機器學習
 - negative prompts: 負向提示詞
 - outpaint: 外補繪製
+- pickle: 儲存張量的模型格式，附檔名為`.pt`
 - postprocessing: 後處理
 - precision: 精度
 - prompts: 提示詞
-- safetensors
+- safetensors: 由Huggingface研發，安全儲存張量的模型格式。
 - sampling method: 取樣方法
 - sampling steps: 取樣步數
 - scheduler: 排程器
 - seed: 種子碼
-- Stable Diffusion: 穩定擴散
+- Stable Diffusion: 穩定擴散，一個文生圖模型，2022年由CompVis發表，由U-Net、VAE、Text Encoder三者組成。
 - text encoder: 文本編碼
 - text to image: 文字生成圖片，文生圖
 - textual inversion: 文本倒置
 - tiling: 平鋪
 - token: 詞元
 - tokenizer: 標記解析器
-- U-Net
-- unified predictor-corrector (UniPC)
+- Transformers: HuggingFace研發的一系列API，用於輔助PyTorch、TensorFlow、JAX機器學習，可下載最新預訓練的模型。
+- U-Net：用於影像分割的卷積神經網路
+- unified predictor-corrector (UniPC): 統一預測校正，2023年發表的新取樣方法。
 - upscale: 升頻，放大
 - variational auto encoder (VAE): 變分自動編碼器
 - weights: 權重
+- xFormers: 2022年由Meta發表，用於加速Transformers，並減少VRAM佔用的技術。
