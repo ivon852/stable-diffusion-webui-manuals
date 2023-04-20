@@ -3,51 +3,52 @@ title: "詞彙表"
 weight: 2
 ---
 
-本手冊中出現的，有關Stable Diffusion的專有名詞。
-- artificial intelligence generated content (AIGC)
-- batch count
-- batch size
-- checkpoint
+本手冊中出現的，還有關於Stable Diffusion的專有名詞。
+
+- artificial intelligence generated content (AIGC): 生成式人工智慧
+- batch count: 批次數量
+- batch size: 批次大小
+- checkpoint: 存檔點模型
 - classifier-free guidance scale (CFG scale)
 - CodeFormer
 - ControlNet
 - cross-attention
-- dataset
+- dataset: 資料集
 - deforum
-- denoising
-- diffusion
+- denoising: 降噪
+- diffusion: 擴散
 - Dreambooth
-- embedding
-- epoch
+- embedding: 嵌入
+- epoch: 時期
 - Euler a
 - GFPGAN
-- hypernetwork
-- image to image
-- inpaint
+- hypernetwork: 超網路
+- image to image: 圖生圖
+- inpaint: 內補繪製
 - interrogator
-- latent diffusion
-- latent space
-- learning rate
+- latent diffusion: 潛在擴散
+- latent space: 潛在空間
+- learning rate: 學習率
 - Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion (LyCORIS)
-- low-rank adaptation (LoRA)
-- machine learning
-- negative prompts
-- outpaint
-- postprocessing
-- precision
-- prompts
+- low-rank adaptation (LoRA): 低秩自適應
+- machine learning: 機器學習
+- negative prompts: 負向提示詞
+- outpaint: 外補繪製
+- postprocessing: 後處理
+- precision: 精度
+- prompts: 提示詞
 - safetensors
-- sampling method
-- sampling steps
-- scheduler
-- seed
-- Stable Diffusion
-- text to image
-- textual inversion
-- tiling
-- token
-- tokenizer
+- sampling method: 取樣方法
+- sampling steps: 取樣步數
+- scheduler: 排程器
+- seed: 種子碼
+- Stable Diffusion: 穩定擴散
+- text to image: 文字生成圖片，文生圖
+- textual inversion: 文本倒置
+- tiling: 平鋪
+- token: 詞元
+- tokenizer: 標記解析器
 - unified predictor-corrector (UniPC)
-- upscale
-- variational auto encoder (VAE)
-- weights
+- upscale: 升頻，放大
+- variational auto encoder (VAE): 變分自動編碼器
+- weights: 權重
