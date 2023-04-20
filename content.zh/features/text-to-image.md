@@ -58,18 +58,23 @@ DDIM和PLMS是2021年隨Stable Diffusion v1發表的取樣方法。
 
 ## Hires_fix 高畫質修復
 
-可以提昇圖片的尺寸，但是會耗費更多VRAM。
+可以提昇圖片的畫質，但是會耗費更多VRAM。
 
 
-## Width x Height 圖片長寬
+## Width x Height 圖片寬高
 
-生成圖片的長寬，尺寸越大品質越好，但越會吃掉更多VRAM。
+生成圖片的寬高，尺寸越大品質越好，但越會吃掉更多VRAM。
 
-預設長寬為512x512
+預設寬高為512x512
 
-其餘可用的長寬比請參考[此表](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025#discussioncomment-3727588)
+其餘可用的寬高比(ratio)請參考下表。[圖片來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025#discussioncomment-3727588)
+
+<img src=/posts/stable-diffusion-webui-manuals/images/192161440-325bfde9-b398-4622-b833-01a6c9cd3b99.webp alt=""  width=500 loading="lazy">
+
 
 ## CFG Scale
+
+CFG Scale即Classifier-free guidance scale
 
 AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內容下去生圖。
 
@@ -93,14 +98,18 @@ AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內
 
 ## Scripts
 
-載入使用者撰寫的指令稿。
+載入使用者撰寫的指令稿。內建的有：
+
+- Prompt Matrix：會生出一個表格圖片，用於比對不同提示詞生圖的效果
+- Prompts from files or textbox：從寫好提示詞的檔案生成圖片。
+- X/Y/Z plot：用於比對不同提示詞、取樣方法、CFG Scale、種子碼的組合所生圖的效果。
 
 
 ## 儲存提示詞
 
 右上角可以儲存與載入生圖提示詞。
 
-5個按鈕依序為：1. 叫出上次生圖使用的設定值 2. 清空提示詞 3. 啟用[額外網路](/posts/stable-diffusion-webui-manuals/features/extra-networks/) 4. 套用選中的風格 5. 儲存目前的提示詞。
+5個按鈕由左至依序為：1. 叫出上次生圖使用的設定值 2. 清空提示詞 3. 啟用[額外網路](/posts/stable-diffusion-webui-manuals/features/extra-networks/) 4. 套用選中的風格 5. 儲存目前的提示詞
 
 <img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_183512.webp alt=""  width=500 loading="lazy">
 
@@ -119,7 +128,7 @@ Stable Diffusion WebUI正上方可看到現在使用的是哪個模型。切換�
 
 <img src=/posts/stable-diffusion-webui-manuals/images/kG3Bn21.webp alt=""  width=500 loading="lazy">
 
-2. Sampling Methods建議先試試最快的「UniPC」，其次是「Euler a」。，Sampling Steps設20，`Width`x`Height`設定為512x512。
+2. Sampling Methods建議先試試最快的「UniPC」，其次是「Euler a」、「DPM++ 2M Karras」。，Sampling Steps設20，`Width`x`Height`設定為512x512。
 
 <img src=/posts/stable-diffusion-webui-manuals/images/vUevujL.webp alt=""  width=500 loading="lazy">
 

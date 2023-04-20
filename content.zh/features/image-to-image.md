@@ -18,10 +18,10 @@ weight: 3
 
 上傳的圖片最好與生圖設定的一致。
 
-- Just resize：調整圖片為生圖設定的長寬。若上傳圖片的長寬與生成設定的長寬不一致，則該圖片會被壓扁
-- Crop and resize：裁切圖片以符合生圖的長寬
-- Resize and fill：裁切並調整圖片長寬，若上傳圖片的長寬與生成設定的長寬不一致，則多出來的區域會自動填滿。
-- Just resize (latent upscale)：調整圖片大小為生圖設定的長寬，並使用潛在空間放大。
+- Just resize：調整圖片為生圖設定的寬高。若上傳圖片的寬高與生成設定的寬高不一致，則該圖片會被壓扁
+- Crop and resize：裁切圖片以符合生圖的寬高
+- Resize and fill：裁切並調整圖片寬高，若上傳圖片的寬高與生成設定的寬高不一致，則多出來的區域會自動填滿。
+- Just resize (latent upscale)：調整圖片大小為生圖設定的寬高，並使用潛在空間放大。
 
 
 ## Denoising strength 降噪強度
@@ -43,7 +43,7 @@ weight: 3
 
 # 2.3.2. 實際操作
 
-1. 點選框框上傳圖片。圖片比例需要跟設定繪製的長寬一致，例如512x512就得上傳長寬1:1比例的圖片。
+1. 點選框框上傳圖片。圖片比例需要跟設定繪製的寬高一致，例如512x512就得上傳寬高1:1比例的圖片。
 
 <img src=/posts/stable-diffusion-webui-manuals/images/67W6nEb.webp alt=""  width=500 loading="lazy">
 
