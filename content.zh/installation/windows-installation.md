@@ -21,7 +21,7 @@ AMD請用[驅動程式自動偵測工具](https://www.amd.com/zh-hant/support/kb
 
 <img src=/posts/stable-diffusion-webui-manuals/images/ozgVF8y.webp alt=""  width=500 loading="lazy">
 
-2. 接著安裝Python。SD WebUI限定Python版本需為`3.10.6`。請至[Python官網](https://www.python.org/downloads/release/python-3106/)下載`Python 3.10.6`的64位元安裝檔。
+2. 接著安裝Python。SD WebUI建議Python版本為`3.10.6`。請至[Python官網](https://www.python.org/downloads/release/python-3106/)下載`Python 3.10.6`的64位元安裝檔。
 
 <img src=/posts/stable-diffusion-webui-manuals/images/a3JMgF9.webp alt=""  width=500 loading="lazy">
 

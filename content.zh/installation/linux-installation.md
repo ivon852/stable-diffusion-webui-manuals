@@ -60,7 +60,7 @@ sudo apt show rocm-libs
 sudo apt install python3 python3-pip python3-virtualenv wget git
 ```
 
-2. Stable Diffusion WebUI的Wiki寫明Python版本需為3.10.6，為此請先安裝[Anaconda](https://ivonblog.com/posts/linux-anaconda/)。
+2. Stable Diffusion WebUI的Wiki寫明Python版本建議為3.10.6，為此請先安裝[Anaconda](https://ivonblog.com/posts/linux-anaconda/)。
 
 3. 建立Python 3.10.6的虛擬環境
 ```bash

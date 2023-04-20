@@ -29,6 +29,8 @@ Stable Difssusion WebUI支援Linux/Windows/macOS。
 
 # MacOS
 
+請使用最新版macOS。
+
 建議使用搭載Apple Silicon M晶片 (M1、M2) 的Mac機型。
 
 舊款Mac需配備AMD獨立顯示卡，只有Intel內顯的不行。

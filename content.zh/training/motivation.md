@@ -10,6 +10,7 @@ weight: 1
 舉例來說，如果餵給AI十幾張我精挑細選的「Hara老師繪製的、不同角度、FGO的斯卡薩哈」做訓練，那麼就能讓AI更懂得如何繪製斯卡薩哈的臉部，風格也會比較固定。
 
 以下是一個具體例子，透過使用自行訓練的HyperNetwork，便改善單靠Anything模型無法繪製出Hara老師畫風的缺點。在不使用HyperNetwork的情況下，風格永遠是左邊那樣；一使用HyperNetwork，右邊的風格就能輕鬆繪製出來了。
+
 ![](/posts/stable-diffusion-webui-manuals/images/vPJsJB1.webp)
 
 訓練模型是複雜的議題，基於哪個現有模型，以及餵給AI學習的圖片品質，還有訓練時的參數，都會影響模型訓練結果。
@@ -20,7 +21,7 @@ weight: 1
 
 各個模型的原理差異請參考下圖。技術原理以及訓練參數設定請參閱「參考資料」一章，礙於篇幅Ivon無法一一細講，本章以操作過程為主。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/bakeFoV.avif alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/bakeFoV.avif)
 
 就訓練時間與實用度而言，目前應是 LoRA > HyperNetwork > Embedding
 
