@@ -1,0 +1,53 @@
+---
+title: "詞彙表"
+weight: 2
+---
+
+本手冊中出現的，有關Stable Diffusion的專有名詞。
+- artificial intelligence generated content (AIGC)
+- batch count
+- batch size
+- checkpoint
+- classifier-free guidance scale (CFG scale)
+- CodeFormer
+- ControlNet
+- cross-attention
+- dataset
+- deforum
+- denoising
+- diffusion
+- Dreambooth
+- embedding
+- epoch
+- Euler a
+- GFPGAN
+- hypernetwork
+- image to image
+- inpaint
+- interrogator
+- latent diffusion
+- latent space
+- learning rate
+- Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion (LyCORIS)
+- low-rank adaptation (LoRA)
+- machine learning
+- negative prompts
+- outpaint
+- postprocessing
+- precision
+- prompts
+- safetensors
+- sampling method
+- sampling steps
+- scheduler
+- seed
+- Stable Diffusion
+- text to image
+- textual inversion
+- tiling
+- token
+- tokenizer
+- unified predictor-corrector (UniPC)
+- upscale
+- variational auto encoder (VAE)
+- weights

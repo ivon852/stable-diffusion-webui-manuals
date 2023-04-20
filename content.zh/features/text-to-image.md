@@ -7,7 +7,7 @@ weight: 2
 
 開啟Stable Diffusion WebUI網頁後，會看到以下畫面。流程為在左上角填入提示詞，勾選左下角的生圖參數，再點選右上角生成圖片。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_181020.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_181020.webp)
 
 其餘SD WebUI的功能用法大抵都按照此邏輯設計，有些參數是通用的。
 
@@ -69,7 +69,7 @@ DDIM和PLMS是2021年隨Stable Diffusion v1發表的取樣方法。
 
 其餘可用的寬高比(ratio)請參考下表。[圖片來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025#discussioncomment-3727588)
 
-<img src=/posts/stable-diffusion-webui-manuals/images/192161440-325bfde9-b398-4622-b833-01a6c9cd3b99.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/192161440-325bfde9-b398-4622-b833-01a6c9cd3b99.webp)
 
 
 ## CFG Scale
@@ -111,7 +111,8 @@ AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內
 
 5個按鈕由左至依序為：1. 叫出上次生圖使用的設定值 2. 清空提示詞 3. 啟用[額外網路](/posts/stable-diffusion-webui-manuals/features/extra-networks/) 4. 套用選中的風格 5. 儲存目前的提示詞
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_183512.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_183512.webp)
+
 
 儲存的提示詞此處稱為風格(styles)
 
@@ -122,34 +123,34 @@ AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內
 
 Stable Diffusion WebUI正上方可看到現在使用的是哪個模型。切換模型約需要等30秒。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Iew050C.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Iew050C.webp)
 
 1. 在頁面上方填入正向與負向提示詞。右邊有存檔按鈕。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/kG3Bn21.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/kG3Bn21.webp)
 
 2. Sampling Methods建議先試試最快的「UniPC」，其次是「Euler a」、「DPM++ 2M Karras」。，Sampling Steps設20，`Width`x`Height`設定為512x512。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/vUevujL.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/vUevujL.webp)
 
 3. 勾選左下角的臉部修復 (Restore faces)，改善臉部繪製效果。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/4tYozfF.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/4tYozfF.webp)
 
 4. 點右上角的Generate開始生圖。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/qu1BW4g.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/qu1BW4g.webp)
 
 5. 視顯卡性能而定，約一分鐘圖片就會算出來了，點選放大存檔。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/X2jMeJx.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/X2jMeJx.webp)
 
 6. 左下角有`Batch count`的數值可設定一次算多張圖。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/mX8jX9s.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/mX8jX9s.webp)
 
 7. 如果對此次結果滿意，不妨將種子碼 (Seed) 保存下來供日後利用，這樣可以一定程度保留風格。
-<img src=/posts/stable-diffusion-webui-manuals/images/DFIZZfA.webp alt=""  width=500 loading="lazy">
 
+![](/posts/stable-diffusion-webui-manuals/images/DFIZZfA.webp)
 
 不論圖片有無儲存，Stable Diffusion WebUI生成的圖都會自動儲存到主程式資料夾下的`outputs`資料夾。

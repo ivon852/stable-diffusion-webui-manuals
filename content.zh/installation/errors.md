@@ -5,7 +5,7 @@ weight: 8
 
 本節列出一些安裝ATOMATIC1111的Stable Diffusion WebUI常遇到的錯誤訊息的解決方式。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/00040-3462613574.png width=300 loading="lazy" alt="">
+![](/posts/stable-diffusion-webui-manuals/images/00040-3462613574.png)
 
 
 # 如何回報錯誤

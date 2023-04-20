@@ -41,9 +41,9 @@ Only masked即外補繪製模式。
 
 1. 上傳圖片，點選圖片，用滑鼠將要替換的部份塗黑。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/ZU9XkZU.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/ZU9XkZU.webp)
 
-或者也可以切換到Inpaint Upload頁面，上傳圖片，再於下方Mask上傳塗好遮罩的圖遍。
+或者也可以切換到Inpaint Upload頁面，上傳圖片，再於下方Mask上傳塗好遮罩的圖片。
 
 2. 假設要換成泳裝，那麼就在正向提示詞加入`swimsuit`或`bikini`這類的提示詞。
 
@@ -51,8 +51,7 @@ Only masked即外補繪製模式。
 
 4. 點選Generate繪圖。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/LIxlFVA.webp alt=""  width=500 loading="lazy">
-
+![](/posts/stable-diffusion-webui-manuals/images/LIxlFVA.webp)
 
 若要切換為外補繪製：點選左下角的Mask mode，將`Inpaint masked`改成`Inpaint not masked`，這樣AI就會改為填滿沒有塗黑的地方。
 
@@ -61,7 +60,7 @@ Only masked即外補繪製模式。
 
 切換到Batch頁面
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230420_143750.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230420_143750.webp)
 
 第一個欄位輸入要處理的圖片路徑，例如桌面的`Input`資料夾
 
