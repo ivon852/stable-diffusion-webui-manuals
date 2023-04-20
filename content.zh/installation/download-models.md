@@ -5,25 +5,33 @@ weight: 2
 
 存檔點模型(checkpoint，勿跟LoRA搞混)是AI算圖的重要依據，算圖用的模型可以安裝很多個。
 
-Stable Diffusion WebUI在初次啟動時，若模型資料夾(`models/Stable-diffusion`)為空，則會自動下載原始版的Stable Diffuson v1.5模型。
+Stable Diffusion WebUI在初次啟動時，若放模型的資料夾(`models/Stable-diffusion`)為空，則會自動下載原始版的Stable Diffusion v1.5模型。
 
-但是，不同人玩AI繪圖有不同的需求，下載以寫實風格為主的Stable Diffusion模型可能無法滿足所有人。因此你可以先下載自己想要使用的模型。
+但是，不同人玩AI繪圖有不同的需求，以寫實風格為主的Stable Diffusion模型可能無法滿足所有人。因此你可以先下載自己想要使用的模型。
 
 這裡推薦一些Ivon綜合個人以及網路上的意見覺得不錯的模型。
 
 
 # 1. 模型下載網站
 
-[HuggingFace](https://huggingface.co/)和[Civitai](https://civitai.com/tag/lora)有很多類別可以下載，看要畫真人還是動漫風格。
+目前找Stable Diffusion與其衍生模型的網站主要就二個。
 
-注意Civitai可能包含未成年不宜的圖像。
+第一個是[HuggingFace](https://huggingface.co/)，中文俗稱抱臉笑，可以說是人工智慧界的Github。Stable Diffusion背後用到的很多AI工具，如Transformer、Tokenizers、Datasets都他們開發的，網站上也有豐富的教學文檔。
+
+另一個是[Civitai](https://civitai.com/tag/lora)，專門用來分享Stable Diffusion相關的資源，特色是模型都有示範縮圖，用戶也可以分享彼此使用的提示詞，以及分享作品。注意Civitai可能包含未成年不宜的圖像。
 
 
 ## 寫實風模型
 
-[Stable Diffusion v2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1)，簡稱SD，是CompVis與合作團隊最初發表的模型，不斷更新中。網路上很多模型都基於此模型訓練而來。適合畫真人、動物、自然、科技、建築的圖像，亦學習過歷史上許多畫家的畫風。
+說到萬模型之母，不得不提原始版的Stable Diffusion了，簡稱SD，是CompVis與合作團隊最初發表的模型，不斷更新中。
 
-[Chilloutmix](https://civitai.com/models/6424/chilloutmix)寫實風格的模型，適合畫出2.5次元，融合日韓真人與動漫風格的圖像。
+最初[Stable Diffusion v1](https://huggingface.co/runwayml/stable-diffusion-v1-5)是使用512x512像素的圖片訓練的，因此高於此尺寸的生圖品質會變差。後來[Stable Diffusion v2](https://huggingface.co/stabilityai/stable-diffusion-2-1)的訓練圖片寬高提昇到了768x768像素。
+
+網路上很多模型都基於此模型訓練而來。適合畫真人、動物、自然、科技、建築的圖像，亦學習過歷史上許多畫家的畫風。
+
+---
+
+[Chilloutmix萬象熔爐](https://civitai.com/models/6424/chilloutmix)寫實風格的模型，適合畫出2.5次元，融合日韓真人與動漫風格的圖像。
 
 [Deliberate](https://civitai.com/models/4823/deliberate)基於SD-1.5模型，適合繪製精緻寫實風格的人物、動物、自然風景。
 
@@ -58,3 +66,8 @@ Civitai則是點選Download按鈕下載模型。
 ```bash
 wget https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors
 ```
+
+
+## 3. 模型放置位置
+
+不論是.ckpt還是.safetensors模型，都是在複製stable-diffusion-webui的儲存庫後，放到主程式目錄下的`/models/Stable-diffusion`資料夾下。

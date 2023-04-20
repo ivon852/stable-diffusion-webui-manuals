@@ -30,8 +30,8 @@ Windows也是一樣，不過啟動是用`webui-user.bat`批次檔，以終端機
 
 環境變數的設定方法：
 
-- Windows：編輯`webui-user.bat`，填入`set 變數=數值`
 - Linux/macOS：編輯`webui-user.sh`，填入`export 變數=數值`
+- Windows：編輯`webui-user.bat`，填入`set 變數=數值`
 
 例如，Windows對`webui-user.bat`按右鍵以記事本編輯，加入這行：
 ```powershell
@@ -42,6 +42,8 @@ set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-va
 # 命令列引數
 
 命令列引數(command line arguments)為啟動WebUI時候使用的選項，寫在啟動指令稿的`COMMANDLINE_ARGS`後面。
+
+注意下面是二條橫線「- -」
 
 
 | 引數指令 | 數值 | 預設值 | 說明 |

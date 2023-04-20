@@ -6,18 +6,16 @@ weight: 5
 
 LoRA (Low-rank adaptation)是用來微調大型模型的技術，其生成的模型訓練時間短，檔案更小。
 
-LoRA較適合訓練畫風而非臉部。
-
 DreamBooth內含LoRA，可作為[SD WebUI的擴充功能](https://github.com/d8ahazard/sd_dreambooth_extension)安裝。
 
 本機訓練還可以用[LoRA_Easy_Training_Scripts](https://github.com/derrian-distro/LoRA_Easy_Training_Scripts)，支援Linux和Windows系統。
 
-另外有用Google Colab的採用[Linaqruf/kohya-trainer](https://github.com/Linaqruf/kohya-trainer)會比較好上手。[Reddit](https://www.reddit.com/r/StableDiffusion/comments/111mhsl/lora_training_guide_version_20_i_added_multiple/)有一圖流教學。
+有用Google Colab的採用[Linaqruf/kohya-trainer](https://github.com/Linaqruf/kohya-trainer)會比較好上手。[Reddit](https://www.reddit.com/r/StableDiffusion/comments/111mhsl/lora_training_guide_version_20_i_added_multiple/)有一圖流教學。
 
 
 # 1. 安裝環境
 
-"LoRA Easy Training Scripts"這個Python程式Linux和Windows都可以用，下面以Ubuntu Linux為例。
+"LoRA Easy Training Scripts"這個Python程式Linux和Windows都可以用，下面以Ubuntu為例。
 
 1. 安裝[Anaconda](https://ivonblog.com/posts/linux-anaconda/)，建立虛擬環境
 ```bash

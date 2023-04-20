@@ -3,7 +3,7 @@ title: "詞彙表"
 weight: 2
 ---
 
-本手冊中出現的，還有關於Stable Diffusion的專有名詞。
+本手冊中有關於Stable Diffusion的專有名詞，附上中文翻譯與註釋。
 
 - artificial intelligence generated content (AIGC): 生成式人工智慧
 - batch count: 批次數量
@@ -12,7 +12,7 @@ weight: 2
 - classifier-free guidance scale (CFG scale)
 - CodeFormer
 - ControlNet
-- cross-attention
+- cross-attention: 分散注意
 - dataset: 資料集
 - deforum
 - denoising: 降噪
@@ -21,6 +21,9 @@ weight: 2
 - embedding: 嵌入
 - epoch: 時期
 - Euler a
+- fine-tune: 微調
+- float16 (fp16)
+- float32 (fp32)
 - GFPGAN
 - hypernetwork: 超網路
 - image to image: 圖生圖
@@ -43,11 +46,13 @@ weight: 2
 - scheduler: 排程器
 - seed: 種子碼
 - Stable Diffusion: 穩定擴散
+- text encoder: 文本編碼
 - text to image: 文字生成圖片，文生圖
 - textual inversion: 文本倒置
 - tiling: 平鋪
 - token: 詞元
 - tokenizer: 標記解析器
+- U-Net
 - unified predictor-corrector (UniPC)
 - upscale: 升頻，放大
 - variational auto encoder (VAE): 變分自動編碼器
