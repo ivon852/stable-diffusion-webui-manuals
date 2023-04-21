@@ -126,3 +126,5 @@ weight: 10
 # can't open file '/stable-diffusion-webui/launch.py
 
 如果執行`webui-user.sh`出現此錯誤，則編輯`webui-user.sh`，將`install_dir`後面改成`$(pwd)`。
+
+如果是在Google Colab遇到此錯誤，代表程式沒裝成功，請看一下終端機輸出，檢查前面的指令是否有哪步執行出錯。

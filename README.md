@@ -42,7 +42,7 @@ Ivon's Stable Diffusion WebUI User Manuals
 git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
 ```
 
-3. 修改`config.toml`，將`bashURL`後面的網址改成`/`。去掉`googleAnalytics`後面的追蹤代碼。
+3. 修改`config.toml`，將`bashURL`後面的網址改成`/`。去掉`googleAnalytics`後面的追蹤代碼。至於`deploy_n.sh`這個指令稿是我自用的，用於部署到我的部落格。
 
 4. 預覽網頁
 ```bash

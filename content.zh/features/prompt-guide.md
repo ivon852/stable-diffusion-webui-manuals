@@ -17,17 +17,16 @@ weight: 1
 
 ![](/posts/stable-diffusion-webui-manuals/images/AAG54w1.webp)
 
-第一個框框是正向提示詞 (Prompt) 告訴AI要畫哪些東西。第二個框框是負向提示詞 (Negative prompt) 告訴AI不要畫哪些東西。
+第一個框框是提示詞 (Prompt) 告訴AI要畫哪些東西。第二個框框是負向提示詞 (Negative prompt) 告訴AI不要畫哪些東西。
 
 首先要注意的是，AI繪圖目前還沒有涵蓋全宇宙所有圖片的模型，所以除了提示詞外，使用的生圖模型亦會大大的影響繪製結果。
 
 譬如，用寫實風格的`Stable Diffusion`模型畫動漫人物，效果絕對會比使用`Anything`差的許多；又或者，想畫出宛如真人coser的圖，用`ChilloutMix`鐵定比用只強調寫實的`RealisticVision`要來的合適。因此在學會下提示詞以前，要先按照用途挑選適合的模型。
 
 
-# 1.  正向提示詞 Prompts
+# 1.  提示詞 Prompts
 
 這一節Ivon使用HD-v22的模型做示範，因此繪製出來都會是動漫風格。
-
 
 1. 下提示詞時，利用人事時地物的概念，寫個英文句子描述圖內場景，盡量將想看到的提示詞排在前面。例如在正向提示詞的欄位填入「一個亞洲女孩在沙灘上」，負向提示詞留空
 ```lisp
@@ -98,7 +97,7 @@ asuka_langley_souryuu from neon_genesis_evangelion, masterpiece, 1girl, beach, o
 
 # 2. 負向提示詞 Negative Prompts
 
-上面的例子，我們只有寫正向提示詞，負向提示詞的欄位都是空白。但生圖時常常還需要加入一些負向提示詞，避免掉不好的結果。AI繪圖有時不會一次就算出好結果，所以還需要加上負向提示詞來控制，尤其是大批算圖的時候更為重要。
+上面的例子，我們只有寫提示詞，但下面的負向提示詞的欄位都是空白。但生圖時常常還需要加入一些負向提示詞，避免掉不好的結果。AI繪圖有時不會一次就算出好結果，所以還需要加上負向提示詞來控制，尤其是大批算圖的時候更為重要。
 
 1. 負向提示詞會加入一些常見的「不好」的圖片特徵，例如低畫質、最糟品質、畫家簽名、模糊、浮水印
 ```lisp
@@ -185,7 +184,7 @@ orange :1.5 AND apple :2.5
 
 建議使用模型：Stable Diffusion、Realistic Vision
 
-正向提示詞
+提示詞
 ```lisp
 3 corgi dogs running on grass field
 ```
@@ -202,7 +201,7 @@ lowres, bad anatomy, text, error, extra digit, fewer digits, cropped, worst qual
 
 建議使用模型：Stable Diffusion、Realistic Vision
 
-正向提示詞
+提示詞
 ```lisp
 city future, 8k, exploration, cinematic, realistic, unreal engine, hyper detailed, volumetric light, moody cinematic epic concept art, realistic matte painting, hyper photorealistic
 ```
@@ -219,7 +218,7 @@ lowres, bad anatomy, text, error, extra digit, fewer digits, cropped, worst qual
 
 建議使用模型：Stable Diffusion、Realistic Vision
 
-正向提示詞
+提示詞
 ```lisp
 concept art,tesla car, aerodynamic, future
 ```
@@ -238,7 +237,7 @@ lowres, bad anatomy, text, error, extra digit, fewer digits, cropped, worst qual
 
 隨機畫一個Fate/Grand Order的貞德
 
-正向提示詞
+提示詞
 ```lisp
 jeanne d'arc from fate grand order, 1girl, (best quality), (masterpiece), (high detail), ((full face)), sharp, ((looking at viewer)), ((detailed pupils)), (thick thighs), (((full body))), (large breasts)
 ```
@@ -257,7 +256,7 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 
 隨機畫一個日本女孩，不要色色
 
-正向提示詞
+提示詞
 ```lisp
 (a japanese woman), shiny skin, (ultra high res,photorealistic,realistic,best quality,photo-realistic), (((high detailed skin,visible pores))),(real person,photograph), (8k, raw photo, best quality, masterpiece),(1girl),photon mapping, radiosity, physically-based rendering,automatic white balance,(haunting smile,moist lips),watery eyes, (blush|cute and playful|adorable|thick bangs|beauty),((irises and pupils are rounded,the pupil reflects the surroundings,eyes are not the same size))
 ```

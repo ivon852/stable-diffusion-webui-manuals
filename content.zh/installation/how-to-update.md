@@ -3,9 +3,7 @@ title: "如何更新程式"
 weight: 10
 ---
 
-SD WebUI專案原始碼是託管在Github，開發迭代速度很快，建議每月適時更新程式。
-
-但更新頻繁也代表功能容易損壞，因此安全的更新方式如下：
+Stable Diffusion WebUI的專案原始碼託管在Github，目前「更新」是以`git pull`指令來操作。
 
 1. 在`stable-diffusion-webui`這個資料夾裡面開啟終端機
 
@@ -16,7 +14,7 @@ Linux/MacOS請用cd指令，切換到`stable-diffusion-webui`目錄：
 cd ~/stable-diffusion-webui
 ```
 
-2. 用`git rev-parse`指令取得目前分支，會印出一組五位數代碼
+2. 保險起見，先用`git rev-parse`指令取得目前分支，會印出一組五位數分支代碼
 ```bash
 git rev-parse --short HEAD
 ```
@@ -32,10 +30,12 @@ git reset --hard main
 git pull
 ```
 
-5. 如果更新後出現`Merge branch 'master' of`的訊息，請按`Esc`鍵，輸入`:q!`退出即可。
+5. 如果出現`Merge branch 'master' of`的訊息，請按`Esc`鍵，輸入`:q!`退出即可。
 
 
-6. 更新後若有功能壞掉就退回之前的分支版本。
+前面用到的`git rev-parse`這個指令，是用來切出分支，降級用的指令。
+
+若是在更新程式後有功能壞掉，那就用`git checkout`降回之前的版本。
 ```bash
 git checkout "分支代碼"
 ```

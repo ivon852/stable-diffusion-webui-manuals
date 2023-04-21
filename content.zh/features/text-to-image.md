@@ -51,9 +51,9 @@ DDIM和PLMS是2021年隨Stable Diffusion v1發表的取樣方法。
 使用臉部修復模型改善臉部繪製效果。預設使用CodeFormer，可在Settings切換為GFPGAN。
 
 
-## Tiling 連續
+## Tiling 平鋪
 
-算出類似地板花紋一樣可連續的圖片。
+生成類似地板花紋一樣可連續的圖片。
 
 
 ## Hires_fix 高畫質修復
@@ -65,7 +65,7 @@ DDIM和PLMS是2021年隨Stable Diffusion v1發表的取樣方法。
 
 生成圖片的寬高，尺寸越大品質越好，但越會吃掉更多VRAM。
 
-預設寬高為512x512
+預設寬高為512x512，新版的建議可以試試768x768。
 
 其餘可用的寬高比(ratio)請參考下表。[圖片來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025#discussioncomment-3727588)
 

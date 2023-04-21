@@ -3,14 +3,13 @@ title: "部署至Google Colab"
 weight: 5
 ---
 
-Google Colab是Google Research推出的免費線上服務，可用伺服器等級的高級顯示卡跑Python程式。
+Google Colab是Google Research推出的免費線上服務，可用伺服器等級的高級顯示卡跑Python程式。有需要的話還可以付費買Pro版，使用更高級的GPU。
 
-| ❗❗ 2023年4月21日，根據Google Colab主管在[Twitter](https://twitter.com/thechrisperry/status/1649189902079381505)的說法，需要付費購買Pro版才可以跑stbale-diffusion-webui。免費版用戶會被封鎖，出現`You may be executing code that is disallowed, and this may restrict your ability to use Colab in the future.`警告的錯誤訊息。   |
+|❗2023年4月21日，根據Google Colab主管在[Twitter](https://twitter.com/thechrisperry/status/1649189902079381505)的說法，需要付費購買Pro版才可以跑stable-diffusion-webui。免費版用戶一偵測到`stable-diffusion-webui`字串就會封鎖，出現`You may be executing code that is disallowed, and this may restrict your ability to use Colab in the future.`的警告訊息。❗|
 |-----------------------------------------|
 
 
-
-Google Colabu已有很多現成的Stable Diffusion WebUI筆記本可以直接用，不用自己寫程式，例如[camenduru的版本](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)。
+Google Colabu已有很多現成的Stable Diffusion WebUI筆記本可以直接用，不用自己寫程式，例如[camenduru的筆記本](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)。
 
 如果你想自己寫Stable Diffusion筆記本，這邊提供我的範本程式，採最小安裝，只安裝必要的東西。
 
