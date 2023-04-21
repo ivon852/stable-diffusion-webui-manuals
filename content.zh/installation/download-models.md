@@ -31,7 +31,7 @@ Stable Diffusion WebUI在初次啟動時，若放模型的資料夾(`models/Stab
 
 ---
 
-[Chilloutmix萬象熔爐](https://civitai.com/models/6424/chilloutmix)寫實風格的模型，適合畫出2.5次元，融合日韓真人與動漫風格的圖像。
+[Chilloutmix](https://civitai.com/models/6424/chilloutmix)寫實風格的模型，適合畫出2.5次元，融合日韓真人與動漫風格的圖像。
 
 [Deliberate](https://civitai.com/models/4823/deliberate)基於SD-1.5模型，適合繪製精緻寫實風格的人物、動物、自然風景。
 
@@ -40,7 +40,7 @@ Stable Diffusion WebUI在初次啟動時，若放模型的資料夾(`models/Stab
 
 ## 動漫風模型
 
-[Anything v4.5](https://huggingface.co/andite/anything-v4.0)適合畫動漫圖，作者宣稱不需要打一堆提示詞也能出漂亮的圖。
+[Anything萬象熔爐 v4.5](https://huggingface.co/andite/anything-v4.0)適合畫動漫圖，作者宣稱不需要打一堆提示詞也能出漂亮的圖。
 
 [Waifu Diffusion v1.4](https://huggingface.co/hakurei/waifu-diffusion-v1-4)是純粹使用Danbooru圖庫訓練而成，適合畫動漫圖。
 
@@ -62,9 +62,9 @@ HuggingFace為儲存庫 → Files and versions，選擇下載副檔名為`.ckpt`
 Civitai則是點選Download按鈕下載模型。
 
 
-如果要用指令下載，可以用wget或git，例如：
+如果要用指令下載，可以用wget或git，例如下載`Anything V4.5`的模型到`stable-diffusion-webui/models/Stable-diffusion`資料夾：
 ```bash
-wget https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors
+wget -nc -P stable-diffusion-webui/models/Stable-diffusion https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors
 ```
 
 

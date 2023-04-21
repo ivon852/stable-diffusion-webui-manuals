@@ -14,7 +14,7 @@ Stable Difssusion WebUI支援Linux/Windows/macOS。
 
 儘管可以[用CPU跑Stable Diffusion WebUI](https://ivonblog.com/posts/stable-diffusion-running-on-cpu/)，但是速度會非常慢。一張顯示卡30秒就能算好的圖，CPU要算10分鐘。因此用獨立顯示卡跑Stable Diffsuion仍是比較好的選擇。
 
-硬體不夠力的話，用Google Colab雲端跑Stable Diffusion WebUI也是可以。
+硬體不夠力的話，用雲端服務跑Stable Diffusion WebUI也是可以。
 
 
 # Linux

@@ -1,11 +1,11 @@
 ---
-title: "部署至Google Colab"
-weight: 5
+title: "(雲端) 部署至Google Colab"
+weight: 6
 ---
 
 Google Colab是Google Research推出的免費線上服務，可用伺服器等級的高級顯示卡跑Python程式。有需要的話還可以付費買Pro版，使用更高級的GPU。
 
-|❗2023年4月21日，根據Google Colab主管在[Twitter](https://twitter.com/thechrisperry/status/1649189902079381505)的說法，需要付費購買Pro版才可以跑stable-diffusion-webui。免費版用戶一偵測到`stable-diffusion-webui`字串就會封鎖，出現`You may be executing code that is disallowed, and this may restrict your ability to use Colab in the future.`的警告訊息。❗|
+|❗2023年4月21日，根據Google Colab員工在[Twitter](https://twitter.com/thechrisperry/status/1649189902079381505)的說法，需要付費購買Pro版才可以跑stable-diffusion-webui。免費版用戶一偵測到`stable-diffusion-webui`字串就會封鎖，出現`You may be executing code that is disallowed, and this may restrict your ability to use Colab in the future.`的警告訊息。❗|
 |-----------------------------------------|
 
 
@@ -17,11 +17,11 @@ Google Colabu已有很多現成的Stable Diffusion WebUI筆記本可以直接用
 
 缺點就是很佔雲端空間，大概需要10GB左右容量。15GB免費容量只夠裝一個存檔點模型和少許LoRA，再勉強塞個ControlNet的擴充功能。因此我的程式碼只下載必要的檔案，擴充功能需要再另外裝。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_132547.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_132547.webp)
 
 1. 至[Google Colab](https://colab.research.google.com/)，點選新增筆記本。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_113248.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_113248.webp)
 
 2. 點選新增儲存格，填入以下內容。先別點選執行，這邊我是分步講解，後面再將這些程式碼合起來。
 ```python
@@ -76,7 +76,7 @@ drive.mount('/content/drive')
 !pip install -q xformers==0.0.16
 !pip install -q triton==2.0.0
 !git clone --depth=1 https://github.com/AUTOMATIC1111/stable-diffusion-webui.git /content/drive/MyDrive/sd-webui-files/stable-diffusion-webui
-!wget -nc -P /content/drive/MyDrive/sd-webui-files/stable-diffusion-webui/models/Stable-diffusion https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensorss
+!wget -nc -P /content/drive/MyDrive/sd-webui-files/stable-diffusion-webui/models/Stable-diffusion https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors
 %cd /content/drive/MyDrive/sd-webui-files/stable-diffusion-webui/
 !git reset --hard
 !git pull
@@ -86,19 +86,19 @@ drive.mount('/content/drive')
 
 8. 點選執行階段 → 變更執行階段，選取使用GPU
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_114247.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_114247.webp)
 
 9. 點選左上角執行儲存格，允許存取雲端硬碟。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_114310.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_114310.webp)
 
 10. 等待依賴裝完，最後會產生Gradio網址，點進去
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_132014.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_132014.webp)
 
 11. 接下來的用法就跟裝在[自己電腦的SD WebUI](/posts/stable-diffusion-webui-manuals/features/)一樣了，亦可以從網頁界面安裝[擴充功能](/posts/stable-diffusion-webui-manuals/extensions/)。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_132314.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_132314.webp)
 
 12. 使用後請點選執行階段 → 中斷並刪除執行階段。由於相關檔案都是放在雲端，關閉分頁也不會刪除，下次執行可以繼續上一次進度。
 

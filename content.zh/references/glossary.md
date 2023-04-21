@@ -7,6 +7,7 @@ weight: 2
 
 - artificial intelligence generated content (AIGC): 生成式人工智慧
 - ancestral sampling: 祖先取樣，又稱向前取樣
+- annotation: 標示
 - batch count: 批次數量
 - batch size: 批次大小
 - checkpoint: 存檔點，模型格式，附檔名為`.ckpt`。
@@ -44,6 +45,7 @@ weight: 2
 - pickle: 儲存張量的模型格式，附檔名為`.pt`
 - postprocessing: 後處理
 - precision: 精度
+- preprocessing: 預處理
 - prompts: 提示詞
 - PyTorch: 一款開源機器學習庫
 - safetensors: 由Huggingface研發，安全儲存張量的模型格式。
