@@ -1,6 +1,6 @@
 ---
 title: "提示詞自動補完 Booru tag autocompletion"
-weight: 4
+weight: 5
 ---
 
 - 擴充功能來源：[DominikDoom/a1111-sd-webui-tagcomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete)

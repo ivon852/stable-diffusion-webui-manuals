@@ -19,15 +19,15 @@ AMD請用[驅動程式自動偵測工具](https://www.amd.com/zh-hant/support/kb
 
 1. 下載Git版本管理工具。至[Git for Windows](https://gitforwindows.org/)下載安裝檔，一直下一步即可。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/ozgVF8y.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/ozgVF8y.webp)
 
 2. 接著安裝Python。SD WebUI建議Python版本為`3.10.6`。請至[Python官網](https://www.python.org/downloads/release/python-3106/)下載`Python 3.10.6`的64位元安裝檔。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/a3JMgF9.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/a3JMgF9.webp)
 
 3. 安裝前務必勾選`Add Python 3.10 to PATH`，將Python加到環境變數。再按`Install Now`。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/DMo5Wkt.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/DMo5Wkt.webp)
 
 <details>
 
@@ -63,7 +63,7 @@ conda activate sdwebui
 
 1. 開啟檔案總管，在桌面資料夾按右鍵＋Shift，點選`在這裡開啟Powershell`或`終端機視窗`。如果你C槽空間不足的話，也可以切換到其他硬碟資料夾再開啟終端機。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/6HJHSMy.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/6HJHSMy.webp)
 
 2. 輸入以下指令，檢查目前Python版本，輸出應為3.10.6
 ```bash
@@ -85,16 +85,16 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml.git
 ```
 
-5. 複製完成後，桌面會多出資料夾`stable-diffusion-webui`。將剛剛下載的存檔點模型放到`models\Stable-diffusion`資料夾。這個資料夾可放入多個存檔點模型檔。
+5. 複製完成後，桌面會多出資料夾`stable-diffusion-webui`。如果你有下載模型，將剛剛下載的存檔點模型放到`models\Stable-diffusion`資料夾。這個資料夾可放入多個存檔點模型檔。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/8aCrI2p.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/8aCrI2p.webp)
 
 
 # 4. 設定啟動引數
 
-有些顯示卡需要修改[啟動引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)才能正常啟動WebUI。對`stable-diffusion-webui`資料夾裡面的`webui-user.bat`按右鍵，以記事本開啟，編輯`COMMANDLINE_ARGS=`這一行後面的啟動引數。(看不到.bat請點選檔案總管檢視 → 顯示/隱藏 → 顯示副檔名)
+對`stable-diffusion-webui`資料夾裡面的`webui-user.bat`按右鍵，以記事本開啟，編輯`COMMANDLINE_ARGS=`這一行後面的啟動引數。(看不到.bat請點選檔案總管檢視 → 顯示/隱藏 → 顯示副檔名)
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Z56oZMe.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/Z56oZMe.webp)
 
 若顯示卡VRAM小於等於4GB的話加入`COMMANDLINE_ARGS=--medvram --opt-split-attention`引數。
 
@@ -102,11 +102,15 @@ git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml.git
 
 (下面的不加也可以)
 
-加入`--xformers`引數可進一步減少VRAM使用量。`--no-half-vae`降低使用VAE時算出黑圖的機率。
+加入`--xformers`引數可進一步減少VRAM使用量。`--no-half-vae`降低用VAE時算出黑圖的機率。
+
+加上`--enable-insecure-extension-access`讓你在網頁界面直接裝擴充功能。
 
 加入`--listen`引數再開放防火牆7860通訊埠，即可用區域網路其他電腦的瀏覽器存取WebUI。
 
 加入`--share`引數則會產生一組Gradio網址，讓你可以從外部網路或手機使用WebUI。網址72小時後過期。
+
+其餘可用引數請見[命令列引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)
 
 
 # 5. 啟動Stable Diffusion WebUI
@@ -121,15 +125,15 @@ cd stable-diffusion-webui
 
 2. 初次啟動會下載依賴套件，大概要等個30分鐘安裝。如果在此步驟遇到錯誤，請先看[常見問題](/posts/stable-diffusion-webui-manuals/installation/errors/)。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/k7zpeWV.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/k7zpeWV.webp)
 
 3. 啟動完成後會顯示一組網址。執行程式時請勿關閉終端機。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/cQt7XvU.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/cQt7XvU.webp)
 
 4. 用瀏覽器開啟：`http://127.0.0.1:7860`就可進入圖形界面了。執行程式時請勿關閉終端機，執行時若出錯終端機也會輸出訊息。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/fCC9Rxv.webp alt=""  width=500 loading="lazy">
+![](/posts/stable-diffusion-webui-manuals/images/fCC9Rxv.webp)
 
 5. 要關閉SD WebUI，在終端機按Ctrl+C終止，再關閉視窗。
 

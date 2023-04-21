@@ -76,7 +76,7 @@ cd ~
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ```
 
-2. 將存檔點模型下載至`stable-diffusion-webui/models/Stable-diffusion`目錄。
+2. (選擇性) 將Anything v4.5模型下載至`stable-diffusion-webui/models/Stable-diffusion`目錄。
 ```bash
 wget -nc -P ~/stable-diffusion-webui/models/Stable-diffusion https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors -O anything-v4.5-pruned.safetensors
 ```
@@ -86,7 +86,7 @@ wget -nc -P ~/stable-diffusion-webui/models/Stable-diffusion https://huggingface
 conda activate sdwebui
 ```
 
-4. 如果想要於bash script自動以conda啟動虛擬環境，可以把這二行加入至`webui-user.sh`頂端：
+如果想要於bash script自動以conda啟動虛擬環境，可以把這二行加入至`webui-user.sh`頂端：
 ```bash
 eval "$(conda shell.bash hook)"
 conda activate sdwebui
@@ -97,19 +97,17 @@ conda activate sdwebui
 
 # 4. 設定啟動引數
 
-GPU晶片為Nvidia且VRAM大於8GB的可跳過此步驟。
-
-有些GPU需要修改[啟動引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)才能正常啟動WebUI。
-
 用VIM編輯`webui-user.sh`。
 
-若GPU VRAM小於等於4GB的話加入`COMMANDLINE_ARGS=--medvram --opt-split-attention`引數，防止`RuntimeError: CUDA Out of memory`錯誤。`
+若GPU VRAM小於等於4GB的話加入`COMMANDLINE_ARGS=--medvram --opt-split-attention`引數，防止`RuntimeError: CUDA Out of memory`錯誤。
 
-AMD顯示卡需要另外加上` --precision full --no-half`引數，否則繪製的圖可能會一片漆黑。
+AMD顯示卡需要另外加上` --precision full --no-half`引數，否則生成的圖可能會一片漆黑。
 
 額外加上`--listen`參數讓其他電腦能以IP存取網頁界面，`--share`則是產生一組Gradio網址。
 
 加上`--enable-insecure-extension-access`讓你在網頁界面直接裝擴充功能。加上`--nowebui`則不會啟動網頁界面，單純接收WebUI API之用。
+
+其餘可用引數請見[命令列引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)
 
 
 # 5. 啟動Stable Diffusion WebUI

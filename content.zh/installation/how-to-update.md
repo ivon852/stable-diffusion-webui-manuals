@@ -1,6 +1,6 @@
 ---
 title: "如何更新程式"
-weight: 7
+weight: 10
 ---
 
 SD WebUI專案原始碼是託管在Github，開發迭代速度很快，建議每月適時更新程式。

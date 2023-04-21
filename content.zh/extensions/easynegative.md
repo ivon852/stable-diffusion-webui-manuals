@@ -1,6 +1,6 @@
 ---
 title: "簡易負向提示詞 EasyNegative"
-weight: 3
+weight: 4
 ---
 
 - 擴充功能來源：[gsdf/EasyNegative](https://huggingface.co/datasets/gsdf/EasyNegative)

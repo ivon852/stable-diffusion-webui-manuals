@@ -7,7 +7,7 @@ weight: 3
 圖生圖img2img是讓AI參照現有的圖片生圖，例如：上傳一張真人照片，讓AI把他畫成動漫人物；上傳畫作線稿，讓AI自動上色。
 
 
-# 2.3.1. 參數解說
+# 參數解說
 
 部份參數與文生圖的參數重疊，這裡不贅述。
 
@@ -30,18 +30,18 @@ weight: 3
 
 ## Interrogate Deepboooru
 
-上傳圖片後，用Danbooru圖庫資料判別圖片並自動填入提示詞。需要注意Deepboooru訓練的圖像數量有限，它頂多只能用來認圖片的場景和人物tag，無法標出所有動漫角色。
+上傳圖片後，用Danbooru圖庫資料判別圖片並自動填入提示詞。需要注意Deepboooru訓練的圖像數量有限，它頂多只能用來認圖片的場景和人物tag，無法準確標出最新的動漫角色。
 
-![](/posts/stable-diffusion-webu-manuals/images/LBQlhHn.webp)
+![](/posts/stable-diffusion-webui-manuals/images/LBQlhHn.webp)
 
 初次使用的時候，Stable Diffusion WebUI會自動下載模型。
 
 ## Interrogate CLIP
 
-類似Deepboooru用途，不過較適合判別照片內容。
+類似Deepbooru用途，不過較適合判別真人照片內容。
+Composable
 
-
-# 2.3.2. 實際操作
+# 實際操作
 
 1. 點選框框上傳圖片。圖片比例需要跟設定繪製的寬高一致，例如512x512就得上傳寬高1:1比例的圖片。
 

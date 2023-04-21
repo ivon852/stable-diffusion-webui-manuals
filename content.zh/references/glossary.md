@@ -45,6 +45,7 @@ weight: 2
 - postprocessing: 後處理
 - precision: 精度
 - prompts: 提示詞
+- PyTorch: 一款開源機器學習庫
 - safetensors: 由Huggingface研發，安全儲存張量的模型格式。
 - sampling method: 取樣方法
 - sampling steps: 取樣步數

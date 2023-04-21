@@ -141,7 +141,7 @@ Stable Diffusion WebUI正上方可看到現在使用的是哪個模型。切換�
 
 ![](/posts/stable-diffusion-webui-manuals/images/qu1BW4g.webp)
 
-5. 視顯卡性能而定，約一分鐘圖片就會算出來了，點選放大存檔。
+5. 視顯卡性能而定，約一分鐘圖片就會算出來了，點選放大右鍵儲存。
 
 ![](/posts/stable-diffusion-webui-manuals/images/X2jMeJx.webp)
 
@@ -153,4 +153,4 @@ Stable Diffusion WebUI正上方可看到現在使用的是哪個模型。切換�
 
 ![](/posts/stable-diffusion-webui-manuals/images/DFIZZfA.webp)
 
-不論圖片有無儲存，Stable Diffusion WebUI生成的圖都會自動儲存到主程式資料夾下的`outputs`資料夾。
+不論圖片有無右鍵儲存，Stable Diffusion WebUI生成的圖都會自動儲存到主程式資料夾下的`outputs`資料夾。

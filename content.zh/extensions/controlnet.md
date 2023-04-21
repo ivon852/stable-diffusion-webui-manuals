@@ -1,6 +1,6 @@
 ---
 title: "按照骨架動作繪圖 ControlNet"
-weight: 5
+weight: 3
 ---
 
 - 擴充功能來源：[Mikubill/sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet)

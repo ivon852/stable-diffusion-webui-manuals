@@ -1,6 +1,6 @@
 ---
 title: "3D人體＋手部＋臉部模型 Openpose for blender"
-weight: 2
+weight: 5
 ---
 
 - 擴充功能來源：[Character bones that look like Openpose for blender _ Ver_8.1 Depth+Canny+Landmark+MediaPipeFace+finger](https://toyxyz.gumroad.com/l/ciojz)

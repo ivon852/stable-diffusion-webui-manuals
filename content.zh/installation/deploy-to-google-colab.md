@@ -5,9 +5,14 @@ weight: 5
 
 Google Colab是Google Research推出的免費線上服務，可用伺服器等級的高級顯示卡跑Python程式。
 
-Google Colabu已經有很多現成的Stable Diffusion WebUI筆記本可以直接用，不用自己寫程式，例如[camenduru的版本](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)。
+| ❗❗ 2023年4月21日，根據Google Colab主管在[Twitter](https://twitter.com/thechrisperry/status/1649189902079381505)的說法，需要付費購買Pro版才可以跑stbale-diffusion-webui。免費版用戶會被封鎖，出現`You may be executing code that is disallowed, and this may restrict your ability to use Colab in the future.`警告的錯誤訊息。   |
+|-----------------------------------------|
 
-如果你想自己寫Stable Diffusion筆記本，這邊提供我的範本程式。
+
+
+Google Colabu已有很多現成的Stable Diffusion WebUI筆記本可以直接用，不用自己寫程式，例如[camenduru的版本](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)。
+
+如果你想自己寫Stable Diffusion筆記本，這邊提供我的範本程式，採最小安裝，只安裝必要的東西。
 
 我的想法是將SD WebUI的程式和模型檔案放到安裝至雲端。優點是裝好後，日後要用就能二分鐘內啟動，而不用等下載模型。
 
@@ -118,4 +123,4 @@ drive.mount('/content/drive')
 - extensions：放擴充功能的資料夾
 - models/stable-duffusion：放存檔點模型
 - models/Lora：放LoRA模型
-- outputs：算圖輸出的資料夾
+- outputs：生圖輸出的資料夾
