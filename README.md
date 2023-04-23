@@ -1,6 +1,6 @@
-# Ivon的Stable Diffusion WebUI使用手冊
+# Stable Diffusion WebUI中文使用手冊
 
-Ivon's Stable Diffusion WebUI User Manuals
+Stable Diffusion WebUI User Manuals in Chinese
 
 [線上閱讀](https://ivonblog.com/posts/stable-diffusion-webui-manuals/)，目前的語言有正體中文、简体中文(大纲尚未完成，暫不欢迎PR)、English(興建中)。
 
@@ -18,16 +18,17 @@ Ivon's Stable Diffusion WebUI User Manuals
 ├── archetypes
 ├── assets
 ├── config.toml
-├── content.zh-tw   --> 文章目錄 (正體中文)
-├── content.zh-cn   --> 文章目錄 (简体中文)
-├── content.en-us   --> 文章目錄 (English)
-├── deploy_n.sh
+├── config_ivonblog.toml
+├── content.zh-tw       --> 文章目錄 (正體中文)
+├── content.zh-cn       --> 文章目錄 (简体中文)
+├── content.en-us       --> 文章目錄 (English)
+├── deploy_ivonblog.sh
 ├── LICENSE
 ├── README.md
 ├── static
 │   ├── favicon.png
 │   ├── favicon.svg
-│   ├── images     --> 圖片目錄
+│   ├── images          --> 圖片目錄
 │   └── logo.png
 └── themes
 ```
@@ -50,7 +51,7 @@ Ivon's Stable Diffusion WebUI User Manuals
 git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
 ```
 
-3. 按需修改`config.toml`。至於`deploy_n.sh`和`config_ivonblog.toml`這二個檔案是我自用的，用於部署到我的部落格。
+3. 按需修改`config.toml`。至於`deploy_ivonblog.sh`和`config_ivonblog.toml`這二個檔案是我自用的，用於部署到我的部落格。
 
 4. 預覽網頁
 ```bash
