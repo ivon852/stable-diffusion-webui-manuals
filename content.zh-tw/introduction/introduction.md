@@ -1,7 +1,5 @@
 ---
-title: "0. 前言"
-bookFlatSection: false
-bookCollapseSection: true
+title: "介紹"
 weight: 1
 ---
 
