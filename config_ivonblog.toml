@@ -1,7 +1,9 @@
-baseURL = 'example.com'
-title = 'Stable Diffusion WebUI使用手冊'
+baseURL = 'https://ivonblog.com/posts/stable-diffusion-webui-manuals'
+title = 'Ivon的Stable Diffusion WebUI使用手冊'
 theme = 'hugo-book'
 defaultContentLanguage = "zh-tw"
+
+googleAnalytics = 'G-NYE962575Q'
 
 # Book configuration
 disablePathToLower = true
@@ -26,34 +28,39 @@ enableGitInfo = true
   languageCode = 'zh-tw'
   languageName = '目前語言：正體中文'
   contentDir = 'content.zh-tw'
-  title = 'Stable Diffusion WebUI使用手冊(正體中文)'
+  title = 'Ivon的Stable Diffusion WebUI使用手冊(正體中文)'
   weight = 1
 
 [languages.zh-cn]
   languageCode = 'zh-cn'
   languageName = '当前语言：简体中文'
   contentDir = 'content.zh-cn'
-  title = 'Stable Diffusion WebUI使用手册(简体中文)'
+  title = 'Ivon的Stable Diffusion WebUI使用手册(简体中文)'
   weight = 2
 
 [languages.en-us]
   languageCode = 'en-us'
   languageName = 'Language: English'
   contentDir = 'content.en-us'
-  title = "(WIP) Stable Diffusion User's Manuals"
+  title = "(WIP) Stable Diffusion User's Manuals by Ivon Huang"
   weight = 3
 
 [menu]
 
 [[menu.before]]
-  name = "【意見回饋】Send feedbacks"
-  url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
+  name = "【回Ivon的部落格】Back to Ivon's Blog"
+  url = "https://ivonblog.com/categories/stable-diffusion%E7%9B%B8%E9%97%9C%E6%95%99%E5%AD%B8/"
   weight = 10
 
-#[[menu.after]]
-  #name = "ATOMATIC1111的Stable Diffsion WebUI儲存庫"
-  #url = "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
-  #weight = 20
+[[menu.before]]
+  name = "【意見回饋】Send feedbacks"
+  url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
+  weight = 20
+
+[[menu.after]]
+  name = "ATOMATIC1111的Stable Diffsion WebUI儲存庫"
+  url = "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
+  weight = 20
 
 
 [params]

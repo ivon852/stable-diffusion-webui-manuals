@@ -50,16 +50,16 @@ Ivon's Stable Diffusion WebUI User Manuals
 git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
 ```
 
-3. 修改`config.toml`，將`baseURL`後面的網址改成`example.com`。去掉`googleAnalytics`後面的追蹤代碼。至於`deploy_n.sh`這個指令稿是我自用的，用於部署到我的部落格。
+3. 按需修改`config.toml`。至於`deploy_n.sh`和`config_ivonblog.toml`這二個指令稿是我自用的，用於部署到我的部落格。
 
 4. 預覽網頁
 ```bash
-hugo server -D
+hugo server -D --config config.toml
 ```
 
 5. 生成靜態HTML，成品位於`public`目錄。
 ```bash
-hugo --gc --minify
+hugo --gc --minify --config config.toml
 ```
 
 ## 致謝

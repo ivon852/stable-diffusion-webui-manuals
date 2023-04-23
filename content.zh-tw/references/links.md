@@ -3,9 +3,6 @@ title: "外部連結"
 weight: 1
 ---
 
-感謝原始AI繪圖工具的開發者CompVis、StabilityAI、RunwayAI、ATOMATIC1111，以及全世界大大小小開發者的付出，才有了這本手冊。
-
-
 本手冊的參考來源
 
 - [AUTOMATIC1111/stable-diffusion-webui Wiki - Github](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/)
