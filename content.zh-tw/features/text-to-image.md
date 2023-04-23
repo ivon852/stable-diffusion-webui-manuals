@@ -7,11 +7,11 @@ weight: 2
 
 開啟Stable Diffusion WebUI網頁後，會看到以下畫面。流程為在左上角填入提示詞，勾選左下角的生圖參數，再點選右上角生成圖片。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_181020.webp)
+![](../../images/Screenshot_20230417_181020.webp)
 
 其餘SD WebUI的功能用法大抵都按照此邏輯設計，有些參數是通用的。
 
-需要中文界面的可以先裝[正體中文/雙語擴充功能](/posts/stable-diffusion-webui-manuals/extensions/localizations/)。
+需要中文界面的可以先裝[正體中文/雙語擴充功能](../extensions/localizations/)。
 
 
 # 參數解說

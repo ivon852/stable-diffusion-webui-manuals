@@ -1,0 +1,72 @@
+---
+title: "术语表"
+weight: 2
+---
+
+本手册中有关于Stable Diffusion的专有名词，附上中文翻译与注释。
+
+参考自[dtlnor/stable-diffusion-webui-localization-zh_CN](https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN)
+
+- artificial intelligence generated content (AIGC):人工智能生成内容
+- ancestral sampling: 祖先采样，又称向前采样
+- annotation: 标示
+- batch count: 批次数量
+- batch size: 批次大小
+- checkpoint: 存档点，模型格式，扩展名为`.ckpt`。
+- classifier-free guidance scale (CFG scale): 事前训练的条件控制生成方法。
+- CodeFormer: 2022年由Shangchen Zhou等人发表的脸部修复模型。
+- ControlNet: 2022年由Lvmin Zhang发表，通过加入额外条件来控制扩散模型的神经网络结构。
+- cross-attention: 分散注意
+- dataset: 资料集
+- denoising: 去噪，降噪
+- diffusion: 扩散
+- Denoising Diffusion Implicit Models (DDIM): 去噪扩散隐式模型，2022年由Jiaming Song等人发表的取样方法。
+- Dreambooth: Google Research和波士顿大学于2022年发表的深度学习模型，用于调整现有的文生图模型。
+- embedding: 嵌入
+- epoch: 时期
+- Euler Ancestral (Euler a): 基于k-diffusion的采样方法，使用祖父取样与欧拉方法步数。可在20~30步数生出好结果。
+- Euler: 基于k-diffusion的采样方法，使用欧拉方法步数。可在20~30步数生出好结果。
+- fine-tune: 微调
+- float16 (fp16): 半精度浮点数
+- float32 (fp32): 单精度浮点数
+- GFPGAN: 腾讯于2021年发表的脸部修复模型。
+- hypernetwork: 超网络
+- image to image: 图生图
+- inference: 模型推理
+- inpaint: 内补绘制
+- interrogator: 图像理解
+- k-diffusion: Karras等人于2022年发表的PyTorch扩散模型，基于论文〈Elucidating the Design Space of Diffusion-Based Generative Models〉所实现。
+- latent diffusion: 潜在扩散
+- latent space: 潜在空间
+- learning rate: 学习率
+- Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion (LyCORIS)
+- low-rank adaptation (LoRA): 低秩自适应，2023年由Microsoft发表，用于微调大模型的技术。
+- machine learning: 机器学习
+- model：模型
+- negative prompts: 负向提示词
+- outpaint: 外补绘制
+- pickle: 储存张量的模型格式，附档名为`.pt`
+- postprocessing: 后处理
+- precision: 精度
+- preprocessing: 预处理
+- prompts: 提示词
+- PyTorch: 一款开源机器学习库
+- safetensors: 由Huggingface研发，安全储存张量的模型格式。
+- sampling method: 采样方法
+- sampling steps: 采样步数
+- scheduler: 调度器
+- seed: 种子
+- Stable Diffusion: 稳定扩散，一个文生图模型，2022年由CompVis发表，由U-Net、VAE、Text Encoder三者组成。
+- text encoder: 文本编码
+- text to image: 文字生成图片，文生图
+- textual inversion: 文本倒置
+- tiling: 平铺
+- token: 词根
+- tokenizer: 分词器
+- Transformers: HuggingFace研发的一系列API，用于辅助PyTorch、TensorFlow、JAX机器学习，可下载最新预训练的模型。
+- U-Net：用于影像分割的卷积神经网络
+- unified predictor-corrector (UniPC): 统一预测校正，2023年发表的新采样方法。
+- upscale: 升频，放大
+- variational auto encoder (VAE): 变分自编码
+- weights: 权重
+- xFormers: 2022年由Meta发表，用于加速Transformers，并减少VRAM占用的技术。

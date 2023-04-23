@@ -2,7 +2,7 @@
 
 Ivon's Stable Diffusion WebUI User Manuals
 
-[線上閱讀](https://ivonblog.com/posts/stable-diffusion-webui-manuals/)，目前的語言有正體中文、简体中文、English(興建中)。
+[線上閱讀](https://ivonblog.com/posts/stable-diffusion-webui-manuals/)，目前的語言有正體中文、简体中文(大纲尚未完成，暫不欢迎PR)、English(興建中)。
 
 
 ## 1. 動機
@@ -12,7 +12,7 @@ Ivon's Stable Diffusion WebUI User Manuals
 
 ## 2. 目錄架構
 
-每個章節一個目錄，目錄下每個頁面一個markdown檔案。`_index.md`為該章封面與前言。Frontmatter裡面的`weight`為文章在左邊列表的順序。
+每個章節一個目錄，目錄下每個頁面一個markdown檔案。
 ```bash
 .
 ├── archetypes
@@ -31,6 +31,12 @@ Ivon's Stable Diffusion WebUI User Manuals
 │   └── logo.png
 └── themes
 ```
+
+`_index.md`為該章封面與前言。Frontmatter裡面的`weight`為文章在左邊列表的順序。
+
+正體中文以外的語言，網址前面會多上語言代碼+雙層目錄。例如，文內引用`../extensions/localizations/`，則簡中的連結會變成`../../zh-cn/extensions/localizations/`
+
+圖片引用一律是`../../images/Screenshot_20230417_181020.webp`這樣。
 
 
 ## 3. 生成網頁

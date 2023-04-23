@@ -1,12 +1,11 @@
 ---
-title: "外部連結"
+title: "外部连结"
 weight: 1
 ---
 
-感謝原始AI繪圖工具的開發者CompVis、StabilityAI、RunwayAI、ATOMATIC1111，以及全世界大大小小開發者的付出，才有了這本手冊。
+感谢原始AI绘图工具的开发者CompVis、StabilityAI、RunwayAI、ATOMATIC1111，以及全世界大大小小开发者的付出，才有了这本手册。
 
-
-本手冊的參考來源
+本手册的参考来源
 
 - [AUTOMATIC1111/stable-diffusion-webui Wiki - Github](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/)
 - [Diffusers - Hugging Face](https://huggingface.co/docs/diffusers/index)
@@ -14,18 +13,17 @@ weight: 1
 - [Stable Diffusion Art - tutorials, prompts, resources](https://stable-diffusion-art.com)
 - [Rombach, R., Blattmann, A., Lorenz, D., Esser, P., & Ommer, B. (2022). High-resolution image synthesis with latent diffusion models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 10684-10695).](https://arxiv.org/abs/2112.10752)
 
-正體中文術語翻譯參考自benlisquare正體中文的擴充功能。
+简体中文术语翻译参考自dtlnor简体中文的扩充功能。
 
-- [benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)
+- [dtlnor/stable-diffusion-webui-localization-zh_CN](https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN)
 
-Stable Diffusion討論社群
+Stable Diffusion讨论社群
 
 - [r/StableDiffusion - Reddit](https://www.reddit.com/r/StableDiffusion/)
-- [看板AI_Art 文章列表- 批踢踢實業坊](https://www.ptt.cc/bbs/AI_Art/index.html)
+- [看板AI_Art 文章列表- 批踢踢实业坊](https://www.ptt.cc/bbs/AI_Art/index.html)
 - [Stable Diffusion - 知乎](https://www.zhihu.com/topic/26072993)
 
-
-模型訓練參考資料
+模型训练参考资料
 
 - [Hypernetwork training for dummies - Rentry.co](https://rentry.co/hypernetwork4dumdums)
 - [【Novel AI】手把手教你Textual Inversion神经网络训练详细操作](https://www.bilibili.com/read/cv19088146)
@@ -35,7 +33,6 @@ Stable Diffusion討論社群
 - [Using LoRA for Efficient Stable Diffusion Fine-Tuning - HuggingFace](https://huggingface.co/blog/lora)
 - [曾飞飞 - 零基础读懂Stable Diffusion](https://zhuanlan.zhihu.com/p/597247221)
 - [Well-Researched Comparison of Training Techniques Lora, Inversion, Dreambooth, Hypernetworks](https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/)
-- [【AI绘画】当我们在训练AI的时候，究竟在训练什么？AI训练前置知识（一）](https://www.bilibili.com/read/cv19249573)
+- [【AI绘画】当我们在训练AI的时候，究竟在训练什么？ AI训练前置知识（一）](https://www.bilibili.com/read/cv19249573)
 - [【笔记】Stable Diffusion模型优化入门级介绍 - LoRA vs Dreambooth vs Textural Inversion vs Hypernetworks](https://zhuanlan.zhihu.com/p/612992813)
 - [Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., ... & Chen, W. (2021). Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685.](https://arxiv.org/abs/2106.09685)
-
