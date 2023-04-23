@@ -50,7 +50,7 @@ Ivon's Stable Diffusion WebUI User Manuals
 git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
 ```
 
-3. 按需修改`config.toml`。至於`deploy_n.sh`和`config_ivonblog.toml`這二個指令稿是我自用的，用於部署到我的部落格。
+3. 按需修改`config.toml`。至於`deploy_n.sh`和`config_ivonblog.toml`這二個檔案是我自用的，用於部署到我的部落格。
 
 4. 預覽網頁
 ```bash
