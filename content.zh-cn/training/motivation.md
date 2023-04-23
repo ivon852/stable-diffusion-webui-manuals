@@ -1,0 +1,36 @@
+---
+title: "4.1. 为何要训练模型？"
+weight: 1
+---
+
+本章所讨论的训练模型仅为自用用途，若要分享训练的模型也应遵照开源的原则分享。
+
+为什么要训练自己的模型？训练自己的模型可以在现有模型的基础上，让AI懂得如何更精确绘制特定的风格、概念、角色、姿势、物件。
+
+举例来说，如果喂给AI十几张我精挑细选的「Hara老师绘制的、不同角度、FGO的斯卡萨哈」做训练，那么就能让AI更懂得如何绘制斯卡萨哈的脸部，风格也会比较固定。
+
+以下是一个具体例子，透过使用自行训练的HyperNetwork，便改善单靠Anything模型无法绘制出Hara老师画风的缺点。在不使用HyperNetwork的情况下，风格永远是左边那样；一使用HyperNetwork，右边的风格就能轻松绘制出来了。
+
+![](/posts/stable-diffusion-webui-manuals/images/vPJsJB1.webp)
+
+训练模型是复杂的议题，基于哪个现有模型，以及喂给AI学习的图片品质，还有训练时的参数，都会影响模型训练结果。
+
+本文提及的Embedding、HyperNetwork、LoRA都是「小模型」，这是相对于网路动辄好几GB的checkpoint「大模型」而言。这些小模型训练时间短，档案约几MB而已，训练成本不高。主要是用于绘制特定人物/物件/画风，并且训练的模型可以多个混用。
+
+如果硬体条件许可的话，搜集大量图片训练特定领域的checkpoint大模型，再上传到HuggingFace造福他人也是不错的选项，只不过此任务过于庞大。要知道Stable Diffusion 1.5版的模型可是输入了23亿张图片训练出来的！网路上其他人训练的模型至少也准备了几万张图片。因此要绘制特定的人物/物件/画风，训练小模型对一般人来说比较划算。
+
+各个模型的原理差异请参考下图。技术原理以及训练参数设定请参阅「参考资料」一章，碍于篇幅Ivon无法一一细讲，本章以操作过程为主。
+
+![](/posts/stable-diffusion-webui-manuals/images/bakeFoV.avif)
+
+就训练时间与实用度而言，目前应是 LoRA > HyperNetwork > Embedding
+
+本章节以ATOMATIC1111开发的Stable Diffusion WebUI为中心撰写，因其图形化且好操作。后面简称SD WebUI。
+
+接著选择部署在本机或是云端？
+
+训练模型至少需要10GB的VRAM，也就是RTX3060等级以上的GPU。
+
+如果你有Nvidia RTX3060以上等级的GPU，那就参考[安装教学](/posts/stable-diffusion-webui-manuals/installation/)部署在本机，想训练多久就训练多久。训练资料不到50张图片的小模型训练时间约只要1~3个小时。
+
+如果没有强力的GPU，那就用云端训练，例如[Google Colab](/posts/stable-diffusion-webui-manuals/installation/deploy-to-google-colab/)。
