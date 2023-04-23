@@ -92,7 +92,7 @@ asuka_langley_souryuu from neon_genesis_evangelion, masterpiece, 1girl, beach, o
 
 除非日后有搜罗全部网路图片的超大模型出现，否则下提示词须配合模型种类来决定。
 
-如果AI怎样都绘制不出你要的风格或人物，请考虑换个模型，或是[自行训练模型](/posts/stable-diffusion-webui-manuals/training/)。
+如果AI怎样都绘制不出你要的风格或人物，请考虑换个模型，或是[自行训练模型](/posts/stable-diffusion-webui-manuals/zh-cn/training/)。
 
 
 # 2. 负向提示词 Negative Prompts
@@ -170,7 +170,7 @@ orange AND apple
 orange :1.5 AND apple :2.5
 ```
 
-此语法适合搭配[ControlNet和Latent Couple](/posts/stable-diffusion-webui-manuals/extensions/latent-couple/)，可以准确控制图中物件的位置。
+此语法适合搭配[ControlNet和Latent Couple](/posts/stable-diffusion-webui-manuals/zh-cn/extensions/latent-couple/)，可以准确控制图中物件的位置。
 
 
 # 4. 提示词范例

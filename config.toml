@@ -26,21 +26,21 @@ enableGitInfo = true
 
 [languages.zh-tw]
   languageCode = 'zh-tw'
-  languageName = '正體中文'
+  languageName = '目前語言：正體中文'
   contentDir = 'content.zh-tw'
   title = 'Ivon的Stable Diffusion WebUI使用手冊(正體中文)'
   weight = 1
 
 [languages.zh-cn]
   languageCode = 'zh-cn'
-  languageName = '简体中文'
+  languageName = '当前语言：简体中文'
   contentDir = 'content.zh-cn'
   title = 'Ivon的Stable Diffusion WebUI使用手册(简体中文)'
   weight = 2
 
 [languages.en-us]
   languageCode = 'en-us'
-  languageName = 'English'
+  languageName = 'Language: English'
   contentDir = 'content.en-us'
   title = "Stable Diffusion User's Manuals by Ivon Huang"
   weight = 3

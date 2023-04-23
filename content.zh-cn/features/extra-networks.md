@@ -9,10 +9,10 @@ weight: 5
 
 ![](/posts/stable-diffusion-webui-manuals/images/GJ7CJT5.webp)
 
-跟ckpt大模型比起来，这类模型档案都很小，主要用来微调现有的模型。小模型有嵌入(Embedding)、超网路(HyperNetwork)、LoRA三种，副档名以`.pt`或`.safetensors`结尾，目前最热门的为"LoRA"。更棒的是因为档案小，自行[训练喜欢的人物模型](/posts/stable-diffusion-webui-manuals/zh-cn/training/)成本并不高。
+跟ckpt大模型比起来，这类模型文件都很小，主要用来微调现有的模型。小模型有嵌入(Embedding)、超网络(HyperNetwork)、LoRA三种，副档名以`.pt`或`.safetensors`结尾，目前最热门的为"LoRA"。更棒的是因为文件小，自行[训练喜欢的人物模型](/posts/stable-diffusion-webui-manuals/zh-cn/training/)成本并不高。
 
 
-# 1. 安装小模型
+# 安装小模型
 
 [Civitai](https://civitai.com/tag/lora)有很多小模型可以下载。下载时需注意模型是哪一种。
 
@@ -25,7 +25,7 @@ LoRA放到`stable-diffusion-webui\models\Lora`。
 如果要显示小模型缩图，将图片取跟该模型一样的文件名，并放到该模型的文件夹。例如在`Taiwan-doll-likeness.safetensors`所在的文件夹放一张`Taiwan-doll-likeness.png`。
 
 
-# 2. 小模型使用方法
+# 小模型使用方法
 
 1. 进入WebUI，点选右上角Show extra networks
 
@@ -48,7 +48,7 @@ LoRA放到`stable-diffusion-webui\models\Lora`。
 ![](/posts/stable-diffusion-webui-manuals/images/VLBuSMp.webp)
 
 
-# 3. 使用VAE
+# 使用VAE
 
 VAE (variational autoencoder)可以让算出来的图片色彩更漂亮。有些存档点模型内建VAE，SD WebUI在生图时会自动侦测。
 

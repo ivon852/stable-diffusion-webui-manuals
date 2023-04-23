@@ -11,10 +11,10 @@ weight: 2
 
 其余SD WebUI的功能用法大抵都按照此逻辑设计，有些参数是通用的。
 
-需要中文界面的可以先装[中文/双语扩充功能](/posts/stable-diffusion-webui-manuals/extensions/localization-zh_tw/)。
+需要中文界面的可以先装[中文/双语扩充功能](/posts/stable-diffusion-webui-manuals/zh-cn/extensions/localizations/)。
 
 
-# 2.2.1. 参数解说
+# 参数解说
 
 不想看参数原理的请直接跳下面的「实际操作」小节，进行教学演练。
 
@@ -119,7 +119,7 @@ AI生图与你给的提示词的相关度，数值越高越会按照你说的内
 下方的Styles列表即为储存的提示词。点选储存的提示词(可多选)，再点选上面的剪贴板图示，即会将该提示词组合加到左边的提示词栏位。
 
 
-# 2.2.2. 实际操作
+# 实际操作
 
 Stable Diffusion WebUI正上方可看到现在使用的是哪个模型。切换模型约需要等30秒。
 
