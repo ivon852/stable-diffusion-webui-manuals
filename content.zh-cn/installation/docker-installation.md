@@ -15,7 +15,7 @@ git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git
 cd stable-diffusion-webui-docker
 ```
 
-3. 安装依赖套件，会自动下载Stable Diffusion v1.5的模型。
+3. 安装依赖，会自动下载Stable Diffusion v1.5的模型。
 ```bash
 sudo docker compose --profile download up --build
 ```

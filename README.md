@@ -20,7 +20,7 @@ Ivon's Stable Diffusion WebUI User Manuals
 ├── config.toml
 ├── content.zh-tw   --> 文章目錄 (正體中文)
 ├── content.zh-cn   --> 文章目錄 (簡體中文)
-├── content.zh-cn   --> 文章目錄 (English)
+├── content.en-us   --> 文章目錄 (English)
 ├── deploy_n.sh
 ├── LICENSE
 ├── README.md

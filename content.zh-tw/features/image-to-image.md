@@ -41,7 +41,6 @@ weight: 3
 ## Interrogate CLIP
 
 類似Deepbooru用途，不過較適合判別真人照片內容。
-Composable
 
 # 實際操作
 

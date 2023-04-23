@@ -22,7 +22,7 @@ HyperNetwork放到`stable-diffusion-webui\models\hypernetworks`。
 
 LoRA放到`stable-diffusion-webui\models\Lora`。
 
-如果要顯示小模型縮圖，將圖片取跟該模型一樣的檔名，並放到該模型的目錄。例如在`Taiwan-doll-likeness.safetensors`所在的目錄放一張`Taiwan-doll-likeness.png`。
+如果要顯示小模型縮圖，將圖片取跟該模型一樣的檔名，並放到該模型的資料夾。例如在`Taiwan-doll-likeness.safetensors`所在的資料夾放一張`Taiwan-doll-likeness.png`。
 
 
 # 2. 小模型使用方法
