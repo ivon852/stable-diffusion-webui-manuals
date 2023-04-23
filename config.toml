@@ -1,7 +1,7 @@
 baseURL = 'https://ivonblog.com/posts/stable-diffusion-webui-manuals'
-title = 'Ivon的Stable Diffusion WebUI使用手冊(正體中文)'
+title = 'Ivon的Stable Diffusion WebUI使用手冊'
 theme = 'hugo-book'
-defaultContentLanguage = "zh"
+defaultContentLanguage = "zh-tw"
 
 googleAnalytics = 'G-NYE962575Q'
 
@@ -23,31 +23,37 @@ enableGitInfo = true
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
 
 [languages]
-#[languages.en]
-  #languageName = 'English'
-  #contentDir = 'content.en'
-  #weight = 1
 
-#[languages.ru]
-  #languageName = 'Russian'
-  #contentDir = 'content.ru'
-  #weight = 2
-
-[languages.zh]
-  languageCode = 'zh'
+[languages.zh-tw]
+  languageCode = 'zh-tw'
   languageName = '正體中文'
-  contentDir = 'content.zh'
+  contentDir = 'content.zh-tw'
+  title = 'Ivon的Stable Diffusion WebUI使用手冊(正體中文)'
+  weight = 1
+
+[languages.zh-cn]
+  languageCode = 'zh-cn'
+  languageName = '简体中文'
+  contentDir = 'content.zh-cn'
+  title = 'Ivon的Stable Diffusion WebUI使用手册(简体中文)'
+  weight = 2
+
+[languages.en-us]
+  languageCode = 'en-us'
+  languageName = 'English'
+  contentDir = 'content.en-us'
+  title = "Stable Diffusion User's Manuals by Ivon Huang"
   weight = 3
 
 [menu]
 
- [[menu.before]]
-   name = "【回Ivon的部落格】"
-   url = "https://ivonblog.com/categories/stable-diffusion%E7%9B%B8%E9%97%9C%E6%95%99%E5%AD%B8/"
-   weight = 10
+[[menu.before]]
+  name = "【回Ivon的部落格】Back to Ivon's Blog"
+  url = "https://ivonblog.com/categories/stable-diffusion%E7%9B%B8%E9%97%9C%E6%95%99%E5%AD%B8/"
+  weight = 10
 
 [[menu.before]]
-  name = "【意見回饋】"
+  name = "【意見回饋】Send feedbacks"
   url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
   weight = 20
 
@@ -78,7 +84,7 @@ enableGitInfo = true
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  BookSection = '*'
+  BookSection = '/'
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.

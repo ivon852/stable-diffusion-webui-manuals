@@ -61,7 +61,7 @@ conda activate sdwebui
 
 # 3. 複製Stable Diffusion WebUI儲存庫
 
-1. 開啟檔案總管，在桌面資料夾按右鍵＋Shift，點選`在這裡開啟Powershell`或`終端機視窗`。如果你C槽空間不足的話，也可以切換到其他硬碟資料夾再開啟終端機。
+1. 開啟檔案總管，在桌面資料夾裡面按右鍵＋Shift，點選`在這裡開啟Powershell`或`終端機視窗`。如果你C槽空間不足的話，也可以切換到其他硬碟資料夾再開啟終端機。
 
 ![](/posts/stable-diffusion-webui-manuals/images/6HJHSMy.webp)
 

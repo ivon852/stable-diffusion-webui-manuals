@@ -2,7 +2,7 @@
 
 Ivon's Stable Diffusion WebUI User Manuals
 
-[線上閱讀](https://ivonblog.com/posts/stable-diffusion-webui-manuals/)
+[線上閱讀](https://ivonblog.com/posts/stable-diffusion-webui-manuals/)，目前的語言有正體中文、简体中文、English(興建中)。
 
 
 ## 1. 動機
@@ -18,7 +18,9 @@ Ivon's Stable Diffusion WebUI User Manuals
 ├── archetypes
 ├── assets
 ├── config.toml
-├── content.zh     --> 文章目錄
+├── content.zh-tw   --> 文章目錄 (正體中文)
+├── content.zh-cn   --> 文章目錄 (簡體中文)
+├── content.zh-cn   --> 文章目錄 (English)
 ├── deploy_n.sh
 ├── LICENSE
 ├── README.md

@@ -5,7 +5,7 @@ weight: 6
 
 Google Colab是Google Research推出的免費線上服務，可用伺服器等級的高級顯示卡跑Python程式。有需要的話還可以付費買Pro版，使用更高級的GPU。
 
-|❗2023年4月21日，根據Google Colab員工在[Twitter](https://twitter.com/thechrisperry/status/1649189902079381505)的說法，需要付費購買Pro版才可以跑stable-diffusion-webui。免費版用戶一偵測到`stable-diffusion-webui`字串就會封鎖，出現`You may be executing code that is disallowed, and this may restrict your ability to use Colab in the future.`的警告訊息。❗|
+|❗2023年4月21日，Google Colab員工在[Twitter](https://twitter.com/thechrisperry/status/1649189902079381505)宣佈，需要付費購買Pro版才可以跑stable-diffusion-webui。免費版用戶一偵測到`stable-diffusion-webui`字串就會被封鎖，出現`You may be executing code that is disallowed, and this may restrict your ability to use Colab in the future.`的警告訊息。❗|
 |-----------------------------------------|
 
 

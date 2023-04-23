@@ -40,6 +40,7 @@ weight: 2
 - Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion (LyCORIS)
 - low-rank adaptation (LoRA): 低秩自適應，2023年由Microsoft發表，用於微調大模型的技術。
 - machine learning: 機器學習
+- model：模型
 - negative prompts: 負向提示詞
 - outpaint: 外補繪製
 - pickle: 儲存張量的模型格式，附檔名為`.pt`
