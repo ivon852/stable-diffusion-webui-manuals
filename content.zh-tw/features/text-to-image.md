@@ -69,7 +69,7 @@ DDIM和PLMS是2021年隨Stable Diffusion v1發表的取樣方法。
 
 其餘可用的寬高比(ratio)請參考下表。[圖片來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025#discussioncomment-3727588)
 
-![](/posts/stable-diffusion-webui-manuals/images/192161440-325bfde9-b398-4622-b833-01a6c9cd3b99.webp)
+![](../../images/192161440-325bfde9-b398-4622-b833-01a6c9cd3b99.webp)
 
 
 ## CFG Scale
@@ -109,9 +109,9 @@ AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內
 
 右上角可以儲存與載入生圖提示詞。
 
-5個按鈕由左至依序為：1. 叫出上次生圖使用的設定值 2. 清空提示詞 3. 啟用[額外網路](/posts/stable-diffusion-webui-manuals/features/extra-networks/) 4. 套用選中的風格 5. 儲存目前的提示詞
+5個按鈕由左至依序為：1. 叫出上次生圖使用的設定值 2. 清空提示詞 3. 啟用[額外網路](../features/extra-networks/) 4. 套用選中的風格 5. 儲存目前的提示詞
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_183512.webp)
+![](../../images/Screenshot_20230417_183512.webp)
 
 
 儲存的提示詞此處稱為風格(styles)
@@ -123,34 +123,34 @@ AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內
 
 Stable Diffusion WebUI正上方可看到現在使用的是哪個模型。切換模型約需要等30秒。
 
-![](/posts/stable-diffusion-webui-manuals/images/Iew050C.webp)
+![](../../images/Iew050C.webp)
 
 1. 在頁面上方填入正向與負向提示詞。右邊有存檔按鈕。
 
-![](/posts/stable-diffusion-webui-manuals/images/kG3Bn21.webp)
+![](../../images/kG3Bn21.webp)
 
 2. Sampling Methods建議先試試最快的「UniPC」，其次是「Euler a」、「DPM++ 2M Karras」。，Sampling Steps設20，`Width`x`Height`設定為512x512。
 
-![](/posts/stable-diffusion-webui-manuals/images/vUevujL.webp)
+![](../../images/vUevujL.webp)
 
 3. 勾選左下角的臉部修復 (Restore faces)，改善臉部繪製效果。
 
-![](/posts/stable-diffusion-webui-manuals/images/4tYozfF.webp)
+![](../../images/4tYozfF.webp)
 
 4. 點右上角的Generate開始生圖。
 
-![](/posts/stable-diffusion-webui-manuals/images/qu1BW4g.webp)
+![](../../images/qu1BW4g.webp)
 
 5. 視顯卡性能而定，約一分鐘圖片就會算出來了，點選放大右鍵儲存。
 
-![](/posts/stable-diffusion-webui-manuals/images/X2jMeJx.webp)
+![](../../images/X2jMeJx.webp)
 
 6. 左下角有`Batch count`的數值可設定一次算多張圖。
 
-![](/posts/stable-diffusion-webui-manuals/images/mX8jX9s.webp)
+![](../../images/mX8jX9s.webp)
 
 7. 如果對此次結果滿意，不妨將種子碼 (Seed) 保存下來供日後利用，這樣可以一定程度保留風格。
 
-![](/posts/stable-diffusion-webui-manuals/images/DFIZZfA.webp)
+![](../../images/DFIZZfA.webp)
 
 不論圖片有無右鍵儲存，Stable Diffusion WebUI生成的圖都會自動儲存到主程式資料夾下的`outputs`資料夾。

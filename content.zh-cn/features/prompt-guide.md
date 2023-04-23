@@ -5,17 +5,17 @@ weight: 1
 
 这节Ivon将教学Stable Diffusion的提示词(prompt)写法，并附上示例。
 
-![](/posts/stable-diffusion-webui-manuals/images/title-2.1.webp)
+![](../../../images/title-2.1.webp)
 
 非ATOMATIC1111开发的Stable Diffusion也可以参考此教程，但要注意哪些是ATOMATIC1111版独有的语法。
 
-我们来看提示词要怎么写，以文生图模式的提示词为主。若要边看边练习的话，可以搭配[文生图用法](/posts/stable-diffusion-webui-manuals/zh-cn/features/text-to-image)操作。
+我们来看提示词要怎么写，以文生图模式的提示词为主。若要边看边练习的话，可以搭配[文生图用法](../features/text-to-image)操作。
 
 不论用哪个模式绘图，Stable Diffusion都是吃「正向」与「负向」提示词 (prompt，通俗的讲法叫关键字、咒语)，并且要用英文输入。
 
 你会在Stable Diffusion WebUI看到以下框框：
 
-![](/posts/stable-diffusion-webui-manuals/images/AAG54w1.webp)
+![](../../../images/AAG54w1.webp)
 
 第一个框框是提示词 (Prompt) 告诉AI要画哪些东西。第二个框框是负向提示词 (Negative prompt) 告诉AI不要画哪些东西。
 
@@ -35,7 +35,7 @@ an asian girl on the beach
 
 结果如下
 
-![](/posts/stable-diffusion-webui-manuals/images/example1.png)
+![](../../../images/example1.png)
 
 2. 不过英文不好的人其实不用写整个句子，用单字加逗号将想看的特征点出来通常就有不错效果。且实务上我们会希望测试更多参数，例如加入画风、要模仿的艺术家风格、身体特征等，因此用逗号更方便调整。将图片特征拆成单字就会变成下面这样：
 ```lisp
@@ -45,7 +45,7 @@ an asian girl on the beach
 
 再算一次，但是结果变了？没错，即使提示词相近，AI绘图每次算图结果都是随机的。要维持上一次的结果并微调，你得保留每次算图的种子码(Seed，SD WebUI界面左下角，亦会写在档名上)。
 
-![](/posts/stable-diffusion-webui-manuals/images/example2.png)
+![](../../../images/example2.png)
 
 3. 接着可以多指定一点细节：这个女孩眼睛是什么颜色的？发型是什么？有戴帽子吗？是站着还是坐着呢？身上穿的是什么衣服？天空是什么颜色的？
 ```lisp
@@ -53,7 +53,7 @@ an asian girl on the beach
 1girl, asian, blue eyes, short hair, straw hat, standing, blue bikini, beach, ocean, orange sky
 ```
 
-![](/posts/stable-diffusion-webui-manuals/images/example3.png)
+![](../../../images/example3.png)
 
 呼，好像一口气加太多细节了呢，详述细节的好处是避免AI乱画，但也限制了其作画创意。所以下面的例子会缩短，有时候让AI随机抽奖也不坏呀～
 
@@ -64,7 +64,7 @@ an asian girl on the beach
 a stone sculpture of 1girl, asian, blue eyes, beach, ocean
 ```
 
-![](/posts/stable-diffusion-webui-manuals/images/example4.png)
+![](../../../images/example4.png)
 
 但我使用的模型已是专攻动漫风格的模型，所以不用特别指定要画出哪种风格，它一律都会是动漫风的图片，很难画出真人照片，所以说挑对模型很重要啊。
 
@@ -77,7 +77,7 @@ artwork by Alfons Maria Mucha, masterpiece, 1girl, asian, blue eyes, beach, ocea
 
 绘图的结果就会变得像是慕夏的作品。顺带一提`masterpiece`这个提示词还蛮万用的，可以让作品维持一定水准。
 
-![](/posts/stable-diffusion-webui-manuals/images/example5.png)
+![](../../../images/example5.png)
 
 6. 当然还可以画特定动漫人物的「二创」，只要将名字和作品名称打上去就可以了。有名的动漫角色只要出现名字，不用特别指定身体特征或就会画出原作风格了，例如指定《新世纪福音战士》的惣流·明日香·兰格雷：
 ```lisp
@@ -85,14 +85,14 @@ artwork by Alfons Maria Mucha, masterpiece, 1girl, asian, blue eyes, beach, ocea
 asuka_langley_souryuu from neon_genesis_evangelion, masterpiece, 1girl, beach, ocean
 ```
 
-![](/posts/stable-diffusion-webui-manuals/images/example6.png)
+![](../../../images/example6.png)
 
 
 再次提醒，在下提示词的时候，绘制图片使用的模型也需纳入考量。譬如想要绘制特定动漫人物，去Danbooru找到了英文姓名，加上提示词，但你却用画真人的Stable Diffusion去算，则AI可能根本就不会认得你说的角色是谁，反之亦然。 Danbooru的标签风格跟一般图片的描述还是有差距的。
 
 除非日后有搜罗全部网路图片的超大模型出现，否则下提示词须配合模型种类来决定。
 
-如果AI怎样都绘制不出你要的风格或人物，请考虑换个模型，或是[自行训练模型](/posts/stable-diffusion-webui-manuals/zh-cn/training/)。
+如果AI怎样都绘制不出你要的风格或人物，请考虑换个模型，或是[自行训练模型](../training/)。
 
 
 # 2. 负向提示词 Negative Prompts
@@ -170,7 +170,7 @@ orange AND apple
 orange :1.5 AND apple :2.5
 ```
 
-此语法适合搭配[ControlNet和Latent Couple](/posts/stable-diffusion-webui-manuals/zh-cn/extensions/latent-couple/)，可以准确控制图中物件的位置。
+此语法适合搭配[ControlNet和Latent Couple](../extensions/latent-couple/)，可以准确控制图中物件的位置。
 
 
 # 4. 提示词范例
@@ -194,7 +194,7 @@ orange :1.5 AND apple :2.5
 lowres, bad anatomy, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name
 ```
 
-![](/posts/stable-diffusion-webui-manuals/images/example-dog.png)
+![](../../../images/example-dog.png)
 
 
 ## 绘制高科技未来城市
@@ -211,7 +211,7 @@ city future, 8k, exploration, cinematic, realistic, unreal engine, hyper detaile
 lowres, bad anatomy, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name
 ```
 
-![](/posts/stable-diffusion-webui-manuals/images/example-city.png)
+![](../../../images/example-city.png)
 
 
 ## 绘制一台特斯拉车子
@@ -228,7 +228,7 @@ concept art,tesla car, aerodynamic, future
 lowres, bad anatomy, text, error, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name
 ```
 
-![](/posts/stable-diffusion-webui-manuals/images/example-car.png)
+![](../../../images/example-car.png)
 
 
 ## 绘制二次元美少女
@@ -247,7 +247,7 @@ jeanne d'arc from fate grand order, 1girl, (best quality), (masterpiece), (high 
 lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts,signature, watermark, username, blurry, artist name
 ```
 
-![](/posts/stable-diffusion-webui-manuals/images/example-anime.png)
+![](../../../images/example-anime.png)
 
 
 ## 绘制日韩风真人女孩
@@ -266,7 +266,7 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 nude, lowres,blurry,simple background,jpeg artifacts,bad-artist,bad shadow,compressed image,low pixel,light spot, paintings,sketches,((monochrome)),((grayscale)),noise point,semi-realistic, 3d,render,cg,drawing,cartoon,anime,comic,username,watermark,signature,cropped,error,censored,text,stain, deformed iris,deformed pupils,deformed nail,deformed ear,deformed eye,deformed eyelid,collapsed eyeshadow, [excessive skin spots,excessive skin imperfections,skin blemishes,skin fold,rough skinstain skin],goosebumps,skin layering,axillary fold,facial contortion, (flawless face),trimming
 ```
 
-![](/posts/stable-diffusion-webui-manuals/images/example-girl.png)
+![](../../../images/example-girl.png)
 
 
 # 5. 值得参考的提示词网站

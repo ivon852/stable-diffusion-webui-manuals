@@ -107,7 +107,7 @@ AMD显示卡需要另外加上` --precision full --no-half`引数，否则生成
 
 加上`--enable-insecure-extension-access`让你在网页界面直接装扩充功能。加上`--nowebui`则不会启动网页界面，单纯接收WebUI API之用。
 
-其余可用引数请见[命令列引数](/posts/stable-diffusion-webui-manuals/zh-cn/installation/command-line-arguments-and-settings/)
+其余可用引数请见[命令列引数](../installation/command-line-arguments-and-settings/)
 
 
 # 5. 启动Stable Diffusion WebUI

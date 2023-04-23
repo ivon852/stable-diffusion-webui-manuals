@@ -29,7 +29,7 @@ ControlNet會用到各種模型，每個模型有對應的用途，不需要全�
 
 2. 到[lllyasviel/ControlNet](https://huggingface.co/lllyasviel/ControlNet/tree/main/models)下載需要的模型，或者全部下載。將模型檔案放到Stable Diffusion WebUI資料夾下的`stable-diffusion-webui/extensions/sd-webui-controlnet/models`
 
-![](/posts/stable-diffusion-webui-manuals/images/Bicm7hz.webp)
+![](../../images/Bicm7hz.webp)
 
 
 <!--#參數解說-->
@@ -39,11 +39,11 @@ ControlNet會用到各種模型，每個模型有對應的用途，不需要全�
 
 1. 在安裝之後，WebUI的界面會多出ControlNet的按鈕。
 
-![](/posts/stable-diffusion-webui-manuals/images/c84PFJJ.webp)
+![](../../images/c84PFJJ.webp)
 
 2. 進入圖生圖的頁面填入提示詞，並上傳圖片。接著點開下面ControlNet的界面，勾選`Enabled`啟用ControlNet，然後再次上傳圖片。勾選LowVRAM可降低VRAM佔用。
 
-![](/posts/stable-diffusion-webui-manuals/images/QP2mKW6.webp)
+![](../../images/QP2mKW6.webp)
 
 3. 接著選取要使用的Preprocessor和Model，二者要一致。
 
@@ -51,11 +51,11 @@ Preprocessor是先將上傳的圖片處理過一輪，例如`Scribbles`會將彩
 
 `Canny`偵測圖片邊緣，`Scribbles`偵測線條，`Openpose`偵測動作，`Depth`偵測法線深度。
 
-![](/posts/stable-diffusion-webui-manuals/images/lSOMjfP.webp)
+![](../../images/lSOMjfP.webp)
 
 4. 以Scribbles為例，選取後點選右上角Generate即會繪製出結果，並附上偵測到的線條。
 
-![](/posts/stable-diffusion-webui-manuals/images/A3pecmu.webp)
+![](../../images/A3pecmu.webp)
 
 
 # 啟用Multi ControlNet
@@ -64,4 +64,4 @@ Preprocessor是先將上傳的圖片處理過一輪，例如`Scribbles`會將彩
 
 要啟用Multi ControlNet，請進入Settings頁面設定要啟用的ControlNet數量。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/F9joNvd.webp alt=""  width=500 loading="lazy">
+<img src=../../images/F9joNvd.webp alt=""  width=500 loading="lazy">

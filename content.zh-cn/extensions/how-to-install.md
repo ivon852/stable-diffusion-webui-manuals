@@ -8,15 +8,15 @@ weight: 1
 
 最简单的就是点选Extensions → Available的`Load from:`，就会列出可下载安装的扩充功能。
 
-![](/posts/stable-diffusion-webui-manuals/images/FwlfcXi.webp)
+![](../../../images/FwlfcXi.webp)
 
 有些比较新的扩充功能则是要你复制Github储存库連結，并点选`Install from URL`，它会自动完成Git clone的操作。
 
-![](/posts/stable-diffusion-webui-manuals/images/mrcehrU.webp)
+![](../../../images/mrcehrU.webp)
 
 在安装扩充功能后，都要点选Installed → Apply and restart WebU重新载入网页界面。有些则是得关掉终端机，整个重新启动。
 
-![](/posts/stable-diffusion-webui-manuals/images/9QksXqM4.webp)
+![](../../../images/9QksXqM4.webp)
 
 如果未来要更新扩充功能，点选Check for updates。
 

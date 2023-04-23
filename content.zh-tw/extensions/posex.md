@@ -13,20 +13,20 @@ PoseX是可以在Stable Diffuison WebUI直接拉人物骨架，再配合ControlN
 
 1. 切換至Extensions頁面，點選Install From URL，URL輸入`https://github.com/hnmr293/posex.git`，按下Install。接著重啟WebUI。
 
-![](/posts/stable-diffusion-webui-manuals/images/JO86Lmt.webp)
+![](../../images/JO86Lmt.webp)
 
 2. 開啟文生圖的頁面，點選右下角PoseX，點選Send this image to ControlNet
 
-![](/posts/stable-diffusion-webui-manuals/images/S9hRG7F.webp)
+![](../../images/S9hRG7F.webp)
 
 3. 在下面的ControlNet，點選Enabled，preprocessor選取`none`，model選`openpose`，不需要上傳圖片。
 
-![](/posts/stable-diffusion-webui-manuals/images/8xBVj5e.webp)
+![](../../images/8xBVj5e.webp)
 
 4. 回到上面的PoseX，調整人物姿勢。左鍵點選移動，滾輪放大縮小，對模型左鍵點二下即可用右鍵移動單個骨架。
 
-![](/posts/stable-diffusion-webui-manuals/images/Dy2Xpac.webp)
+![](../../images/Dy2Xpac.webp)
 
 5. 填入正負向提示詞，即會按照PoseX的姿勢來繪製圖片。
 
-![](/posts/stable-diffusion-webui-manuals/images/iCILLPO.webp)
+![](../../images/iCILLPO.webp)

@@ -12,7 +12,7 @@ Brew是安裝下面的東西所需要的必備工具，需要用到終端機指�
 
 1. 在應用程式列表開啟終端機
 
-![](/posts/stable-diffusion-webui-manuals/images/MKYNa6u.avif)
+![](../../images/MKYNa6u.avif)
 
 2. 貼上以下指令安裝Homebrew (此指令來自[Homebrew官網](https://brew.sh/index_zh-tw))
 ```bash
@@ -21,7 +21,7 @@ Brew是安裝下面的東西所需要的必備工具，需要用到終端機指�
 
 3. 輸入密碼，全部Enter，等待安裝完成。下面Homebrew在安裝軟體的時候都需要輸入密碼。
 
-![](/posts/stable-diffusion-webui-manuals/images/BvkF63l.avif)
+![](../../images/BvkF63l.avif)
 
 
 # 2. 安裝Git和Anaconda
@@ -57,11 +57,11 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 
 2. 開啟Finder，點選前往 → 個人專屬，會看到多了一個`stable-diffusion-webui`資料夾，這個就是程式本體了。
 
-![](/posts/stable-diffusion-webui-manuals/images/xPSMOZa.avif)
+![](../../images/xPSMOZa.avif)
 
 3. 將下載的模型檔移動至`stable-diffusion-webui`下的`models/Stable-diffusion`資料夾。
 
-![](/posts/stable-diffusion-webui-manuals/images/XZvCmqn.avif)
+![](../../images/XZvCmqn.avif)
 
 4, 接著回到終端機，啟動Python虛擬環境，終端機提示符前面會變成`(sdwebui)`
 ```bash
@@ -73,13 +73,13 @@ conda activate sdwebui
 
 找到`stable-diffusion-webui`資料夾下的`webui-user.sh`，右鍵用文字編輯器開啟。
 
-![](/posts/stable-diffusion-webui-manuals/images/0nkVg73.avif)
+![](../../images/0nkVg73.avif)
 
 參考上圖框起來的地方，填入`export COMMANDLINE_ARGS=--medvram --opt-split-attention`引數，降低VRAM使用量。
 
 額外加上`--listen`參數讓其他電腦能以IP存取網頁界面，`--share`則是產生一組Gradio網址。
 
-其餘引數請參閱[命令列引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)頁面。
+其餘引數請參閱[命令列引數](../installation/command-line-arguments-and-settings/)頁面。
 
 
 # 5. 啟動Stable Diffusion WebUI
@@ -92,12 +92,12 @@ cd ~/stable-diffusion-webui
 
 2. 跑完它應該會顯示一組網址
 
-![](/posts/stable-diffusion-webui-manuals/images/vT6gVFu.avif)
+![](../../images/vT6gVFu.avif)
 
 
 3. 用瀏覽器開啟`http://127.0.0.1:7860`進入網頁圖形界面。執行程式時請保持終端機開著。
 
-![](/posts/stable-diffusion-webui-manuals/images/ZK9gSnP.avif)
+![](../../images/ZK9gSnP.avif)
 
 欲中止SD WebUI執行，直接將對終端機圖示按右鍵終止即可。
 

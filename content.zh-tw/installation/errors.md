@@ -5,7 +5,7 @@ weight: 10
 
 本節列出一些安裝ATOMATIC1111的Stable Diffusion WebUI常遇到的錯誤訊息的解決方式。
 
-![](/posts/stable-diffusion-webui-manuals/images/00040-3462613574.png)
+![](../../images/00040-3462613574.png)
 
 
 # 如何回報錯誤
@@ -21,7 +21,7 @@ weight: 10
 
 要Debug請嘗試刪除`stable-diffusion-webui\extensions`下的某個新安裝的擴充功能資料夾，再嘗試啟動SD WebUI。
 
-也可以嘗試將Stable Diffusion WebUI主程式[更新到最新版本](/posts/stable-diffusion-webui-manuals/features/how-to-update/)。
+也可以嘗試將Stable Diffusion WebUI主程式[更新到最新版本](../features/how-to-update/)。
 
 
 # RuntimeError: CUDA Out of memory

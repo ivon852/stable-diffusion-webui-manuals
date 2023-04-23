@@ -12,7 +12,7 @@ weight: 2
 
 这里我准备了33张Hara绘制的斯卡萨哈
 
-![](/posts/stable-diffusion-webui-manuals/images/bqSn4Xp.avif)
+![](../../../images/bqSn4Xp.avif)
 
 
 # 2. 裁切图片
@@ -28,7 +28,7 @@ weight: 2
 
 2. 开启SD WebUI，进到Train → Preprocess images页面
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230421_002313.webp)
+![](../../../images/Screenshot_20230421_002313.webp)
 
 3. 第一个栏位`Source directory`填写原始图片的路径
 
@@ -45,31 +45,31 @@ weight: 2
 
 1. 安装修图软件[GIMP](https://www.gimp.org/)，点选档案→新增512x512像素的专案
 
-![](/posts/stable-diffusion-webui-manuals/images/C2ScvyP.avif)
+![](../../../images/C2ScvyP.avif)
 
 2. 点油漆桶将其漆成白色
 
-![](/posts/stable-diffusion-webui-manuals/images/DsUDEu9.avif)
+![](../../../images/DsUDEu9.avif)
 
 3. 将图片拖曳进画面，成为新的图层
 
-![](/posts/stable-diffusion-webui-manuals/images/cLqIlXa.avif)
+![](../../../images/cLqIlXa.avif)
 
 4. 点选工具→变形工具→缩放，缩放图片使其符合目前画布大小，再按Enter。
 
-![](/posts/stable-diffusion-webui-manuals/images/TAoINha.avif)
+![](../../../images/TAoINha.avif)
 
 5. 点选档案→Export，汇出成png。
 
-![](/posts/stable-diffusion-webui-manuals/images/Lx95khX.avif)
+![](../../../images/Lx95khX.avif)
 
 6. 为加快后面图片的处理速度，按右下角删除目前图层，再拖新的图片进来，重复操作。
 
-![](/posts/stable-diffusion-webui-manuals/images/fZ3D4Vb.avif)
+![](../../../images/fZ3D4Vb.avif)
 
 7. 将33张Hara绘制的斯卡萨哈裁切后，统一放到名为`raw`的目录。
 
-![](/posts/stable-diffusion-webui-manuals/images/O5Tpz0f.avif)
+![](../../../images/O5Tpz0f.avif)
 
 
 # 3. 预先给图片上提示词
@@ -80,7 +80,7 @@ weight: 2
 
 2. 进入Preprocess页面，`Source`输入裁切图片的路径，`Destination`填处理后图片输出的路径。
 
-![](/posts/stable-diffusion-webui-manuals/images/YB1dJqc.avif)
+![](../../../images/YB1dJqc.avif)
 
 3. 接着勾选`Create Flipped Copies`，建立翻转图片提升训练数量。
 
@@ -88,7 +88,7 @@ weight: 2
 
 4. 点选Preprocess，约几分钟后便会处理完成。输出的目录里面会含有每张图片对应的提示词txt文件。
 
-![](/posts/stable-diffusion-webui-manuals/images/wNTq9uV.avif)
+![](../../../images/wNTq9uV.avif)
 
 5. 点选开启txt文件，将你觉得无关的特征都删除，例如`2girls`这类太笼统的提示词。
 

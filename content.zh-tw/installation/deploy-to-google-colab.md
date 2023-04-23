@@ -17,11 +17,11 @@ Google Colabu已有很多現成的Stable Diffusion WebUI筆記本可以直接用
 
 缺點就是很佔雲端空間，大概需要10GB左右容量。15GB免費容量只夠裝一個存檔點模型和少許LoRA，再勉強塞個ControlNet的擴充功能。因此我的程式碼只下載必要的檔案，擴充功能需要再另外裝。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_132547.webp)
+![](../../images/Screenshot_20230403_132547.webp)
 
 1. 至[Google Colab](https://colab.research.google.com/)，點選新增筆記本。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_113248.webp)
+![](../../images/Screenshot_20230403_113248.webp)
 
 2. 點選新增儲存格，填入以下內容。先別點選執行，這邊我是分步講解，後面再將這些程式碼合起來。
 ```python
@@ -86,19 +86,19 @@ drive.mount('/content/drive')
 
 8. 點選執行階段 → 變更執行階段，選取使用GPU
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_114247.webp)
+![](../../images/Screenshot_20230403_114247.webp)
 
 9. 點選左上角執行儲存格，允許存取雲端硬碟。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_114310.webp)
+![](../../images/Screenshot_20230403_114310.webp)
 
 10. 等待依賴裝完，最後會產生Gradio網址，點進去
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_132014.webp)
+![](../../images/Screenshot_20230403_132014.webp)
 
-11. 接下來的用法就跟裝在[自己電腦的SD WebUI](/posts/stable-diffusion-webui-manuals/features/)一樣了，亦可以從網頁界面安裝[擴充功能](/posts/stable-diffusion-webui-manuals/extensions/)。
+11. 接下來的用法就跟裝在[自己電腦的SD WebUI](../features/)一樣了，亦可以從網頁界面安裝[擴充功能](../extensions/)。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230403_132314.webp)
+![](../../images/Screenshot_20230403_132314.webp)
 
 12. 使用後請點選執行階段 → 中斷並刪除執行階段。由於相關檔案都是放在雲端，關閉分頁也不會刪除，下次執行可以繼續上一次進度。
 

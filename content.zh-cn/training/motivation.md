@@ -11,7 +11,7 @@ weight: 1
 
 以下是一个具体例子，透过使用自行训练的HyperNetwork，便改善单靠Anything模型无法绘制出Hara老师画风的缺点。在不使用HyperNetwork的情况下，风格永远是左边那样；一使用HyperNetwork，右边的风格就能轻松绘制出来了。
 
-![](/posts/stable-diffusion-webui-manuals/images/vPJsJB1.webp)
+![](../../../images/vPJsJB1.webp)
 
 训练模型是复杂的议题，基于哪个现有模型，以及喂给AI学习的图片品质，还有训练时的参数，都会影响模型训练结果。
 
@@ -21,7 +21,7 @@ weight: 1
 
 各个模型的原理差异请参考下图。技术原理以及训练参数设定请参阅「参考资料」一章，碍于篇幅Ivon无法一一细讲，本章以操作过程为主。
 
-![](/posts/stable-diffusion-webui-manuals/images/bakeFoV.avif)
+![](../../../images/bakeFoV.avif)
 
 就训练时间与实用度而言，目前应是 LoRA > HyperNetwork > Embedding
 
@@ -31,6 +31,6 @@ weight: 1
 
 训练模型至少需要10GB的VRAM，也就是RTX3060等级以上的GPU。
 
-如果你有Nvidia RTX3060以上等级的GPU，那就参考[安装教学](/posts/stable-diffusion-webui-manuals/installation/)部署在本机，想训练多久就训练多久。训练资料不到50张图片的小模型训练时间约只要1~3个小时。
+如果你有Nvidia RTX3060以上等级的GPU，那就参考[安装教学](..installation/)部署在本机，想训练多久就训练多久。训练资料不到50张图片的小模型训练时间约只要1~3个小时。
 
-如果没有强力的GPU，那就用云上平台训练，例如[Google Colab](/posts/stable-diffusion-webui-manuals/zh-cn/installation/deploy-to-google-colab/)。
+如果没有强力的GPU，那就用云上平台训练，例如[Google Colab](../installation/deploy-to-google-colab/)。

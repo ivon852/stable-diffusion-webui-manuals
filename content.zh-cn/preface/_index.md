@@ -13,11 +13,11 @@ Stable Diffusion (稳定扩散) 是一个扩散模型，2022年8月由德国Comp
 
 以下是一些Stable Diffusion WebUI生成的图像，无后期处理。
 
-![一些Stable Diffusion WebUI生成的图像，无后制。 ](/posts/stable-diffusion-webui-manuals/images/title-1.4.webp)
+![一些Stable Diffusion WebUI生成的图像，无后制。 ](../../../images/title-1.4.webp)
 
-![一些Stable Diffusion WebUI生成的图像，无后制。 ](/posts/stable-diffusion-webui-manuals/images/title-1.3.webp)
+![一些Stable Diffusion WebUI生成的图像，无后制。 ](../../../images/title-1.3.webp)
 
-![一些Stable Diffusion WebUI生成的图像，无后制。 ](/posts/stable-diffusion-webui-manuals/images/title-1.5.webp)
+![一些Stable Diffusion WebUI生成的图像，无后制。 ](../../../images/title-1.5.webp)
 
 因Stable Diffusion WebUI支援多系统又有很好的扩充性，便成为最多人使用的图形化程序。其图形界面是透过网页访问的，上手无难度，还有社群制作的界面中文化扩充功能。
 

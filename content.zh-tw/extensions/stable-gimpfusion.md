@@ -19,12 +19,12 @@ ArtBIT開發的Stable-Gimpfusion能讓你在GIMP修圖時的圖層調用Stable D
 
 5. 點選右上角的Gimpfusion，點選要使用文生圖(text to image)還是圖生圖(image to image)
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230330_150855.webp alt=""  width=500 loading="lazy">
+<img src=../../images/Screenshot_20230330_150855.webp alt=""  width=500 loading="lazy">
 
 6. 輸入提示詞，Stable Diffusion就會開始繪圖
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230330_151938.webp alt=""  width=500 loading="lazy">
+<img src=../../images/Screenshot_20230330_151938.webp alt=""  width=500 loading="lazy">
 
 7. 進度條可從終端機查看，之後結果會新增至GIMP的圖層。目前此擴充功能只支援填充整個圖層。
 
-<img src=/posts/stable-diffusion-webui-manuals/images/Screenshot_20230330_151918.webp alt=""  width=500 loading="lazy">
+<img src=../../images/Screenshot_20230330_151918.webp alt=""  width=500 loading="lazy">

@@ -7,11 +7,11 @@ weight: 2
 
 开启Stable Diffusion WebUI网页后，会看到以下画面。流程为在左上角填入提示词，勾选左下角的生图参数，再点选右上角生成图片。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_181020.webp)
+![](../../../images/Screenshot_20230417_181020.webp)
 
 其余SD WebUI的功能用法大抵都按照此逻辑设计，有些参数是通用的。
 
-需要中文界面的可以先装[中文/双语扩充功能](/posts/stable-diffusion-webui-manuals/zh-cn/extensions/localizations/)。
+需要中文界面的可以先装[中文/双语扩充功能](../extensions/localizations/)。
 
 
 # 参数解说
@@ -69,7 +69,7 @@ DDIM和PLMS是2021年随Stable Diffusion v1发表的采样方法。
 
 其余可用的宽高比(ratio)请参考下表。 [图片来源](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025#discussioncomment-3727588)
 
-![](/posts/stable-diffusion-webui-manuals/images/192161440-325bfde9-b398-4622-b833-01a6c9cd3b99.webp)
+![](../../../images/192161440-325bfde9-b398-4622-b833-01a6c9cd3b99.webp)
 
 
 ## CFG Scale
@@ -109,9 +109,9 @@ AI生图与你给的提示词的相关度，数值越高越会按照你说的内
 
 右上角可以储存与载入生图提示词。
 
-5个按钮由左至依序为：1. 叫出上次生图使用的设定值 2. 清空提示词 3. 启用[额外网络](/posts/stable-diffusion-webui-manuals/features/extra-networks/) 4. 套用选中的风格 5. 储存目前的提示词
+5个按钮由左至依序为：1. 叫出上次生图使用的设定值 2. 清空提示词 3. 启用[额外网络](..features/extra-networks/) 4. 套用选中的风格 5. 储存目前的提示词
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230417_183512.webp)
+![](../../../images/Screenshot_20230417_183512.webp)
 
 
 储存的提示词此处称为风格(styles)
@@ -123,34 +123,34 @@ AI生图与你给的提示词的相关度，数值越高越会按照你说的内
 
 Stable Diffusion WebUI正上方可看到现在使用的是哪个模型。切换模型约需要等30秒。
 
-![](/posts/stable-diffusion-webui-manuals/images/Iew050C.webp)
+![](../../../images/Iew050C.webp)
 
 1. 在页面上方填入正向与负向提示词。右边有存档按钮。
 
-![](/posts/stable-diffusion-webui-manuals/images/kG3Bn21.webp)
+![](../../../images/kG3Bn21.webp)
 
 2. Sampling Methods建议先试试最快的「UniPC」，其次是「Euler a」、「DPM++ 2M Karras」。 ，Sampling Steps设20，`Width`x`Height`设定为512x512。
 
-![](/posts/stable-diffusion-webui-manuals/images/vUevujL.webp)
+![](../../../images/vUevujL.webp)
 
 3. 勾选左下角的脸部修复 (Restore faces)，改善脸部绘制效果。
 
-![](/posts/stable-diffusion-webui-manuals/images/4tYozfF.webp)
+![](../../../images/4tYozfF.webp)
 
 4. 点右上角的Generate开始生图。
 
-![](/posts/stable-diffusion-webui-manuals/images/qu1BW4g.webp)
+![](../../../images/qu1BW4g.webp)
 
 5. 视显卡性能而定，约一分钟图片就会算出来了，点选放大右键储存。
 
-![](/posts/stable-diffusion-webui-manuals/images/X2jMeJx.webp)
+![](../../../images/X2jMeJx.webp)
 
 6. 左下角有`Batch count`的数值可设定一次算多张图。
 
-![](/posts/stable-diffusion-webui-manuals/images/mX8jX9s.webp)
+![](../../../images/mX8jX9s.webp)
 
 7. 如果对此次结果满意，不妨将种子码 (Seed) 保存下来供日后利用，这样可以一定程度保留风格。
 
-![](/posts/stable-diffusion-webui-manuals/images/DFIZZfA.webp)
+![](../../../images/DFIZZfA.webp)
 
 不论图片有无右键储存，Stable Diffusion WebUI生成的图都会自动储存到软件文件夹下的`outputs`文件夹。

@@ -52,7 +52,7 @@ accelerate config
 
 4. LoRA的訓練資料目錄結構不太一樣，需建立目錄結構如下。已經上好提示詞的訓練資料要放在`img_dir`下面，將目錄名稱取名為`數字_概念`，目錄名稱前面加上數字代表要重複的步數。
 
-![](/posts/stable-diffusion-webui-manuals/images/2ubZ2W0.avif)
+![](../../images/2ubZ2W0.avif)
 
 
 5. 新增訓練設定檔`trainingconfig.json`
@@ -150,12 +150,12 @@ accelerate launch main.py --load_json_path "/home/ivon/trainingconfig.json"
 
 1. 點選SD WebUI右上角，Show extra networks
 
-![](/posts/stable-diffusion-webui-manuals/images/lLGiqZ6.avif)
+![](../../images/lLGiqZ6.avif)
 
 2. 點選要使用的LoRA，將其加入至提示詞欄位
 
-![](/posts/stable-diffusion-webui-manuals/images/ix3dK3M.avif)
+![](../../images/ix3dK3M.avif)
 
 3. 再加上訓練時使用的提示詞，即可繪製出使用LoRA風格的人物。
 
-![](/posts/stable-diffusion-webui-manuals/images/mWhp5Gv.avif)
+![](../../images/mWhp5Gv.avif)

@@ -11,4 +11,4 @@ weight: 4
 
 之后在WebUI的负向提示词栏位填入`EasyNegative`即会生效，可有效替代冗长的负向提示词。不过单独使用效果可能还是不好，你还是需要额外准备一些负向提示词。
 
-![](/posts/stable-diffusion-webui-manuals/images/QQQ7O3N.webp)
+![](../../../images/QQQ7O3N.webp)

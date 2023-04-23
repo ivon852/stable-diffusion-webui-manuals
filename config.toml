@@ -1,4 +1,4 @@
-baseURL = 'https://ivonblog.com/posts/stable-diffusion-webui-manuals'
+baseURL = 'example.com'
 title = 'Ivon的Stable Diffusion WebUI使用手冊'
 theme = 'hugo-book'
 defaultContentLanguage = "zh-tw"

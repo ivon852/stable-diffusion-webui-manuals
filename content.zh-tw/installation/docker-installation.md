@@ -27,7 +27,7 @@ sudo docker compose --profile auto up --build
 
 5. 等待啟動完成，用瀏覽器開啟`http://127.0.0.1:7860`進入WebUI。要停止執行就是在終端機按Ctrl＋C。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230421_131029.webp)
+![](../../images/Screenshot_20230421_131029.webp)
 
 此Dockerfile啟動的Stable Diffusion WebUI，資料會掛載至同一目錄下的`data`目錄。
 
@@ -37,7 +37,7 @@ sudo docker compose --profile auto up --build
 
 擴充功能請從網頁界面裝，或是在`data`新建`extensions`目錄再於該處放入擴充功能的目錄。
 
-若要修改WebUI啟動時的[命令列引數](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)，編輯此專案目錄下的`docker-compose.yml`，修改`CLI_ARGS`這一行：
+若要修改WebUI啟動時的[命令列引數](../installation/command-line-arguments-and-settings/)，編輯此專案目錄下的`docker-compose.yml`，修改`CLI_ARGS`這一行：
 ```yaml
   auto: &automatic
     <<: *base_service

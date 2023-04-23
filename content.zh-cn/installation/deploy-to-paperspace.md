@@ -14,21 +14,21 @@ Paperspace是一间位于美国的云机器学习服务供应商，提供免费G
 
 2. 进入[gradient-ai/stable-diffusion](https://console.paperspace.com/github/gradient-ai/stable-diffusion?machine=Free-GPU&ref=blog.paperspace.com)页面，点选Start Machine
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230421_205429.webp)
+![](../../../images/Screenshot_20230421_205429.webp)
 
 3. 这个面板就是笔记本的页面了。点选右上角的Run all后，笔记本会安装Stable Diffusion WebUI所需的依赖，并下载Stable Diffusion v2.1的模型。此阶段所下载的文件不会计入帐户的储存空间。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230421_210700.webp)
+![](../../../images/Screenshot_20230421_210700.webp)
 
 
 4. 之后点选Use the Stable Diffusion Web UI这个储存格终端机显示的Gradio网址
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230421_202838.webp)
+![](../../../images/Screenshot_20230421_202838.webp)
 
 
 5. 即可使用WebUI。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230421_204541.webp)
+![](../../../images/Screenshot_20230421_204541.webp)
 
 6. 使用完毕后记得按左上角的Stop Machine关机。
 
@@ -41,7 +41,7 @@ Paperspace是一间位于美国的云机器学习服务供应商，提供免费G
 !wget -nc -P stable-diffusion-webui/models/Stable-diffusion https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors
 ```
 
-参照[命令列引数](/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)，找到启动WebUI这行，加入`--enable-insecure-extension-access`让你可从网页版的Extension页面下载扩充。
+参照[命令列引数](..installation/command-line-arguments-and-settings/)，找到启动WebUI这行，加入`--enable-insecure-extension-access`让你可从网页版的Extension页面下载扩充。
 ```python
 !python launch.py --share --config ~/../datasets/stable-diffusion-classic-v2/768-v-ema.yaml --ckpt ~/../datasets/stable-diffusion-classic-v2/768-v-ema.ckpt --enable-insecure-extension-access
 ```

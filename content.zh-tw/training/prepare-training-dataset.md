@@ -12,7 +12,7 @@ weight: 2
 
 這裡我準備了33張Hara繪製的斯卡薩哈
 
-![](/posts/stable-diffusion-webui-manuals/images/bqSn4Xp.avif)
+![](../../images/bqSn4Xp.avif)
 
 
 # 2. 裁切圖片
@@ -28,7 +28,7 @@ weight: 2
 
 2. 開啟SD WebUI，進到Train → Preprocess images頁面
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230421_002313.webp)
+![](../../images/Screenshot_20230421_002313.webp)
 
 3. 第一個欄位`Source directory`填寫原始圖片的路徑
 
@@ -45,31 +45,31 @@ weight: 2
 
 1. 安裝修圖軟體[GIMP](https://www.gimp.org/)，點選檔案→新增512x512像素的專案
 
-![](/posts/stable-diffusion-webui-manuals/images/C2ScvyP.avif)
+![](../../images/C2ScvyP.avif)
 
 2. 點油漆桶將其漆成白色
 
-![](/posts/stable-diffusion-webui-manuals/images/DsUDEu9.avif)
+![](../../images/DsUDEu9.avif)
 
 3. 將圖片拖曳進畫面，成為新的圖層
 
-![](/posts/stable-diffusion-webui-manuals/images/cLqIlXa.avif)
+![](../../images/cLqIlXa.avif)
 
 4. 點選工具→變形工具→縮放，縮放圖片使其符合目前畫布大小，再按Enter。
 
-![](/posts/stable-diffusion-webui-manuals/images/TAoINha.avif)
+![](../../images/TAoINha.avif)
 
 5. 點選檔案→Export，匯出成png。
 
-![](/posts/stable-diffusion-webui-manuals/images/Lx95khX.avif)
+![](../../images/Lx95khX.avif)
 
 6. 為加快後面圖片的處理速度，按右下角刪除目前圖層，再拖新的圖片進來，重複操作。
 
-![](/posts/stable-diffusion-webui-manuals/images/fZ3D4Vb.avif)
+![](../../images/fZ3D4Vb.avif)
 
 7. 將33張Hara繪製的斯卡薩哈裁切後，統一放到名為`raw`的目錄。
 
-![](/posts/stable-diffusion-webui-manuals/images/O5Tpz0f.avif)
+![](../../images/O5Tpz0f.avif)
 
 
 # 3. 預先給圖片上提示詞
@@ -80,7 +80,7 @@ weight: 2
 
 2. 進入Preprocess頁面，`Source`輸入裁切圖片的路徑，`Destination`填處理後圖片輸出的路徑。
 
-![](/posts/stable-diffusion-webui-manuals/images/YB1dJqc.avif)
+![](../../images/YB1dJqc.avif)
 
 3. 接著勾選`Create Flipped Copies`，建立翻轉圖片提升訓練數量。
 
@@ -88,7 +88,7 @@ weight: 2
 
 4. 點選Preprocess，約幾分鐘後便會處理完成。輸出的目錄裡面會含有每張圖片對應的提示詞txt檔。
 
-![](/posts/stable-diffusion-webui-manuals/images/wNTq9uV.avif)
+![](../../images/wNTq9uV.avif)
 
 5. 點選開啟txt檔，將你覺得無關的特徵都刪除，例如`2girls`這類太籠統的提示詞。
 

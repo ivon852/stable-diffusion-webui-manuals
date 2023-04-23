@@ -12,16 +12,16 @@ weight: 7
 
 1. 切換到mov2mov頁面，輸入提示詞, 再上傳影片。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230420_130951.webp)
+![](../../images/Screenshot_20230420_130951.webp)
 
 2. 在下面設定輸出影片的長寬。生圖的長寬比例應與原始影片一致。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230420_131855.webp)
+![](../../images/Screenshot_20230420_131855.webp)
 
 3. 最下面是單獨用ControlNet處理人物的選項，可以改善動作偵測的精度。
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230420_132520.webp)
+![](../../images/Screenshot_20230420_132520.webp)
 
 4. 點選右上角Generate，即會開始生成。成品位於主程式下的`/outputs/mov2mov-images`目錄。
 
-![](/posts/stable-diffusion-webui-manuals/images/2023-04-20-14h30m36s877.webp)
+![](../../images/2023-04-20-14h30m36s877.webp)

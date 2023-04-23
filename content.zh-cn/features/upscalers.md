@@ -51,6 +51,6 @@ CodeFormer脸部修复模型的权重
 
 切换至Extras页面，上传图片，选取放大2倍，点选下面的`Upscaler 1`中挑一个看起来顺眼的，其余维持预设，按`Generate`即会得到放大过的图片。
 
-![](/posts/stable-diffusion-webui-manuals/images/6s3J611.webp)
+![](../../../images/6s3J611.webp)
 
 旁边的Batch Process可以一次处理大量图片；Batch from Directory则是从特定文件夹输入放大图片。

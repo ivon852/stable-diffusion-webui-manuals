@@ -34,9 +34,9 @@ Ivon's Stable Diffusion WebUI User Manuals
 
 `_index.md`為該章封面與前言。Frontmatter裡面的`weight`為文章在左邊列表的順序。
 
-正體中文以外的語言，網址前面會多上語言代碼+雙層目錄。例如，文內引用`../extensions/localizations/`，則簡中的連結會變成`../../zh-cn/extensions/localizations/`
+不論何種語言，引用網址是一樣的，Hugo會自行判斷。
 
-圖片引用一律是`../../images/Screenshot_20230417_181020.webp`這樣。
+至於圖片引用，非正體中文的路徑一律是`../../../images/<圖片檔名>`，這樣不論前置域名為何皆能找到圖片。
 
 
 ## 3. 生成網頁
@@ -50,7 +50,7 @@ Ivon's Stable Diffusion WebUI User Manuals
 git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
 ```
 
-3. 修改`config.toml`，將`bashURL`後面的網址改成`/`。去掉`googleAnalytics`後面的追蹤代碼。至於`deploy_n.sh`這個指令稿是我自用的，用於部署到我的部落格。
+3. 修改`config.toml`，將`baseURL`後面的網址改成`example.com`。去掉`googleAnalytics`後面的追蹤代碼。至於`deploy_n.sh`這個指令稿是我自用的，用於部署到我的部落格。
 
 4. 預覽網頁
 ```bash

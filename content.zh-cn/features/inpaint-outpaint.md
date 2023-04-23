@@ -41,7 +41,7 @@ Only masked即外补绘制模式。
 
 1. 上传图片，点选图片，用鼠标将要替换的部份涂黑。
 
-![](/posts/stable-diffusion-webui-manuals/images/ZU9XkZU.webp)
+![](../../../images/ZU9XkZU.webp)
 
 或者也可以切换到Inpaint Upload页面，上传图片，再于下方Mask上传涂好遮罩的图片。
 
@@ -51,7 +51,7 @@ Only masked即外补绘制模式。
 
 4. 点选Generate绘图。
 
-![](/posts/stable-diffusion-webui-manuals/images/LIxlFVA.webp)
+![](../../../images/LIxlFVA.webp)
 
 若要切换为外补绘制：点选左下角的Mask mode，将`Inpaint masked`改成`Inpaint not masked`，这样AI就会改为填满没有涂黑的地方。
 
@@ -60,7 +60,7 @@ Only masked即外补绘制模式。
 
 切换到Batch页面
 
-![](/posts/stable-diffusion-webui-manuals/images/Screenshot_20230420_143750.webp)
+![](../../../images/Screenshot_20230420_143750.webp)
 
 第一个栏位输入要处理的图片路径，例如桌面的`Input`文件夹
 
