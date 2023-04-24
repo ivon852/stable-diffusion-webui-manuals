@@ -19,6 +19,6 @@ Stable Diffusion WebUI可以透過擴充功能將界面變成中文。
 
 由於SD WebUI的擴充功能發展太快，翻譯可能跟不上，建議另外安裝雙語對照[sd-webui-bilingual-localization](https://github.com/journey-ad/sd-webui-bilingual-localization)，同時顯示中文和英文的文字，這樣看教學時就不會找無按鈕了。
 
-啟用雙語擴充功能前，要到Settings - User interface - Localization設為None再重啟才會生效。
+啟用雙語擴充功能前，要到Settings → User interface → Localization設為None再重啟才會生效。
 
 ![](../../images/FHmnr50L.webp)
