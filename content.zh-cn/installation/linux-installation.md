@@ -68,7 +68,7 @@ conda create --name sdwebui python=3.10.6
 ```
 
 
-# 3. 复制Stable Diffusion WebUI储存库
+# 3. 复制Stable Diffusion WebUI仓库
 
 1. 将Stable Diffusion WebUI复制至使用者家目录
 ```bash
@@ -101,11 +101,11 @@ conda activate sdwebui
 
 若GPU VRAM小于等于4GB的话加入`COMMANDLINE_ARGS=--medvram --opt-split-attention`引数，防止`RuntimeError: CUDA Out of memory`错误。
 
-AMD显示卡需要另外加上` --precision full --no-half`引数，否则生成的图可能会一片漆黑。
+AMD显卡需要另外加上` --precision full --no-half`引数，否则生成的图可能会一片漆黑。
 
 额外加上`--listen`参数让其他电脑能以IP访问网页界面，`--share`则是产生一组Gradio网址。
 
-加上`--enable-insecure-extension-access`让你在网页界面直接装扩充功能。加上`--nowebui`则不会启动网页界面，单纯接收WebUI API之用。
+加上`--enable-insecure-extension-access`让你在网页界面直接装扩展。加上`--nowebui`则不会启动网页界面，单纯接收WebUI API之用。
 
 其余可用引数请见[命令列引数](../installation/command-line-arguments-and-settings/)
 

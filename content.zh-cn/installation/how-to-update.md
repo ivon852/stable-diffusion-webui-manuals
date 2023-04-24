@@ -3,7 +3,7 @@ title: "如何更新软件"
 weight: 10
 ---
 
-Stable Diffusion WebUI的专案源码托管在Github，目前「更新」是以`git pull`指令来操作。
+Stable Diffusion WebUI的项目源码托管在Github，目前「更新」是以`git pull`指令来操作。
 
 1. 在`stable-diffusion-webui`这个文件夹里面开启终端机
 

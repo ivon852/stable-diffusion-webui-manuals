@@ -3,9 +3,9 @@ title: "手部模型 Depth map library and poser"
 weight: 7
 ---
 
-- 扩充功能来源：[jexom/sd-webui-depth-lib](https://github.com/jexom/sd-webui-depth-lib)
+- 扩展来源：[jexom/sd-webui-depth-lib](https://github.com/jexom/sd-webui-depth-lib)
 
-此扩充功能加入手部模型，可配合PoseX的骨架使用，改善AI手部画不好的问题。
+此扩展加入手部模型，可配合PoseX的骨架使用，改善AI手部画不好的问题。
 
 于Extensions页面的Install from URL输入以下网址安装： `https://github.com/jexom/sd-webui-depth-lib`，重启WebUI。
 
@@ -31,4 +31,4 @@ weight: 7
 
 ![](../../../images/nvjQj43.webp)
 
-6. 点选Generate绘制，可看到图片按照方才制作的手和骨架绘制了。
+6. 点选Generate生成，可看到图片按照方才制作的手和骨架生成了。

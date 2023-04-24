@@ -1,9 +1,9 @@
 ---
-title: "用文生图 ＋ ControlNet ＋ Latent Couple绘制指定位置的多个人物"
+title: "用文生图 ＋ ControlNet ＋ Latent Couple生成指定位置的多个人物"
 weight: 8
 ---
 
-请先阅读[文生图用法](../features/text-to-image/)，并安装[ControlNet](../extensions/controlnet/)、[Latent Couple](../extensions/latent-couple/)、[PoseX](../extensions/posex/)扩充功能。
+请先阅读[文生图用法](../features/text-to-image/)，并安装[ControlNet](../extensions/controlnet/)、[Latent Couple](../extensions/latent-couple/)、[PoseX](../extensions/posex/)扩展。
 
 1. 于文生图的界面会看到Latent Couple
 
@@ -13,7 +13,7 @@ weight: 8
 
 ![](../../../images/MxZcaDu.webp)
 
-3. 用鼠标绘制色块。例如用红笔绘制一个人物，蓝笔绘制另一个人物。
+3. 用鼠标生成色块。例如用红笔生成一个人物，蓝笔生成另一个人物。
 
 ![](../../../images/1AeIBQm.webp)
 

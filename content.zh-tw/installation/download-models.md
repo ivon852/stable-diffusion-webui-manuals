@@ -3,11 +3,11 @@ title: "1.2. 下載模型"
 weight: 2
 ---
 
-存檔點模型(checkpoint，勿跟LoRA搞混)是AI算圖的重要依據，算圖用的模型可以安裝很多個。
+存檔點模型(checkpoint，勿跟LoRA搞混)是AI生圖的重要依據，算圖用的模型可以安裝很多個。
 
 Stable Diffusion WebUI在初次啟動時，若放模型的資料夾(`models/Stable-diffusion`)為空，則會自動下載原始版的Stable Diffusion v1.5模型。
 
-但是，不同人玩AI繪圖有不同的需求，以寫實風格為主的Stable Diffusion模型可能無法滿足所有人。因此你可以先下載自己想要使用的模型。
+但是，不同人玩AI生圖有不同的需求，以寫實風格為主的Stable Diffusion模型可能無法滿足所有人。因此你可以先下載自己想要使用的模型。
 
 這裡推薦一些不錯的模型。
 
@@ -31,11 +31,11 @@ Stable Diffusion WebUI在初次啟動時，若放模型的資料夾(`models/Stab
 
 ---
 
-[Chilloutmix](https://civitai.com/models/6424/chilloutmix)寫實風格的模型，適合畫出2.5次元，融合日韓真人與動漫風格的圖像。
+[Chilloutmix](https://civitai.com/models/6424/chilloutmix)：寫實風格的模型，適合畫出2.5次元，融合日韓真人與動漫風格的圖像。
 
-[Deliberate](https://civitai.com/models/4823/deliberate)基於SD-1.5模型，適合繪製精緻寫實風格的人物、動物、自然風景。
+[Deliberate](https://civitai.com/models/4823/deliberate)：基於SD-1.5模型，適合生成精緻寫實風格的人物、動物、自然風景。
 
-[Realistic Vision v1.4](https://civitai.com/models/4201/realistic-vision-v13)，寫實風人物與動物模型。
+[Realistic Vision v1.4](https://civitai.com/models/4201/realistic-vision-v13)：寫實風人物與動物模型。
 
 
 ## 動漫風模型
@@ -46,7 +46,7 @@ Stable Diffusion WebUI在初次啟動時，若放模型的資料夾(`models/Stab
 
 [Hentai Diffusion](https://github.com/Delcos/Hentai-Diffusion)適合畫動漫圖，模型已使用大量負向提示詞訓練過以排除不良結果，另提供embeddings方便繪圖時使用。
 
-[DreamShaper](https://civitai.com/models/4384/dreamshaper)是基於SD-1.5模型，繪製精細動漫人物與油畫風格的模型。
+[DreamShaper](https://civitai.com/models/4384/dreamshaper)是基於SD-1.5模型，生成精細動漫人物與油畫風格的模型。
 
 [OrangeMix3](https://huggingface.co/WarriorMama777/OrangeMixs)，混合多種風格的動漫繪圖模型，偏寫實。
 

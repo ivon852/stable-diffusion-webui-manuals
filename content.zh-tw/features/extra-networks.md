@@ -3,9 +3,9 @@ title: "2.5. 額外網路 Extra Networks"
 weight: 5
 ---
 
-除了根據需求切換ckpt模型外，也可以額外疊幾層網路(Extra networks)小模型來改善畫風，並改善繪製特定物件、角色的準確度。
+除了根據需求切換ckpt模型外，也可以額外疊幾層網路(Extra networks)小模型來改善畫風，並改善生成特定物件、角色的準確度。
 
-例如使用Anything模型繪圖，再搭配"Taiwan-doll-likeness LoRA"就能轉成真人風格而不用依賴許多提示詞，並且可以一次疊很多個，就像套多層濾鏡一般。
+例如使用Anything模型生圖，再搭配"Taiwan-doll-likeness LoRA"就能轉成真人風格而不用依賴許多提示詞，並且可以一次疊很多個，就像套多層濾鏡一般。
 
 ![](../../images/GJ7CJT5.webp)
 
@@ -35,11 +35,11 @@ LoRA放到`stable-diffusion-webui\models\Lora`。
 
 ![](../../images/GCgN6JA.webp)
 
-3. 接著再加上其他提示詞，繪圖即會有使用LoRA的風格。
+3. 接著再加上其他提示詞，生圖即會有使用LoRA的風格。
 
 ![](../../images/vKKJAST.webp)
 
-4. 如果畫出來的圖片太詭異，調整提示詞欄位每個LoRA後面的數字，控制權重。
+4. 如果生出來的圖片太詭異，調整提示詞欄位每個LoRA後面的數字，控制權重。
 
 ![](../../images/F371fSN.webp)
 

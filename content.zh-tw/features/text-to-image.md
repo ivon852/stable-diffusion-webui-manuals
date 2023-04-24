@@ -48,7 +48,7 @@ DDIM和PLMS是2021年隨Stable Diffusion v1發表的取樣方法。
 
 ## Restore faces 臉部修復
 
-使用臉部修復模型改善臉部繪製效果。預設使用CodeFormer，可在Settings切換為GFPGAN。
+使用臉部修復模型改善臉部生成效果。預設使用CodeFormer，可在Settings切換為GFPGAN。
 
 
 ## Tiling 平鋪
@@ -133,7 +133,7 @@ Stable Diffusion WebUI正上方可看到現在使用的是哪個模型。切換�
 
 ![](../../images/vUevujL.webp)
 
-3. 勾選左下角的臉部修復 (Restore faces)，改善臉部繪製效果。
+3. 勾選左下角的臉部修復 (Restore faces)，改善臉部生成效果。
 
 ![](../../images/4tYozfF.webp)
 

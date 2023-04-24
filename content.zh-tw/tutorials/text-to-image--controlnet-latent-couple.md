@@ -1,5 +1,5 @@
 ---
-title: "用文生圖 ＋ ControlNet ＋ Latent Couple繪製指定位置的多個人物"
+title: "用文生圖 ＋ ControlNet ＋ Latent Couple生成指定位置的多個人物"
 weight: 8
 ---
 
@@ -13,7 +13,7 @@ weight: 8
 
 ![](../../images/MxZcaDu.webp)
 
-3. 用滑鼠繪製色塊。例如用紅筆繪製一個人物，藍筆繪製另一個人物。
+3. 用滑鼠生成色塊。例如用紅筆生成一個人物，藍筆生成另一個人物。
 
 ![](../../images/1AeIBQm.webp)
 
@@ -25,6 +25,6 @@ weight: 8
 
 ![](../../images/4w0YBc8.webp)
 
-6. 搭配事先用PoseX拉好的骨架，再點選Generate開始繪圖。
+6. 搭配事先用PoseX拉好的骨架，再點選Generate開始生圖。
 
 ![](../../images/bm9qPcV.png)

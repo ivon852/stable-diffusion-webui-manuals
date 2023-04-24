@@ -1,11 +1,11 @@
 ---
-title: "绘制多个人物 Latent Couple"
+title: "生成多个人物 Latent Couple"
 weight: 8
 ---
 
-- 扩充功能来源：[ashen-sensored/stable-diffusion-webui-two-shot](https://github.com/ashen-sensored/stable-diffusion-webui-two-shot)
+- 扩展来源：[ashen-sensored/stable-diffusion-webui-two-shot](https://github.com/ashen-sensored/stable-diffusion-webui-two-shot)
 
-Latent Couple会分割绘图时的提示词，这样就可以绘制多重人物/物件，并精确指定位置颜色了。
+Latent Couple会分割绘图时的提示词，这样就可以生成多重人物/物件，并精确指定位置颜色了。
 
 像是先用PoseX拉好骨架，再使用Latent Couple标出人物的概略位置。
 

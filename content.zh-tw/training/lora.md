@@ -156,6 +156,6 @@ accelerate launch main.py --load_json_path "/home/ivon/trainingconfig.json"
 
 ![](../../images/ix3dK3M.avif)
 
-3. 再加上訓練時使用的提示詞，即可繪製出使用LoRA風格的人物。
+3. 再加上訓練時使用的提示詞，即可生成使用LoRA風格的人物。
 
 ![](../../images/mWhp5Gv.avif)

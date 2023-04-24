@@ -49,7 +49,7 @@ Only masked即外補繪製模式。
 
 3. 左下角的`Masked content`有幾個選項：`fill`即為填充新內容，`original`則是在填充內容的時候參考原圖黑色底下的內容。
 
-4. 點選Generate繪圖。
+4. 點選Generate生圖。
 
 ![](../../images/LIxlFVA.webp)
 

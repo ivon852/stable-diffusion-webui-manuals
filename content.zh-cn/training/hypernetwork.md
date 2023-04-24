@@ -41,7 +41,7 @@ HyperNetwork我是使用Anything当基础模型来训练。
 
 # 2. HyperNetwork模型使用方式
 
-1. 于SD WebUI的绘图界面，点选右上角`Show Extra Networks`
+1. 于SD WebUI的生图界面，点选右上角`Show Extra Networks`
 
 ![](../../../images/lLGiqZ6.avif)
 

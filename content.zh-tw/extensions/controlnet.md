@@ -53,14 +53,14 @@ Preprocessor是先將上傳的圖片處理過一輪，例如`Scribbles`會將彩
 
 ![](../../images/lSOMjfP.webp)
 
-4. 以Scribbles為例，選取後點選右上角Generate即會繪製出結果，並附上偵測到的線條。
+4. 以Scribbles為例，選取後點選右上角Generate即會生成出結果，並附上偵測到的線條。
 
 ![](../../images/A3pecmu.webp)
 
 
 # 啟用Multi ControlNet
 
-預設是使用一個ControlNet，但是疊加多個有助於生成更好的圖片。比方說同時使用Open Pose和Depth繪製人體，並防止手畫歪。
+預設是使用一個ControlNet，但是疊加多個有助於生成更好的圖片。比方說同時使用Open Pose和Depth生成人體，並防止手畫歪。
 
 要啟用Multi ControlNet，請進入Settings頁面設定要啟用的ControlNet數量。
 

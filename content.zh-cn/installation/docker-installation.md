@@ -5,17 +5,17 @@ weight: 5
 
 Docker容器技术可以方便在多个平台部署Stable Diffusion WebUI。
 
-以Ubuntu 22.04为例，采用AbdBarho提供的Dockerfile，仅支援Nvidia显卡。
+以Ubuntu 22.04为例，采用AbdBarho提供的Dockerfile，仅支持Nvidia显卡。
 
 1. 安装Git、[Docker](https://docs.docker.com/engine/)，并确认已安装[Nvidia驱动、CUDA、NVIDIA Container Toolkit](https://ivonblog.com/posts/ubuntu-install-nvidia-drivers/)
 
-2. 复制AbdBarho的储存库
+2. 复制AbdBarho的仓库
 ```bash
 git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git
 cd stable-diffusion-webui-docker
 ```
 
-3. 安装依赖，会自动下载Stable Diffusion v1.5的模型。
+3. 安装依赖，会自动下载Stable Diffusion v1.5的模型
 ```bash
 sudo docker compose --profile download up --build
 ```
@@ -35,7 +35,7 @@ sudo docker compose --profile auto up --build
 
 生图的输出文件夹则是`data/output`。
 
-扩充功能请从网页界面装，或是在`data`新建`extensions`目录再于该处放入扩充功能的目录。
+扩展请从网页界面装，或是在`data`新建`extensions`目录再于该处放入扩展的目录。
 
 若要修改WebUI启动时的[命令列引数](..installation/command-line-arguments-and-settings/)，编辑此专案目录下的`docker-compose.yml`，修改`CLI_ARGS`这一行：
 ```yaml

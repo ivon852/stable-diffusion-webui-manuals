@@ -3,13 +3,13 @@ title: "2.5. 额外网络 Extra Networks"
 weight: 5
 ---
 
-除了根据需求切换ckpt模型外，也可以额外叠几层网路(Extra networks)小模型来改善画风，并改善绘制特定物件、角色的准确度。
+除了根据需求切换ckpt模型外，也可以额外叠几层網絡(Extra networks)小模型来改善画风，并改善生成特定物件、角色的准确度。
 
-例如使用Anything模型绘图，再搭配"Taiwan-doll-likeness LoRA"就能转成真人风格而不用依赖许多提示词，并且可以一次叠很多个，就像套多层滤镜一般。
+例如使用Anything模型生图，再搭配"Taiwan-doll-likeness LoRA"就能转成真人风格而不用依赖许多提示词，并且可以一次叠很多个，就像套多层滤镜一般。
 
 ![](../../../images/GJ7CJT5.webp)
 
-跟ckpt大模型比起来，这类模型文件都很小，主要用来微调现有的模型。小模型有嵌入(Embedding)、超网络(HyperNetwork)、LoRA三种，副档名以`.pt`或`.safetensors`结尾，目前最热门的为"LoRA"。更棒的是因为文件小，自行[训练喜欢的人物模型](../training/)成本并不高。
+跟ckpt大模型比起来，这类模型文件都很小，主要用来微调现有的模型。小模型有嵌入(Embedding)、超网络(HyperNetwork)、LoRA三种，扩展名以`.pt`或`.safetensors`结尾，目前最热门的为"LoRA"。更棒的是因为文件小，自行[训练喜欢的人物模型](../training/)成本并不高。
 
 
 # 安装小模型

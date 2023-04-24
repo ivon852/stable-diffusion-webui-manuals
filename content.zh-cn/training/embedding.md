@@ -36,18 +36,18 @@ Anything这类基于NovelAI制作的模型不适合拿来练Embedding，成品�
 
 <img src=../../../images/7mBAcYm.avif width=300>
 
-9. 例如觉得9500步的不错，那就将该pt文件从里面挑出，将其放到SD WebUI程式目录下的`embeddings`。
+9. 例如觉得9500步的不错，那就将该pt文件从里面挑出，将其放到SD WebUI程序目录下的`embeddings`。
 
 ![](../../../images/ts3gqY7.avif)
 
 
 # 2. Embedding模型使用方式
 
-1. 于SD WebUI的绘图界面，点选右上角`Show Extra Networks`
+1. 于SD WebUI的生图界面，点选右上角`Show Extra Networks`
 
 ![](../../../images/wgXGW1a.avif)
 
-2. 接着选取要使用的embedding，点选将其加入提示词栏位。 Embedding只能配合训练时使用的模型来算图。
+2. 接着选取要使用的embedding，点选将其加入提示词栏位。 Embedding只能配合训练时使用的模型来生图。
 
 ![](../../../images/vRqzVQp.avif)
 

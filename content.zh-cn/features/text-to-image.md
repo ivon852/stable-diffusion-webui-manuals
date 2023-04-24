@@ -11,7 +11,7 @@ weight: 2
 
 其余SD WebUI的功能用法大抵都按照此逻辑设计，有些参数是通用的。
 
-需要中文界面的可以先装[中文/双语扩充功能](../extensions/localizations/)。
+需要中文界面的可以先装[中文/双语扩展](../extensions/localizations/)。
 
 
 # 参数解说
@@ -48,7 +48,7 @@ DDIM和PLMS是2021年随Stable Diffusion v1发表的采样方法。
 
 ## Restore faces 脸部修复
 
-使用脸部修复模型改善脸部绘制效果。预设使用CodeFormer，可在Settings切换为GFPGAN。
+使用脸部修复模型改善脸部生成效果。预设使用CodeFormer，可在Settings切换为GFPGAN。
 
 
 ## Tiling 平铺
@@ -133,7 +133,7 @@ Stable Diffusion WebUI正上方可看到现在使用的是哪个模型。切换�
 
 ![](../../../images/vUevujL.webp)
 
-3. 勾选左下角的脸部修复 (Restore faces)，改善脸部绘制效果。
+3. 勾选左下角的脸部修复 (Restore faces)，改善脸部生成效果。
 
 ![](../../../images/4tYozfF.webp)
 

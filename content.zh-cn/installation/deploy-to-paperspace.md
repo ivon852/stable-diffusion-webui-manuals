@@ -33,9 +33,9 @@ Paperspace是一间位于美国的云机器学习服务供应商，提供免费G
 6. 使用完毕后记得按左上角的Stop Machine关机。
 
 
-此笔记本只有安装最小功能。扩充功能和额外模型要自行修正笔记本程序下载。
+此笔记本只有安装最小功能。扩展和额外模型要自行修正笔记本程序下载。
 
-下载自订模型可以加在复制Stable Diffusion WebUI的储存库之后
+下载自订模型可以加在复制Stable Diffusion WebUI的仓库之后
 ```python
 !git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 !wget -nc -P stable-diffusion-webui/models/Stable-diffusion https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors

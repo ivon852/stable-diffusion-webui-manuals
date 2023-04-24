@@ -29,6 +29,7 @@ weight: 2
 - fine-tune: 微調
 - float16 (fp16): 半精度浮點數
 - float32 (fp32): 單精度浮點數
+- generate：生成圖片
 - GFPGAN: 騰訊於2021年發表的臉部修復模型。
 - hypernetwork: 超網路
 - image to image: 圖生圖

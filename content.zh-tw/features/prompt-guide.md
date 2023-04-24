@@ -11,24 +11,24 @@ weight: 1
 
 我們來看提示詞要怎麼寫，以文生圖模式的提示詞為主。若要邊看邊練習的話，可以搭配[文生圖用法](../features/text-to-image)操作。
 
-不論用哪個模式繪圖，Stable Diffusion都是吃「正向」與「負向」提示詞 (prompt，通俗的講法叫關鍵字、咒語)，並且要用英文輸入。
+不論用哪個模式生圖，Stable Diffusion都是吃「正向」與「負向」提示詞 (prompt，通俗的講法叫關鍵字、咒語)，並且要用英文輸入。
 
 你會在Stable Diffusion WebUI看到以下框框：
 
 ![](../../images/AAG54w1.webp)
 
-第一個框框是提示詞 (Prompt) 告訴AI要畫哪些東西。第二個框框是負向提示詞 (Negative prompt) 告訴AI不要畫哪些東西。
+第一個框框是提示詞 (Prompt) 告訴AI要生成哪些東西。第二個框框是負向提示詞 (Negative prompt) 告訴AI不要生成哪些東西。
 
-首先要注意的是，AI繪圖目前還沒有涵蓋全宇宙所有圖片的模型，所以除了提示詞外，使用的生圖模型亦會大大的影響繪製結果。
+首先要注意的是，AI生圖目前還沒有涵蓋全宇宙所有圖片的模型，所以除了提示詞外，使用的生圖模型亦會大大的影響生成結果。
 
 譬如，用寫實風格的`Stable Diffusion`模型畫動漫人物，效果絕對會比使用`Anything`差的許多；又或者，想畫出宛如真人coser的圖，用`ChilloutMix`鐵定比用只強調寫實的`RealisticVision`要來的合適。因此在學會下提示詞以前，要先按照用途挑選適合的模型。
 
 
 # 1.  提示詞 Prompts
 
-這一節使用HD-v22的模型做示範，因此繪製出來都會是動漫風格。
+這一節使用HD-v22的模型做示範，因此生成出來都會是動漫風格。
 
-1. 下提示詞時，利用人事時地物的概念，寫個英文句子描述圖內場景，盡量將想看到的提示詞排在前面。例如在正向提示詞的欄位填入「一個亞洲女孩在沙灘上」，負向提示詞留空
+1. 下提示詞時，利用人事時地物的概念，寫個英文句子描述圖內場景，盡量將想看到的提示詞排在前面。例如在提示詞的欄位填入「一個亞洲女孩在沙灘上」，負向提示詞留空
 ```lisp
 an asian girl on the beach
 ```
@@ -43,7 +43,7 @@ an asian girl on the beach
 1girl, asian, beach, ocean
 ```
 
-再算一次，但是結果變了？沒錯，即使提示詞相近，AI繪圖每次算圖結果都是隨機的。要維持上一次的結果並微調，你得保留每次算圖的種子碼(Seed，SD WebUI界面左下角，亦會寫在檔名上)。
+再算一次，但是結果變了？沒錯，即使提示詞相近，AI繪圖每次生圖結果都是隨機的。要維持上一次的結果並微調，你得保留每次算圖的種子碼(Seed，SD WebUI界面左下角，亦會寫在檔名上)。
 
 ![](../../images/example2.png)
 
@@ -55,7 +55,7 @@ an asian girl on the beach
 
 ![](../../images/example3.png)
 
-呼，好像一口氣加太多細節了呢，詳述細節的好處是避免AI亂畫，但也限制了其作畫創意。所以下面的例子會縮短，有時候讓AI隨機抽獎也不壞呀～
+呼，好像一口氣加太多細節了呢，詳述細節的好處是避免AI亂生成，但也限制了其作畫創意。所以下面的例子會縮短，有時候讓AI隨機抽獎也不壞呀～
 
 
 4. 要改變風格，可以在提示詞加入「風格」的提示詞。這方面的提示詞有：相片(photshop)、3D建模(3d model)、裝飾藝術(art deco)、石像(stone sculpture)等風格。
@@ -75,11 +75,11 @@ a stone sculpture of 1girl, asian, blue eyes, beach, ocean
 artwork by Alfons Maria Mucha, masterpiece, 1girl, asian, blue eyes, beach, ocean
 ```
 
-繪圖的結果就會變得像是慕夏的作品。順帶一提`masterpiece`這個提示詞還蠻萬用的，可以讓作品維持一定水準。
+生圖的結果就會變得像是慕夏的作品。順帶一提`masterpiece`這個提示詞還蠻萬用的，可以讓作品維持一定水準。
 
 ![](../../images/example5.png)
 
-6. 當然還可以畫特定動漫人物的「二創」，只要將名字和作品名稱打上去就可以了。有名的動漫角色只要出現名字，不用特別指定身體特徵或就會畫出原作風格了，例如指定《新世紀福音戰士》的惣流·明日香·蘭格雷：
+6. 當然還可以畫特定動漫人物的「二創」，只要將名字和作品名稱打上去就可以了。有名的動漫角色只要出現名字，不用特別指定身體特徵或就會生成原作風格了，例如指定《新世紀福音戰士》的惣流·明日香·蘭格雷：
 ```lisp
 ; 參考翻譯：新世紀福音戰士的明日香，大師級作品，一個女孩，沙灘，海洋
 asuka_langley_souryuu from neon_genesis_evangelion, masterpiece, 1girl, beach, ocean
@@ -88,11 +88,11 @@ asuka_langley_souryuu from neon_genesis_evangelion, masterpiece, 1girl, beach, o
 ![](../../images/example6.png)
 
 
-再次提醒，在下提示詞的時候，繪製圖片使用的模型也需納入考量。譬如想要繪製特定動漫人物，去Danbooru找到了英文姓名，加上提示詞，但你卻用畫真人的Stable Diffusion去算，則AI可能根本就不會認得你說的角色是誰，反之亦然。Danbooru的標籤風格跟一般圖片的描述還是有差距的。
+再次提醒，在下提示詞的時候，生成圖片使用的模型也需納入考量。譬如想要生成特定動漫人物，去Danbooru找到了英文姓名，加上提示詞，但你卻用畫真人的Stable Diffusion去算，則AI可能根本就不會認得你說的角色是誰，反之亦然。Danbooru的標籤風格跟一般圖片的描述還是有差距的。
 
 除非日後有蒐羅全部網路圖片的超大模型出現，否則下提示詞須配合模型種類來決定。
 
-如果AI怎樣都繪製不出你要的風格或人物，請考慮換個模型，或是[自行訓練模型](../training/)。
+如果AI怎樣都生成不出你要的風格或人物，請考慮換個模型，或是[自行訓練模型](../training/)。
 
 
 # 2. 負向提示詞 Negative Prompts
@@ -119,9 +119,9 @@ nsfw, weapon, blood, guro, lowres, bad anatomy, text, error, extra digit, fewer 
 
 ##  關注度括號 Attention/emphasis
 
-控制關注度的符號，增加算圖時對該提示詞的關注度(attention)。簡單來說，括號就是你想強調的重點元素，括號越多，繪製的結果越會符合括號裡的提示詞。
+控制關注度的符號，增加算圖時對該提示詞的關注度(attention)。簡單來說，括號就是你想強調的重點元素，括號越多，生成的結果越會符合括號裡的提示詞。
 
-SD WebUI使用小括號控制關注度： `( )` 小括號層次越多權重越高(不加小括號為1倍，每加一層小括號乘以1.1倍)。例如，強調「藍眼睛」，繪製的結果就更高機率是藍眼睛人物
+SD WebUI使用小括號控制關注度： `( )` 小括號層次越多權重越高(不加小括號為1倍，每加一層小括號乘以1.1倍)。例如，強調「藍眼睛」，生成的結果就更高機率是藍眼睛人物
 ```lisp
 asian, woman, ((blue eyes)), beach, ocean
 ```
@@ -158,9 +158,9 @@ asian, woman, [blue eyes|red eyes|black eyes], beach, ocean
 
 ## 可組合性擴散 Composable Diffusion
 
-此語法讓AI依照權重繪製二個不同的物件。
+此語法讓AI依照權重生成二個不同的物件。
 
-例如繪製橘子與蘋果，中間用大寫的`AND`連接
+例如生成橘子與蘋果，中間用大寫的`AND`連接
 ```lisp
 orange AND apple
 ```
@@ -178,7 +178,7 @@ orange :1.5 AND apple :2.5
 這裡提供一些懶人包。負向提示詞有些是通用的。
 
 
-## 繪製可愛的狗勾
+## 生成可愛的狗勾
 
 讓我們試著畫幾隻柯基犬在草地上奔跑。
 
@@ -197,7 +197,7 @@ lowres, bad anatomy, text, error, extra digit, fewer digits, cropped, worst qual
 ![](../../images/example-dog.png)
 
 
-## 繪製高科技未來城市
+## 生成高科技未來城市
 
 建議使用模型：Stable Diffusion、Realistic Vision
 
@@ -214,7 +214,7 @@ lowres, bad anatomy, text, error, extra digit, fewer digits, cropped, worst qual
 ![](../../images/example-city.png)
 
 
-## 繪製一台特斯拉車子
+## 生成一台特斯拉車子
 
 建議使用模型：Stable Diffusion、Realistic Vision
 
@@ -231,7 +231,7 @@ lowres, bad anatomy, text, error, extra digit, fewer digits, cropped, worst qual
 ![](../../images/example-car.png)
 
 
-## 繪製動漫美少女
+## 生成動漫美少女
 
 建議使用模型：Anything、Hentai Diffusion
 
@@ -250,7 +250,7 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
 ![](../../images/example-anime.png)
 
 
-## 繪製日韓風真人女孩
+## 生成日韓風真人女孩
 
 建議使用模型：ChilloutMix、Perfect World，並適時使用Japanese Doll的LoRA。
 
@@ -272,7 +272,7 @@ nude, lowres,blurry,simple background,jpeg artifacts,bad-artist,bad shadow,compr
 # 5. 值得參考的提示詞網站
 
 
-若使用的是SD模型，想繪製真人，請看[Voldy](https://rentry.org/artists_sd-v1-4)整理的歷史上有名的藝術家。
+若使用的是SD模型，想生成真人，請看[Voldy](https://rentry.org/artists_sd-v1-4)整理的歷史上有名的藝術家。
 
 若使用動漫風的模型請看[Danbooru](https://danbooru.donmai.us)圖庫的標籤決定要下哪些提示詞。
 

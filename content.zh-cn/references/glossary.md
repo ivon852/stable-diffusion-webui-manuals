@@ -20,7 +20,7 @@ weight: 2
 - dataset: 资料集
 - denoising: 去噪，降噪
 - diffusion: 扩散
-- Denoising Diffusion Implicit Models (DDIM): 去噪扩散隐式模型，2022年由Jiaming Song等人发表的取样方法。
+- Denoising Diffusion Implicit Models (DDIM): 去噪扩散隐式模型，2022年由Jiaming Song等人发表的采样方法。
 - Dreambooth: Google Research和波士顿大学于2022年发表的深度学习模型，用于调整现有的文生图模型。
 - embedding: 嵌入
 - epoch: 时期
@@ -29,6 +29,7 @@ weight: 2
 - fine-tune: 微调
 - float16 (fp16): 半精度浮点数
 - float32 (fp32): 单精度浮点数
+- generate：生成图片
 - GFPGAN: 腾讯于2021年发表的脸部修复模型。
 - hypernetwork: 超网络
 - image to image: 图生图

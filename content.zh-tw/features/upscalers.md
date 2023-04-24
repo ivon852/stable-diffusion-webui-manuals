@@ -5,7 +5,7 @@ weight: 7
 
 Stable Difussion WebUI內建AI放大技術，像是ESRGAN，比Waifu2x更強。
 
-如果用預設的512x512解析度就算出不錯的圖，可以將圖片直接丟到Extras放大。
+如果用預設的512x512解析度就生出不錯的圖，可以將圖片直接丟到Extras放大。
 
 
 # 參數解說

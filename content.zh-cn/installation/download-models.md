@@ -3,11 +3,11 @@ title: "1.2. 下载模型"
 weight: 2
 ---
 
-存档点模型(checkpoint，勿跟LoRA搞混)是AI算图的重要依据，算图用的模型可以安装很多个。
+存档点模型(checkpoint，勿跟LoRA搞混)是AI生图的重要依据，生图用的模型可以安装很多个。
 
 Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stable-diffusion`)为空，则会自动下载原始版的Stable Diffusion v1.5模型。
 
-但是，不同人玩AI绘图有不同的需求，以写实风格为主的Stable Diffusion模型可能无法满足所有人。因此你可以先下载自己想要使用的模型。
+但是，不同人玩AI生图有不同的需求，以写实风格为主的Stable Diffusion模型可能无法满足所有人。因此你可以先下载自己想要使用的模型。
 
 这里推荐一些不错的模型。
 
@@ -31,11 +31,11 @@ Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stab
 
 ---
 
-[Chilloutmix](https://civitai.com/models/6424/chilloutmix)写实风格的模型，适合画出2.5次元，融合日韩真人与动漫风格的图像。
+[Chilloutmix](https://civitai.com/models/6424/chilloutmix)：写实风格的模型，适合画出2.5次元，融合日韩真人与动漫风格的图像。
 
-[Deliberate](https://civitai.com/models/4823/deliberate)基于SD-1.5模型，适合绘制精致写实风格的人物、动物、自然风景。
+[Deliberate](https://civitai.com/models/4823/deliberate)：基于SD-1.5模型，适合生成精致写实风格的人物、动物、自然风景。
 
-[Realistic Vision v1.4](https://civitai.com/models/4201/realistic-vision-v13)，写实风人物与动物模型。
+[Realistic Vision v1.4](https://civitai.com/models/4201/realistic-vision-v13)：写实风人物与动物模型。
 
 
 ## 动漫风模型
@@ -46,7 +46,7 @@ Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stab
 
 [Hentai Diffusion](https://github.com/Delcos/Hentai-Diffusion)适合画动漫图，模型已使用大量负向提示词训练过以排除不良结果，另提供embeddings方便绘图时使用。
 
-[DreamShaper](https://civitai.com/models/4384/dreamshaper)是基于SD-1.5模型，绘制精细动漫人物与油画风格的模型。
+[DreamShaper](https://civitai.com/models/4384/dreamshaper)是基于SD-1.5模型，生成精细动漫人物与油画风格的模型。
 
 [OrangeMix3](https://huggingface.co/WarriorMama777/OrangeMixs)，混合多种风格的动漫绘图模型，偏写实。
 
@@ -55,7 +55,7 @@ Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stab
 
 通常只需要下载模型文件即可。
 
-HuggingFace为储存库 → Files and versions，选择下载副档名为`.ckpt`或`.safetensors`的模型。后者因不具备运行代码的能力因此较前者安全。至于`-pruned`代表模型有删减过大小。
+HuggingFace为仓库 → Files and versions，选择下载副档名为`.ckpt`或`.safetensors`的模型。后者因不具备运行代码的能力因此较前者安全。至于`-pruned`代表模型有删减过大小。
 
 <img src=../../../images/RvclOoa.webp alt=""  width=500 loading="lazy">
 
@@ -70,4 +70,4 @@ wget -nc -P stable-diffusion-webui/models/Stable-diffusion https://huggingface.c
 
 ## 3. 模型放置位置
 
-不论是.ckpt还是.safetensors模型，都是在复制stable-diffusion-webui的储存库后，放到軟件目录下的`/models/Stable-diffusion`资料夹。
+不论是.ckpt还是.safetensors模型，都是在复制stable-diffusion-webui的仓库后，放到軟件目录下的`/models/Stable-diffusion`文件夹。

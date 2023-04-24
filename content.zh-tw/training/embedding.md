@@ -42,7 +42,7 @@ Anything這類基於NovelAI製作的模型不適合拿來練Embedding，成品�
 
 # 2. Embedding模型使用方式
 
-1. 於SD WebUI的繪圖界面，點選右上角`Show Extra Networks`
+1. 於SD WebUI的生圖界面，點選右上角`Show Extra Networks`
 
 ![](../../images/wgXGW1a.avif)
 

@@ -57,11 +57,6 @@ enableGitInfo = true
   url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
   weight = 20
 
-[[menu.after]]
-  name = "ATOMATIC1111的Stable Diffsion WebUI儲存庫"
-  url = "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
-  weight = 20
-
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.

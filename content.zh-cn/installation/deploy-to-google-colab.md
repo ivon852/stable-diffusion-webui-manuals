@@ -8,7 +8,7 @@ Google Colab是Google Research推出的免费线上服务，可用服务器等�
 |❗ 国内无法直连Google Colab ❗|
 |-----------------------------------------|
 
-|❗2023年4月21日，Google Colab员工在[Twitter](https://twitter.com/thechrisperry/status/1649189902079381505)宣布，需要付费购买Pro版才可以跑stable-diffusion-webui。免费版用户一侦测到`stable-diffusion-webui`字串就会被封锁，出现`You may be executing code that is disallowed, and this may restrict your ability to use Colab in the future.`的警告讯息。 ❗|
+|❗2023年4月21日，Google Colab员工在[Twitter](https://twitter.com/thechrisperry/status/1649189902079381505)宣布，需要付费购买Pro版才可以跑stable-diffusion-webui。免费版用户一侦测到`stable-diffusion-webui`字串就会被封锁，出现`You may be executing code that is disallowed, and this may restrict your ability to use Colab in the future.`的警告信息。 ❗|
 |-----------------------------------------|
 
 
@@ -18,7 +18,7 @@ Google Colabu已有很多现成的Stable Diffusion WebUI笔记本可以直接用
 
 我的想法是将SD WebUI的程序和模型文件放到安装至云盘。优点是装好后，日后要用就能二分钟内启动，而不用等下载模型。
 
-缺点就是很占云盘空间，大概需要10GB左右容量。 15GB免费容量只够装一个存档点模型和少许LoRA，再勉强塞个ControlNet的扩充功能。因此我的代码只下载必要的文件，扩充功能需要再另外装。
+缺点就是很占云盘空间，大概需要10GB左右容量。 15GB免费容量只够装一个存档点模型和少许LoRA，再勉强塞个ControlNet的扩展。因此我的代码只下载必要的文件，扩展需要再另外装。
 
 ![](../../../images/Screenshot_20230403_132547.webp)
 
@@ -44,9 +44,9 @@ drive.mount('/content/drive')
 !pip install -q triton==2.0.0
 ```
 
-4. 复制SD WebUI的储存库到Google云盘的`sd-webui-files`文件夹
+4. 复制SD WebUI的仓库到Google云盘的`sd-webui-files`文件夹
 ```python
-# 复制SD WebUI上游的储存库
+# 复制SD WebUI上游的仓库
 !git clone --depth=1 https://github.com/AUTOMATIC1111/stable-diffusion-webui.git /content/drive/MyDrive/sd-webui-files/stable-diffusion-webui
 ```
 
@@ -55,9 +55,9 @@ drive.mount('/content/drive')
 !wget -nc -P /content/drive/MyDrive/sd-webui-files/stable-diffusion-webui/models/Stable-diffusion https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors
 ```
 
-6. 接着修正储存库版本错误
+6. 接着修正仓库版本错误
 ```bash
-# 防止其他储存库造成错误
+# 防止其他仓库造成错误
 %cd /content/drive/MyDrive/sd-webui-files/stable-diffusion-webui/
 !git reset --hard
 !git pull
@@ -99,7 +99,7 @@ drive.mount('/content/drive')
 
 ![](../../../images/Screenshot_20230403_132014.webp)
 
-11. 接下来的用法就跟装在[自己电脑的SD WebUI](../features/)一样了，亦可以从网页界面安装[扩充功能](../extensions/)。
+11. 接下来的用法就跟装在[自己电脑的SD WebUI](../features/)一样了，亦可以从网页界面安装[扩展](../extensions/)。
 
 ![](../../../images/Screenshot_20230403_132314.webp)
 
@@ -118,11 +118,11 @@ drive.mount('/content/drive')
 !python launch.py --share --xformers --enable-insecure-extension-access --theme light
 ```
 
-`stable-diffusion-webui`会安装到Google云盘的`sd-webui-files`文件夹下面。想新增模型或扩充功能，往Google云盘文件夹的对应文件夹上传文件就可以了。
+`stable-diffusion-webui`会安装到Google云盘的`sd-webui-files`文件夹下面。想新增模型或扩展，往Google云盘文件夹的对应文件夹上传文件就可以了。
 
 `stable-diffusion-webui`下面有几个重要的文件夹：
 
-- extensions：放扩充功能的文件夹
+- extensions：放扩展的文件夹
 - models/stable-duffusion：放存档点模型
 - models/Lora：放LoRA模型
 - outputs：生图输出的文件夹

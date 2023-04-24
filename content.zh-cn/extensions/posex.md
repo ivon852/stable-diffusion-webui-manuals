@@ -3,13 +3,13 @@ title: "骨架人偶 PoseX"
 weight: 6
 ---
 
-- 扩充功能来源：[hnmr293/posex](https://github.com/hnmr293/posex)
+- 扩展来源：[hnmr293/posex](https://github.com/hnmr293/posex)
 
-＊需要先安装ControlNet才能使用这个扩充功能。
+＊需要先安装ControlNet才能使用这个扩展。
 
-PoseX是可以在Stable Diffuison WebUI直接拉人物骨架，再配合ControlNet画出姿势的扩充功能。
+PoseX是可以在Stable Diffuison WebUI直接拉人物骨架，再配合ControlNet画出姿势的扩展。
 
-类似的扩充功能为[OpenPose Editor](https://github.com/fkunn1326/openpose-editor)，差别在于PoseX可以旋转放大。
+类似的扩展为[OpenPose Editor](https://github.com/fkunn1326/openpose-editor)，差别在于PoseX可以旋转放大。
 
 1. 切换至Extensions页面，点选Install From URL，URL输入`https://github.com/hnmr293/posex.git`，按下Install。接着重启WebUI。
 
@@ -27,6 +27,6 @@ PoseX是可以在Stable Diffuison WebUI直接拉人物骨架，再配合ControlN
 
 ![](../../../images/Dy2Xpac.webp)
 
-5. 填入正负向提示词，即会按照PoseX的姿势来绘制图片。
+5. 填入正负向提示词，即会按照PoseX的姿势来生成图片。
 
 ![](../../../images/iCILLPO.webp)

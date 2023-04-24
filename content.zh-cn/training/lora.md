@@ -4,9 +4,9 @@ weight: 5
 ---
 
 
-LoRA (Low-rank adaptation)是用来微调大型模型的技术，其生成的模型训练时间短，档案更小。
+LoRA (Low-rank adaptation)是用来微调大型模型的技术，其生成的模型训练时间短，文件更小。
 
-DreamBooth内含LoRA，可作为[SD WebUI的扩充功能](https://github.com/d8ahazard/sd_dreambooth_extension)安装。
+DreamBooth内含LoRA，可作为[SD WebUI的扩展](https://github.com/d8ahazard/sd_dreambooth_extension)安装。
 
 本机训练还可以用[LoRA_Easy_Training_Scripts](https://github.com/derrian-distro/LoRA_Easy_Training_Scripts)，支持Linux和Windows系统。
 
@@ -23,7 +23,7 @@ conda create --name loratraining python=3.10.6
 conda activate loratraining
 ```
 
-2. 复制储存库
+2. 复制仓库
 ```bash
 git clone https://github.com/derrian-distro/LoRA_Easy_Training_Scripts.git
 cd LoRA_Easy_Training_Scripts
@@ -138,7 +138,7 @@ export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
-2. 输入以下指令，载入json设定档。 `libnvinfer.so.7: cannot open shared object file`的警告可以暂时忽略。
+2. 输入以下指令，载入json设定文件。 `libnvinfer.so.7: cannot open shared object file`的警告可以暂时忽略。
 ```bash
 accelerate launch main.py --load_json_path "/home/ivon/trainingconfig.json"
 ```
@@ -148,7 +148,7 @@ accelerate launch main.py --load_json_path "/home/ivon/trainingconfig.json"
 
 # 3. LoRA模型使用方式
 
-1. 点选SD WebUI右上角，Show extra networks
+1. 点选SD WebUI生图界面右上角，Show extra networks
 
 ![](../../../images/lLGiqZ6.avif)
 
@@ -156,6 +156,6 @@ accelerate launch main.py --load_json_path "/home/ivon/trainingconfig.json"
 
 ![](../../../images/ix3dK3M.avif)
 
-3. 再加上训练时使用的提示词，即可绘制出使用LoRA风格的人物。
+3. 再加上训练时使用的提示词，即可生成出使用LoRA风格的人物。
 
 ![](../../../images/mWhp5Gv.avif)

@@ -13,7 +13,7 @@ weight: 1
 - [Stable Diffusion Art - tutorials, prompts, resources](https://stable-diffusion-art.com)
 - [Rombach, R., Blattmann, A., Lorenz, D., Esser, P., & Ommer, B. (2022). High-resolution image synthesis with latent diffusion models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 10684-10695).](https://arxiv.org/abs/2112.10752)
 
-简体中文术语翻译参考自dtlnor简体中文的扩充功能。
+简体中文术语翻译参考自dtlnor简体中文的扩展。
 
 - [dtlnor/stable-diffusion-webui-localization-zh_CN](https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN)
 

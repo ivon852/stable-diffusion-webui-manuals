@@ -17,7 +17,7 @@ AMD请用[驱动自动侦测工具](https://www.amd.com/zh-hant/support/kb/faq/g
 
 # 2. 安装Git和Python
 
-1. 下载Git版本管理工具。至[Git for Windows](https://gitforwindows.org/)下载安装档，一直下一步即可。
+1. 下载Git版本管理工具。至[Git for Windows](https://gitforwindows.org/)下载安装文件，一直下一步即可。
 
 ![](../../../images/ozgVF8y.webp)
 
@@ -59,9 +59,9 @@ conda activate sdwebui
 </details>
 
 
-# 3. 复制Stable Diffusion WebUI储存库
+# 3. 复制Stable Diffusion WebUI仓库
 
-1. 开启文件管理器，在桌面文件夹里按右键＋Shift，点选`在这里开启Powershell`或`终端机视窗`。如果你C盘空间不足的话，也可以切换到其他文件资料夹再开启终端机。
+1. 开启文件管理器，在桌面文件夹里按右键＋Shift，点选`在这里开启Powershell`或`终端机视窗`。如果你C盘空间不足的话，也可以切换到其他文件文件夹再开启终端机。
 
 ![](../../../images/6HJHSMy.webp)
 
@@ -75,7 +75,7 @@ python --version
 nvcc --version
 ```
 
-4. Nvidia显卡用户输入以下指令，复制Stable Diffusion WebUI的储存库。复制完成后保持终端机开着。
+4. Nvidia显卡用户输入以下指令，复制Stable Diffusion WebUI的仓库。复制完成后保持终端机开着。
 ```bash
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ```
@@ -85,7 +85,7 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml.git
 ```
 
-5. 复制完成后，桌面会多出文件夹`stable-diffusion-webui`。如果你有下载模型，将刚刚下载的存档点模型放到`models\Stable-diffusion`文件夹。这个资料夹可放入多个存档点模型。
+5. 复制完成后，桌面会多出文件夹`stable-diffusion-webui`。如果你有下载模型，将刚刚下载的存档点模型放到`models\Stable-diffusion`文件夹。这个文件夹可放入多个存档点模型。
 
 ![](../../../images/8aCrI2p.webp)
 
@@ -98,13 +98,13 @@ git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml.git
 
 若显示卡VRAM小于等于4GB的话加入`COMMANDLINE_ARGS=--medvram --opt-split-attention`引数。
 
-电脑RAM（不是VRAM）小于等于8GB的话改加入`COMMANDLINE_ARGS=--lowvram --opt-split-attention`引数。注意使用`--lowvram`引数会让高阶显卡算图变很慢。
+电脑RAM（不是VRAM）小于等于8GB的话改加入`COMMANDLINE_ARGS=--lowvram --opt-split-attention`引数。注意使用`--lowvram`引数会让高阶显卡生图变很慢。
 
 (下面的不加也可以)
 
 加入`--xformers`引数可进一步减少VRAM使用量。 `--no-half-vae`降低用VAE时算出黑图的机率。
 
-加上`--enable-insecure-extension-access`让你在网页界面直接装扩充功能。
+加上`--enable-insecure-extension-access`让你在网页界面直接装扩展。
 
 加入`--listen`引数再开放防火墙7860通讯埠，即可用区域网路其他电脑的浏览器访问WebUI。
 
@@ -127,11 +127,11 @@ cd stable-diffusion-webui
 
 ![](../../../images/k7zpeWV.webp)
 
-3. 启动完成后会显示一组网址。执行程式时请勿关闭终端机。
+3. 启动完成后会显示一组网址。执行时请勿关闭终端机。
 
 ![](../../../images/cQt7XvU.webp)
 
-4. 用浏览器开启：`http://127.0.0.1:7860`就可进入图形界面了。执行时请勿关闭终端机，执行时若出错终端机也会输出讯息。
+4. 用浏览器开启：`http://127.0.0.1:7860`就可进入图形界面了。执行时请勿关闭终端机，执行时若出错终端机也会输出信息。
 
 ![](../../../images/fCC9Rxv.webp)
 

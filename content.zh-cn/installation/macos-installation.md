@@ -47,7 +47,7 @@ conda create --name sdwebui python=3.10.6
 ```
 
 
-# 3. 复制Stable Diffusion WebUI储存库
+# 3. 复制Stable Diffusion WebUI仓库
 
 1. 将Stable Diffusion WebUI复制至家目录
 ```bash
@@ -55,7 +55,7 @@ cd ~
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ```
 
-2. 开启Finder，点选前往 → 个人专属，会看到多了一个`stable-diffusion-webui`资料夹，这个就是软件本体了。
+2. 开启Finder，点选前往 → 个人专属，会看到多了一个`stable-diffusion-webui`文件夹，这个就是软件本体了。
 
 ![](../../../images/xPSMOZa.avif)
 

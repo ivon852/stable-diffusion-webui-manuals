@@ -7,7 +7,7 @@ weight: 6
 
 ＊需要先安裝ControlNet才能使用這個擴充功能。
 
-PoseX是可以在Stable Diffuison WebUI直接拉人物骨架，再配合ControlNet畫出姿勢的擴充功能。
+PoseX是可以在Stable Diffuison WebUI直接拉人物骨架，再配合ControlNet生成姿勢的擴充功能。
 
 類似的擴充功能為[OpenPose Editor](https://github.com/fkunn1326/openpose-editor)，差別在於PoseX可以旋轉放大。
 
@@ -27,6 +27,6 @@ PoseX是可以在Stable Diffuison WebUI直接拉人物骨架，再配合ControlN
 
 ![](../../images/Dy2Xpac.webp)
 
-5. 填入正負向提示詞，即會按照PoseX的姿勢來繪製圖片。
+5. 填入正負向提示詞，即會按照PoseX的姿勢來生成圖片。
 
 ![](../../images/iCILLPO.webp)

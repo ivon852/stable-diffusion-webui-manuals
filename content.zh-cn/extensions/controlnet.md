@@ -3,7 +3,7 @@ title: "按照骨架动作绘图 ControlNet"
 weight: 3
 ---
 
-- 扩充功能来源：[Mikubill/sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet)
+- 扩展来源：[Mikubill/sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet)
 
 ControlNet是通过加入额外条件来控制扩散模型的神经网络结构。它可以让AI参考给定图片的动作/线条/景深，精准的生成图片。例如，上传一张人体骨架，ControlNet就能按照骨架的动作生成完稿的人物图片。
 
@@ -27,7 +27,7 @@ ControlNet会用到各种模型，每个模型有对应的用途，不需要全�
 
 1. 切换至Extensions页面，点选`Install From URL`，URL输入`https://github.com/Mikubill/sd-webui-controlnet.git`，按下Install，接着重启WebUI。
 
-2. 到[lllyasviel/ControlNet](https://huggingface.co/lllyasviel/ControlNet/tree/main/models)下载需要的模型，或者全部下载。将模型档案放到Stable Diffusion WebUI资料夹下的`stable-diffusion-webui/extensions/sd-webui-controlnet/models`
+2. 到[lllyasviel/ControlNet](https://huggingface.co/lllyasviel/ControlNet/tree/main/models)下载需要的模型，或者全部下载。将模型文件放到Stable Diffusion WebUI文件夹下的`stable-diffusion-webui/extensions/sd-webui-controlnet/models`
 
 ![](../../../images/Bicm7hz.webp)
 
@@ -53,14 +53,14 @@ Preprocessor是先将上传的图片处理过一轮，例如`Scribbles`会将彩
 
 ![](../../../images/lSOMjfP.webp)
 
-4. 以Scribbles为例，选取后点选右上角Generate即会绘制出结果，并附上侦测到的线条。
+4. 以Scribbles为例，选取后点选右上角Generate即会生成出结果，并附上侦测到的线条。
 
 ![](../../../images/A3pecmu.webp)
 
 
 # 启用Multi ControlNet
 
-预设是使用一个ControlNet，但是叠加多个有助于生成更好的图片。比方说同时使用Open Pose和Depth绘制人体，并防止手画歪。
+预设是使用一个ControlNet，但是叠加多个有助于生成更好的图片。比方说同时使用Open Pose和Depth生成人体，并防止手画歪。
 
 要启用Multi ControlNet，请进入Settings页面设定要启用的ControlNet数量。
 
