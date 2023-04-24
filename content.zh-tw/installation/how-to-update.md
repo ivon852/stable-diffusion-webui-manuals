@@ -1,6 +1,6 @@
 ---
 title: "如何更新程式"
-weight: 10
+weight: 20
 ---
 
 Stable Diffusion WebUI的專案原始碼託管在Github，目前「更新」是以`git pull`指令來操作。

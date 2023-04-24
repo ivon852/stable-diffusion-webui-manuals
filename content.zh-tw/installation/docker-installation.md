@@ -1,6 +1,6 @@
 ---
 title: "用Docker容器跑"
-weight: 5
+weight: 6
 ---
 
 Docker容器技術可以方便在多個平台部署Stable Diffusion WebUI。

@@ -1,6 +1,6 @@
 ---
 title: "(云服务) 部署至Paperspace"
-weight: 7
+weight: 8
 ---
 
 Paperspace是一间位于美国的云机器学习服务供应商，提供免费GPU跑机器学习专案。

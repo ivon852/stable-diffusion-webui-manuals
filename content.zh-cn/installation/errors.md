@@ -1,6 +1,6 @@
 ---
 title: "常见安装问题"
-weight: 10
+weight: 21
 ---
 
 本节列出一些安装ATOMATIC1111的Stable Diffusion WebUI常遇到的错误信息的解决方式。

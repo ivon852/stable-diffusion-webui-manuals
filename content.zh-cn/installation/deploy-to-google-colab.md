@@ -1,6 +1,6 @@
 ---
 title: "(云服务) 部署至Google Colab"
-weight: 6
+weight: 7
 ---
 
 Google Colab是Google Research推出的免费线上服务，可用服务器等级的高级显示卡跑Python程式。有需要的话还可以付费买Pro版，使用更高级的GPU。

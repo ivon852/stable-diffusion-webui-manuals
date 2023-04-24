@@ -1,6 +1,6 @@
 ---
 title: "(雲端) 部署至Paperspace"
-weight: 7
+weight: 8
 ---
 
 Paperspace是一間位於美國的雲端機器學習服務供應商，提供免費GPU跑機器學習專案。
