@@ -51,13 +51,12 @@ Stable Diffusion WebUI User Manuals in Chinese
 git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
 ```
 
-3. 編輯`config.toml`，將`relativeURLs`和`uglyURLs`取消註解。
+3. 按需編輯`config.toml`。
 
 4. 預覽網頁，伺服器IP位址為`http://localhost:1313`，按CTRL＋C終止。
 ```bash
 hugo server -D --config config.toml
 ```
-
 
 ＊`deploy_ivonblog.sh`和`config_ivonblog.toml`這二個檔案是我自用的，用於部署到我的部落格。
 

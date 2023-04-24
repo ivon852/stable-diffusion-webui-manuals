@@ -10,5 +10,3 @@ weight: 5
 ![](../../../images/ZWKtuRV.webp)
 
 进入Extensions页面，点选`Install from URL`，输入网址`https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git`，按`Install`，之后重启WebUI。
-
-![](../../../images/mrcehrU.webp)
