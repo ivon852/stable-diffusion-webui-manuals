@@ -4,7 +4,7 @@ weight: 1
 ---
 
 
-# 用圖形界面安裝
+# 1. 用圖形界面安裝
 
 最簡單的就是點選Extensions → Available的`Load from:`，就會列出可下載安裝的擴充功能。
 
@@ -21,7 +21,7 @@ weight: 1
 如果未來要更新擴充功能，點選Check for updates。
 
 
-# 用指令安裝
+# 2. 用指令安裝
 
 Stable Diffusion WebUI的擴充功能目錄一律放在`extensions`資料夾。
 

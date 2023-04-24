@@ -13,7 +13,7 @@ weight: 8
 
 ![](../../../images/MxZcaDu.webp)
 
-3. 用鼠标生成色块。例如用红笔生成一个人物，蓝笔生成另一个人物。
+3. 用鼠标绘制色块。例如用红笔绘制一个人物，蓝笔绘制另一个人物。
 
 ![](../../../images/1AeIBQm.webp)
 
@@ -25,6 +25,6 @@ weight: 8
 
 ![](../../../images/4w0YBc8.webp)
 
-6. 搭配事先用PoseX拉好的骨架，再点选Generate开始绘图。
+6. 搭配事先用PoseX拉好的骨架，再点选Generate开始生图。
 
 ![](../../../images/bm9qPcV.png)

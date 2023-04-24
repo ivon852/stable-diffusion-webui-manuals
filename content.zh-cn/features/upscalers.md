@@ -8,7 +8,7 @@ Stable Difussion WebUI内建AI放大技术，像是ESRGAN，比Waifu2x更强。
 如果用预设的512x512解析度就生出不错的图，可以将图片直接丢到Extras放大。
 
 
-# 参数解说
+# 1. 参数解说
 
 ## Scale by
 
@@ -36,7 +36,7 @@ GFPGAN脸部修复模型的权重
 CodeFormer脸部修复模型的权重
 
 
-# Upscaler效果比较
+# 2. Upscaler效果比较
 
 目前Stable Diffusion WebUI的放大器包含LDSR、BSRGAN、ESRGAN_4x、R-ESRGAN-General-4xV3、R-ESRGAN-General-WDN-4xV3、R-ESRGAN-AnimeVideo、R-ESRGAN-4x+、R-ESRGAN-4x+-Anime6B、ScuNET-GAN、ScuNET-PSNR、SwinIR_4x...看的让人头昏眼花。
 
@@ -47,7 +47,7 @@ CodeFormer脸部修复模型的权重
 - Anime6B适合用于动漫图片，它也可以用来将真人图片转动漫风格
 
 
-# 实际操作
+# 3. 实际操作
 
 切换至Extras页面，上传图片，选取放大2倍，点选下面的`Upscaler 1`中挑一个看起来顺眼的，其余维持预设，按`Generate`即会得到放大过的图片。
 

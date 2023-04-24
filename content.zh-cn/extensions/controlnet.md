@@ -10,7 +10,7 @@ ControlNet是通过加入额外条件来控制扩散模型的神经网络结构�
 跟内建的「图生图」技术比起来，ControlNet的效果更好，能让AI以指定动作下去生图；再搭配3D建模作为辅助，能缓解单纯用文生图功能下手脚、脸部表情画不好的问题。
 
 
-# 各个模型的用途
+# 1. 各个模型的用途
 
 ControlNet会用到各种模型，每个模型有对应的用途，不需要全部下载。
 
@@ -23,7 +23,7 @@ ControlNet会用到各种模型，每个模型有对应的用途，不需要全�
 `Depth`侦测法线深度
 
 
-# 安装ControlNet与下载模型
+# 2. 安装ControlNet与下载模型
 
 1. 切换至Extensions页面，点选`Install From URL`，URL输入`https://github.com/Mikubill/sd-webui-controlnet.git`，按下Install，接着重启WebUI。
 
@@ -35,7 +35,7 @@ ControlNet会用到各种模型，每个模型有对应的用途，不需要全�
 <!--#参数解说-->
 
 
-# 实际操作
+# 3. 实际操作
 
 1. 在安装之后，WebUI的界面会多出ControlNet的按钮。
 
@@ -58,7 +58,7 @@ Preprocessor是先将上传的图片处理过一轮，例如`Scribbles`会将彩
 ![](../../../images/A3pecmu.webp)
 
 
-# 启用Multi ControlNet
+# 4. 启用Multi ControlNet
 
 预设是使用一个ControlNet，但是叠加多个有助于生成更好的图片。比方说同时使用Open Pose和Depth生成人体，并防止手画歪。
 

@@ -4,7 +4,7 @@ weight: 1
 ---
 
 
-# 用图形界面安装
+# 1. 用图形界面安装
 
 最简单的就是点选Extensions → Available的`Load from:`，就会列出可下载安装的扩展。
 
@@ -21,7 +21,7 @@ weight: 1
 如果未来要更新扩展，点选Check for updates。
 
 
-# 用指令安装
+# 2. 用指令安装
 
 Stable Diffusion WebUI的扩展目录一律放在`extensions`文件夹。
 

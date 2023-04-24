@@ -8,7 +8,7 @@ weight: 4
 此功能位於圖生圖的頁面。
 
 
-# 參數解說
+# 1. 參數解說
 
 ## Mask blur
 
@@ -37,7 +37,7 @@ weight: 4
 Only masked即外補繪製模式。
 
 
-# 實際操作
+# 2. 實際操作
 
 1. 上傳圖片，點選圖片，用滑鼠將要替換的部份塗黑。
 
@@ -56,7 +56,7 @@ Only masked即外補繪製模式。
 若要切換為外補繪製：點選左下角的Mask mode，將`Inpaint masked`改成`Inpaint not masked`，這樣AI就會改為填滿沒有塗黑的地方。
 
 
-# 批次處理圖片
+# 3. 批次處理圖片
 
 切換到Batch頁面
 

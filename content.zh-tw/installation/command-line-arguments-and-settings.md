@@ -12,7 +12,7 @@ Linux/macOS為`webui-user.sh`，以終端機執行`webui.sh`，它會讀取`webu
 Windows也是一樣，不過啟動是用`webui-user.bat`批次檔，以終端機執行此批次檔(或者點二下)，無需系統管理員權限啟動。
 
 
-# 環境變數
+# 1. 環境變數
 
 指令稿裡面可使用這些環境變數(environment variables)：
 
@@ -39,7 +39,7 @@ set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-va
 ```
 
 
-# 命令列引數
+# 2. 命令列引數
 
 命令列引數(command line arguments)為啟動WebUI時候使用的選項，寫在啟動指令稿的`COMMANDLINE_ARGS`後面。
 

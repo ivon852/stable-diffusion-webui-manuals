@@ -24,7 +24,7 @@ weight: 1
 譬如，用寫實風格的`Stable Diffusion`模型畫動漫人物，效果絕對會比使用`Anything`差的許多；又或者，想畫出宛如真人coser的圖，用`ChilloutMix`鐵定比用只強調寫實的`RealisticVision`要來的合適。因此在學會下提示詞以前，要先按照用途挑選適合的模型。
 
 
-# 1.  提示詞 Prompts
+# 1. 提示詞 Prompts
 
 這一節使用HD-v22的模型做示範，因此生成出來都會是動漫風格。
 

@@ -12,7 +12,7 @@ Linux/macOS为`webui-user.sh`，以终端机执行`webui.sh`，它会读取`webu
 Windows也是一样，不过启动是用`webui-user.bat`批处理文件，以终端机执行此批次文件(或者点二下)，无需系统管理员权限启动。
 
 
-# 环境变量
+# 1. 环境变量
 
 脚本里面可使用这些环境变量(environment variables)：
 
@@ -39,7 +39,7 @@ set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-va
 ```
 
 
-# 命令列引数
+# 2. 命令列引数
 
 命令列引数(command line arguments)为启动WebUI时候使用的选项，写在启动脚本的`COMMANDLINE_ARGS`后面。
 
