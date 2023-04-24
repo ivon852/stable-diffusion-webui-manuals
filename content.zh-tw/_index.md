@@ -8,8 +8,8 @@ title: "歡迎"
 
 「AI繪圖」在本手冊一律稱之為「生圖」(generate)以避免歧異，僅在初次介紹與特定段落用「AI繪圖」方便理解。其餘專有名詞用語請參照[詞彙表](../references/glossary)。
 
-![](../../images/Screenshot_20230403_132314.webp)
+![](../images/Screenshot_20230403_132314.webp)
 
-![](../../images/ao8XZVX.webp)
+![](../images/ao8XZVX.webp)
 
-![](../../images/GJ7CJT5.webp)
+![](../images/GJ7CJT5.webp)
