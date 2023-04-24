@@ -79,7 +79,7 @@ artwork by Alfons Maria Mucha, masterpiece, 1girl, asian, blue eyes, beach, ocea
 
 ![](../../../images/example5.png)
 
-6. 当然还可以画特定动漫人物的「二创」，只要将名字和作品名称打上去就可以了。有名的动漫角色只要出现名字，不用特别指定身体特征或就会画出原作风格了，例如指定《新世纪福音战士》的惣流·明日香·兰格雷：
+6. 当然还可以画特定动漫人物的「二创」，只要将名字和作品名称打上去就可以了。有名的动漫角色只要出现名字，不用特别指定身体特征就会画出原作风格了，例如指定《新世纪福音战士》的惣流·明日香·兰格雷：
 ```lisp
 ; 参考翻译：新世纪福音战士的明日香，大师级作品，一个女孩，沙滩，海洋
 asuka_langley_souryuu from neon_genesis_evangelion, masterpiece, 1girl, beach, ocean

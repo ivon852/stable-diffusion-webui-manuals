@@ -40,7 +40,7 @@ Stable Diffusion WebUI User Manuals in Chinese
 至於圖片引用，非正體中文的路徑一律是`../../../images/<圖片檔名>`，這樣不論前置域名為何皆能找到圖片。
 
 
-## 3. 生成可攜式離線網頁
+## 3. 離線預覽
 
 此手冊使用[Hugo](https://gohugo.io/)與[hugo-paper](https://github.com/nanxiaobei/hugo-paper)主題製作而成。網頁可以在本機離線瀏覽。
 
@@ -58,10 +58,6 @@ git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
 hugo server -D --config config.toml
 ```
 
-5. 以此指令生成靜態HTML，成品位於`public`目錄。用瀏覽器開啟裡面的`index.html`即可離線瀏覽。
-```bash
-hugo --gc --minify --config config.toml
-```
 
 ＊`deploy_ivonblog.sh`和`config_ivonblog.toml`這二個檔案是我自用的，用於部署到我的部落格。
 
