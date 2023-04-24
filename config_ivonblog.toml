@@ -62,7 +62,7 @@ enableGitInfo = true
 
 [[menu.before]]
   name = "【關於作者】About authors"
-  url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
+  url = "https://ivonblog.com/about"
   weight = 30
 
 
