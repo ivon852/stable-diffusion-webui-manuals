@@ -3,8 +3,8 @@ title = 'Stable Diffusion WebUI使用手冊'
 theme = 'hugo-book'
 defaultContentLanguage = "zh-tw"
 
-relativeURLs = true
-uglyURLs = true
+#relativeURLs = true
+#uglyURLs = true
 
 # Book configuration
 disablePathToLower = true
