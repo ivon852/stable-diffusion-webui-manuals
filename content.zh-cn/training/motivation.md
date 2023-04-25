@@ -25,7 +25,7 @@ weight: 1
 
 就训练时间与实用度而言，目前应是 LoRA > HyperNetwork > Embedding
 
-本章节以ATOMATIC1111开发的Stable Diffusion WebUI为中心撰写，因其图形化且好操作。后面简称SD WebUI。
+本章节以AUTOMATIC1111开发的Stable Diffusion WebUI为中心撰写，因其图形化且好操作。后面简称SD WebUI。
 
 接着选择部署在本机或是云端？
 

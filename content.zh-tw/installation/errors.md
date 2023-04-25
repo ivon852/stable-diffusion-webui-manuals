@@ -3,16 +3,16 @@ title: "❓ 常見安裝問題"
 weight: 21
 ---
 
-本節列出一些安裝ATOMATIC1111的Stable Diffusion WebUI常遇到的錯誤訊息的解決方式。
+本節列出一些安裝AUTOMATIC1111的Stable Diffusion WebUI常遇到的錯誤訊息的解決方式。
 
 ![](../../images/errors-1.png)
 
 
 # 如何回報錯誤
 
-你可以到[我的Discussion](https://github.com/ivon852/netlify-ivon-blog-comments/discussions/437)或是[ATOMATIC1111儲存庫的Issue](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues)查看別人遇過的錯誤訊息。
+你可以到[我的Discussion](https://github.com/ivon852/netlify-ivon-blog-comments/discussions/437)或是[AUTOMATIC1111儲存庫的Issue](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues)查看別人遇過的錯誤訊息。
 
-如果遇到了真正無法解決的錯誤，請註冊Github帳號，並到[ATOMATIC1111儲存庫的Issue](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues)頁面，點選New Issue → Bug Report，用英文填寫遇到的狀況。
+如果遇到了真正無法解決的錯誤，請註冊Github帳號，並到[AUTOMATIC1111儲存庫的Issue](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues)頁面，點選New Issue → Bug Report，用英文填寫遇到的狀況。
 
 
 # 擴充功能導致的錯誤

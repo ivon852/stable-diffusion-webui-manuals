@@ -3,7 +3,7 @@ title: "外部连结"
 weight: 1
 ---
 
-感谢原始AI绘图工具的开发者CompVis、StabilityAI、RunwayAI、ATOMATIC1111，以及全世界大大小小开发者的付出，才有了这本手册。
+感谢原始AI绘图工具的开发者CompVis、StabilityAI、RunwayAI、AUTOMATIC1111，以及全世界大大小小开发者的付出，才有了这本手册。
 
 本手册的参考来源
 

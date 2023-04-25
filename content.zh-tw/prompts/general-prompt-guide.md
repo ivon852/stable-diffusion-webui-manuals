@@ -7,7 +7,7 @@ weight: 1
 
 ![](../../images/general-prompt-guide-1.webp)
 
-非ATOMATIC1111開發的Stable Diffusion也可以參考此教學，但要注意哪些是ATOMATIC1111版獨有的語法。
+非AUTOMATIC1111開發的Stable Diffusion也可以參考此教學，但要注意哪些是AUTOMATIC1111版獨有的語法。
 
 我們來看提示詞要怎麼寫，以文生圖模式的提示詞為主。若要邊看邊練習的話，可以搭配[文生圖用法](../features/text-to-image)操作。
 
@@ -114,7 +114,7 @@ nsfw, weapon, blood, guro, lowres, bad anatomy, text, error, extra digit, fewer 
 
 # 3. Stable Diffusion WebUI獨有語法
 
-此節列出的語法為ATOMATIC1111製作的SD WebUI獨有，使用其他人製作的Stable Diffusion程式不見得適用。
+此節列出的語法為AUTOMATIC1111製作的SD WebUI獨有，使用其他人製作的Stable Diffusion程式不見得適用。
 
 
 ##  關注度括號 Attention/emphasis
