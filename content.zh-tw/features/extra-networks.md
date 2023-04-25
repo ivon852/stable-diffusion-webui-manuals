@@ -1,5 +1,5 @@
 ---
-title: "2.5. 額外網路 Extra Networks"
+title: "4.4. 額外網路 Extra Networks"
 weight: 5
 ---
 
@@ -7,7 +7,7 @@ weight: 5
 
 例如使用Anything模型生圖，再搭配"Taiwan-doll-likeness LoRA"就能轉成真人風格而不用依賴許多提示詞，並且可以一次疊很多個，就像套多層濾鏡一般。
 
-![](../../images/GJ7CJT5.webp)
+![](../../images/extra-networks-1.webp)
 
 跟ckpt大模型比起來，這類模型檔案都很小，主要用來微調現有的模型。小模型有嵌入(Embedding)、超網路(HyperNetwork)、LoRA三種，副檔名以`.pt`或`.safetensors`結尾，目前最熱門的為"LoRA"。更棒的是因為檔案小，自行[訓練喜歡的人物模型](../training/)成本並不高。
 
@@ -29,23 +29,23 @@ LoRA放到`stable-diffusion-webui\models\Lora`。
 
 1. 進入WebUI，點選右上角Show extra networks
 
-![](../../images/MaaUngp.webp)
+![](../../images/extra-networks-2.webp)
 
 2. 這樣就會出現選單。以LoRA為例，點選小模型的卡片便會將其加到提示詞欄位，提示詞欄位會出現`< >`，表示要在繪圖時使用LoRA。
 
-![](../../images/GCgN6JA.webp)
+![](../../images/extra-networks-3.webp)
 
 3. 接著再加上其他提示詞，生圖即會有使用LoRA的風格。
 
-![](../../images/vKKJAST.webp)
+![](../../images/extra-networks-4.webp)
 
 4. 如果生出來的圖片太詭異，調整提示詞欄位每個LoRA後面的數字，控制權重。
 
-![](../../images/F371fSN.webp)
+![](../../images/extra-networks-5.webp)
 
 5. 嗯，這樣看起來好些了 (並沒有)
 
-![](../../images/VLBuSMp.webp)
+![](../../images/extra-networks-6.webp)
 
 
 # 3. 使用VAE

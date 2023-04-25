@@ -1,11 +1,13 @@
 ---
-title: "2.4. 內補繪製 InPaint"
+title: "4.3. 內補繪製 InPaint"
 weight: 4
 ---
 
 內補繪製(inpaint)。這是用AI填充塗黑(遮罩)區域的技術，例如給圖片的角色換衣服。或是反過來：讓AI把圖片空白的地方繪製完成(outpaint)。
 
-此功能位於圖生圖的頁面。
+此功能位於Img2img下的Inpaint頁面。
+
+![](../../images/inpaint-outpaint-1.webp)
 
 
 # 1. 參數解說
@@ -41,7 +43,7 @@ Only masked即外補繪製模式。
 
 1. 上傳圖片，點選圖片，用滑鼠將要替換的部份塗黑。
 
-![](../../images/ZU9XkZU.webp)
+![](../../images/inpaint-outpaint-2.webp)
 
 或者也可以切換到Inpaint Upload頁面，上傳圖片，再於下方Mask上傳塗好遮罩的圖片。
 
@@ -51,7 +53,7 @@ Only masked即外補繪製模式。
 
 4. 點選Generate生圖。
 
-![](../../images/LIxlFVA.webp)
+![](../../images/inpaint-outpaint-3.webp)
 
 若要切換為外補繪製：點選左下角的Mask mode，將`Inpaint masked`改成`Inpaint not masked`，這樣AI就會改為填滿沒有塗黑的地方。
 
@@ -60,7 +62,7 @@ Only masked即外補繪製模式。
 
 切換到Batch頁面
 
-![](../../images/Screenshot_20230420_143750.webp)
+![](../../images/inpaint-outpaint-4.webp)
 
 第一個欄位輸入要處理的圖片路徑，例如桌面的`Input`資料夾
 

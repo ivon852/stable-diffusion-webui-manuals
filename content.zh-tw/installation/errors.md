@@ -1,11 +1,11 @@
 ---
-title: "常見安裝問題"
+title: "❓ 常見安裝問題"
 weight: 21
 ---
 
 本節列出一些安裝ATOMATIC1111的Stable Diffusion WebUI常遇到的錯誤訊息的解決方式。
 
-![](../../images/00040-3462613574.png)
+![](../../images/errors-1.png)
 
 
 # 如何回報錯誤

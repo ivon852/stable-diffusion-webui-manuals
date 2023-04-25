@@ -9,11 +9,11 @@ Stable Diffusion WebUI可以透過擴充功能將界面變成中文。
 
 1. 進入Extensions頁面，取消勾選`localization`，再點選`Load from:`，找到`zh_TW Localization`，點選Install。
 
-![](../../images/dHwXv8L.webp)
+![](../../images/localizations-1.webp)
 
 2. 到Settings頁面，找到左邊的Localization，點選`zh-tw`，再點選`Apply Settings`。
 
-![](../../images/rwnzVT7n.webp)
+![](../../images/localizations-2.webp)
 
 3. 之後重啟WebUI，界面就會變成中文了。
 
@@ -21,4 +21,4 @@ Stable Diffusion WebUI可以透過擴充功能將界面變成中文。
 
 啟用雙語擴充功能前，要到Settings → User interface → Localization設為None再重啟才會生效。
 
-![](../../images/FHmnr50L.webp)
+![](../../images/localizations-3.webp)

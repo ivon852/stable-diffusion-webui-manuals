@@ -23,7 +23,7 @@ Lvmin Zhang是ControlNet原始程式的開發者，Mikubill則是開發擴充功
 
 2. 到[lllyasviel/ControlNet v1.1](https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main)下載以`.pth`結尾的模型檔，全部檔案加起來約18GB。`.yaml`檔不需要下載。目前v1.1是測試版，之後會合併回[主儲存庫](https://huggingface.co/lllyasviel/ControlNet)。
 
-![](../../images/controlnet1.webp)
+![](../../images/controlnet-1.webp)
 
 3. 將這些模型檔放到`stable-diffusion-webui/extensions/sd-webui-controlnet/models`資料夾
 
@@ -97,7 +97,7 @@ ControlNet現有以下模型。
 
 在安裝之後，WebUI的界面會多出"ControlNet"的按鈕。
 
-![](../../images/controlnet3.webp)
+![](../../images/controlnet-2.webp)
 
 點開會看到以下選項：
 
@@ -117,7 +117,7 @@ ControlNet現有以下模型。
 
 在Open New Canvas的選項下面有四個按鈕。
 
-![](../../images/controlnet2.webp)
+![](../../images/controlnet-3.webp)
 
 由左到右：新增畫布；使用電腦鏡頭拍照上傳；未知；還原上次算圖設定。
 
@@ -185,7 +185,7 @@ ControlNet在生圖時的權重。
 
 要啟用Multi ControlNet，請進入Settings → ControlNet，拖動拉桿，設定要啟用的ControlNet數量。
 
-<img src=../../images/F9joNvd.webp alt=""  width=500 loading="lazy">
+<img src=../../images/controlnet-4.webp alt=""  width=500 loading="lazy">
 
 
 # 4. 實際操作
@@ -194,19 +194,19 @@ ControlNet在生圖時的權重。
 
 1. 在安裝之後，WebUI的界面會多出"ControlNet"的按鈕。
 
-![](../../images/c84PFJJ.webp)
+![](../../images/controlnet-5.webp)
 
 2. 進入文生圖的頁面填入提示詞，接著點開下面ControlNet的界面，勾選`Enabled`啟用ControlNet，上傳圖片。勾選LowVRAM可降低VRAM佔用。
 
-![](../../images/QP2mKW6.webp)
+![](../../images/controlnet-6.webp)
 
 3. 接著選取要使用的Preprocessor和Model，二者要一致。
 
 Preprocessor是先將上傳的圖片處理過一輪，例如`Scribbles`會將彩色圖片轉成線稿。如果你的圖片不需要處理，則Preprocessor可留空。
 
-![](../../images/lSOMjfP.webp)
+![](../../images/controlnet-7.webp)
 
 4. 以Scribbles為例，選取後點選右上角Generate即會生成出結果，並附上偵測到的線條。如下圖所示，右邊貞德的姿勢確實跟左邊的02十分類似。
 
-![](../../images/A3pecmu.webp)
+![](../../images/controlnet-8.webp)
 

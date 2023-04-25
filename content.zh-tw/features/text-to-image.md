@@ -1,15 +1,15 @@
 ---
-title: "2.2. 文生圖 Text to image"
+title: "4.1. 文生圖 Text to image"
 weight: 2
 ---
 
 文生圖(txt2image)即為讓AI按照文字敘述生圖。
 
-開啟Stable Diffusion WebUI網頁後，會看到以下畫面。流程為在左上角填入提示詞，勾選左下角的生圖參數，再點選右上角生成圖片。
+開啟Stable Diffusion WebUI網頁後，第一個看到的是以下畫面，這就是文生圖的頁面。
 
-![](../../images/Screenshot_20230417_181020.webp)
+![](../../images/text-to-image-1.webp)
 
-其餘SD WebUI的功能用法大抵都按照此邏輯設計，有些參數是通用的。
+生圖流程為在左上角填入提示詞，勾選左下角的生圖參數，再點選右上角生成圖片。其餘SD WebUI的功能用法大抵都按照此邏輯設計，有些參數是通用的。
 
 需要中文界面的可以先裝[正體中文/雙語擴充功能](../extensions/localizations/)。
 
@@ -32,7 +32,7 @@ Sampling Methods即為取樣方法，各種方法得出的結果不太一樣。
 
 UniPC是2023年發表的取樣方法。
 
-DDIM和PLMS是2021年隨Stable Diffusion v1發表的取樣方法。
+DDIM和PLMS是2022年隨Stable Diffusion v1發表的取樣方法。
 
 若要兼顧品質與速度，請優先試試這三種取樣方法：UniPC、DPM++ 2M Karras、Euler a。
 
@@ -67,7 +67,7 @@ DDIM和PLMS是2021年隨Stable Diffusion v1發表的取樣方法。
 
 其餘可用的寬高比(ratio)請參考下表。[圖片來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025#discussioncomment-3727588)
 
-![](../../images/192161440-325bfde9-b398-4622-b833-01a6c9cd3b99.webp)
+![](../../images/text-to-image-2.webp)
 
 
 ## CFG Scale
@@ -109,7 +109,7 @@ AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內
 
 5個按鈕由左至依序為：1. 叫出上次生圖使用的設定值 2. 清空提示詞 3. 啟用[額外網路](../features/extra-networks/) 4. 套用選中的風格 5. 儲存目前的提示詞
 
-![](../../images/Screenshot_20230417_183512.webp)
+![](../../images/text-to-image-3.webp)
 
 
 儲存的提示詞此處稱為風格(styles)
@@ -121,34 +121,34 @@ AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內
 
 Stable Diffusion WebUI正上方可看到現在使用的是哪個模型。切換模型約需要等30秒。
 
-![](../../images/Iew050C.webp)
+![](../../images/text-to-image-4.webp)
 
 1. 在頁面上方填入正向與負向提示詞。右邊有存檔按鈕。
 
-![](../../images/kG3Bn21.webp)
+![](../../images/text-to-image-5.webp)
 
 2. Sampling Methods建議先試試最快的「UniPC」，其次是「Euler a」、「DPM++ 2M Karras」。，Sampling Steps設20，`Width`x`Height`設定為512x512。
 
-![](../../images/vUevujL.webp)
+![](../../images/text-to-image-6.webp)
 
 3. 勾選左下角的臉部修復 (Restore faces)，改善臉部生成效果。
 
-![](../../images/4tYozfF.webp)
+![](../../images/text-to-image-7.webp)
 
 4. 點右上角的Generate開始生圖。
 
-![](../../images/qu1BW4g.webp)
+![](../../images/text-to-image-8.webp)
 
 5. 視顯卡性能而定，約一分鐘圖片就會算出來了，點選放大右鍵儲存。
 
-![](../../images/X2jMeJx.webp)
+![](../../images/text-to-image-9.webp)
 
 6. 左下角有`Batch count`的數值可設定一次算多張圖。
 
-![](../../images/mX8jX9s.webp)
+![](../../images/text-to-image-10.webp)
 
 7. 如果對此次結果滿意，不妨將種子碼 (Seed) 保存下來供日後利用，這樣可以一定程度保留風格。
 
-![](../../images/DFIZZfA.webp)
+![](../../images/text-to-image-11.webp)
 
 不論圖片有無右鍵儲存，Stable Diffusion WebUI生成的圖都會自動儲存到主程式資料夾下的`outputs`資料夾。

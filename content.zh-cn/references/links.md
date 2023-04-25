@@ -21,6 +21,7 @@ Stable Diffusion讨论社群
 
 - [r/StableDiffusion - Reddit](https://www.reddit.com/r/StableDiffusion/)
 - [看板AI_Art 文章列表- 批踢踢实业坊](https://www.ptt.cc/bbs/AI_Art/index.html)
+- [Stable Diffusion 台湾社群v2 - Facebook](https://www.facebook.com/groups/sdaitw/)
 - [Stable Diffusion - 知乎](https://www.zhihu.com/topic/26072993)
 
 模型训练参考资料

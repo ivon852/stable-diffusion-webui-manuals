@@ -1,5 +1,5 @@
 ---
-title: "安裝至Linux"
+title: "🖥️ 安裝至Linux"
 weight: 3
 ---
 
@@ -115,14 +115,8 @@ AMD顯示卡需要另外加上` --precision full --no-half`引數，否則生成
 
 # 5. 啟動Stable Diffusion WebUI
 
-1. 執行`webui.sh`，它會自動下載PyTorch並安裝依賴套件。跑完它應該會顯示一組網址，本機用瀏覽器開啟`http://127.0.0.1:7860`進入網頁圖形界面。
+執行`webui.sh`，它會自動下載PyTorch並安裝依賴套件。跑完它應該會顯示一組網址，本機用瀏覽器開啟`http://127.0.0.1:7860`進入網頁圖形界面。
 ```bash
 cd ~/stable-diffusion-webui
 ./webui.sh
-```
-
-2. 若要從其他電腦存取，則是輸入`http://本機IP:7860`連線。記得開放防火牆：
-```bash
-sudo ufw allow 7860/tcp
-sudo ufw reload
 ```

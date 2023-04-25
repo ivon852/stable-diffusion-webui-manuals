@@ -1,5 +1,5 @@
 ---
-title: "1.2. 下載模型"
+title: "2.2. 下載模型"
 weight: 2
 ---
 
@@ -57,7 +57,7 @@ Stable Diffusion WebUI在初次啟動時，若放模型的資料夾(`models/Stab
 
 HuggingFace為儲存庫 → Files and versions，選擇下載副檔名為`.ckpt`或`.safetensors`的模型。後者因不具備執行程式碼的能力因此較前者安全。至於`-pruned`代表模型有刪減過大小。
 
-<img src=../../images/RvclOoa.webp alt=""  width=500 loading="lazy">
+<img src=../../images/download-models-1.webp alt=""  width=500 loading="lazy">
 
 Civitai則是點選Download按鈕下載模型。
 

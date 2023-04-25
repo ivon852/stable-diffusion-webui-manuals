@@ -15,6 +15,7 @@ weight: 2
 - checkpoint: 存档点，模型格式，扩展名为`.ckpt`。
 - classifier-free guidance scale (CFG scale): 事前训练的条件控制生成方法。
 - CodeFormer: 2022年由Shangchen Zhou等人发表的脸部修复模型。
+- conditioning：制約訓練
 - ControlNet: 2022年由Lvmin Zhang发表，通过加入额外条件来控制扩散模型的神经网络结构。
 - cross-attention: 分散注意
 - dataset: 资料集
@@ -30,6 +31,7 @@ weight: 2
 - float16 (fp16): 半精度浮点数
 - float32 (fp32): 单精度浮点数
 - generate：生成图片
+- Generative Adversarial Network (GAN)：生成对抗網絡，让两个神经網絡相互博弈的方式进行学习的训练方法。
 - GFPGAN: 腾讯于2021年发表的脸部修复模型。
 - hypernetwork: 超网络
 - image to image: 图生图

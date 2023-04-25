@@ -1,5 +1,5 @@
 ---
-title: "4.1. 為何要訓練模型？"
+title: "6.1. 為何要訓練模型？"
 weight: 1
 ---
 
@@ -11,7 +11,7 @@ weight: 1
 
 以下是一個具體例子，透過使用自行訓練的HyperNetwork，便改善單靠Anything模型無法生成出Hara老師畫風的缺點。在不使用HyperNetwork的情況下，風格永遠是左邊那樣；一使用HyperNetwork，右邊的風格就能輕鬆生成出來了。
 
-![](../../images/vPJsJB1.webp)
+![](../../images/motivation-1.webp)
 
 訓練模型是複雜的議題，基於哪個現有模型，以及餵給AI學習的圖片品質，還有訓練時的參數，都會影響模型訓練結果。
 
@@ -21,7 +21,7 @@ weight: 1
 
 各個模型的原理差異請參考下圖。技術原理以及訓練參數設定請參閱「參考資料」一章，礙於篇幅無法一一細講，本章以操作過程為主。
 
-![](../../images/bakeFoV.avif)
+![](../../images/motivation-2.webp)
 
 就訓練時間與實用度而言，目前應是 LoRA > HyperNetwork > Embedding
 

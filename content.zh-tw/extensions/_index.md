@@ -1,5 +1,5 @@
 ---
-title: "3. 擴充功能"
+title: "5. 安裝擴充功能"
 bookFlatSection: false
 bookCollapseSection: true
 ---

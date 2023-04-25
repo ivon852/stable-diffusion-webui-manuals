@@ -1,6 +1,6 @@
 ---
-title: "(雲端) 部署至Paperspace"
-weight: 8
+title: "☁️ 部署至Paperspace"
+weight: 12
 ---
 
 Paperspace是一間位於美國的雲端機器學習服務供應商，提供免費GPU跑機器學習專案。
@@ -14,21 +14,21 @@ Paperspace是一間位於美國的雲端機器學習服務供應商，提供免�
 
 2. 進入[gradient-ai/stable-diffusion](https://console.paperspace.com/github/gradient-ai/stable-diffusion?machine=Free-GPU&ref=blog.paperspace.com)頁面，點選Start Machine
 
-![](../../images/Screenshot_20230421_205429.webp)
+![](../../images/deploy-to-paperspace-1.webp)
 
 3. 這個面板就是筆記本的頁面了。點選右上角的Run all後，筆記本會安裝Stable Diffusion WebUI所需的依賴，並下載Stable Diffusion v2.1的模型。此階段所下載的檔案不會計入帳戶的儲存空間。
 
-![](../../images/Screenshot_20230421_210700.webp)
+![](../../images/deploy-to-paperspace-2.webp)
 
 
 4. 之後點選Use the Stable Diffusion Web UI這個儲存格終端機顯示的Gradio網址
 
-![](../../images/Screenshot_20230421_202838.webp)
+![](../../images/deploy-to-paperspace-3.webp)
 
 
 5. 即可使用WebUI。
 
-![](../../images/Screenshot_20230421_204541.webp)
+![](../../images/deploy-to-paperspace-4.webp)
 
 6. 使用完畢後記得按左上角的Stop Machine關機。
 

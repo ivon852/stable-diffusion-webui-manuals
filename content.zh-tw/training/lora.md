@@ -1,5 +1,5 @@
 ---
-title: "4.5. 訓練LoRA"
+title: "訓練LoRA"
 weight: 5
 ---
 
@@ -52,7 +52,7 @@ accelerate config
 
 4. LoRA的訓練資料目錄結構不太一樣，需建立目錄結構如下。已經上好提示詞的訓練資料要放在`img_dir`下面，將目錄名稱取名為`數字_概念`，目錄名稱前面加上數字代表要重複的步數。
 
-![](../../images/2ubZ2W0.avif)
+![](../../images/lora-1.webp)
 
 
 5. 新增訓練設定檔`trainingconfig.json`
@@ -64,17 +64,17 @@ vim trainingconfig.json
 ```json
 {
   //基於何種模型訓練
-  "pretrained_model_name_or_path": "/home/ivon/桌面/heralora/anything-v4.5-pruned.ckpt",
+  "pretrained_model_name_or_path": "/home/user/桌面/heralora/anything-v4.5-pruned.ckpt",
   "v2": false,
   "v_parameterization": false,
   //紀錄檔輸出目錄
-  "logging_dir": "/home/ivon/桌面/heralora/log_dir/",
+  "logging_dir": "/home/user/桌面/heralora/log_dir/",
   //訓練資料目錄
-  "train_data_dir": "/home/ivon/桌面/heralora/image_dir/",
+  "train_data_dir": "/home/user/桌面/heralora/image_dir/",
   //註冊目錄
-  "reg_data_dir": "/home/ivon/桌面/heralora/reg_dir/",
+  "reg_data_dir": "/home/user/桌面/heralora/reg_dir/",
   //輸出目錄
-  "output_dir": "/home/ivon/桌面/heralora/output_dir",
+  "output_dir": "/home/user/桌面/heralora/output_dir",
   //訓練的圖片最大長寬
   "max_resolution": "512,512",
   //學習率
@@ -140,7 +140,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PA
 
 2. 輸入以下指令，載入json設定檔。`libnvinfer.so.7: cannot open shared object file`的警告可以暫時忽略。
 ```bash
-accelerate launch main.py --load_json_path "/home/ivon/trainingconfig.json"
+accelerate launch main.py --load_json_path "/home/user/trainingconfig.json"
 ```
 
 3. 之後會自動開始訓練。訓練好的模型位於訓練設定檔所寫的`output_dir`目錄。將`.safetensors`檔移動至SD WebUI根目錄下的`/models/Lora`。
@@ -150,12 +150,12 @@ accelerate launch main.py --load_json_path "/home/ivon/trainingconfig.json"
 
 1. 點選SD WebUI右上角，Show extra networks
 
-![](../../images/lLGiqZ6.avif)
+![](../../images/lora-2.webp)
 
 2. 點選要使用的LoRA，將其加入至提示詞欄位
 
-![](../../images/ix3dK3M.avif)
+![](../../images/lora-3.webp)
 
 3. 再加上訓練時使用的提示詞，即可生成使用LoRA風格的人物。
 
-![](../../images/mWhp5Gv.avif)
+![](../../images/lora-4.webp)

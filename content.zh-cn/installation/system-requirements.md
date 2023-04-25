@@ -20,7 +20,14 @@ Stable Difssusion WebUI支援Linux/Windows/macOS。
 
 # Linux
 
-建议使用Debian 11或Ubuntu 20.04以上系统。
+下面是测试可以跑的Linux发行版，使用Debian和Ubuntu会比较好上手。
+
+- Debian 11
+- Ubuntu 22.04
+- Fedora / RHEL / RockyLinux
+- openSUSE
+- Arch Linux / Manjaro
+- Gentoo
 
 
 # Windows

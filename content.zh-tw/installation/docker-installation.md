@@ -1,5 +1,5 @@
 ---
-title: "用Docker容器跑"
+title: "🐳 用Docker容器跑"
 weight: 6
 ---
 
@@ -27,7 +27,7 @@ sudo docker compose --profile auto up --build
 
 5. 等待啟動完成，用瀏覽器開啟`http://127.0.0.1:7860`進入WebUI。要停止執行就是在終端機按Ctrl＋C。
 
-![](../../images/Screenshot_20230421_131029.webp)
+![](../../images/docker-installation-1.webp)
 
 此Dockerfile啟動的Stable Diffusion WebUI，資料會掛載至同一目錄下的`data`目錄。
 

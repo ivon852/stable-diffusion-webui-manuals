@@ -1,5 +1,5 @@
 ---
-title: "1. 安裝Stable Diffusion WebUI"
+title: "2. 安裝Stable Diffusion WebUI"
 bookFlatSection: false
 bookCollapseSection: true
 weight: 1
