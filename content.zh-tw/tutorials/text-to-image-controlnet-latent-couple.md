@@ -5,6 +5,8 @@ weight: 1
 
 請先閱讀[文生圖用法](../features/text-to-image/)，並安裝[ControlNet](../extensions/controlnet/)、[Latent Couple](../extensions/latent-couple/)、[PoseX](../extensions/posex/)擴充功能。
 
+![](../../images/text-to-image-controlnet-latent-couple-7.webp)
+
 1. 於文生圖的界面會看到Latent Couple
 
 ![](../../images/text-to-image-controlnet-latent-couple-1.webp)

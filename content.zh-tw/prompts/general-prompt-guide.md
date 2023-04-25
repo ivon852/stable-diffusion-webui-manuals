@@ -1,5 +1,5 @@
 ---
-title: "3.1. 提示詞(Prompt)快速入門"
+title: "提示詞快速入門"
 weight: 1
 ---
 
