@@ -11,7 +11,7 @@ weight: 1
 
 我們來看提示詞要怎麼寫，以文生圖模式的提示詞為主。若要邊看邊練習的話，可以搭配[文生圖用法](../features/text-to-image)操作。
 
-不論用哪個模式生圖，Stable Diffusion都是吃「正向」與「負向」提示詞 (prompt，通俗的講法叫關鍵字、咒語)，並且要用英文輸入。
+不論用哪個模式生圖，Stable Diffusion都是吃「正向」與「負向」提示詞 (prompt，通俗的講法叫關鍵字、咒語、指令)，並且要用英文輸入。
 
 你會在Stable Diffusion WebUI看到以下框框：
 
