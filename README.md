@@ -51,7 +51,7 @@ Stable Diffusion WebUI User Manuals in Chinese
 git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
 ```
 
-3. 按需編輯`config.toml`。
+3. 按需編輯`config.toml`，將`BookComments`設定為`false`。
 
 4. 預覽網頁，伺服器IP位址為`http://localhost:1313`，按CTRL＋C終止。
 ```bash
