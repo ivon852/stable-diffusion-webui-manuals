@@ -10,7 +10,7 @@ weight: 3
 
 ControlNet是通过加入额外条件来控制扩散模型的神经網絡结构，它可以让AI参考给定图片的动作/线条/景深，精准的生成图片。
 
-跟内建的「图生图」技术比起来，ControlNet的效果更好，能让AI以指定动作生图；再搭配3D建模作为辅助，能缓解单纯用文生图功能下手脚、脸部表情画不好的问题。
+跟内建的「图生图」技术比起来，ControlNet的效果更好，能让AI以指定动作生图；再搭配3D建模作为辅助，能缓解单纯用文生图手脚、脸部表情画不好的问题。
 
 ControlNet的用法还有：上传人体骨架线条，ControlNet就能按骨架的动作生成完稿的人物图片。或是上传素色的3D建模，让ControlNet彩现成为室内布置家具。
 
@@ -21,7 +21,7 @@ Lvmin Zhang是ControlNet原始程序的开发者，Mikubill则是开发扩展，
 
 1. 切换至Extensions页面，点选`Install From URL`，URL输入`https://github.com/Mikubill/sd-webui-controlnet.git`，按下Install，接着从终端按CTRL＋C，关闭Stable Diffusion WebUI。
 
-2. 到[lllyasviel/ControlNet v1.1](https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main)下载以`.pth`结尾的模型文件，全部加起来约18GB。`.yaml`文件不需要下载。目前1.1是测试版，之后会合并回[主仓库](https://huggingface.co/lllyasviel/ControlNet)。
+2. 到[lllyasviel/ControlNet v1.1](https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main)下载以`.pth`结尾的模型文件，全部加起来约18GB。`.yaml`文件不需要下载。目前v1.1是测试版，之后会合并回[主仓库](https://huggingface.co/lllyasviel/ControlNet)。
 
 ![](../../../images/controlnet1.webp)
 
@@ -54,7 +54,7 @@ ControlNet现有以下模型。
 
 模型文件名为`ip2p`，类似「图生图」，但是使用训练50%的指示(instruction)提示词和50%的叙述(description)提示词训练而成。因为是ControlNet，使用此模型时不需要调整CFG Scale。
 
-根据原作者的说法，此模型在下「使其成为X」的提示词所生成的图，效果比「使其成为X」要好。
+根据原作者的说法，此模型在下「使其成为X」的提示词所生成的图，效果比「使Y成为X」要好。
 
 > Also, it seems that instructions like "make it into X" works better than "make Y into X".
 

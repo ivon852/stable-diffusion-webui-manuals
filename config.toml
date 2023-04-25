@@ -53,6 +53,11 @@ enableGitInfo = true
   url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
   weight = 10
 
+[[menu.after]]
+  name = "© 2023 Ivon Huang. 文章授權：創用CC-姓名標示-相同方式分享"
+  url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
+  weight = 10
+
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
