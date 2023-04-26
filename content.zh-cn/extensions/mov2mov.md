@@ -1,5 +1,5 @@
 ---
-title: "AI绘图转视频 mov2mov"
+title: "AI绘图转影片 mov2mov"
 weight: 7
 ---
 
@@ -7,14 +7,14 @@ weight: 7
 
 ＊需要先安装ControlNet才能使用这个扩充功能。
 
-将视频逐一抽出画格，使用ControlNet生图，然后再自动合成新视频。可以设置输出的画格率，将人物单独处理。
+将影片逐一抽出画格，使用ControlNet生图，然后再自动合成新影片。可以设定输出的画格率，将人物单独处理。
 
 
-1. 切换到mov2mov页面，输入提示词, 再上传视频。
+1. 切换到mov2mov页面，输入提示词, 再上传影片。
 
 ![](../../../images/mov2mov-1.webp)
 
-2. 在下面设置输出视频的长宽。生图的长宽比例应与原始视频一致。
+2. 在下面设定输出影片的长宽。生图的长宽比例应与原始影片一致。
 
 ![](../../../images/mov2mov-2.webp)
 
@@ -22,6 +22,6 @@ weight: 7
 
 ![](../../../images/mov2mov-3.webp)
 
-4. 点击右上角Generate，即会开始生成。成品位于主程序下的`/outputs/mov2mov-images`目录。
+4. 点选右上角Generate，即会开始生成。成品位于主程式下的`/outputs/mov2mov-images`目录。
 
 ![](../../../images/mov2mov-4.webp)

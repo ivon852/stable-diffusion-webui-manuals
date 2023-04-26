@@ -2,7 +2,7 @@
 
 Stable Diffusion WebUI User Manuals in Chinese
 
-[線上閱讀](https://ivonblog.com/posts/stable-diffusion-webui-manuals/)，目前的語言有正體中文(歡迎PR)、简体中文(欢迎PR)、English(興建中)。
+[線上閱讀](https://ivonblog.com/posts/stable-diffusion-webui-manuals/)，目前的語言有正體中文、简体中文(使用OpenCC轉換)、English(興建中)。歡迎PR貢獻文章。
 
 
 ## 1. 動機

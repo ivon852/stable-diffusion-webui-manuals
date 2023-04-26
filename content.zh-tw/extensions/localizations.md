@@ -1,17 +1,18 @@
 ---
-title: "正體中文和雙語界面"
+title: "中文和雙語界面"
 weight: 2
 ---
 
-- 擴充功能來源：[benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)
+- 正體中文擴充功能來源：[benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)
+- 簡體中文擴充功能來源：[dtlnor/stable-diffusion-webui-localization-zh_CN](https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN)
 
-Stable Diffusion WebUI可以透過擴充功能將界面變成中文。
+Stable Diffusion WebUI可以透過擴充功能將界面變成中文。如果您想協助翻譯，請點選以上的Github儲存庫連結，幫幫他們。
 
-1. 進入Extensions頁面，取消勾選`localization`，再點選`Load from:`，找到`zh_TW Localization`，點選Install。
+1. 進入Extensions頁面，取消勾選`localization`，再點選`Load from:`，找到`zh_TW Localization`或`zh_CN Localization`，點選Install。
 
 ![](../../images/localizations-1.webp)
 
-2. 到Settings頁面，找到左邊的Localization，點選`zh-tw`，再點選`Apply Settings`。
+2. 到Settings頁面，找到左邊的Localization，點選`zh-tw`或`zh-cn`，再點選`Apply Settings`。
 
 ![](../../images/localizations-2.webp)
 

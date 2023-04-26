@@ -5,7 +5,7 @@ weight: 2
 
 本手冊中有關於Stable Diffusion的專有名詞，附上中文翻譯與註釋。
 
-参考自[benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)
+参考自[benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)和[dtlnor/stable-diffusion-webui-localization-zh_CN](https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN)
 
 - artificial intelligence generated content (AIGC): 生成式人工智慧
 - ancestral sampling: 祖先取樣，又稱向前取樣

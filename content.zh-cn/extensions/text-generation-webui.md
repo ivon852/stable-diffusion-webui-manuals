@@ -1,5 +1,5 @@
 ---
-title: "大型语言模型集成 Text Generation WebUI"
+title: "大型语言模型整合 Text Generation WebUI"
 weight: 11
 ---
 

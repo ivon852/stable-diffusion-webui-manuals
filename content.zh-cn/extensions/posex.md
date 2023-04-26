@@ -11,19 +11,19 @@ PoseX是可以在Stable Diffuison WebUI直接拉人物骨架，再配合ControlN
 
 类似的扩充功能为[OpenPose Editor](https://github.com/fkunn1326/openpose-editor)，差别在于PoseX可以旋转放大。
 
-1. 切换至Extensions页面，点击Install From URL，URL输入`https://github.com/hnmr293/posex.git`，按下Install。接着重启WebUI。
+1. 切换至Extensions页面，点选Install From URL，URL输入`https://github.com/hnmr293/posex.git`，按下Install。接着重启WebUI。
 
 ![](../../../images/posex-1.webp)
 
-2. 打开文生图的页面，点击右下角PoseX，点击Send this image to ControlNet
+2. 开启文生图的页面，点选右下角PoseX，点选Send this image to ControlNet
 
 ![](../../../images/posex-2.webp)
 
-3. 在下面的ControlNet，点击Enabled，preprocessor选取`none`，model选`openpose`，不需要上传图片。
+3. 在下面的ControlNet，点选Enabled，preprocessor选取`none`，model选`openpose`，不需要上传图片。
 
 ![](../../../images/posex-3.webp)
 
-4. 回到上面的PoseX，调整人物姿势。左键点击移动，滚轮放大缩小，对模型左键点二下即可用右键移动单个骨架。
+4. 回到上面的PoseX，调整人物姿势。左键点选移动，滚轮放大缩小，对模型左键点二下即可用右键移动单个骨架。
 
 ![](../../../images/posex-4.webp)
 

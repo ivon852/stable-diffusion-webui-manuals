@@ -11,10 +11,6 @@ weight: 1
 - [Voldy's Retard Guide The definitive Stable Diffusion experience ™](https://rentry.org/voldy)
 - [Stable Diffusion Art - tutorials, prompts, resources](https://stable-diffusion-art.com)
 
-正體中文術語翻譯參考自benlisquare正體中文的擴充功能。
-
-- [benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)
-
 Stable Diffusion討論社群
 
 - [r/StableDiffusion - Reddit](https://www.reddit.com/r/StableDiffusion/)

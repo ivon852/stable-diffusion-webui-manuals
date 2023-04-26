@@ -4,28 +4,28 @@ weight: 3
 ---
 
 - 扩充功能来源：[Mikubill/sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet)
-- ControlNet的保存库：[lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)
+- ControlNet的储存库：[lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)
 
 目前版本：ControlNet v1.1
 
-ControlNet是通过加入额外条件来控制扩散模型的神经网络结构，它可以让AI参考给定图片的动作/线条/景深，更精准的生成图片。
+ControlNet是通过加入额外条件来控制扩散模型的神经网路结构，它可以让AI参考给定图片的动作/线条/景深，更精准的生成图片。
 
-跟内置的「图生图」技术比起来，ControlNet的效果更好，能让AI以指定动作生图；再搭配3D建模作为辅助，能缓解单纯用文生图手脚、脸部表情画不好的问题。
+跟内建的「图生图」技术比起来，ControlNet的效果更好，能让AI以指定动作生图；再搭配3D建模作为辅助，能缓解单纯用文生图手脚、脸部表情画不好的问题。
 
 ControlNet的用法还有：上传人体骨架线条，ControlNet就能按骨架的动作生成完稿的人物图片。或是上传素色的3D建模，让ControlNet彩现成为室内布置家具。
 
-Lvmin Zhang是ControlNet原始程序的开发者，Mikubill则是开发扩充功能，让我们可以在Stable Diffusion WebUI用ControlNet生图。
+Lvmin Zhang是ControlNet原始程式的开发者，Mikubill则是开发扩充功能，让我们可以在Stable Diffusion WebUI用ControlNet生图。
 
 
 # 1. 安装ControlNet与下载模型
 
-1. 切换至Extensions页面，点击`Install From URL`，URL输入`https://github.com/Mikubill/sd-webui-controlnet.git`，按下Install，接着从终端机按CTRL＋C，关闭Stable Diffusion WebUI。
+1. 切换至Extensions页面，点选`Install From URL`，URL输入`https://github.com/Mikubill/sd-webui-controlnet.git`，按下Install，接着从终端机按CTRL＋C，关闭Stable Diffusion WebUI。
 
-2. 到[lllyasviel/ControlNet v1.1](https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main)下载以`.pth`结尾的模型档，全部文件加起来约18GB。`.yaml`档不需要下载。目前v1.1是测试版，之后会合并回[主保存库](https://huggingface.co/lllyasviel/ControlNet)。
+2. 到[lllyasviel/ControlNet v1.1](https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main)下载以`.pth`结尾的模型档，全部档案加起来约18GB。`.yaml`档不需要下载。目前v1.1是测试版，之后会合并回[主储存库](https://huggingface.co/lllyasviel/ControlNet)。
 
 ![](../../../images/controlnet-1.webp)
 
-3. 将这些模型档放到`stable-diffusion-webui/extensions/sd-webui-controlnet/models`文件夹
+3. 将这些模型档放到`stable-diffusion-webui/extensions/sd-webui-controlnet/models`资料夹
 
 4. 重新启动Stable Diffusion WebUI。
 
@@ -56,7 +56,7 @@ ControlNet现有以下模型。
 
 ## Instruct Pix2Pix
 
-模型文件名为`ip2p`，类似「图生图」，但是使用训练50%的指示(instruction)提示词和50%的叙述(description)提示词训练而成。因为是ControlNet，使用此模型时不需要调整CFG Scale。
+模型档名为`ip2p`，类似「图生图」，但是使用训练50%的指示(instruction)提示词和50%的叙述(description)提示词训练而成。因为是ControlNet，使用此模型时不需要调整CFG Scale。
 
 根据原作者的说法，此模型在下「使其成为X」的提示词所生成的图，效果比「使Y成为X」要好。
 
@@ -82,7 +82,7 @@ ControlNet现有以下模型。
 
 ## Segmentation
 
-模型文件名为`seg`，将侦测的图片对象切成一个一个色块处理，例如房子一个色块，后面的天空一个色块。
+模型档名为`seg`，将侦测的图片物件切成一个一个色块处理，例如房子一个色块，后面的天空一个色块。
 
 ## Shuffle
 
@@ -125,11 +125,11 @@ ControlNet现有以下模型。
 
 ![](../../../images/controlnet-3.webp)
 
-由左到右：添加画布；使用电脑镜头拍照上传；未知；还原上次算图设置。
+由左到右：新增画布；使用电脑镜头拍照上传；未知；还原上次算图设定。
 
 ## Enable
 
-在生图时激活ControlNet，必选。
+在生图时启用ControlNet，必选。
 
 ## Low VRAM
 
@@ -137,7 +137,7 @@ ControlNet现有以下模型。
 
 ## Pixel Perfect
 
-由ControlNet自动决定Preprocessor分辨率。
+由ControlNet自动决定Preprocessor解析度。
 
 ## Allow Preview
 
@@ -153,7 +153,7 @@ Preprocessor是先将上传的图片处理过一轮，例如`Scribbles`会将彩
 
 ## Model 模型
 
-设置生图的时候使用哪个ControlNet模型。
+设定生图的时候使用哪个ControlNet模型。
 
 ## Control Weight
 
@@ -169,7 +169,7 @@ ControlNet在生图时的权重。
 
 ## Preprocessor Resolution
 
-预处理器的分辨率。
+预处理器的解析度。
 
 如果不知道要设多少，请勾选"Pixel Perfect"让ControlNet自动为您决定。
 
@@ -181,15 +181,15 @@ ControlNet在生图时的权重。
 
 自动将生成的图片传回此ControlNet运算单元(unit)。
 
-是的，如果您的电脑VRAM够大，您可以在Settings → ControlNet激活多个ControlNet运算单元。
+是的，如果您的电脑VRAM够大，您可以在Settings → ControlNet启用多个ControlNet运算单元。
 
 ## Multi ControlNet
 
-一个ControlNet效果不够，您有没有想过激活第二、第三个ControlNet！？
+一个ControlNet效果不够，您有没有想过启用第二、第三个ControlNet！？
 
-缺省安装后只会使用一个ControlNet，但是叠加多个有助于生成更好的图片。比方说同时使用Open Pose和Depth生成人体，并防止手画歪。
+预设安装后只会使用一个ControlNet，但是叠加多个有助于生成更好的图片。比方说同时使用Open Pose和Depth生成人体，并防止手画歪。
 
-要激活Multi ControlNet，请进入Settings → ControlNet，拖动拉杆，设置要激活的ControlNet数量。
+要启用Multi ControlNet，请进入Settings → ControlNet，拖动拉杆，设定要启用的ControlNet数量。
 
 <img src=../../../images/controlnet-4.webp alt=""  width=500 loading="lazy">
 
@@ -202,7 +202,7 @@ ControlNet在生图时的权重。
 
 ![](../../../images/controlnet-5.webp)
 
-2. 进入文生图的页面填入提示词，接着点开下面ControlNet的界面，勾选`Enabled`激活ControlNet，上传图片。勾选LowVRAM可降低VRAM占用。
+2. 进入文生图的页面填入提示词，接着点开下面ControlNet的界面，勾选`Enabled`启用ControlNet，上传图片。勾选LowVRAM可降低VRAM占用。
 
 ![](../../../images/controlnet-6.webp)
 
@@ -212,7 +212,7 @@ Preprocessor是先将上传的图片处理过一轮，例如`Scribbles`会将彩
 
 ![](../../../images/controlnet-7.webp)
 
-4. 以Scribbles为例，选取后点击右上角Generate即会生成出结果，并附上侦测到的线条。如下图所示，右边贞德的姿势确实跟左边的02十分类似。
+4. 以Scribbles为例，选取后点选右上角Generate即会生成出结果，并附上侦测到的线条。如下图所示，右边贞德的姿势确实跟左边的02十分类似。
 
 ![](../../../images/controlnet-8.webp)
 

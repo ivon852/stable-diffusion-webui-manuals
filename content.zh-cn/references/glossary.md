@@ -5,35 +5,35 @@ weight: 2
 
 本手册中有关于Stable Diffusion的专有名词，附上中文翻译与注释。
 
-参考自[benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)
+参考自[benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)和[dtlnor/stable-diffusion-webui-localization-zh_CN](https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN)
 
-- artificial intelligence generated content (AIGC): 生成式人工智能
-- ancestral sampling: 祖先采样，又称向前采样
+- artificial intelligence generated content (AIGC): 生成式人工智慧
+- ancestral sampling: 祖先取样，又称向前取样
 - annotation: 标示
-- batch count: 批量数量
-- batch size: 批量大小
-- checkpoint: 存盘点，模型格式，附文件名为`.ckpt`。
+- batch count: 批次数量
+- batch size: 批次大小
+- checkpoint: 存档点，模型格式，附档名为`.ckpt`。
 - classifier-free guidance scale (CFG scale): 事前训练的条件控制生成方法。
 - CodeFormer: 2022年由Shangchen Zhou等人发表的脸部修复模型。
 - conditioning：制约训练
-- ControlNet: 2022年由Lvmin Zhang发表，通过加入额外条件来控制扩散模型的神经网络结构。
+- ControlNet: 2022年由Lvmin Zhang发表，通过加入额外条件来控制扩散模型的神经网路结构。
 - cross-attention: 分散注意
-- dataset: 数据集
+- dataset: 资料集
 - denoising: 去噪，降噪
 - diffusion: 扩散
-- Denoising Diffusion Implicit Models (DDIM): 去噪扩散隐式模型，2022年由Jiaming Song等人发表的采样方法。
+- Denoising Diffusion Implicit Models (DDIM): 去噪扩散隐式模型，2022年由Jiaming Song等人发表的取样方法。
 - Dreambooth: Google Research和波士顿大学于2022年发表的深度学习模型，用于调整现有的文生图模型。
 - embedding: 嵌入
 - epoch: 时期
-- Euler Ancestral (Euler a): 基于k-diffusion的采样方法，使用祖父采样与欧拉方法步数。可在20~30步数生出好结果。
-- Euler: 基于k-diffusion的采样方法，使用欧拉方法步数。可在20~30步数生出好结果。
+- Euler Ancestral (Euler a): 基于k-diffusion的取样方法，使用祖父取样与欧拉方法步数。可在20~30步数生出好结果。
+- Euler: 基于k-diffusion的取样方法，使用欧拉方法步数。可在20~30步数生出好结果。
 - fine-tune: 微调
 - float16 (fp16): 半精度浮点数
 - float32 (fp32): 单精度浮点数
 - generate：生成图片
-- Generative Adversarial Network (GAN)：生成对抗网络，让两个神经网络相互博弈的方式进行学习的训练方法。
+- Generative Adversarial Network (GAN)：生成对抗网路，让两个神经网路相互博弈的方式进行学习的训练方法。
 - GFPGAN: 腾讯于2021年发表的脸部修复模型。
-- hypernetwork: 超网络
+- hypernetwork: 超网路
 - image to image: 图生图
 - inference: 模型推理
 - inpaint: 内补绘制
@@ -48,27 +48,27 @@ weight: 2
 - model：模型
 - negative prompts: 负向提示词
 - outpaint: 外补绘制
-- pickle: 保存张量的模型格式，附文件名为`.pt`
+- pickle: 储存张量的模型格式，附档名为`.pt`
 - postprocessing: 后处理
 - precision: 精度
 - preprocessing: 预处理
 - prompts: 提示词
 - PyTorch: 一款开源机器学习库
-- safetensors: 由Huggingface研发，安全保存张量的模型格式。
-- sampling method: 采样方法
-- sampling steps: 采样步数
-- scheduler: 调度器
+- safetensors: 由Huggingface研发，安全储存张量的模型格式。
+- sampling method: 取样方法
+- sampling steps: 取样步数
+- scheduler: 排程器
 - seed: 种子码
 - Stable Diffusion: 稳定扩散，一个文生图模型，2022年由CompVis发表，由U-Net、VAE、Text Encoder三者组成。
 - text encoder: 文本编码
-- text to image: 文本生成图片，文生图
+- text to image: 文字生成图片，文生图
 - textual inversion: 文本倒置
 - tiling: 平铺
 - token: 词元
 - tokenizer: 标记解析器
 - Transformers: HuggingFace研发的一系列API，用于辅助PyTorch、TensorFlow、JAX机器学习，可下载最新预训练的模型。
-- U-Net：用于影像分割的卷积神经网络
-- unified predictor-corrector (UniPC): 统一预测校正，2023年发表的新采样方法。
+- U-Net：用于影像分割的卷积神经网路
+- unified predictor-corrector (UniPC): 统一预测校正，2023年发表的新取样方法。
 - upscale: 升频，放大
 - variational auto encoder (VAE): 变分自动编码器
 - weights: 权重

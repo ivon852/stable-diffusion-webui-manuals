@@ -1,5 +1,5 @@
 ---
-title: "外部链接"
+title: "外部连结"
 weight: 1
 ---
 
@@ -11,10 +11,6 @@ weight: 1
 - [Voldy's Retard Guide The definitive Stable Diffusion experience ™](https://rentry.org/voldy)
 - [Stable Diffusion Art - tutorials, prompts, resources](https://stable-diffusion-art.com)
 
-正体中文术语翻译参考自benlisquare正体中文的扩充功能。
-
-- [benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)
-
 Stable Diffusion讨论社群
 
 - [r/StableDiffusion - Reddit](https://www.reddit.com/r/StableDiffusion/)
@@ -23,7 +19,7 @@ Stable Diffusion讨论社群
 - [Stable Diffusion - 知乎](https://www.zhihu.com/topic/26072993)
 
 
-模型训练参考数据
+模型训练参考资料
 
 - [Hypernetwork training for dummies - Rentry.co](https://rentry.co/hypernetwork4dumdums)
 - [【Novel AI】手把手教你Textual Inversion神经网络训练详细操作](https://www.bilibili.com/read/cv19088146)

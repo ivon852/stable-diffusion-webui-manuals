@@ -5,7 +5,7 @@ weight: 5
 
 - 扩充功能来源：[Character bones that look like Openpose for blender _ Ver_8.1 Depth+Canny+Landmark+MediaPipeFace+finger](https://toyxyz.gumroad.com/l/ciojz)
 
-设计给Blender使用的3D人体模型，集成OpenPose和手部、脸部的模型，在Blender内摆好姿势后输出图片，即可搭配ControlNet生图。
+设计给Blender使用的3D人体模型，整合OpenPose和手部、脸部的模型，在Blender内摆好姿势后输出图片，即可搭配ControlNet生图。
 
 ＊需要安装Blender 3.0以上版本。
 
