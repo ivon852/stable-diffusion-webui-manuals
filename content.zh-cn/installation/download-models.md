@@ -1,9 +1,9 @@
 ---
-title: "1.2. 下载模型"
+title: "2.2. 下载模型"
 weight: 2
 ---
 
-存档点模型(checkpoint，勿跟LoRA搞混)是AI生图的重要依据，生图用的模型可以安装很多个。
+存盘点模型(checkpoint，勿跟LoRA搞混)是AI生图的重要依据，算图用的模型可以安装很多个。
 
 Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stable-diffusion`)为空，则会自动下载原始版的Stable Diffusion v1.5模型。
 
@@ -16,9 +16,9 @@ Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stab
 
 目前找Stable Diffusion与其衍生模型的网站主要就二个。
 
-第一个是[HuggingFace](https://huggingface.co/models?other=stable-diffusion)，中文俗称抱脸笑，可以说是人工智能界的Github。 Stable Diffusion背后用到的很多AI工具，如Transformer、Tokenizers、Datasets都他们开发的，网站上也有丰富的教学文档。
+第一个是[HuggingFace](https://huggingface.co/models?other=stable-diffusion)，中文俗称抱脸笑，可以说是人工智能界的Github。Stable Diffusion背后用到的很多AI工具，如Transformer、Tokenizers、Datasets都他们开发的，网站上也有丰富的教学文档。
 
-另一个是[Civitai](https://civitai.com/)，专门用来分享Stable Diffusion相关的资源，特色是模型都有示例缩图，用户也可以分享彼此使用的提示词，以及分享作品。注意Civitai可能包含未成年不宜的图像。
+另一个是[Civitai](https://civitai.com/)，专门用来分享Stable Diffusion相关的资源，特色是模型都有示范缩略图，用户也可以分享彼此使用的提示词，以及分享作品。注意Civitai可能包含未成年不宜的图像。
 
 
 ## 写实风模型
@@ -27,7 +27,7 @@ Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stab
 
 最初[Stable Diffusion v1](https://huggingface.co/runwayml/stable-diffusion-v1-5)是使用512x512像素的图片训练的，因此高于此尺寸的生图品质会变差。后来[Stable Diffusion v2](https://huggingface.co/stabilityai/stable-diffusion-2-1)的训练图片宽高提升到了768x768像素。
 
-网路上很多模型都基于此模型训练而来。适合画真人、动物、自然、科技、建筑的图像，亦学习过历史上许多画家的画风。
+网络上很多模型都基于此模型训练而来。适合画真人、动物、自然、科技、建筑的图像，亦学习过历史上许多画家的画风。
 
 ---
 
@@ -53,16 +53,16 @@ Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stab
 
 # 2. 如何下载模型
 
-通常只需要下载模型文件即可。
+通常只需要下载模型档即可。
 
-HuggingFace为仓库 → Files and versions，选择下载副档名为`.ckpt`或`.safetensors`的模型。后者因不具备运行代码的能力因此较前者安全。至于`-pruned`代表模型有删减过大小。
+HuggingFace为保存库 → Files and versions，选择下载扩展名为`.ckpt`或`.safetensors`的模型。后者因不具备运行代码的能力因此较前者安全。至于`-pruned`代表模型有删减过大小。
 
-<img src=../../../images/RvclOoa.webp alt=""  width=500 loading="lazy">
+<img src=../../../images/download-models-1.webp alt=""  width=500 loading="lazy">
 
-Civitai则是点选Download按钮下载模型。
+Civitai则是点击Download按钮下载模型。
 
 
-如果要用命令下载，可以用wget或git，例如下载`Anything V4.5`的模型到`stable-diffusion-webui/models/Stable-diffusion`文件夹：
+如果要用指令下载，可以用wget或git，例如下载`Anything V4.5`的模型到`stable-diffusion-webui/models/Stable-diffusion`文件夹：
 ```bash
 wget -nc -P stable-diffusion-webui/models/Stable-diffusion https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors
 ```
@@ -70,4 +70,4 @@ wget -nc -P stable-diffusion-webui/models/Stable-diffusion https://huggingface.c
 
 ## 3. 模型放置位置
 
-不论是.ckpt还是.safetensors模型，都是在复制stable-diffusion-webui的仓库后，放到軟件目录下的`/models/Stable-diffusion`文件夹。
+不论是.ckpt还是.safetensors模型，都是在拷贝stable-diffusion-webui的保存库后，放到主程序目录下的`/models/Stable-diffusion`文件夹下。

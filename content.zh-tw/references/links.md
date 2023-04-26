@@ -6,10 +6,10 @@ weight: 1
 本手冊的參考來源
 
 - [AUTOMATIC1111/stable-diffusion-webui Wiki - Github](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/)
+- [Rombach, R., Blattmann, A., Lorenz, D., Esser, P., & Ommer, B. (2022). High-resolution image synthesis with latent diffusion models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 10684-10695).](https://arxiv.org/abs/2112.10752)
 - [Diffusers - Hugging Face](https://huggingface.co/docs/diffusers/index)
 - [Voldy's Retard Guide The definitive Stable Diffusion experience ™](https://rentry.org/voldy)
 - [Stable Diffusion Art - tutorials, prompts, resources](https://stable-diffusion-art.com)
-- [Rombach, R., Blattmann, A., Lorenz, D., Esser, P., & Ommer, B. (2022). High-resolution image synthesis with latent diffusion models. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 10684-10695).](https://arxiv.org/abs/2112.10752)
 
 正體中文術語翻譯參考自benlisquare正體中文的擴充功能。
 

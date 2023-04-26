@@ -1,56 +1,56 @@
 ---
-title: "绘图软件Krita整合 auto-sd-paint-ext"
+title: "绘图软件Krita集成 auto-sd-paint-ext"
 weight: 10
 ---
 
-- 扩展来源：[Interpause/auto-sd-paint-ext](https://github.com/Interpause/auto-sd-paint-ext)
+- 扩充功能来源：[Interpause/auto-sd-paint-ext](https://github.com/Interpause/auto-sd-paint-ext)
 
-这是将Stable Diffusion的Inpainti整合至绘图软件Krita的扩展，可在选取图层范围后调用Stable Diffusion填充内容，支持不规则选取。
+这是将Stable Diffusion的Inpainti集成至绘图软件Krita的扩充功能，可在选取图层范围后调用Stable Diffusion填充内容，支持不规则选取。
 
-1. 进入Extension页面，点选Install from URL：`https://github.com/Interpause/auto-sd-paint-ext.git`，关闭SD WebUI。
+1. 进入Extension页面，点击Install from URL：`https://github.com/Interpause/auto-sd-paint-ext.git`，关闭SD WebUI。
 
-2. 编辑SD WebUI的启动引数，加入`--api`启动SD WebUI。进入网页界面会看到多了`auto-sd-paint-ext Guide/Panel`页面
+2. 编辑SD WebUI的启动参数，加入`--api`启动SD WebUI。进入网页界面会看到多了`auto-sd-paint-ext Guide/Panel`页面
 
-![](../../../images/Screenshot_20230330_155902.webp)
+![](../../../images/auto-sd-paint-ext-1.webp)
 
 3. 安装自由软件[Krita](https://krita.org/)
 
-4. 启动Krita，点选上方的设定 → 管理资源，点选「开启资源文件夹」
+4. 启动Krita，点击上方的设置 → 管理资源，点击「打开资源文件夹」
 
-![](../../../images/Screenshot_20230330_155918.webp)
+![](../../../images/auto-sd-paint-ext-2.webp)
 
-5. 复制`pykrita`文件夹的路径
+5. 拷贝`pykrita`文件夹的路径
 
-![](../../../images/Screenshot_20230330_160000.webp)
+![](../../../images/auto-sd-paint-ext-3.webp)
 
-6. 回到SD WebUI，贴上pykrita文件夹的路径，下面即会产生建立符号连结的指令。开启终端机，按照你的系统执行指令。
+6. 回到SD WebUI，粘贴pykrita文件夹的路径，下面即会产生创建符号链接的指令。打开终端机，按照你的操作系统运行指令。
 
-![](../../../images/Screenshot_20230330_160110.webp)
+![](../../../images/auto-sd-paint-ext-4.webp)
 
-7. 重新启动Krita。点选设定 → 设定Krita，点选左边的「Python外挂管理器」，再勾选右边的Stable Diffusion Plugin
+7. 重新启动Krita。点击设置 → 设置Krita，点击左边的「Python插件程序管理器」，再勾选右边的Stable Diffusion Plugin
 
-![](../../../images/Screenshot_20230330_160327.webp)
+![](../../../images/auto-sd-paint-ext-5.webp)
 
-8. 重新启动Krita，编辑图片时左边即会多出一堆面板。这些面板可从设定 → 工具面板叫出来
+8. 重新启动Krita，编辑图片时左边即会多出一堆面板。这些面板可从设置 → 工具面板叫出来
 
-![](../../../images/Screenshot_20230330_160657.webp)
+![](../../../images/auto-sd-paint-ext-6.webp)
 
 9. 以Inpaint的功能为例子，让我们先把无关的面板都关掉，只留下"Inpaint"
 
-![](../../../images/Screenshot_20230330_164146.webp)
+![](../../../images/auto-sd-paint-ext-7.webp)
 
-10. 点选右下角新增颜料图层
+10. 点击右下角添加颜料图层
 
-![](../../../images/Screenshot_20230330_164250.webp)
+![](../../../images/auto-sd-paint-ext-8.webp)
 
 11. 在此图层用铅笔工具，将要填充的地方涂黑
 
-![](../../../images/Screenshot_20230330_164338.webp)
+![](../../../images/auto-sd-paint-ext-9.webp)
 
-12. 于左边的面板填入提示词，点选Start Inpaint，开始绘图。进度条可从终端机查看。
+12. 于左边的面板填入提示词，点击Start Inpaint，开始绘图。进度条可从终端机查看。
 
-![](../../../images/Screenshot_20230330_164558.webp)
+![](../../../images/auto-sd-paint-ext-10.webp)
 
 13. SD WebUI运算完成后结果即会显示在Krita的图层上。
 
-![](../../../images/Screenshot_20230330_164849.webp)
+![](../../../images/auto-sd-paint-ext-11.webp)

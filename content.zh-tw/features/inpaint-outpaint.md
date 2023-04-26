@@ -5,6 +5,8 @@ weight: 4
 
 內補繪製(inpaint)。這是用AI填充塗黑(遮罩)區域的技術，例如給圖片的角色換衣服。或是反過來：讓AI把圖片空白的地方繪製完成(outpaint)。
 
+可以想像成讓AI幫您修圖，用於在圖中新增或去除物件。
+
 此功能位於Img2img下的Inpaint頁面。
 
 ![](../../images/inpaint-outpaint-1.webp)

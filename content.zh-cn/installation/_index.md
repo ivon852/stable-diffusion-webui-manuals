@@ -1,5 +1,5 @@
 ---
-title: "1. 安装Stable Diffusion WebUI"
+title: "2. 安装Stable Diffusion WebUI"
 bookFlatSection: false
 bookCollapseSection: true
 weight: 1
@@ -9,10 +9,10 @@ weight: 1
 
 阅读方式：
 
-请依序读完系統需求 → 下载模型 → 命令列引数
+请依序读完系统需求 → 下载模型 → 命令行参数
 
 然后按照您的需求，阅读相应的安装章节
 
-要在自己电脑跑的就看Linux或Windows或macOS的安装解说。 Docker则是另一种跨平台的容器解决方案。
+要在自己电脑跑的就看Linux或Windows或macOS的安装解说。Docker则是另一种跨平台的容器解决方案。
 
-要在云上跑的就看部署至Google Colab/Paperspace的安装解说。
+要在云端跑的就看部署至Google Colab/Paperspace的安装解说。

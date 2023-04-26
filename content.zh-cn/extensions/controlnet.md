@@ -3,29 +3,29 @@ title: "ControlNet 按照骨架动作绘图"
 weight: 3
 ---
 
-- 扩展来源：[Mikubill/sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet)
-- ControlNet的倉库：[lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)
+- 扩充功能来源：[Mikubill/sd-webui-controlnet](https://github.com/Mikubill/sd-webui-controlnet)
+- ControlNet的保存库：[lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)
 
 目前版本：ControlNet v1.1
 
-ControlNet是通过加入额外条件来控制扩散模型的神经網絡结构，它可以让AI参考给定图片的动作/线条/景深，精准的生成图片。
+ControlNet是通过加入额外条件来控制扩散模型的神经网络结构，它可以让AI参考给定图片的动作/线条/景深，更精准的生成图片。
 
-跟内建的「图生图」技术比起来，ControlNet的效果更好，能让AI以指定动作生图；再搭配3D建模作为辅助，能缓解单纯用文生图手脚、脸部表情画不好的问题。
+跟内置的「图生图」技术比起来，ControlNet的效果更好，能让AI以指定动作生图；再搭配3D建模作为辅助，能缓解单纯用文生图手脚、脸部表情画不好的问题。
 
 ControlNet的用法还有：上传人体骨架线条，ControlNet就能按骨架的动作生成完稿的人物图片。或是上传素色的3D建模，让ControlNet彩现成为室内布置家具。
 
-Lvmin Zhang是ControlNet原始程序的开发者，Mikubill则是开发扩展，让我们可以在Stable Diffusion WebUI用ControlNet生图。
+Lvmin Zhang是ControlNet原始程序的开发者，Mikubill则是开发扩充功能，让我们可以在Stable Diffusion WebUI用ControlNet生图。
 
 
 # 1. 安装ControlNet与下载模型
 
-1. 切换至Extensions页面，点选`Install From URL`，URL输入`https://github.com/Mikubill/sd-webui-controlnet.git`，按下Install，接着从终端按CTRL＋C，关闭Stable Diffusion WebUI。
+1. 切换至Extensions页面，点击`Install From URL`，URL输入`https://github.com/Mikubill/sd-webui-controlnet.git`，按下Install，接着从终端机按CTRL＋C，关闭Stable Diffusion WebUI。
 
-2. 到[lllyasviel/ControlNet v1.1](https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main)下载以`.pth`结尾的模型文件，全部加起来约18GB。`.yaml`文件不需要下载。目前v1.1是测试版，之后会合并回[主仓库](https://huggingface.co/lllyasviel/ControlNet)。
+2. 到[lllyasviel/ControlNet v1.1](https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main)下载以`.pth`结尾的模型档，全部文件加起来约18GB。`.yaml`档不需要下载。目前v1.1是测试版，之后会合并回[主保存库](https://huggingface.co/lllyasviel/ControlNet)。
 
-![](../../../images/controlnet1.webp)
+![](../../../images/controlnet-1.webp)
 
-3. 将这些模型文件放到`stable-diffusion-webui/extensions/sd-webui-controlnet/models`文件夹
+3. 将这些模型档放到`stable-diffusion-webui/extensions/sd-webui-controlnet/models`文件夹
 
 4. 重新启动Stable Diffusion WebUI。
 
@@ -36,7 +36,7 @@ ControlNet现有以下模型。
 
 ## Anime Lineart
 
-侦测线条，生成的图片亦会保留原始的线条，适合处理二次元图像
+侦测线条，生成的图片亦会保留原始的线条，适合处理动漫图像
 
 ## Canny
 
@@ -45,6 +45,10 @@ ControlNet现有以下模型。
 ## Depth
 
 侦测输入图片的深度图(depth map)。
+
+## Illumination
+
+侦测输入图片的光源与照明效果。
 
 ## Inpaint
 
@@ -62,9 +66,11 @@ ControlNet现有以下模型。
 
 侦测线条，适合处理线稿，生成的图片亦会保留原始的线条。
 
-## MLSD
+## M-LSD
 
 侦测输入图片的直线。
+
+## Normalbae
 
 ## Openpose
 
@@ -76,13 +82,13 @@ ControlNet现有以下模型。
 
 ## Segmentation
 
-将侦测的图片物件切成一个一个色块处理，例如房子一个色块，后面的天空一个色块。
+模型文件名为`seg`，将侦测的图片对象切成一个一个色块处理，例如房子一个色块，后面的天空一个色块。
 
 ## Shuffle
 
 把输入图片的概念转移到生成的图片。
 
-作者给的例子：输入灰色装甲图片，生成的钢铁侠盔甲也会是灰色的。
+作者给的例子：输入灰色装甲图片，生成的钢铁人盔甲也会是灰色的。
 
 ## Soft Edge
 
@@ -97,7 +103,7 @@ ControlNet现有以下模型。
 
 在安装之后，WebUI的界面会多出"ControlNet"的按钮。
 
-![](../../../images/controlnet3.webp)
+![](../../../images/controlnet-2.webp)
 
 点开会看到以下选项：
 
@@ -107,23 +113,23 @@ ControlNet现有以下模型。
 
 ## Batch
 
-处理多张图片。 Input Directory填写的是待处理的图片所在路径。
+处理多张图片。Input Directory填写的是待处理的图片所在路径。
 
 ## Open New Canvas
 
 清除图片，开一张新画布。
 
-## 使用电脑摄像头
+## 使用电脑镜头
 
 在Open New Canvas的选项下面有四个按钮。
 
-![](../../../images/controlnet2.webp)
+![](../../../images/controlnet-3.webp)
 
-由左到右：新增画布；使用电脑摄像头拍照上传；未知；还原上次算图设定。
+由左到右：添加画布；使用电脑镜头拍照上传；未知；还原上次算图设置。
 
 ## Enable
 
-在生图时启用ControlNet，必选。
+在生图时激活ControlNet，必选。
 
 ## Low VRAM
 
@@ -147,7 +153,7 @@ Preprocessor是先将上传的图片处理过一轮，例如`Scribbles`会将彩
 
 ## Model 模型
 
-设定生图的时候使用哪个ControlNet模型。
+设置生图的时候使用哪个ControlNet模型。
 
 ## Control Weight
 
@@ -163,7 +169,7 @@ ControlNet在生图时的权重。
 
 ## Preprocessor Resolution
 
-预处理器的解析度。
+预处理器的分辨率。
 
 如果不知道要设多少，请勾选"Pixel Perfect"让ControlNet自动为您决定。
 
@@ -175,17 +181,17 @@ ControlNet在生图时的权重。
 
 自动将生成的图片传回此ControlNet运算单元(unit)。
 
-是的，如果您的电脑VRAM够大，您可以在Settings → ControlNet启用多个ControlNet运算单元。
+是的，如果您的电脑VRAM够大，您可以在Settings → ControlNet激活多个ControlNet运算单元。
 
 ## Multi ControlNet
 
-一个ControlNet效果不够，您有没有想过启用第二、第三个ControlNet！？
+一个ControlNet效果不够，您有没有想过激活第二、第三个ControlNet！？
 
-预设安装后只会使用一个ControlNet，但是叠加多个有助于生成更好的图片。比方说同时使用Open Pose和Depth生成人体，并防止手画歪。
+缺省安装后只会使用一个ControlNet，但是叠加多个有助于生成更好的图片。比方说同时使用Open Pose和Depth生成人体，并防止手画歪。
 
-要启用Multi ControlNet，请进入Settings → ControlNet，拖动拉杆，设定要启用的ControlNet数量。
+要激活Multi ControlNet，请进入Settings → ControlNet，拖动拉杆，设置要激活的ControlNet数量。
 
-<img src=../../../images/F9joNvd.webp alt=""  width=500 loading="lazy">
+<img src=../../../images/controlnet-4.webp alt=""  width=500 loading="lazy">
 
 
 # 4. 实际操作
@@ -194,18 +200,19 @@ ControlNet在生图时的权重。
 
 1. 在安装之后，WebUI的界面会多出"ControlNet"的按钮。
 
-![](../../../images/c84PFJJ.webp)
+![](../../../images/controlnet-5.webp)
 
-2. 进入文生图的页面填入提示词，接着点开下面ControlNet的界面，勾选`Enabled`启用ControlNet，上传图片。勾选LowVRAM可降低VRAM占用。
+2. 进入文生图的页面填入提示词，接着点开下面ControlNet的界面，勾选`Enabled`激活ControlNet，上传图片。勾选LowVRAM可降低VRAM占用。
 
-![](../../../images/QP2mKW6.webp)
+![](../../../images/controlnet-6.webp)
 
 3. 接着选取要使用的Preprocessor和Model，二者要一致。
 
 Preprocessor是先将上传的图片处理过一轮，例如`Scribbles`会将彩色图片转成线稿。如果你的图片不需要处理，则Preprocessor可留空。
 
-![](../../../images/lSOMjfP.webp)
+![](../../../images/controlnet-7.webp)
 
-4. 以Scribbles为例，选取后点选右上角Generate即会生成出结果，并附上侦测到的线条。如下图所示，右边贞德的姿势确实跟左边的02十分类似。
+4. 以Scribbles为例，选取后点击右上角Generate即会生成出结果，并附上侦测到的线条。如下图所示，右边贞德的姿势确实跟左边的02十分类似。
 
-![](../../../images/A3pecmu.webp)
+![](../../../images/controlnet-8.webp)
+

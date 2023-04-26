@@ -7,4 +7,4 @@ weight: 2
 
 此手册的正体中文版贡献者：[Ivon Huang](https://github.com/ivon852)
 
-此手册的簡体中文版贡献者：[Ivon Huang](https://github.com/ivon852)
+此手册的简体中文版贡献者：[Ivon Huang](https://github.com/ivon852)

@@ -1,5 +1,5 @@
 ---
-title: "4.3. 训练Embedding"
+title: "训练Embedding"
 weight: 3
 ---
 
@@ -12,45 +12,45 @@ Anything这类基于NovelAI制作的模型不适合拿来练Embedding，成品�
 
 1. 启动SD WebUI
 
-2. 切换至Train页面，在`Create embedding`输入名字。 `Number of vectors per token`设定7以上。点选`Create embedding`。
+2. 切换至Train页面，在`Create embedding`输入名字。`Number of vectors per token`设置7以上。点击`Create embedding`。
 
-![](../../../images/AJGhKGD.avif)
+![](../../../images/embedding-1.webp)
 
-3. 切换至Train页面，选择刚刚建立的embedding，于`Dataset directory`输入训练资料的路径
+3. 切换至Train页面，选择刚刚创建的embedding，于`Dataset directory`输入训练数据的路径
 
-![](../../../images/L72fSWj.avif)
+![](../../../images/embedding-2.webp)
 
-4. `Prompt template file`选style_filewords.txt。 `Mx Step`设定训练至10000步停止。当然你也可以调高一点，并看预览图决定品质差不多之后才按Interrupt中止训练，究竟要多少步数不得而知。
+4. `Prompt template file`选style_filewords.txt。`Mx Step`设置训练至10000步停止。当然你也可以调高一点，并看预览图决定品质差不多之后才按Interrupt中止训练，究竟要多少步数不得而知。
 
-![](../../../images/acSmZHm.avif)
+![](../../../images/embedding-3.webp)
 
-5. 点选`Train Embedding`，开始训练。
+5. 点击`Train Embedding`，开始训练。
 
 6. SD WebUI应会显示剩余时间，通常是一小时起跳，每500步会在右边显示训练该步数的成果。
 
 7. 你也可以到SD WenUI根目录下的`texual_inversions`查看训练成果。里面`image_embeddings`目录会存放第几步所训练的成果。
 
-![](../../../images/IZZLOD1.avif)
+![](../../../images/embedding-4.webp)
 
 8. 待训练完成后，至SD WenUI根目录下的`texual_inversions/embeddings`，对照`image_embeddings`目录的图片挑选合适的成品。
 
-<img src=../../../images/7mBAcYm.avif width=300>
+![](../../../images/embedding-5.webp)
 
-9. 例如觉得9500步的不错，那就将该pt文件从里面挑出，将其放到SD WebUI程序目录下的`embeddings`。
+9. 例如觉得9500步的不错，那就将该pt档从里面挑出，将其放到SD WebUI程序目录下的`embeddings`。
 
-![](../../../images/ts3gqY7.avif)
+![](../../../images/embedding-6.webp)
 
 
 # 2. Embedding模型使用方式
 
-1. 于SD WebUI的生图界面，点选右上角`Show Extra Networks`
+1. 于SD WebUI的生图界面，点击右上角`Show Extra Networks`
 
-![](../../../images/wgXGW1a.avif)
+![](../../../images/embedding-7.webp)
 
-2. 接着选取要使用的embedding，点选将其加入提示词栏位。 Embedding只能配合训练时使用的模型来生图。
+2. 接着选取要使用的embedding，点击将其加入提示词字段。Embedding只能配合训练时使用的模型来算图。
 
-![](../../../images/vRqzVQp.avif)
+![](../../../images/embedding-8.webp)
 
 3. 然后按照Embedding训练时使用的提示词下提示词，这样算出来的图便会有该Embedding的人物了。
 
-![](../../../images/4Vch9zC.avif)
+![](../../../images/embedding-9.webp)
