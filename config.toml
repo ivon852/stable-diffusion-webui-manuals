@@ -1,10 +1,10 @@
-baseURL = 'example.com'
+baseURL = '/'
 title = 'Stable Diffusion WebUI使用手冊'
 theme = 'hugo-book'
 defaultContentLanguage = "zh-tw"
 
-#relativeURLs = true
-#uglyURLs = true
+relativeURLs = true
+uglyURLs = true
 
 # Book configuration
 disablePathToLower = true
@@ -112,7 +112,7 @@ enableGitInfo = true
   # By default partals/docs/comments.html includes Disqus template
   # See https://gohugo.io/content-management/comments/#configure-disqus
   # Can be overwritten by same param in page frontmatter
-  BookComments = true
+  BookComments = false
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.

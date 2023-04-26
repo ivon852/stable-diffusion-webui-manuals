@@ -17,22 +17,11 @@ Stable Diffusion WebUI User Manuals in Chinese
 每個章節一個目錄，目錄下每個頁面一個markdown檔案。
 ```bash
 .
-├── archetypes
-├── assets
-├── config.toml
-├── config_ivonblog.toml
 ├── content.zh-tw       --> 文章目錄 (正體中文)
 ├── content.zh-cn       --> 文章目錄 (简体中文)
 ├── content.en-us       --> 文章目錄 (English)
-├── deploy_ivonblog.sh
-├── LICENSE
-├── README.md
 ├── static
-│   ├── favicon.png
-│   ├── favicon.svg
-│   ├── images          --> 圖片目錄
-│   └── logo.png
-└── themes
+└── └── images          --> 圖片目錄
 ```
 
 `_index.md`為該章封面與前言。Frontmatter裡面的`weight`為文章在左邊列表的順序。
@@ -42,7 +31,7 @@ Stable Diffusion WebUI User Manuals in Chinese
 至於圖片引用，非正體中文的路徑一律是`../../../images/<圖片檔名>`，這樣不論前置域名為何皆能找到圖片。
 
 
-## 3. 離線預覽
+## 3. 離線閱讀HTML檔案
 
 此手冊使用[Hugo](https://gohugo.io/)與[hugo-paper](https://github.com/nanxiaobei/hugo-paper)主題製作而成。網頁可以在本機離線瀏覽。
 
@@ -53,11 +42,14 @@ Stable Diffusion WebUI User Manuals in Chinese
 git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
 ```
 
-3. 按需編輯`config.toml`，將`BookComments`設定為`false`。
-
-4. 預覽網頁，伺服器IP位址為`http://localhost:1313`，按CTRL＋C終止。
+3. 預覽網頁，伺服器IP位址為`http://localhost:1313`，按CTRL＋C終止。
 ```bash
 hugo server -D --config config.toml
+```
+
+4. 執行`generate_static_html.sh`指令稿生成靜態網頁，成品位於`public`目錄，用瀏覽器開啟`index.html`即可閱讀。
+```bash
+bash generate_static_html.sh
 ```
 
 ＊`deploy_ivonblog.sh`和`config_ivonblog.toml`這二個檔案是我自用的，用於部署到我的部落格。
