@@ -41,7 +41,6 @@ conda init zsh
 ```
 
 3.  建立Python 3.10.6的虚拟环境，输入y同意，它会自动下载必要的套件
-
 ```bash
 conda create --name sdwebui python=3.10.6
 ```
@@ -63,9 +62,14 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 
 ![](../../../images/macos-installation-4.webp)
 
-4, 接着回到终端机，启动Python虚拟环境，终端机提示符前面会变成`(sdwebui)`
+4. 接着回到终端机，启动Python虚拟环境，终端机提示符前面会变成`(sdwebui)`
 ```bash
 conda activate sdwebui
+```
+
+5. 确认Pyhton版本，输出应为3.10.6
+```bash
+python --version
 ```
 
 
@@ -76,8 +80,6 @@ conda activate sdwebui
 ![](../../../images/macos-installation-5.webp)
 
 参考上图框起来的地方，填入`export COMMANDLINE_ARGS=--medvram --opt-split-attention`引数，降低VRAM使用量。
-
-额外加上`--listen`参数让其他电脑能以IP存取网页界面，`--share`则是产生一组Gradio网址。
 
 其余引数请参阅[命令列引数](../installation/command-line-arguments-and-settings/)页面。
 

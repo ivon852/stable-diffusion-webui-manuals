@@ -27,7 +27,7 @@ Stable Diffusion WebUI的扩充功能目录一律放在`extensions`资料夹。
 
 1. 用指令安装扩充功能前先关闭主程式。
 
-2. 接着在`stable-diffusion-webui/extensions`资料夹开启终端机，执行`git clone`指令，安装扩充功能。例如要安装正体中文翻译的话就是：
+2. 接着在`stable-diffusion-webui/extensions`资料夹开启终端机，执行`git clone`指令，安装扩充功能。例如要安装正体中文翻译的话就是把该储存库复制下来：
 ```bash
 git clone https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW.git
 ```

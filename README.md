@@ -40,6 +40,7 @@ Stable Diffusion WebUI User Manuals in Chinese
 2. fork或clone此儲存庫
 ```bash
 git clone git@github.com:ivon852/stable-diffusion-webui-manuals.git
+cd stable-diffusion-webui-manuals
 ```
 
 3. 預覽網頁，伺服器IP位址為`http://localhost:1313`，按CTRL＋C終止。

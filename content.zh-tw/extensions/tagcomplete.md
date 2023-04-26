@@ -5,7 +5,7 @@ weight: 5
 
 - 擴充功能來源：[DominikDoom/a1111-sd-webui-tagcomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete)
 
-輸入提示詞的時候提示相關標籤，畫動漫圖的時候很有用，還可以安裝中文標籤翻譯。
+輸入提示詞的時候提示相關Danbooru上的標籤，畫動漫圖的時候很有用，還可以安裝中文標籤翻譯。
 
 ![](../../images/ZWKtuRV.webp)
 

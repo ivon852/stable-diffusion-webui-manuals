@@ -63,7 +63,7 @@ sudo apt show rocm-libs
 sudo apt install python3 python3-pip python3-virtualenv wget git
 ```
 
-2. Stable Diffusion WebUI的Wiki寫明Python版本建議為3.10.6，為此請先安裝[Anaconda](https://ivonblog.com/posts/linux-anaconda/)。
+2. 安裝[Anaconda](https://ivonblog.com/posts/linux-anaconda/)。
 
 3. 建立Python 3.10.6的虛擬環境
 ```bash
@@ -104,7 +104,7 @@ conda activate sdwebui
 
 若GPU VRAM小於等於4GB的話加入`COMMANDLINE_ARGS=--medvram --opt-split-attention`引數，防止`RuntimeError: CUDA Out of memory`錯誤。
 
-AMD顯示卡需要另外加上` --precision full --no-half`引數，否則生成的圖可能會一片漆黑。
+AMD顯示卡需要另外加上`--precision full --no-half`引數，否則生成的圖可能會一片漆黑。
 
 額外加上`--listen`參數讓其他電腦能以IP存取網頁界面，`--share`則是產生一組Gradio網址。
 
