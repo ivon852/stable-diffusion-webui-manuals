@@ -19,7 +19,7 @@ Stable Difssusion WebUI支援Linux/Windows/macOS系统的电脑。
 硬体不够力的话，用云端服务跑也是可以。
 
 
-# Linux
+# GNU/Linux
 
 下面是测试可以跑的Linux发行版，使用Debian和Ubuntu会比较好上手。
 

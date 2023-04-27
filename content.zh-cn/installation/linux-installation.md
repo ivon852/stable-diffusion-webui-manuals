@@ -1,5 +1,5 @@
 ---
-title: "🖥️ 安装至Linux"
+title: "🖥️ 安装至GNU/Linux"
 weight: 3
 ---
 
