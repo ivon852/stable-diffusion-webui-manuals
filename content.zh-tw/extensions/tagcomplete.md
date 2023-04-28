@@ -11,3 +11,4 @@ weight: 5
 
 進入Extensions頁面，點選`Install from URL`，輸入網址`https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git`，按`Install`，之後重啟WebUI。
 
+如何安裝標籤中文翻譯：到[byzod/a1111-sd-webui-tagcomplete-CN](https://github.com/byzod/a1111-sd-webui-tagcomplete-CN)儲存庫，點選綠色的Code → Download ZIP，解壓縮，得到tags資料夾，下面有`Tags-zh-full-pack.csv`和`config.json`這二個檔案。將這二個檔案移動到`stable-diffusion-webui/extensions/a1111-sd-webui-tagcomplete/tags`資料夾。

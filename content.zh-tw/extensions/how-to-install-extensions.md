@@ -10,7 +10,7 @@ weight: 1
 
 ![](../../images/how-to-install-extensions-1.webp)
 
-有些比較新的擴充功能則是要你複製Github儲存庫網址，並點選`Install from URL`，它會自動完成Git clone的操作。
+有些比較新的擴充功能則是要你複製Github儲存庫網址，並點選選Extensions → `Install from URL`，貼上網址再按Install，它會自動完成git clone的操作。
 
 ![](../../images/how-to-install-extensions-2.webp)
 
@@ -36,9 +36,9 @@ git clone https://github.com/benlisquare/stable-diffusion-webui-localization-zh_
 
 未來要一次更新全部擴充功能的話，在`stable-diffusion-webui/extensions`資料夾開啟終端機，執行以下指令：
 ```bash
-# Windows
-Get-ChildItem | ForEach-Object { git -C $_.FullName pull }
-
 # Linux
 ls | xargs -I{} git -C {} pull
+
+# Windows
+Get-ChildItem | ForEach-Object { git -C $_.FullName pull }
 ```
