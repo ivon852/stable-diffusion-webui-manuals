@@ -151,6 +151,11 @@ Preprocessor是先將上傳的圖片處理過一輪，例如`Scribbles`會將彩
 
 如果你的圖片不需要處理，Preprocessor可留空。
 
+## Run Preprocessor (爆炸圖示)
+
+執行預處理器，預先處理圖片。
+
+
 ## Model 模型
 
 設定生圖的時候使用哪個ControlNet模型。

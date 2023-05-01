@@ -5,6 +5,8 @@ weight: 4
 
 Stable Diffusion WebUI支援Windows 10和Windows 11。
 
+本文以Windows 11 22H2為例子。
+
 
 # 1. 安裝顯示卡驅動程式
 

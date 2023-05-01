@@ -28,7 +28,7 @@ Windows也是一樣，不過啟動是用`webui-user.bat`批次檔，以終端機
 |TRANSFORMERS_CACHE| Transformer函式庫下載的路徑，以及CLIP模型相關檔案的路徑。|
 
 
-環境變數的設定方法：
+環境變數與命令列引數的設定方法：
 
 - Linux/macOS：編輯`webui-user.sh`，填入`export 變數=數值`
 - Windows：編輯`webui-user.bat`，填入`set 變數=數值`

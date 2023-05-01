@@ -6,7 +6,9 @@ weight: 1
 
 # 1. 用圖形界面安裝
 
-最簡單的就是點選Extensions → Available的`Load from:`，就會列出可下載安裝的擴充功能。
+注意：您必須在[命令列引數](../installation/command-line-arguments-and-settings/)加入`--enable-insecure-extension-access`才能從圖形界面裝擴充功能。
+
+最簡單的就是點選Extensions → Available的`Load from:`，就會列出可下載安裝的擴充功能，點選安裝。
 
 ![](../../images/how-to-install-extensions-1.webp)
 

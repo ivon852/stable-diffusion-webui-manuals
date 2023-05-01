@@ -21,7 +21,7 @@ Stable Difssusion WebUI支援Linux/Windows/macOS系統的電腦。
 
 # GNU/Linux
 
-下面是測試可以跑的Linux發行版，使用Debian和Ubuntu會比較好上手。
+下面是測試可以跑的Linux發行版
 
 - Debian 11
 - Ubuntu 22.04
@@ -33,12 +33,12 @@ Stable Difssusion WebUI支援Linux/Windows/macOS系統的電腦。
 
 # Windows
 
-作業系統最低要求為Windows 10 64位元。Windows 7不行。
+最低要求為Windows 10 64位元。Windows 7不行。
 
 
 # MacOS
 
-請使用最新版macOS。
+最低要求版本為macOS Monterey (12.5)，可以的話請使用最新版macOS。
 
 建議使用搭載Apple Silicon M晶片 (M1、M2) 的Mac機型。
 

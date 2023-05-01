@@ -5,7 +5,7 @@ weight: 4
 
 内补绘制(inpaint)。这是用AI填充涂黑(遮罩)区域的技术，例如给图片的角色换衣服。或是反过来：让AI把图片空白的地方绘制完成(outpaint)。
 
-可以想像成让AI帮您修图，用于在图中新增或去除物件。
+可以想像成让AI帮您修图，用于在图中添加或去除对象。
 
 此功能位于Img2img下的Inpaint页面。
 
@@ -43,7 +43,7 @@ Only masked即外补绘制模式。
 
 # 2. 实际操作
 
-1. 上传图片，点选图片，用滑鼠将要替换的部份涂黑。
+1. 上传图片，点击图片，用鼠标将要替换的部份涂黑。
 
 ![](../../../images/inpaint-outpaint-2.webp)
 
@@ -53,21 +53,21 @@ Only masked即外补绘制模式。
 
 3. 左下角的`Masked content`有几个选项：`fill`即为填充新内容，`original`则是在填充内容的时候参考原图黑色底下的内容。
 
-4. 点选Generate生图。
+4. 点击Generate生图。
 
 ![](../../../images/inpaint-outpaint-3.webp)
 
-若要切换为外补绘制：点选左下角的Mask mode，将`Inpaint masked`改成`Inpaint not masked`，这样AI就会改为填满没有涂黑的地方。
+若要切换为外补绘制：点击左下角的Mask mode，将`Inpaint masked`改成`Inpaint not masked`，这样AI就会改为填满没有涂黑的地方。
 
 
-# 3. 批次处理图片
+# 3. 批量处理图片
 
 切换到Batch页面
 
 ![](../../../images/inpaint-outpaint-4.webp)
 
-第一个栏位输入要处理的图片路径，例如桌面的`Input`资料夹
+第一个字段输入要处理的图片路径，例如桌面的`Input`文件夹
 
 第二个则是输出路径
 
-第三个栏位是预先涂好遮罩的图片的路径
+第三个字段是预先涂好遮罩的图片的路径

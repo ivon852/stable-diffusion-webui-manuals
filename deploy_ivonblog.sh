@@ -7,7 +7,7 @@ lst=`find "content.zh-cn" -type f -name "*.md"`
 lst_num=`find "content.zh-cn" -type f -name "*.md"|wc -l`
 for file in $lst
 do
-	opencc -i $file -o $file -c tw2s.json
+	opencc -i $file -o $file -c tw2sp.json
 done
 
 # 修正圖片連結

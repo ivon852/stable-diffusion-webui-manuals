@@ -3,7 +3,7 @@ title: "🖥️ 安裝至macOS"
 weight: 5
 ---
 
-以macOS Ventura作示範。
+本文以macOS Ventura (13.3.1) 作示範。
 
 
 # 1. 安裝套件管理員Homebrew

@@ -3,7 +3,7 @@ title: "🖥️ 安裝至GNU/Linux"
 weight: 3
 ---
 
-以Ubuntu 22.04為例子。
+本文以Ubuntu 22.04 LTS為例子。
 
 請使用一般使用者，不可以用Root使用者安裝。
 

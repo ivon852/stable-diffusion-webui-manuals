@@ -28,7 +28,7 @@ weight: 1
 
 这一节使用HD-v22的模型做示范，因此生成出来都会是动漫风格。
 
-1. 下提示词时，利用人事时地物的概念，写个英文句子描述图内场景，尽量将想看到的提示词排在前面。例如在提示词的栏位填入「一个亚洲女孩在沙滩上」，负向提示词留空
+1. 下提示词时，利用人事时地物的概念，写个英文句子描述图内场景，尽量将想看到的提示词排在前面。例如在提示词的字段填入「一个亚洲女孩在沙滩上」，负向提示词留空
 ```lisp
 an asian girl on the beach
 ```
@@ -43,7 +43,7 @@ an asian girl on the beach
 1girl, asian, beach, ocean
 ```
 
-再算一次，但是结果变了？没错，即使提示词相近，AI绘图每次生图结果都是随机的。要维持上一次的结果并微调，你得保留每次算图的种子码(Seed，SD WebUI界面左下角，亦会写在档名上)。
+再算一次，但是结果变了？没错，即使提示词相近，AI绘图每次生图结果都是随机的。要维持上一次的结果并微调，你得保留每次算图的种子码(Seed，SD WebUI界面左下角，亦会写在文件名上)。
 
 ![](../../../images/example2.png)
 
@@ -90,14 +90,14 @@ asuka_langley_souryuu from neon_genesis_evangelion, masterpiece, 1girl, beach, o
 
 再次提醒，在下提示词的时候，生成图片使用的模型也需纳入考量。譬如想要生成特定动漫人物，去Danbooru找到了英文姓名，加上提示词，但你却用画真人的Stable Diffusion去算，则AI可能根本就不会认得你说的角色是谁，反之亦然。Danbooru的标签风格跟一般图片的描述还是有差距的。
 
-除非日后有搜罗全部网路图片的超大模型出现，否则下提示词须配合模型种类来决定。
+除非日后有搜罗全部网络图片的超大模型出现，否则下提示词须配合模型种类来决定。
 
 如果AI怎样都生成不出你要的风格或人物，请考虑换个模型，或是[自行训练模型](../training/)。
 
 
 # 2. 负向提示词 Negative Prompts
 
-上面的例子，我们只有写提示词，但下面的负向提示词的栏位都是空白。但生图时常常还需要加入一些负向提示词，避免掉不好的结果。AI绘图有时不会一次就算出好结果，所以还需要加上负向提示词来控制，尤其是大批算图的时候更为重要。
+上面的例子，我们只有写提示词，但下面的负向提示词的字段都是空白。但生图时常常还需要加入一些负向提示词，避免掉不好的结果。AI绘图有时不会一次就算出好结果，所以还需要加上负向提示词来控制，尤其是大批算图的时候更为重要。
 
 1. 负向提示词会加入一些常见的「不好」的图片特征，例如低画质、最糟品质、画家签名、模糊、浮水印
 ```lisp
@@ -114,14 +114,14 @@ nsfw, weapon, blood, guro, lowres, bad anatomy, text, error, extra digit, fewer 
 
 # 3. Stable Diffusion WebUI独有语法
 
-此节列出的语法为AUTOMATIC1111制作的SD WebUI独有，使用其他人制作的Stable Diffusion程式不见得适用。
+此节列出的语法为AUTOMATIC1111制作的SD WebUI独有，使用其他人制作的Stable Diffusion程序不见得适用。
 
 
 ##  关注度括号 Attention/emphasis
 
 控制关注度的符号，增加算图时对该提示词的关注度(attention)。简单来说，括号就是你想强调的重点元素，括号越多，生成的结果越会符合括号里的提示词。
 
-SD WebUI使用小括号控制关注度： `( )` 小括号层次越多权重越高(不加小括号为1倍，每加一层小括号乘以1.1倍)。例如，强调「蓝眼睛」，生成的结果就更高机率是蓝眼睛人物
+SD WebUI使用小括号控制关注度： `( )` 小括号层次越多权重越高(不加小括号为1倍，每加一层小括号乘以1.1倍)。例如，强调「蓝眼睛」，生成的结果就更高几率是蓝眼睛人物
 ```lisp
 asian, woman, ((blue eyes)), beach, ocean
 ```
@@ -131,9 +131,9 @@ asian, woman, ((blue eyes)), beach, ocean
 asian, woman, (blue eyes:2.5), beach, ocean
 ```
 
-SD WebUI还支援`[ ]`中括号，越多权重越弱(乘以1.1倍)，通常用在负向提示词栏位。
+SD WebUI还支持`[ ]`中括号，越多权重越弱(乘以1.1倍)，通常用在负向提示词字段。
 
-＊给用过NovelAI的使用者：SD WebUI的小括号`( )`效果等价于NovelAI的大括号`{ }`，都是增加对该提示词的关注度。
+＊给用过NovelAI的用户：SD WebUI的小括号`( )`效果等价于NovelAI的大括号`{ }`，都是增加对该提示词的关注度。
 
 
 ## 提示词编辑 Prompt editing
@@ -142,7 +142,7 @@ SD WebUI还支援`[ ]`中括号，越多权重越弱(乘以1.1倍)，通常用�
 
 语法为`[提示词1:提示词2:要切换的步数]`
 
-例如，算图时设定20步，一开始算橘子，设定算到15步时切换成苹果
+例如，算图时设置20步，一开始算橘子，设置算到15步时切换成苹果
 ```lisp
 [orange : apple : 15] on table
 ```
@@ -158,7 +158,7 @@ asian, woman, [blue eyes|red eyes|black eyes], beach, ocean
 
 ## 可组合性扩散 Composable Diffusion
 
-此语法让AI依照权重生成二个不同的物件。
+此语法让AI依照权重生成二个不同的对象。
 
 例如生成橘子与苹果，中间用大写的`AND`连接
 ```lisp
@@ -170,7 +170,7 @@ orange AND apple
 orange :1.5 AND apple :2.5
 ```
 
-此语法适合搭配[ControlNet和Latent Couple](../extensions/latent-couple/)，可以准确控制图中物件的位置。
+此语法适合搭配[ControlNet和Latent Couple](../extensions/latent-couple/)，可以准确控制图中对象的位置。
 
 
 # 4. 提示词范例

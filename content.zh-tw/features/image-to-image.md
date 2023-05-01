@@ -29,6 +29,15 @@ weight: 3
 - Resize and fill：裁切並調整圖片寬高，若上傳圖片的寬高與生成設定的寬高不一致，則多出來的區域會自動填滿。
 - Just resize (latent upscale)：調整圖片大小為生圖設定的寬高，並使用潛在空間放大。
 
+## Resize to
+
+依照填入的寬高來生圖。
+
+
+## Resize by
+
+依照填入的縮放係數來生圖，然後縮放圖片。
+
 
 ## Denoising strength 降噪強度
 

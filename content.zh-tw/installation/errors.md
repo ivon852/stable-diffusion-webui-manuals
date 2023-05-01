@@ -75,8 +75,8 @@ weight: 21
 
 你可以：
 
-1. 將該引數刪除。
-2. 額外加上`--enable-insecure-extension-access`引數試試。
+1. 將`--share`或`--listen`引數刪除。
+2. 額外加上`--enable-insecure-extension-access`引數。
 3. 改用Git clone的方式來安裝擴充功能：關閉SD WebUI。於`stable-diffusion-webui\extensions`資料夾開啟終端機，輸入`git clone <儲存庫網址>`下載擴充功能。
 
 

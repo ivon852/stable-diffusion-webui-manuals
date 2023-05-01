@@ -58,6 +58,21 @@ DDIM和PLMS是2022年隨Stable Diffusion v1發表的取樣方法。
 
 可以提昇圖片的畫質，但是會耗費更多VRAM。
 
+### Upscaler
+
+要使用的放大器。
+
+### Hires steps
+
+高畫質修復步數。
+
+### Denoising strength
+
+降噪強度。
+
+### Upscale by
+
+縮放係數。
 
 ## Width x Height 圖片寬高
 
@@ -92,6 +107,20 @@ AI生圖與你給的提示詞的相關度，數值越高越會按照你說的內
 生成圖片的種子碼。將種子碼保存下來有助於保留生圖的風格。
 
 點選骰子圖示，設定成`-1`即為重置種子碼；回收符號則是叫出上一次生圖所使用的種子碼。
+
+## Seeds Extra
+
+測試更多種子碼變化之用。
+
+### Variation seed
+
+### Variation strength
+
+變化強度，此值越高，生圖結果越不可預料。
+
+### Resize seed from width
+
+### Resize seed from height
 
 
 ## Scripts

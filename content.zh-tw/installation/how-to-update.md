@@ -5,6 +5,8 @@ weight: 20
 
 Stable Diffusion WebUI的專案原始碼託管在Github，目前「更新」是以`git pull`指令來操作。
 
+版本號碼和更新日誌可以到[Github Releases](https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases)查看。
+
 1. 在`stable-diffusion-webui`這個資料夾裡面開啟終端機
 
 Windows請按右鍵＋SHIFT → 開啟終端機

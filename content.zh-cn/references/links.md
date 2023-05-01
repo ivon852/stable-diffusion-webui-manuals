@@ -1,5 +1,5 @@
 ---
-title: "外部连结"
+title: "外部链接"
 weight: 1
 ---
 
@@ -19,7 +19,7 @@ Stable Diffusion讨论社群
 - [Stable Diffusion - 知乎](https://www.zhihu.com/topic/26072993)
 
 
-模型训练参考资料
+模型训练参考数据
 
 - [Hypernetwork training for dummies - Rentry.co](https://rentry.co/hypernetwork4dumdums)
 - [【Novel AI】手把手教你Textual Inversion神经网络训练详细操作](https://www.bilibili.com/read/cv19088146)

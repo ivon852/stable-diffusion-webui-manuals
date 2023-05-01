@@ -4,26 +4,26 @@ weight: 5
 ---
 
 
-LoRA (Low-rank adaptation)是用来微调大型模型的技术，其生成的模型训练时间短，档案更小。
+LoRA (Low-rank adaptation)是用来微调大型模型的技术，其生成的模型训练时间短，文件更小。
 
 DreamBooth内含LoRA，可作为[SD WebUI的扩充功能](https://github.com/d8ahazard/sd_dreambooth_extension)安装。
 
-本机训练还可以用[LoRA_Easy_Training_Scripts](https://github.com/derrian-distro/LoRA_Easy_Training_Scripts)，支援Linux和Windows系统。
+本机训练还可以用[LoRA_Easy_Training_Scripts](https://github.com/derrian-distro/LoRA_Easy_Training_Scripts)，支持Linux和Windows系统。
 
 有用Google Colab的采用[Linaqruf/kohya-trainer](https://github.com/Linaqruf/kohya-trainer)会比较好上手。[Reddit](https://www.reddit.com/r/StableDiffusion/comments/111mhsl/lora_training_guide_version_20_i_added_multiple/)有一图流教学。
 
 
 # 1. 安装环境
 
-"LoRA Easy Training Scripts"这个Python程式Linux和Windows都可以用，下面以Ubuntu为例。
+"LoRA Easy Training Scripts"这个Python程序Linux和Windows都可以用，下面以Ubuntu为例。
 
-1. 安装[Anaconda](https://ivonblog.com/posts/linux-anaconda/)，建立虚拟环境
+1. 安装[Anaconda](https://ivonblog.com/posts/linux-anaconda/)，创建虚拟环境
 ```bash
 conda create --name loratraining python=3.10.6
 conda activate loratraining
 ```
 
-2. 复制储存库
+2. 拷贝保存库
 ```bash
 git clone https://github.com/derrian-distro/LoRA_Easy_Training_Scripts.git
 cd LoRA_Easy_Training_Scripts
@@ -36,7 +36,7 @@ pip install -U xformers
 ```
 
 
-3. 设定加速选项
+3. 设置加速选项
 ```bash
 accelerate config
 #依序回答：
@@ -50,12 +50,12 @@ accelerate config
 ```
 
 
-4. LoRA的训练资料目录结构不太一样，需建立目录结构如下。已经上好提示词的训练资料要放在`img_dir`下面，将目录名称取名为`数字_概念`，目录名称前面加上数字代表要重复的步数。
+4. LoRA的训练数据目录结构不太一样，需创建目录结构如下。已经上好提示词的训练数据要放在`img_dir`下面，将目录名称取名为`数字_概念`，目录名称前面加上数字代表要重复的步数。
 
 ![](../../../images/lora-1.webp)
 
 
-5. 新增训练设定档`trainingconfig.json`
+5. 添加训练设置档`trainingconfig.json`
 ```bash
 vim trainingconfig.json
 ```
@@ -69,7 +69,7 @@ vim trainingconfig.json
   "v_parameterization": false,
   //纪录档输出目录
   "logging_dir": "/home/user/桌面/heralora/log_dir/",
-  //训练资料目录
+  //训练数据目录
   "train_data_dir": "/home/user/桌面/heralora/image_dir/",
   //注册目录
   "reg_data_dir": "/home/user/桌面/heralora/reg_dir/",
@@ -138,21 +138,21 @@ export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
-2. 输入以下指令，载入json设定档。`libnvinfer.so.7: cannot open shared object file`的警告可以暂时忽略。
+2. 输入以下指令，加载json设置档。`libnvinfer.so.7: cannot open shared object file`的警告可以暂时忽略。
 ```bash
 accelerate launch main.py --load_json_path "/home/user/trainingconfig.json"
 ```
 
-3. 之后会自动开始训练。训练好的模型位于训练设定档所写的`output_dir`目录。将`.safetensors`档移动至SD WebUI根目录下的`/models/Lora`。
+3. 之后会自动开始训练。训练好的模型位于训练设置档所写的`output_dir`目录。将`.safetensors`档移动至SD WebUI根目录下的`/models/Lora`。
 
 
 # 3. LoRA模型使用方式
 
-1. 点选SD WebUI右上角，Show extra networks
+1. 点击SD WebUI右上角，Show extra networks
 
 ![](../../../images/lora-2.webp)
 
-2. 点选要使用的LoRA，将其加入至提示词栏位
+2. 点击要使用的LoRA，将其加入至提示词字段
 
 ![](../../../images/lora-3.webp)
 

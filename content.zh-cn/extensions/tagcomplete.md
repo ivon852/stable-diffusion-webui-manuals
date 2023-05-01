@@ -9,6 +9,6 @@ weight: 5
 
 ![](../../../images/ZWKtuRV.webp)
 
-进入Extensions页面，点选`Install from URL`，输入网址`https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git`，按`Install`，之后重启WebUI。
+进入Extensions页面，点击`Install from URL`，输入网址`https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git`，按`Install`，之后重启WebUI。
 
-如何安装标签中文翻译：到[byzod/a1111-sd-webui-tagcomplete-CN](https://github.com/byzod/a1111-sd-webui-tagcomplete-CN)储存库，点选绿色的Code → Download ZIP，解压缩，得到tags资料夹，下面有`Tags-zh-full-pack.csv`和`config.json`这二个档案。将这二个档案移动到`stable-diffusion-webui/extensions/a1111-sd-webui-tagcomplete/tags`资料夹。
+如何安装标签中文翻译：到[byzod/a1111-sd-webui-tagcomplete-CN](https://github.com/byzod/a1111-sd-webui-tagcomplete-CN)保存库，点击绿色的Code → Download ZIP，解压缩，得到tags文件夹，下面有`Tags-zh-full-pack.csv`和`config.json`这二个文件。将这二个文件移动到`stable-diffusion-webui/extensions/a1111-sd-webui-tagcomplete/tags`文件夹。
