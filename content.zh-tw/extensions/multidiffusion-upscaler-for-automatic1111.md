@@ -11,6 +11,6 @@ weight: 5
 
 在文生圖的頁面左下角會看到Tiled Diffusion和Tiled VAE，將二者的Enabled勾選即為啟用，生圖時維持預設值即可。
 
-![](../../images/multidiffusion-upscaler-1.webp)
+![](../../images/multidiffusion-upscaler-for-automatic1111-1.webp)
 
 另提供Region Prompt Control，可以控制每個tile的提示詞。

@@ -8,7 +8,7 @@ weight: 1
 
 注意：您必须在[命令行参数](../installation/command-line-arguments-and-settings/)加入`--enable-insecure-extension-access`才能从图形界面装扩充功能。
 
-最简单的就是点击Extensions → Available的`Load from:`，就会列出可下载安装的扩充功能，点击安装。
+最简单的方法就是点击Extensions → Available的`Load from:`，就会列出可下载安装的扩充功能，点击安装。
 
 ![](../../../images/how-to-install-extensions-1.webp)
 
@@ -20,7 +20,7 @@ weight: 1
 
 ![](../../../images/how-to-install-extensions-3.webp)
 
-如果未来要更新扩充功能，点击Check for updates。
+如果未来要更新扩充功能，点击Installed → Check for updates，然后重启WebUI。
 
 
 # 2. 用指令安装

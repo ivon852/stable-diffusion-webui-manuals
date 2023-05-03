@@ -7,7 +7,7 @@ weight: 5
 
 输入提示词的时候提示相关Danbooru上的标签，画动漫图的时候很有用，还可以安装中文标签翻译。
 
-![](../../../images/ZWKtuRV.webp)
+![](../../../images/a1111-sd-webui-tagcomplete-1.webp)
 
 进入Extensions页面，点击`Install from URL`，输入网址`https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git`，按`Install`，之后重启WebUI。
 

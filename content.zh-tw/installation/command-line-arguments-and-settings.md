@@ -35,7 +35,7 @@ Windows也是一樣，不過啟動是用`webui-user.bat`批次檔，以終端機
 
 例如，Windows對`webui-user.bat`按右鍵以記事本編輯，加入這行：
 ```powershell
-set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-vae --api --ckpt-dir A:\\stable-diffusion-checkpoints
+set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-vae --api --ckpt-dir C:\\stable-diffusion-checkpoints
 ```
 
 

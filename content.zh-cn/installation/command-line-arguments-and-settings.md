@@ -35,7 +35,7 @@ Windows也是一样，不过启动是用`webui-user.bat`批量档，以终端机
 
 例如，Windows对`webui-user.bat`按右键以记事本编辑，加入这行：
 ```powershell
-set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-vae --api --ckpt-dir A:\\stable-diffusion-checkpoints
+set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-vae --api --ckpt-dir C:\\stable-diffusion-checkpoints
 ```
 
 
