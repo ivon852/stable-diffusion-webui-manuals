@@ -14,7 +14,9 @@ Stable Diffusion WebUI支持Windows 10和Windows 11。
 
 Nvidia显卡建议用[Geforce Experience](https://www.nvidia.com/zh-tw/geforce/geforce-experience/)安装最新驱动，会顺便安装CUDA。或者你想[手动下载CUDA](https://developer.nvidia.com/cuda-downloads)也行。
 
-AMD请用[驱动程序自动侦测工具](https://www.amd.com/zh-hant/support/kb/faq/gpu-131)安装显卡驱动。
+AMD显卡请用[驱动程序自动侦测工具](https://www.amd.com/zh-hant/support/kb/faq/gpu-131)安装显卡驱动。
+
+Intel Arc显卡请安装[WHQL](https://www.intel.com.tw/content/www/tw/zh/download/726609/intel-arc-iris-xe-graphics-whql-windows.html)驱动。
 
 
 # 2. 安装Git和Python
@@ -82,12 +84,17 @@ nvcc --version
 git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ```
 
-＊ AMD显卡用户请暂时先用这个专门设计给AMD DirectML的分支：
+＊ AMD显卡用户请用这个DirectML的分支：
 ```bash
 git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml.git
 ```
 
-5. 拷贝完成后，桌面会多出文件夹`stable-diffusion-webui`。如果你有下载模型，将刚刚下载的存盘点模型放到`models\Stable-diffusion`文件夹。这个文件夹可放入多个存盘点模型档。
+＊ Intel Arc显卡用户请用这个DirectML的分支：
+```bash
+git clone https://github.com/Aloereed/stable-diffusion-webui-arc-directml.git
+```
+
+5. 拷贝完成保存库后，桌面会多出文件夹`stable-diffusion-webui`。如果你有下载模型，将刚刚下载的存盘点模型放到`models\Stable-diffusion`文件夹。这个文件夹可放入多个存盘点模型档。
 
 ![](../../../images/windows-installation-5.webp)
 

@@ -7,20 +7,16 @@ Android/iOS的手機平板無法直接裝Stable Diffusion WebUI，大部分手�
 
 但是您可以在一部電腦安裝Stable Diffusion WebUI，設定防火牆，然後啟動程式，使用其他裝置遠端存取網頁界面。
 
-目前有二種遠端存取的解決方案，下面以Linux系統為例。
+目前有二種遠端存取的解決方案。
 
 
 # 1. 使用區域網路連線
 
 區域網路指的是電腦與手機處於同一網段，例如連線到同一個Wifi。
 
-1. 開放防火牆的7860通訊埠：
-```bash
-sudo ufw allow 7860/tcp
-sudo ufw reload
-```
+1. 開放電腦防火牆的7860 TCP通訊埠
 
-2. 使用`ip addr`指令取得本機區域IP，應是以192.168開頭
+2. 使用`ip addr`或`ifconfig`指令查看本機區域IP，應是以192.168開頭
 
 3. 在[啟動Stable Diffusion WebUI的指令稿](../installation/command-line-arguments-and-settings/)的`COMMANDLINE_ARGS`後面加入`--listen`引數。
 

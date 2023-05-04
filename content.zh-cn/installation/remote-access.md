@@ -7,20 +7,16 @@ Android/iOS的手机平板无法直接装Stable Diffusion WebUI，大部分手�
 
 但是您可以在一部电脑安装Stable Diffusion WebUI，设置防火墙，然后启动程序，使用其他设备远程访问网页界面。
 
-目前有二种远程访问的解决方案，下面以Linux系统为例。
+目前有二种远程访问的解决方案。
 
 
 # 1. 使用局域网路连接
 
 局域网路指的是电脑与手机处于同一网段，例如连接到同一个Wifi。
 
-1. 开放防火墙的7860通信端口：
-```bash
-sudo ufw allow 7860/tcp
-sudo ufw reload
-```
+1. 开放电脑防火墙的7860 TCP通信端口
 
-2. 使用`ip addr`指令取得本机区域IP，应是以192.168开头
+2. 使用`ip addr`或`ifconfig`指令查看本机区域IP，应是以192.168开头
 
 3. 在[启动Stable Diffusion WebUI的指令稿](../installation/command-line-arguments-and-settings/)的`COMMANDLINE_ARGS`后面加入`--listen`参数。
 

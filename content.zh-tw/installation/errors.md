@@ -8,18 +8,23 @@ weight: 21
 ![](../../images/errors-1.png)
 
 
-# 如何回報錯誤
+# 1. 如何回報錯誤
 
 你可以到[我的Discussion](https://github.com/ivon852/netlify-ivon-blog-comments/discussions/437)或是[AUTOMATIC1111儲存庫的Issue](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues)查看別人遇過的錯誤訊息。
 
 如果遇到了真正無法解決的錯誤，請註冊Github帳號，並到[AUTOMATIC1111儲存庫的Issue](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues)頁面，點選New Issue → Bug Report，用英文填寫遇到的狀況。
 
 
-# 擴充功能導致的錯誤
+# 確保您的電腦符合Stable Diffusion的系統需求
 
-有時除了Stable Diffusion WebUI本身問題外，也有可能是你安裝的擴充功能導致出錯。
+參閱[Stable Diffusion系統需求](../installation/system-requirements)
 
-要Debug請嘗試刪除`stable-diffusion-webui\extensions`下的某個新安裝的擴充功能資料夾，再嘗試啟動SD WebUI。
+
+# 可能是擴充功能導致的錯誤
+
+有時除了Stable Diffusion WebUI本身問題外，也有可能是你安裝的擴充功能出錯導致程式無法啟動。
+
+請嘗試刪除`stable-diffusion-webui\extensions`下的某個新安裝的擴充功能資料夾，再嘗試啟動SD WebUI。
 
 也可以嘗試將Stable Diffusion WebUI主程式[更新到最新版本](../features/how-to-update/)。
 
@@ -56,6 +61,15 @@ weight: 21
 3. 非Nvidia GPU用戶也可能遇到此錯誤，於`webui-user.bat`的`COMMANDLINE_ARGS`加入`--skip-torch-cuda-test`引數跳過檢測。
 
 4. 你沒有獨顯，所以它不給跑。沒有獨顯請考慮用[Google Colab](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)
+
+
+# Torch is not able to use GPU
+
+如果顯卡是Nvidia的話，請確認CUDA有正確安裝。
+
+顯卡是AMD的話，編輯`webui-user.bat`，加入`COMMANDLINE_ARGS=--medvram --opt-split-attention --skip-torch-cuda-test`
+
+並刪除`venv`資料夾，重新啟動。
 
 
 # fatal: unable to access Recv failure: Connection was reset

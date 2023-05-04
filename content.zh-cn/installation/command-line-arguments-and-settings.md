@@ -5,14 +5,24 @@ weight: 2
 
 此页面仅供参考：左边各个系统(Linux/Windows/macOS)的安装教学已包含懒人参数，照抄即可。
 
-Stable Diffusion WebUI的项目文件夹附有启动程序的指令稿(script)，称为启动指令稿。
+Stable Diffusion WebUI的项目文件夹附有启动主程序的指令稿(script)，称为启动指令稿。
 
-Linux/macOS为`webui-user.sh`，以终端机运行`webui.sh`，它会读取`webui-user.sh`里面写的变量与设置值，将其传给`launch.py`，然后启动WebUI。
+Linux/macOS的变量与参数是写在`webui-user.sh`，接着用户以终端机运行`webui.sh`，它会读取`webui-user.sh`里面写的变量与设置值，将其传给`launch.py`，然后启动WebUI。
 
-Windows也是一样，不过启动是用`webui-user.bat`批量档，以终端机运行此批量档(或者点二下)，无需系统管理员权限启动。
+Windows也是类似，不过变量与参数是写在`webui-user.bat`批量档，然后用户以终端机运行此批量档(或者在文件总管点二下，无需系统管理员权限)即会启动主程序。
 
 
-# 1. 环境变量
+# 1. 环境变量与命令行参数的设置方法
+
+- Linux/macOS：编辑`webui-user.sh`，填入`export 变量=数值`
+- Windows：编辑`webui-user.bat`，填入`set 变量=数值`
+
+例如，Windows对`webui-user.bat`按右键以记事本编辑，加入这行命令行参数：
+```powershell
+set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
+```
+
+# 2. 环境变量
 
 指令稿里面可使用这些环境变量(environment variables)：
 
@@ -28,18 +38,7 @@ Windows也是一样，不过启动是用`webui-user.bat`批量档，以终端机
 |TRANSFORMERS_CACHE| Transformer函数库下载的路径，以及CLIP模型相关文件的路径。|
 
 
-环境变量与命令行参数的设置方法：
-
-- Linux/macOS：编辑`webui-user.sh`，填入`export 变量=数值`
-- Windows：编辑`webui-user.bat`，填入`set 变量=数值`
-
-例如，Windows对`webui-user.bat`按右键以记事本编辑，加入这行：
-```powershell
-set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-vae --api --ckpt-dir C:\\stable-diffusion-checkpoints
-```
-
-
-# 2. 命令行参数
+# 3. 命令行参数
 
 命令行参数(command line arguments)为启动WebUI时候使用的选项，写在启动指令稿的`COMMANDLINE_ARGS`后面。
 
@@ -142,5 +141,3 @@ set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-va
 |--unload-gfpgan | None | False      				 | 无作用 |
 |--gradio-img2img-tool | GRADIO_IMG2IMG_TOOL | None | 无作用 |
 |--gradio-inpaint-tool | GRADIO_INPAINT_TOOL | None | 无作用 |
-
-

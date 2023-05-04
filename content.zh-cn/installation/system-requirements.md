@@ -3,42 +3,80 @@ title: "2.1. 系统需求"
 weight: 1
 ---
 
-Stable Difssusion WebUI支持Linux/Windows/macOS系统的电脑。
+本页面是跑Stable Difssusion WebUI，用于AI绘图的硬件以及系统需求。
 
 
-# 硬件需求
+# 1. 硬件需求
 
-- 内存： 最低8GB，建议16GB
-- 显卡：需配备独立显卡，VRAM最低4GB，建议8GB
-- 硬盘空间：20GB
-- 处理器：x86架构的Intel或AMD处理器皆可。若为Mac电脑建议使用搭载M系列芯片的机型
-- 良好的网络连接，可以正常连接到Github和Youtube
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th>最低配备</th>
+    <th>建议配备</th>
+    <th>注解</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>显卡(GPU)</td>
+    <td>GTX1050Ti</td>
+    <td>RTX3060Ti</td>
+    <td>支持的显卡芯片有Nvidia/AMD/Intel Arc/Apple M。显卡需求看的是VRAM大小，最低要4GB才不会内存不足。</td>
+  </tr>
+  <tr>
+    <td>内存(RAM)</td>
+    <td>8GB</td>
+    <td>16GB</td>
+    <td>您可以激活分页档或挂载SWAP增加系统内存。</td>
+  </tr>
+  <tr>
+    <td>保存空间</td>
+    <td colspan="3" style="text-align: center">20GB，最好是SSD</td>
+  </tr>
+  <tr>
+    <td>处理器(CPU)</td>
+    <td colspan="3" style="text-align: center">x86架构的Intel或AMD处理器皆可。若为Mac电脑建议使用搭载M系列芯片的机型</td>
+  </tr>
+  <tr>
+    <td>网络连接</td>
+    <td colspan="3" style="text-align: center">可以正常连接到Github和Youtube的网络</td>
+  </tr>
+</tbody>
+</table>
 
-尽管可以[用CPU跑Stable Diffusion WebUI](https://ivonblog.com/posts/stable-diffusion-running-on-cpu/)，但是速度会非常慢。一张显卡30秒就能算好的图，CPU要算10分钟。因此用独立显卡跑Stable Diffsuion仍是比较好的选择。
+- 显卡VRAM在4GB以下的会很容易遇到内存不足的问题，并且生图速度很慢。
 
-硬件不够力的话，用云端服务跑也是可以。
+- 尽管可以[用CPU跑Stable Diffusion WebUI](https://ivonblog.com/posts/stable-diffusion-running-on-cpu/)，但是速度会非常慢。一张显卡30秒就能算好的图，CPU要算10分钟。因此用独立显卡跑Stable Diffsuion仍是比较好的选择。
+
+- 硬件不够力的话，用云端服务跑也是可以。
 
 
-# GNU/Linux
+# 2. 系统需求
 
-下面是测试可以跑的Linux发行版
+## GNU/Linux
+
+测试可以跑的Linux发行版：
 
 - Debian 11
-- Ubuntu 22.04
-- Fedora / RHEL / RockyLinux
-- openSUSE
-- Arch Linux / Manjaro
-- Gentoo
+- Ubuntu 22.04 LTS
+- Fedora 38
+- openSUSE Tumbleweed
+- Arch Linux
+- Manjaro
+- Gentoo (使用glibc的profile)
 
 
-# Windows
+## Windows
 
-最低要求为Windows 10 64比特。Windows 7不行。
+最低要求为Windows 10 64比特，请确保系统已更新至最新版本。
+
+Windows 7不行。
 
 
-# MacOS
+## macOS
 
-最低要求版本为macOS Monterey (12.5)，可以的话请使用最新版macOS。
+最低要求为macOS Monterey (12.5)，可以的话请使用最新版macOS。
 
 建议使用搭载Apple Silicon M芯片 (M1、M2) 的Mac机型。
 

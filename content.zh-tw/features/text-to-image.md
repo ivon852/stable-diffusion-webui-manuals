@@ -41,7 +41,7 @@ DDIM和PLMS是2022年隨Stable Diffusion v1發表的取樣方法。
 
 取樣步數建議值至少為20，在使用Euler a和UniPC取樣方法的時候就有很好效果。
 
-相對的和DDIM需要80以上的取樣步數才會有好結果。
+相對的DDIM需要80以上的取樣步數才會有好結果。
 
 
 ## Restore faces 臉部修復

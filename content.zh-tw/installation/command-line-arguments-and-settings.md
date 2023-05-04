@@ -5,14 +5,24 @@ weight: 2
 
 此頁面僅供參考：左邊各個系統(Linux/Windows/macOS)的安裝教學已包含懶人引數，照抄即可。
 
-Stable Diffusion WebUI的專案資料夾附有啟動程式的指令稿(script)，稱為啟動指令稿。
+Stable Diffusion WebUI的專案資料夾附有啟動主程式的指令稿(script)，稱為啟動指令稿。
 
-Linux/macOS為`webui-user.sh`，以終端機執行`webui.sh`，它會讀取`webui-user.sh`裡面寫的變數與設定值，將其傳給`launch.py`，然後啟動WebUI。
+Linux/macOS的變數與引數是寫在`webui-user.sh`，接著使用者以終端機執行`webui.sh`，它會讀取`webui-user.sh`裡面寫的變數與設定值，將其傳給`launch.py`，然後啟動WebUI。
 
-Windows也是一樣，不過啟動是用`webui-user.bat`批次檔，以終端機執行此批次檔(或者點二下)，無需系統管理員權限啟動。
+Windows也是類似，不過變數與引數是寫在`webui-user.bat`批次檔，然後使用者以終端機執行此批次檔(或者在檔案總管點二下，無需系統管理員權限)即會啟動主程式。
 
 
-# 1. 環境變數
+# 1. 環境變數與命令列引數的設定方法
+
+- Linux/macOS：編輯`webui-user.sh`，填入`export 變數=數值`
+- Windows：編輯`webui-user.bat`，填入`set 變數=數值`
+
+例如，Windows對`webui-user.bat`按右鍵以記事本編輯，加入這行命令列引數：
+```powershell
+set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
+```
+
+# 2. 環境變數
 
 指令稿裡面可使用這些環境變數(environment variables)：
 
@@ -28,18 +38,7 @@ Windows也是一樣，不過啟動是用`webui-user.bat`批次檔，以終端機
 |TRANSFORMERS_CACHE| Transformer函式庫下載的路徑，以及CLIP模型相關檔案的路徑。|
 
 
-環境變數與命令列引數的設定方法：
-
-- Linux/macOS：編輯`webui-user.sh`，填入`export 變數=數值`
-- Windows：編輯`webui-user.bat`，填入`set 變數=數值`
-
-例如，Windows對`webui-user.bat`按右鍵以記事本編輯，加入這行：
-```powershell
-set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-vae --api --ckpt-dir C:\\stable-diffusion-checkpoints
-```
-
-
-# 2. 命令列引數
+# 3. 命令列引數
 
 命令列引數(command line arguments)為啟動WebUI時候使用的選項，寫在啟動指令稿的`COMMANDLINE_ARGS`後面。
 
@@ -142,5 +141,3 @@ set COMMANDLINE_ARGS=--allow-code --xformers --skip-torch-cuda-test --no-half-va
 |--unload-gfpgan | None | False      				 | 無作用 |
 |--gradio-img2img-tool | GRADIO_IMG2IMG_TOOL | None | 無作用 |
 |--gradio-inpaint-tool | GRADIO_INPAINT_TOOL | None | 無作用 |
-
-
