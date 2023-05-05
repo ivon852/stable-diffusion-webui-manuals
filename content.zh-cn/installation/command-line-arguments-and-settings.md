@@ -101,7 +101,7 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |--tls-keyfile | TLS_KEYFILE | None | 部份激活TLS,，需要配合--tls-certfile才能正常运作 |
 |--tls-certfile | TLS_CERTFILE | None | 部份激活TLS，需要配合--tls-keyfile才能正常运作  |
 |--server-name | SERVER_NAME | None | 设置服务器主机名称 |
-|--gradio-queue | None | False | 使用Gradio queue。实验性功能，会导致重启按钮损坏。 |
+|--gradio-queue | None | False | 使用Gradio queue，限制短时间内API的请求数量。实验性功能，会导致重启按钮损坏。 |
 |--skip-version-check | None | False | 不检查torch和xformers的版本 |
 |--no-hashing | None | False | 停用计算存盘点模型的sha256哈希值，加快加载速度 |
 | **性能相关** |

@@ -69,7 +69,7 @@ weight: 21
 
 显卡是AMD的话，编辑`webui-user.bat`，加入`COMMANDLINE_ARGS=--medvram --opt-split-attention --skip-torch-cuda-test`
 
-并删除`venv`文件夹，重新启动。
+修改完之后，删除`venv`文件夹，重新启动WebUI。
 
 
 # fatal: unable to access Recv failure: Connection was reset
@@ -78,9 +78,9 @@ weight: 21
 
 需要[换个代理](https://www.bilibili.com/read/cv21253533/)或[改DNS](https://zhuanlan.zhihu.com/p/571519560)才能正常连接。
 
-但是有时只将部份网址换成「国内源」是不够的，因为Stable Diffussion WebUI还会尝试从HuggingFace等处下载脸部模型。
+但是有时只将部份网址换成「国内源」是不够的，因为Stable Diffussion WebUI还会尝试从HuggingFace等处下载模型。
 
-为此全局挂着VPN，避免连接受到阻扰会是较好的作法。
+为此全域挂着VPN，避免连接受到阻扰会是较好的作法。
 
 
 # AssertionError: extension access disabled because of commandline flags

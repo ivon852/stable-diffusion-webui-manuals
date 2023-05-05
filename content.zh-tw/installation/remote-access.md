@@ -5,7 +5,11 @@ weight: 7
 
 Android/iOS的手機平板無法直接裝Stable Diffusion WebUI，大部分手機也跑不動。
 
-但是您可以在一部電腦安裝Stable Diffusion WebUI，設定防火牆，然後啟動程式，使用其他裝置遠端存取網頁界面。
+但是您可以在一部電腦安裝Stable Diffusion WebUI，設定防火牆，然後啟動程式，使用其他裝置遠端存取網頁界面，並開放給多人共用。
+
+例如，從Android手機的Google Chrome瀏覽器存取同一網路下，另一部電腦的Stable Diffusion WebUI。
+
+![](../../images/remote-access-1.webp)
 
 目前有二種遠端存取的解決方案。
 
@@ -20,7 +24,7 @@ Android/iOS的手機平板無法直接裝Stable Diffusion WebUI，大部分手�
 
 3. 在[啟動Stable Diffusion WebUI的指令稿](../installation/command-line-arguments-and-settings/)的`COMMANDLINE_ARGS`後面加入`--listen`引數。
 
-4. 啟動Stable Diffusion WebUI，接著在另一部裝置輸入`http://電腦IP:7860`即可連線到網頁界面。
+4. 啟動Stable Diffusion WebUI，接著在另一部裝置的瀏覽器輸入`http://電腦IP:7860`即可連線到網頁界面。
 
 
 # 2. 使用Gradio的公開網址
