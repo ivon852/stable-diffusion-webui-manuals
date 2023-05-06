@@ -101,30 +101,32 @@ git clone https://github.com/Aloereed/stable-diffusion-webui-arc-directml.git
 
 # 4. 设置启动参数
 
-对`stable-diffusion-webui`文件夹里面的`webui-user.bat`按右键，以记事本打开，编辑`COMMANDLINE_ARGS=`这一行后面的启动参数。(看不到.bat请点击文件总管查看 → 显示/隐藏 → 显示扩展名)
+如下图所示，对`stable-diffusion-webui`文件夹里面的`webui-user.bat`按右键，以记事本打开 (看不到.bat请点击文件总管查看 → 显示/隐藏 → 显示扩展名)
 
 ![](../../../images/windows-installation-6.webp)
 
-若显卡VRAM小于等于4GB的话加入`COMMANDLINE_ARGS=--medvram --opt-split-attention`参数。
+接着您要编辑`set COMMANDLINE_ARGS=`这一行启动参数。
 
-电脑RAM（不是VRAM）小于等于8GB的话改加入`COMMANDLINE_ARGS=--lowvram --opt-split-attention`参数。注意使用`--lowvram`参数会让高端显卡算图变很慢。
+若显卡VRAM小于等于4GB的话，将`set COMMANDLINE_ARGS=`替换成`set COMMANDLINE_ARGS=--medvram --opt-split-attention`参数。
+
+电脑RAM（不是VRAM）小于等于8GB的话改替换为`set COMMANDLINE_ARGS=--lowvram --opt-split-attention`参数。注意使用`--lowvram`参数会让高端显卡算图变很慢。
 
 (下面的不加也可以)
 
-加入`--xformers`参数可进一步减少VRAM使用量。`--no-half-vae`降低用VAE时算出黑图的几率。
+在最后面加上`--xformers`参数可进一步减少VRAM使用量。`--no-half-vae`降低用VAE时算出黑图的几率。
 
 加上`--enable-insecure-extension-access`让你在网页界面直接装扩充功能。
 
-加入`--listen`参数再开放防火墙7860通信端口，即可用局域网路其他电脑的浏览器访问WebUI。
+加上`--listen`参数再开放防火墙7860通信端口，即可用局域网路其他电脑的浏览器访问WebUI。
 
-加入`--share`参数则会产生一组Gradio网址，让你可以从外部网络或手机使用WebUI。网址72小时后过期。
+加上`--share`参数则会产生一组Gradio网址，让你可以从外部网络或手机使用WebUI。网址72小时后过期。
 
 其余可用参数请见[命令行参数](../installation/command-line-arguments-and-settings/)
 
 
 # 5. 启动Stable Diffusion WebUI
 
-初次启动会下载好几GB的数据，请保持网络顺畅，不要开VPN。如果你所在的地方有网络审查干扰Github连接，请想办法找代理绕过。
+初次启动会下载好几GB的数据，请保持网络顺畅，不要开VPN。如果您所在的地方有网络审查干扰Github连接，请想办法找代理绕过。
 
 1. 回到终端机，输入以下指令启动SD WebUI：
 ```bash
