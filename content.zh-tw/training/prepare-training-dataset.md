@@ -24,7 +24,7 @@ weight: 2
 
 裁切圖片不會用到顯示卡計算。
 
-1. 將要裁切的圖片放到同一個目錄下，例如`/home/ivon/桌面/input`。
+1. 將要裁切的圖片放到同一個目錄下，例如`/home/user/桌面/input`。
 
 2. 開啟SD WebUI，進到Train → Preprocess images頁面
 
@@ -32,7 +32,7 @@ weight: 2
 
 3. 第一個欄位`Source directory`填寫原始圖片的路徑
 
-4. 第二個欄位`Destination directory`填寫輸出路徑，例如`/home/ivon/桌面/cropped`
+4. 第二個欄位`Destination directory`填寫輸出路徑，例如`/home/user/桌面/cropped`
 
 5. Width和Height設定為512x512
 

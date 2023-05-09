@@ -20,7 +20,7 @@ weight: 1
 
 ![](../../../images/how-to-install-extensions-3.webp)
 
-如果未来要更新扩充功能，点击Installed → Check for updates，然后重启WebUI。
+如果未来要更新扩充功能，点击Installed → Check for updates，等待下载完成，然后重启WebUI。
 
 
 # 2. 用指令安装

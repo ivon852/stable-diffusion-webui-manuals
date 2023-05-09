@@ -102,11 +102,13 @@ conda activate sdwebui
 
 用VIM编辑`webui-user.sh`。
 
-若GPU VRAM小于等于4GB的话加入`COMMANDLINE_ARGS=--medvram --opt-split-attention`参数，防止`RuntimeError: CUDA Out of memory`错误。
+显卡VRAM在8GB以上，将`# COMMANDLINE_ARGS=`替换成`COMMANDLINE_ARGS=--xformers --enable-insecure-extension-access`参数。
 
-AMD显卡需要另外加上`--precision full --no-half`参数，否则生成的图可能会一片漆黑。
+若显卡VRAM小于等于4GB，将`# COMMANDLINE_ARGS=`替换成`COMMANDLINE_ARGS=--medvram --opt-split-attention --xformers --enable-insecure-extension-access`参数。
 
 额外加上`--listen`参数让其他电脑能以IP访问网页界面，`--share`则是产生一组Gradio网址。
+
+加上`--xformers`可进一步减少VRAM占用，只支持Nvidia显卡。加入`--no-half-vae`减少使用VAE时算出黑图的几率。
 
 加上`--enable-insecure-extension-access`让你在网页界面直接装扩充功能。加上`--nowebui`则不会启动网页界面，单纯接收WebUI API之用。
 

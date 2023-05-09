@@ -99,7 +99,7 @@ git clone https://github.com/Aloereed/stable-diffusion-webui-arc-directml.git
 ![](../../images/windows-installation-5.webp)
 
 
-# 4. 設定啟動引數
+# 4. 設定啟動命令列引數
 
 如下圖所示，對`stable-diffusion-webui`資料夾裡面的`webui-user.bat`按右鍵，以記事本開啟 (看不到.bat請點選檔案總管檢視 → 顯示/隱藏 → 顯示副檔名)
 
@@ -107,15 +107,15 @@ git clone https://github.com/Aloereed/stable-diffusion-webui-arc-directml.git
 
 接著您要編輯`set COMMANDLINE_ARGS=`這一行啟動引數。
 
-若顯示卡VRAM小於等於4GB的話，將`set COMMANDLINE_ARGS=`替換成`set COMMANDLINE_ARGS=--medvram --opt-split-attention`引數。
+若顯示卡VRAM在8GB以上，將`set COMMANDLINE_ARGS=`替換成`set COMMANDLINE_ARGS=--enable-insecure-extension-access`引數。
 
-電腦RAM（不是VRAM）小於等於8GB的話改替換為`set COMMANDLINE_ARGS=--lowvram --opt-split-attention`引數。注意使用`--lowvram`引數會讓高階顯示卡算圖變很慢。
+顯示卡VRAM小於等於4GB，將`set COMMANDLINE_ARGS=`替換成`set COMMANDLINE_ARGS=--medvram --opt-split-attention --enable-insecure-extension-access`引數。加上`--medvram`的用意是為了限制VRAM佔用。
+
+電腦RAM（不是VRAM）小於等於8GB的話改替換為`set COMMANDLINE_ARGS=--lowvram --opt-split-attention --enable-insecure-extension-access`引數。注意使用`--lowvram`引數會讓高階顯示卡算圖變很慢。
 
 (下面的不加也可以)
 
-在最後面加上`--xformers`引數可進一步減少VRAM使用量。`--no-half-vae`降低用VAE時算出黑圖的機率。
-
-加上`--enable-insecure-extension-access`讓你在網頁界面直接裝擴充功能。
+加上`--xformers`可進一步減少VRAM佔用，只支援Nvidia顯示卡。加入`--no-half-vae`減少使用VAE算出黑圖的機率。
 
 加上`--listen`引數再開放防火牆7860通訊埠，即可用區域網路其他電腦的瀏覽器存取WebUI。
 

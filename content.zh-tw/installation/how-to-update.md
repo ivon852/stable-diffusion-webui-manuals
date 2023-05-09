@@ -3,41 +3,27 @@ title: "❓ 如何更新程式"
 weight: 20
 ---
 
-Stable Diffusion WebUI的專案原始碼託管在Github，目前「更新」是以`git pull`指令來操作。
+AUTOMATIC1111的Stable Diffusion WebUI專案原始碼託管在Github，目前「更新」是以`git pull`指令來操作。
 
 版本號碼和更新日誌可以到[Github Releases](https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases)查看。
 
-1. 在`stable-diffusion-webui`這個資料夾裡面開啟終端機
+1. 進入`stable-diffusion-webui`資料夾，在裡面開啟終端機
 
-Windows請按右鍵＋SHIFT → 開啟終端機
+Windows請於空白處按右鍵＋SHIFT → 開啟終端機
 
-Linux/MacOS請用cd指令，切換到`stable-diffusion-webui`目錄：
+Linux和macOS請用cd指令，切換到`stable-diffusion-webui`資料夾：
 ```bash
 cd ~/stable-diffusion-webui
 ```
 
-2. 保險起見，先用`git rev-parse`指令取得目前分支，會印出一組五位數分支代碼
-```bash
-git rev-parse --short HEAD
-```
+2. 如果您已經很久沒更新，或是AUTOMATIC1111發布了大版本更新，則建議您刪除`venv`資料夾，讓它啟動後重裝依賴套件。
 
-3. 接著拉取最新分支，更新到最新版檔案。
-```bash
-git pull
-```
-
-4. 如果檔案無法拉取，請使用`git reset`：
+3. 拉取最新分支，更新到最新版檔案。
 ```bash
 git reset --hard main
 git pull
 ```
 
-5. 如果出現`Merge branch 'master' of`的訊息，請按`Esc`鍵，輸入`:q!`退出即可。
+4. 檢查啟動指令稿(用文字編輯器開啟`webui-user.bat`或`webui-user.sh`)，查看[命令列引數](https://ivonblog.com/posts/stable-diffusion-webui-manuals/installation/command-line-arguments-and-settings/)有無變更。
 
-
-前面用到的`git rev-parse`這個指令，是用來切出分支，降級用的指令。
-
-若是在更新程式後有功能壞掉，那就用`git checkout`降回之前的版本。
-```bash
-git checkout "分支代碼"
-```
+5. 啟動WebUI
