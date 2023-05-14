@@ -4,7 +4,7 @@ bookFlatSection: false
 bookCollapseSection: true
 ---
 
-Stable Difussion WebUI除了基本的文生图、图生图、内补绘制之外，还能安装扩充功能(Extensions，或称「插件」)，在绘图的时候集成其他AI技术，或是简化操作，生成更好的作品。
+Stable Diffusion WebUI除了基本的文生图、图生图、内补绘制之外，还能安装扩充功能(Extensions，或称「插件」)，在绘图的时候集成其他AI技术，或是简化操作，生成更好的作品。
 
 这一章介绍设计给Stable Diffusion WebUI的扩充功能用法，并附上一些范例。
 

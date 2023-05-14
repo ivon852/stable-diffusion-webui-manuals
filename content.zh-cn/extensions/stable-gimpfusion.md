@@ -27,4 +27,4 @@ ArtBIT开发的Stable-Gimpfusion能让你在GIMP修图时的图层调用Stable D
 
 7. 进度条可从终端机查看，之后结果会添加至GIMP的图层。目前此扩充功能只支持填充整个图层。
 
-![](../../../images/Screenshot_20230330_151918.webp)
+![](../../../images/stable-gimpfusion-3.webp)

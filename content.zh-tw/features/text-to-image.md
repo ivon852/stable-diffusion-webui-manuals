@@ -156,7 +156,7 @@ Stable Diffusion WebUI正上方可看到現在使用的是哪個模型。切換�
 
 ![](../../images/text-to-image-5.webp)
 
-2. Sampling Methods建議先試試最快的「UniPC」，其次是「Euler a」、「DPM++ 2M Karras」。，Sampling Steps設20，`Width`x`Height`設定為512x512。
+2. Sampling Methods建議先試試最快的「UniPC」，其次是「Euler a」、「DPM++ 2M Karras」。Sampling Steps設20，`Width`x`Height`設定為512x512。
 
 ![](../../images/text-to-image-6.webp)
 

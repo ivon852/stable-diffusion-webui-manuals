@@ -48,11 +48,11 @@ LoRA放到`stable-diffusion-webui\models\Lora`。
 ![](../../images/extra-networks-6.webp)
 
 
-# 3. 使用VAE
+# 3. 安裝與使用VAE
 
-VAE (variational autoencoder)可以讓算出來的圖片色彩更漂亮。有些存檔點模型內建VAE，SD WebUI在生圖時會自動偵測。
+VAE (variational autoencoder)可以讓算出來的圖片色彩更漂亮，改善圖片顏色灰灰暗暗的問題。Hentai Diffusion這類模型內建VAE，SD WebUI在生圖時會自動偵測並套用；Anything這類的模型要另外下載VAE；VAE的下載點通常跟模型下載頁面放在一起。
 
-如果要使用VAE，下載模型後，將其放到`stable-diffusion-webui\models\VAE`資料夾。
+如果要使用VAE，下載VAE模型後，將其放到`stable-diffusion-webui/models/VAE`資料夾。
 
 接著點選Settings → Stabe Diffusion → SD VAE，選取要使用的VAE，再點選Apply Settings，此後生圖就會一律使用指定的VAE。
 

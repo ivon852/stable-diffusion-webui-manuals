@@ -32,7 +32,7 @@ Lvmin Zhang是ControlNet原始程序的开发者，Mikubill则是开发扩充功
 
 # 2. 各个模型的用途
 
-ControlNet现有以下模型。
+ControlNet现有以下模型，您可以按照需求只下载需要的模型。
 
 ## Anime Lineart
 

@@ -24,7 +24,7 @@ weight: 21
 
 有時除了Stable Diffusion WebUI本身問題外，也有可能是你安裝的擴充功能出錯導致程式無法啟動。
 
-請嘗試刪除`stable-diffusion-webui\extensions`下的某個新安裝的擴充功能資料夾，再嘗試啟動SD WebUI。
+請嘗試刪除`stable-diffusion-webui\extensions`下的某個新安裝的擴充功能資料夾，或是將整個extensions資料夾先移動到其他位置，再嘗試啟動SD WebUI。
 
 也可以嘗試將Stable Diffusion WebUI主程式[更新到最新版本](../features/how-to-update/)。
 
@@ -33,7 +33,7 @@ weight: 21
 
 顯示卡的VRAM不足。Stable Diffusion WebUI的顯示卡VRAM最低要求為4GB，要無壓力的玩建議8GB以上。
 
-開啟`webui-user.bat`，在`COMMANDLINE_ARGS`後面加入`--mdevram`或`--lowvram`引數，降低VRAM使用量。如果還是在算圖時出現此訊息，建議降低算圖的解析度，或是買張更好的顯示卡，或是改用[Google Colab](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)。
+開啟`webui-user.bat`，在`COMMANDLINE_ARGS`後面加入`--mdevram`或`--lowvram`引數，降低VRAM使用量。如果還是在生圖時出現此訊息，建議降低生圖的解析度，或是買張更好的顯示卡，或是改用[Google Colab](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)。
 
 
 # No module named pip
@@ -142,3 +142,28 @@ weight: 21
 如果執行`webui-user.sh`出現此錯誤，則編輯`webui-user.sh`，將`install_dir`後面改成`$(pwd)`。
 
 如果是在Google Colab遇到此錯誤，代表程式沒裝成功，請看一下終端機輸出，檢查前面的指令是否有哪步執行出錯。
+
+
+# Couldn't launch python, exit code 9009
+
+Windows用戶請重裝Python 3.10.6，並確認有在安裝界面勾選`Add Python to PATH`
+
+
+# libtcmalloc.so.4 python3: version `GLIBCXX_3.4.30' not found (required by /usr/lib/libtcmalloc.so.4)
+
+可能是暫時性的bug。
+
+啟動conda虛擬環境：`conda activate sdwebui`，然後安裝gcc：`conda install -c conda-forge gcc`，接著退出虛擬環境：`conda deactivate`，再嘗試啟動WebUI。
+
+
+# PyTorch has CUDA Version=11.7 and torchvision has CUDA Version=11.8. Please reinstall the torchvision that matches your PyTorch install.
+
+可能是暫時性的bug。
+
+如果有使用Anaconda，啟動conda虛擬環境：`conda activate sdwebui && source venv/bin/activate`
+
+安裝舊版本PyTorch：`pip uninstall torch && pip install xformers==0.0.16rc425 torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117`
+
+接著退出虛擬環境：`deactivate && conda deactivate`
+
+再嘗試啟動WebUI。
