@@ -18,9 +18,9 @@ weight: 5
 
 Embedding请放`stable-diffusion-webui`文件夹下的`embeddings`
 
-HyperNetwork放到`stable-diffusion-webui\models\hypernetworks`。
+HyperNetwork放到`stable-diffusion-webui/models/hypernetworks`。
 
-LoRA放到`stable-diffusion-webui\models\Lora`。
+LoRA放到`stable-diffusion-webui/models/Lora`。
 
 如果要显示小模型缩略图，将图片取跟该模型一样的文件名，并放到该模型的文件夹。例如在`Taiwan-doll-likeness.safetensors`所在的文件夹放一张`Taiwan-doll-likeness.png`。
 
@@ -50,7 +50,9 @@ LoRA放到`stable-diffusion-webui\models\Lora`。
 
 # 3. 安装与使用VAE
 
-VAE (variational autoencoder)可以让算出来的图片色彩更漂亮，改善图片颜色灰灰暗暗的问题。Hentai Diffusion这类模型内置VAE，SD WebUI在生图时会自动侦测并套用；Anything这类的模型要另外下载VAE；VAE的下载点通常跟模型下载页面放在一起。
+VAE (variational autoencoder)可以让算出来的图片色彩更漂亮，改善图片颜色灰灰暗暗的问题。
+
+Hentai Diffusion这类模型内置VAE，SD WebUI在生图时会自动侦测并套用；Anything这类的模型要另外下载VAE；VAE的下载点通常跟模型下载页面放在一起。
 
 如果要使用VAE，下载VAE模型后，将其放到`stable-diffusion-webui/models/VAE`文件夹。
 

@@ -5,7 +5,7 @@ weight: 5
 
 - 擴充功能來源：[yfszzx/stable-diffusion-webui-images-browser](https://github.com/yfszzx/stable-diffusion-webui-images-browser)
 
-安裝後即可方便瀏覽生圖的結果，並查看過使用的提示詞歷史紀錄。
+安裝後即可方便瀏覽生圖的結果，並查看使用過的提示詞歷史紀錄。
 
 安裝方法：進入Extensions頁面，點選Install from URL，輸入`https://github.com/yfszzx/stable-diffusion-webui-images-browser.git`後按Install，重啟WebUI。WebUI頁面即會多出"Images Browser"的頁面。
 

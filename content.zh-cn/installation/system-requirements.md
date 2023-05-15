@@ -6,7 +6,7 @@ weight: 1
 本页面是跑Stable Difssusion WebUI，用于AI绘图的硬件以及系统需求。
 
 
-# 1. 硬件需求
+# 1. 电脑硬件需求
 
 <table>
 <thead>
@@ -52,7 +52,7 @@ weight: 1
 - 硬件不够力的话，用云端服务跑也是可以。
 
 
-# 2. 系统需求
+# 2. 操作系统需求
 
 ## GNU/Linux
 

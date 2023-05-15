@@ -62,7 +62,7 @@ weight: 3
 
 ![](../../../images/image-to-image-3.webp)
 
-2. 同样填入正负向提示词，就是你希望AI将图片改绘成什么，勾选Restore faces，再点击右上角Generate生图。
+2. 同样于左上角字段填入正负向提示词，就是你希望AI将图片改绘成什么，勾选Restore faces，再点击右上角Generate生图。
 
 ![](../../../images/image-to-image-4.webp)
 

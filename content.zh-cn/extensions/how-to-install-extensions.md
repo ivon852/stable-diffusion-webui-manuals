@@ -3,24 +3,30 @@ title: "❓ 如何安装扩充功能"
 weight: 1
 ---
 
+注意：安装扩充功能可能会导致Stable Diffusion WebUI无法启动，或是启动变慢。
+
+如果遇到bug，您应当优先到扩充功能开发者的保存库回报，而非直接到AUTOMATIC1111的保存库询问。
+
 
 # 1. 用图形界面安装
 
-注意：您必须在[命令行参数](../installation/command-line-arguments-and-settings/)加入`--enable-insecure-extension-access`才能从图形界面装扩充功能。
+1. 您必须在[命令行参数](../installation/command-line-arguments-and-settings/)加入`--enable-insecure-extension-access`才能从图形界面装扩充功能。
 
-最简单的方法就是点击Extensions → Available的`Load from:`，就会列出可下载安装的扩充功能，点击安装。
+2. 最简单的方法就是点击Extensions → Available的`Load from:`，就会列出可下载安装的扩充功能，点击安装。
 
 ![](../../../images/how-to-install-extensions-1.webp)
 
-有些比较新的扩充功能则是要你拷贝Github保存库网址，并点击选Extensions → `Install from URL`，粘贴网址再按Install，它会自动完成git clone的操作。
+3. 有些比较新的扩充功能则是要你拷贝Github保存库网址，并点击选Extensions → `Install from URL`，粘贴网址再按Install，它会自动完成git clone的操作。
 
 ![](../../../images/how-to-install-extensions-2.webp)
 
-在安装扩充功能后，都要点击Installed → Apply and restart WebU重新加载网页界面。有些则是得关掉终端机，整个重新启动。
+4. 在安装扩充功能后，都要点击Installed → Apply and restart WebU，重新加载网页界面。有些则是得关掉终端机，重新启动WebUI。
 
 ![](../../../images/how-to-install-extensions-3.webp)
 
-如果未来要更新扩充功能，点击Installed → Check for updates，等待下载完成，然后重启WebUI。
+5. 如果未来要更新扩充功能，点击Installed → Check for updates，等待下载完成，然后重启WebUI。您可以在这个界面按取消打勾来停用特定的扩充功能。
+
+![](../../../images/how-to-install-extensions-4.webp)
 
 
 # 2. 用指令安装

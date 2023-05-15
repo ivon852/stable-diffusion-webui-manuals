@@ -2,7 +2,7 @@
 
 Stable Diffusion WebUI User Manuals in Chinese
 
-Stable Diffusion WebUI中文使用手冊，針對AUTOMATIC1111開發的版本撰寫。
+這是AI繪圖軟體"Stable Diffusion WebUI"的中文使用手冊，針對AUTOMATIC1111開發的版本撰寫。
 
 [線上閱讀](https://ivonblog.com/posts/stable-diffusion-webui-manuals/)，目前的語言有正體中文、简体中文(使用OpenCC轉換)、English(興建中)。
 

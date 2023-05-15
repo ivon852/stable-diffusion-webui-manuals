@@ -146,37 +146,48 @@ AI生图与你给的提示词的相关度，数值越高越会按照你说的内
 下方的Styles列表即为保存的提示词。点击保存的提示词(可多选)，再点击上面的剪贴板图标，即会将该提示词组合加到左边的提示词字段。
 
 
+## 发送结果到其他页面
+
+生图后可以点击右下角的`Send to image to image`，将生图结果发送到图生图的页面做进一步处理。
+
+![](../../../images/text-to-image-13.webp)
+
+
 # 2. 实际操作
 
-Stable Diffusion WebUI正上方可看到现在使用的是哪个模型。切换模型约需要等30秒。
+1. Stable Diffusion WebUI正上方可看到现在使用的是哪个存盘点模型。切换模型约需要等30秒。
 
 ![](../../../images/text-to-image-4.webp)
 
-1. 在页面上方填入正向与负向提示词。右边有存盘按钮。
+2. 您也可以按右上角的红色图标，以图形界面选取要使用的存盘点模型。
+
+![](../../../images/text-to-image-12.webp)
+
+3. 在页面左上方填入正向与负向提示词。
 
 ![](../../../images/text-to-image-5.webp)
 
-2. Sampling Methods建议先试试最快的「UniPC」，其次是「Euler a」、「DPM++ 2M Karras」。Sampling Steps设20，`Width`x`Height`设置为512x512。
+4. Sampling Methods建议先试试最快的「UniPC」，其次是「Euler a」、「DPM++ 2M Karras」。Sampling Steps设20，`Width`x`Height`设置为512x512。
 
 ![](../../../images/text-to-image-6.webp)
 
-3. 勾选左下角的脸部修复 (Restore faces)，改善脸部生成效果。
+5. 勾选左下角的脸部修复 (Restore faces)，改善脸部生成效果。
 
 ![](../../../images/text-to-image-7.webp)
 
-4. 点右上角的Generate开始生图。
+6. 点右上角的Generate开始生图。
 
 ![](../../../images/text-to-image-8.webp)
 
-5. 视显卡性能而定，约一分钟图片就会算出来了，点击放大右键保存。
+7. 视显卡性能而定，约一分钟图片就会算出来了，点击放大右键保存。您也可以点击右下角的Zip按钮，将图片打包下载为压缩档。
 
 ![](../../../images/text-to-image-9.webp)
 
-6. 左下角有`Batch count`的数值可设置一次算多张图。
+8. 左下角有`Batch count`的数值可设置一次算多张图。
 
 ![](../../../images/text-to-image-10.webp)
 
-7. 如果对此次结果满意，不妨将种子码 (Seed) 保存下来供日后利用，这样可以一定程度保留风格。
+9. 如果对此次结果满意，不妨将种子码 (Seed) 保存下来供日后利用，这样可以一定程度保留风格。
 
 ![](../../../images/text-to-image-11.webp)
 

@@ -49,7 +49,7 @@ drive.mount('/content/drive')
 
 5. 下载Anything V4.5存盘点模型至`sd-webui-files/stable-diffusion-webui/models`文件夹，网址为在模型网站按右键取得
 ```python
-!wget -nc -P /content/drive/MyDrive/sd-webui-files/stable-diffusion-webui/models/Stable-diffusion https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors
+!wget -nc -P "/content/drive/MyDrive/sd-webui-files/stable-diffusion-webui/models/Stable-diffusion" "https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors"
 ```
 
 6. 接着修正保存库版本错误

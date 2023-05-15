@@ -3,7 +3,7 @@ title: "詞彙表"
 weight: 2
 ---
 
-本手冊中有關於Stable Diffusion的專有名詞，附上中文翻譯與註釋。
+本手冊中有關於Stable Diffusion的專有名詞，附上中文翻譯與註釋，以正體中文(臺灣)的翻譯為主。
 
 参考自[benlisquare/stable-diffusion-webui-localization-zh_TW](https://github.com/benlisquare/stable-diffusion-webui-localization-zh_TW)和[dtlnor/stable-diffusion-webui-localization-zh_CN](https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN)
 

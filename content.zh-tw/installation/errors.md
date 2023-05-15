@@ -24,9 +24,9 @@ weight: 21
 
 有時除了Stable Diffusion WebUI本身問題外，也有可能是你安裝的擴充功能出錯導致程式無法啟動。
 
-請嘗試刪除`stable-diffusion-webui\extensions`下的某個新安裝的擴充功能資料夾，或是將整個extensions資料夾先移動到其他位置，再嘗試啟動SD WebUI。
+請嘗試刪除`stable-diffusion-webui/extensions`下的某個新安裝的擴充功能資料夾，或是將整個extensions資料夾先移動到其他位置，再嘗試啟動SD WebUI。
 
-也可以嘗試將Stable Diffusion WebUI主程式[更新到最新版本](../features/how-to-update/)。
+也可以嘗試將Stable Diffusion WebUI主程式[更新到最新版本](../installation/how-to-update)。
 
 
 # RuntimeError: CUDA Out of memory
