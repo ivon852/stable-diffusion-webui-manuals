@@ -17,14 +17,14 @@ weight: 5
 此页面有4个功能：
 
 
-## 1. 自动下载缩略图 Scan Models for Civitai
+## 1. 自动下载缩略图
 
 点击橘色的Scan按钮，它就会自动比对本机模型(存盘点、嵌入、超网络、LoRA)的数据，从CivitAI下载模型缩略图。
 
 ![](../../../images/stable-diffusion-webui-civitai-helper-2.webp)
 
 
-## 2. 从CivitAI取得模型信息 Get Model Info from Civitai by URL
+## 2. 从CivitAI取得模型信息
 
 此功能用于爬取本机模型的信息。
 

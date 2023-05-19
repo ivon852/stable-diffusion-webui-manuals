@@ -16,7 +16,7 @@ weight: 1
 
 ![](../../../images/how-to-install-extensions-1.webp)
 
-3. 有些比较新的扩充功能则是要你拷贝Github保存库网址，并点击选Extensions → `Install from URL`，粘贴网址再按Install，它会自动完成git clone的操作。
+3. 有些比较新的扩充功能则是要您拷贝Github保存库网址，并点击选Extensions → `Install from URL`，粘贴网址再按Install，它会自动完成git clone的操作。
 
 ![](../../../images/how-to-install-extensions-2.webp)
 
