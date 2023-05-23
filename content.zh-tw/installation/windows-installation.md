@@ -33,9 +33,7 @@ Intel Arc顯示卡請安裝[WHQL](https://www.intel.com.tw/content/www/tw/zh/dow
 
 ![](../../images/windows-installation-3.webp)
 
-<details>
-
-<summary>(進階) 如果你熟悉Python開發的話，改用Anaconda設定Python虛擬環境會更好。點選展開</summary>
+{{< details title="(進階) 如果你熟悉Python開發的話，改用Anaconda設定Python虛擬環境會更好。點選展開" open=false >}}
 
 Anaconda是針對資料科學打造的Python發行版，能管理一部電腦上的多重Python版本。如果之前已經裝過舊版Python，不需要解除安裝。
 
@@ -60,7 +58,7 @@ conda create --name sdwebui python=3.10.6
 conda activate sdwebui
 ```
 
-</details>
+{{< /details >}}
 
 
 # 3. 複製Stable Diffusion WebUI儲存庫

@@ -7,7 +7,7 @@ Docker容器技術可以方便在多個平台部署Stable Diffusion WebUI。
 
 以Ubuntu 22.04為例，採用AbdBarho提供的Dockerfile，僅支援Nvidia顯示卡。
 
-1. 安裝Git、[Docker](https://docs.docker.com/engine/)，並確認已安裝[Nvidia驅動、CUDA、NVIDIA Container Toolkit](https://ivonblog.com/posts/ubuntu-install-nvidia-drivers/)套件
+1. 安裝Git、[Docker](https://ivonblog.com/posts/install-docker-engine-on-linux/)，並確認已安裝[Nvidia驅動、CUDA、NVIDIA Container Toolkit](https://ivonblog.com/posts/ubuntu-install-nvidia-drivers/)套件
 
 2. 複製AbdBarho的儲存庫
 ```bash

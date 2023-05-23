@@ -18,8 +18,11 @@ Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stab
 
 第一个是[HuggingFace](https://huggingface.co/models?other=stable-diffusion)，中文俗称抱脸笑，可以说是人工智能界的Github。Stable Diffusion背后用到的很多AI工具，如Transformer、Tokenizers、Datasets都他们开发的，网站上也有丰富的教学文档。
 
-另一个是[Civitai](https://civitai.com/)，专门用来分享Stable Diffusion相关的资源，特色是模型都有示范缩略图，用户也可以分享彼此使用的提示词，以及分享作品。注意Civitai可能包含未成年不宜的图像。
+另一个是[Civitai](https://civitai.com/)，专门用来分享Stable Diffusion相关的资源，特色是模型都有示范缩略图，用户也可以分享彼此使用的提示词，以及分享作品。
 
+{{< hint danger >}}
+Civitai可能包含未成年不宜的图像。
+{{< /hint >}}
 
 ## 写实风模型
 
