@@ -33,7 +33,7 @@ weight: 21
 
 显卡的VRAM不足。Stable Diffusion WebUI的显卡VRAM最低要求为4GB，要无压力的玩建议8GB以上。
 
-打开`webui-user.bat`，在`COMMANDLINE_ARGS`后面加入`--mdevram`或`--lowvram`参数，降低VRAM使用量。如果还是在生图时出现此消息，建议降低生图的分辨率，或是买张更好的显卡，或是改用[Google Colab](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)。
+打开`webui-user.bat`，在`COMMANDLINE_ARGS`后面加入`--medvram`或`--lowvram`参数，降低VRAM使用量。如果还是在生图时出现此消息，建议降低生图的分辨率，或是买张更好的显卡，或是改用[Google Colab](https://ivonblog.com/posts/google-colab-stable-diffusion-webui/)。
 
 
 # No module named pip

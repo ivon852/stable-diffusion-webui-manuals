@@ -5,7 +5,7 @@ weight: 6
 
 Docker容器技術可以方便在多個平台部署Stable Diffusion WebUI。
 
-以Ubuntu 22.04為例，採用AbdBarho提供的Dockerfile，僅支援Nvidia顯示卡。
+以Ubuntu 22.04為例，採用AbdBarho提供的docker-compose，僅支援Nvidia顯示卡。
 
 1. 安裝Git、[Docker](https://ivonblog.com/posts/install-docker-engine-on-linux/)，並確認已安裝[Nvidia驅動、CUDA、NVIDIA Container Toolkit](https://ivonblog.com/posts/ubuntu-install-nvidia-drivers/)套件
 
@@ -29,7 +29,7 @@ sudo docker compose --profile auto up --build
 
 ![](../../images/docker-installation-1.webp)
 
-此Dockerfile啟動的Stable Diffusion WebUI，資料會掛載至同一目錄下的`data`目錄。
+此docker-compose啟動的Stable Diffusion WebUI，資料會掛載至同一目錄下的`data`目錄。
 
 自訂模型要放到`data/Stable-diffusion`
 
