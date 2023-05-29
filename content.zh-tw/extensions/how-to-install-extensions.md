@@ -52,10 +52,10 @@ Get-ChildItem | ForEach-Object { git -C $_.FullName pull }
 ```
 
 
-## 3. 如何移除擴充功能
+# 3. 如何移除擴充功能
 
 1. 關閉Stable Diffusion WebUI的終端機。
 
-2. 到`stable-diffusion-webui/extension`資料夾，將要移除的擴充功能資料夾刪除。
+2. 到`stable-diffusion-webui`下的`extension`資料夾，將要移除的擴充功能資料夾刪除。
 
-3. 如果要完全移除擴充功能，將`stable-diffusion-webui/venv`資料夾也刪除，迫使主程式下次啟動重新安裝pip依賴套件。
+3. 如果要完全移除擴充功能，將`stable-diffusion-webui`下的`venv`資料夾也刪除，迫使主程式下次啟動重新安裝pip依賴套件。
