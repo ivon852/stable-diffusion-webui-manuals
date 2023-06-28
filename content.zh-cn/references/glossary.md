@@ -48,7 +48,7 @@ weight: 2
 - model：模型
 - negative prompts: 负向提示词
 - outpaint: 外补绘制
-- pickle: 保存张量的模型格式，附文件名为`.pt`
+- pickle: 保存张量的模型格式，扩展名为`.pt`
 - postprocessing: 后处理
 - precision: 精度
 - preprocessing: 预处理

@@ -10,7 +10,7 @@ Stable Diffusion WebUI支持Windows 10和Windows 11。
 
 # 1. 安装显卡驱动程序
 
-请确认电脑已经安装最新版的显卡驱动程序。
+请确认电脑已经安装最新版的显卡驱动程序。安装驱动程序后请重开机。
 
 Nvidia显卡建议用[Geforce Experience](https://www.nvidia.com/zh-tw/geforce/geforce-experience/)安装最新驱动，会顺便安装CUDA。或者你想[手动下载CUDA](https://developer.nvidia.com/cuda-downloads)也行。
 

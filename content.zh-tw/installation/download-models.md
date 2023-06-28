@@ -71,6 +71,6 @@ wget -nc -P stable-diffusion-webui/models/Stable-diffusion https://huggingface.c
 ```
 
 
-## 3. 模型放置位置
+# 3. 模型放置位置
 
 不論是.ckpt還是.safetensors模型，都是在複製stable-diffusion-webui的儲存庫後，放到主程式資料夾下的`/models/Stable-diffusion`資料夾。
