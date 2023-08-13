@@ -78,7 +78,7 @@ DDIM和PLMS是2022年隨Stable Diffusion v1發表的取樣方法。
 
 生成圖片的寬高，尺寸越大品質越好，但越會吃掉更多VRAM。
 
-預設寬高為512x512，新版的建議可以試試768x768。
+v1.5模型預設寬高為512x512，v2模型建議可以試試768x768。
 
 其餘可用的寬高比(ratio)請參考下表。[圖片來源](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025#discussioncomment-3727588)
 

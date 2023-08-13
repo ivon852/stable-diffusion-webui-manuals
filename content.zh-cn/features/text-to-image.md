@@ -78,7 +78,7 @@ DDIM和PLMS是2022年随Stable Diffusion v1发表的采样方法。
 
 生成图片的宽高，尺寸越大品质越好，但越会吃掉更多VRAM。
 
-缺省宽高为512x512，新版的建议可以试试768x768。
+v1.5模型缺省宽高为512x512，v2模型建议可以试试768x768。
 
 其余可用的宽高比(ratio)请参考下表。[图片来源](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/1025#discussioncomment-3727588)
 

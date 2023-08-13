@@ -20,7 +20,7 @@ Linux和macOS請用cd指令，切換到`stable-diffusion-webui`資料夾：
 cd ~/stable-diffusion-webui
 ```
 
-2. 輸入以下指令，會印出一組長長的英數代碼，
+2. 輸入以下指令，會印出一組長長的英數代碼
 ```bash
 git rev-parse HEAD
 # 範例輸出：89f9faa63388756314e8a1d96cf86bf5e0663045
@@ -46,7 +46,10 @@ cd ~/stable-diffusion-webui
 
 4. 拉取最新分支，更新到最新版檔案。
 ```bash
-git reset --hard main
+git pull
+
+# 如果無法更新再用以下指令，注意這會導致本機變更全部丟失
+git reset --hard master
 git pull
 ```
 
