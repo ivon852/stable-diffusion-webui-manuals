@@ -58,7 +58,7 @@ an asian girl on the beach
 呼，好像一口氣加太多細節了呢，詳述細節的好處是避免AI亂生成，但也限制了其作畫創意。所以下面的例子會縮短，有時候讓AI隨機抽獎也不壞呀～
 
 
-4. 要改變風格，可以在提示詞加入「風格」的提示詞。這方面的提示詞有：相片(photshop)、3D建模(3d model)、裝飾藝術(art deco)、石像(stone sculpture)等風格。
+4. 要改變風格，可以在提示詞加入「風格」的提示詞。這方面的提示詞有：相片(photoshop)、3D建模(3d model)、裝飾藝術(art deco)、石像(stone sculpture)等風格。
 ```lisp
 ; 參考翻譯：一個女孩的石像，亞洲人，藍眼睛，沙灘，海洋
 a stone sculpture of 1girl, asian, blue eyes, beach, ocean

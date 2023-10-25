@@ -3,7 +3,7 @@ title: "2.1. 系统需求"
 weight: 1
 ---
 
-本页面是跑Stable Difssusion WebUI，用于AI绘图的硬件以及系统需求。
+本页面是跑Stable Diffusion WebUI，用于AI绘图的硬件以及系统需求。
 
 
 # 1. 电脑硬件需求

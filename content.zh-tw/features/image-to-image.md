@@ -45,7 +45,7 @@ weight: 3
 
 ## Interrogate Deepboooru
 
-上傳圖片後，用Danbooru圖庫資料判別圖片並自動填入提示詞。需要注意Deepboooru訓練的圖像數量有限，它頂多只能用來認圖片的場景和人物tag，無法準確標出最新的動漫角色。
+上傳圖片後，用Danbooru圖庫資料判別圖片並自動填入提示詞。需要注意Deepbooru訓練的圖像數量有限，它頂多只能用來認圖片的場景和人物tag，無法準確標出最新的動漫角色。
 
 ![](../../images/image-to-image-2.webp)
 
