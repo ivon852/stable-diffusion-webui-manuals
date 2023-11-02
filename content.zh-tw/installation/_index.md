@@ -13,6 +13,8 @@ weight: 1
 
 然後按照您的需求，閱讀相應的安裝章節
 
-要在自己電腦跑的就看Linux或Windows或macOS的安裝解說。Docker則是另一種跨平台的容器解決方案。
+要在自己電腦跑的就看Linux或Windows或macOS的安裝解說。
+
+Docker則是跨平台的容器解決方案，方便部署到伺服器。
 
 要在雲端跑的就看部署至Google Colab/Paperspace的安裝解說。

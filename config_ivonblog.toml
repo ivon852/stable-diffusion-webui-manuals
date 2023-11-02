@@ -3,7 +3,7 @@ title = 'Stable Diffusion WebUI使用手冊｜Ivon的部落格'
 theme = 'hugo-book'
 defaultContentLanguage = "zh-tw"
 
-#googleAnalytics = ""
+googleAnalytics = "G-NYE962575Q"
 
 #relativeURLs = true
 #uglyURLs = true

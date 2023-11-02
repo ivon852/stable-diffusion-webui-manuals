@@ -11,24 +11,19 @@ Stable Diffusion (稳定扩散) 是一个扩散模型，2022年8月由德国Comp
 
 以下是一些Stable Diffusion WebUI生成的图像，无后期处理。
 
-{{< columns >}}
+![](../../../images/introduction-1.webp)
 
-![一些Stable Diffusion WebUI生成的图像，无后制。](../../../images/introduction-1.webp)
+![](../../../images/introduction-2.webp)
 
-<---> <!-- magic separator, between columns -->
+![](../../../images/introduction-3.webp)
 
-![一些Stable Diffusion WebUI生成的图像，无后制。](../../../images/introduction-2.webp)
 
-<---> <!-- magic separator, between columns -->
+Stable Diffusion WebUI集成了许多程序，因其跨平台又有很好的扩充性，便成为最多人使用的图形化程序。图形界面是通过网页访问的，上手无难度，还有社群制作的界面中文化扩充功能。
 
-![一些Stable Diffusion WebUI生成的图像，无后制。](../../../images/introduction-3.webp)
+与其他云端AI绘图软件Midjoruney、NovelAI、DALL-E相比，Stable Diffusion WebUI最大优点是可以免费在自己的电脑或服务器跑，且只要遵照[Creative ML OpenRAIL-M授权条款](https://github.com/CompVis/stable-diffusion/blob/main/LICENSE)的话，几无使用限制。
 
-{{< /columns >}}
-
-因Stable Diffusion WebUI支持多系统又有很好的扩充性，便成为最多人使用的图形化程序。其图形界面是通过网页访问的，上手无难度，还有社群制作的界面中文化扩充功能。
-
-与其他云端AI绘图软件Midjoruney、NovelAI、DALL-E相比，Stable Diffusion WebUI最大优点是可以免费在自己的电脑或服务器跑，且只要遵照[Creative ML OpenRAIL-M授权条款](https://github.com/CompVis/stable-diffusion/blob/main/LICENSE)的话，几无使用限制。因其开放原代码的特性，任何人都可以贡献代码，参与改进项目。
+因其开放原代码的特性，任何人都可以贡献代码，参与改进项目。
 
 一开始Stable Diffusion WebUI支持的是x86架构，配备独立显卡的Linux和Windows电脑。不过AI绘图热门到让Apple公司亲自下场优化，于是macOS也可以跑Stable Diffusion WebUI了。只是用笔电跑的要小心，AI绘图会占用大量GPU资源，小心散热。
 
-至2023年，Stable Diffusion WebUI已支持Linux/Windows/MacOS系统，以及Nvidia/AMD/Apple Silicon M的GPU。
+至2023年，Stable Diffusion WebUI已支持Linux/Windows/MacOS系统，以及Nvidia/AMD/Intel Arc/Apple Silicon M的GPU。

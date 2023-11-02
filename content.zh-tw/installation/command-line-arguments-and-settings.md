@@ -3,13 +3,17 @@ title: "2.3. 命令列引數"
 weight: 2
 ---
 
+{{< hint danger >}}
 此頁面僅供參考：左邊各個系統(Linux/Windows/macOS)的安裝教學已包含懶人引數，照抄即可。
+{{< /hint >}}
 
 Stable Diffusion WebUI的專案資料夾附有啟動主程式的指令稿(script)，稱為啟動指令稿。
 
 Linux/macOS的變數與引數是寫在`webui-user.sh`，接著使用者以終端機執行`webui.sh`，它會讀取`webui-user.sh`裡面寫的變數與設定值，將其傳給`launch.py`，然後啟動WebUI。
 
 Windows也是類似，不過變數與引數是寫在`webui-user.bat`批次檔，然後使用者以終端機執行此批次檔(或者在檔案總管點二下，無需系統管理員權限)即會啟動主程式。
+
+因此要修改啟動引數，您應該改的是`webui-user.sh`，而不是`webui.sh`。
 
 
 # 1. 環境變數與命令列引數的設定方法
@@ -24,7 +28,7 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 
 # 2. 環境變數
 
-指令稿裡面可使用這些環境變數(environment variables)：
+可在啟動指令稿使用這些環境變數(environment variables)：
 
 |名稱|說明|
 |---|---|
@@ -34,13 +38,18 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |IGNORE_CMD_ARGS_ERRORS| 設定為任意值，使程式遇到未知的命令列引數退出時不顯示錯誤|
 |REQS_FILE| 啟動`launch.py`安裝依賴套件使用的requirements.txt檔名。預設值為`requirements_versions.txt`|
 |TORCH_COMMAND|安裝PyTorch的指令 |
-|INDEX_URL|pip的--index-url參數|
+|INDEX_URL|pip的`--index-url`參數|
 |TRANSFORMERS_CACHE| Transformer函式庫下載的路徑，以及CLIP模型相關檔案的路徑。|
+|CUDA_VISIBLE_DEVICES|如果電腦有多重GPU，使用此引數選取要使用的GPU，例如`set CUDA_VISIBLE_DEVICES=0`。|
+|SD_WEBUI_LOG_LEVEL|輸出日誌格式。有效值為Pyhton內建的`logging`模組數值。預設為`INFO`。|
+|SD_WEBUI_CACHE_FILE|快取檔案路徑，預設值為根目錄下的`cache.json`。|
+|SD_WEBUI_RESTAR|由啟動指令稿(`webui.sh`或`webui.bat`)設定的值，告訴WebUI可以使用重啟功能。|
+|SD_WEBUI_RESTARTING|檢測WebUI是否正在重啟或重新載入的內部數值，可以用來關閉自動開啟瀏覽器的功能。設為`1`即不要自動開啟瀏覽器。設為`0`的話，即使WebUI正在重啟也自動開啟瀏覽器。|
 
 
 # 3. 命令列引數
 
-命令列引數(command line arguments)為啟動WebUI時候使用的選項，寫在啟動指令稿的`COMMANDLINE_ARGS`後面。
+命令列引數(command line arguments)為啟動WebUI時使用的選項，寫在啟動指令稿的`COMMANDLINE_ARGS=`後面。
 
 注意下面是二條橫線「- -」
 
@@ -101,9 +110,16 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |--tls-keyfile | TLS_KEYFILE | None | 部份啟用TLS,，需要配合--tls-certfile才能正常運作 |
 |--tls-certfile | TLS_CERTFILE | None | 部份啟用TLS，需要配合--tls-keyfile才能正常運作  |
 |--server-name | SERVER_NAME | None | 設定伺服器主機名稱 |
-|--gradio-queue | None | False | 使用Gradio queue，限制短時間內API的請求數量。實驗性功能，會導致重啟按鈕損壞。 |
 |--skip-version-check | None | False | 不檢查torch和xformers的版本 |
 |--no-hashing | None | False | 停用計算存檔點模型的sha256雜湊值，加快載入速度 |
+|--skip-version-check|None|False|不檢查torch與xformers版本。|
+|--skip-version-check|None|False|不檢查Python版本。|
+|--skip-torch-cuda-test|None|False|不檢查CUDA是否正常運作。|
+|--skip-install|None|False|跳過安裝套件。|
+|--loglevel|None|None|日誌紀錄等級，有效值為CRITICAL, ERROR, WARNING, INFO, DEBUG|
+|--log-startup|None|False|在啟動程式時輸出launch.py的詳細執行內容。|
+|--api-server-stop|None|False|允許透過API通訊停止/重啟/強制停止主程式。|
+|--timeout-keep-alive|int|30|設定uvicorn的timeout_keep_alive數值。|
 | **性能相關** |
 |--xformers | None | False           					| 給cross attention layers啟用xformers |
 |--reinstall-xformers | None | False           					| 強制重裝xformers，升級時很有用。但為避免不斷重裝，升級後將會移除。 |
@@ -127,7 +143,7 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |--medvram    | None | False          				 | 啟用Stable Diffusion模型最佳化，犧牲速度，換取較小的VRAM佔用。 |
 |--lowvram    | None | False          				 | 啟用Stable Diffusion模型最佳化，大幅犧牲速度，換取更小的VRAM佔用。  |
 |--lowram     | None | False         				 | 將Stable Diffusion存檔點模型的權重載入至VRAM，而非RAM |
-|--always-batch-cond-uncond | None | False			 | 將--medvram或--lowvram使用的無限制批次停用 |
+|--disable-model-loading-ram-optimization|None|False|停用模型載入時降低RAM佔用的優化。|
 | **功能** |
 |--autolaunch | None | False         					| 啟動WebUI後自動開啟系統預設的瀏覽器 |
 |--theme | None | Unset         					| 使用指定主題啟動WebUI (light或dark)，無指定則使用瀏覽器預設主題。 |
@@ -135,9 +151,21 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |--disable-safe-unpickle | None | False				| 不檢查PyTorch模型是否有惡意程式碼 |
 |--ngrok | NGROK | None         				 | Ngrok授權權杖， --share引數的替代品。 |
 |--ngrok-region | NGROK_REGION | us			 | 選擇啟動Ngrok的區域 |
-| **無效選項** |
-|--show-negative-prompt | None | False 					| 無作用 |
-|--deepdanbooru | None | False 					|無作用 |
-|--unload-gfpgan | None | False      				 | 無作用 |
+|--update-check|None|None|啟動時檢查有無新版本。|
+|--update-all-extensions|None|None|在啟動WebUI的時候自動更新所有擴充功能。|
+|--reinstall-xformers|None|False|強制重新安裝xformers，適用於更新程式之後執行。更新完之後記得移除此引數。|
+|--reinstall-torch|None|False|強制重新安裝touch，適用於更新程式之後執行。更新完之後記得移除此引數。|
+|--tests|TESTS|False|執行功能測試，確認WebUI正常運作。|
+|--no-tests| None | False | 即使有`--test`引數也不要執行功能測試。 |
+|--dump-sysinfo	| None | False | 傾印系統訊息並退出程式（不包括擴充功能） |
+|--disable-all-extensions|None|False|停用所有擴充功能，包含內建的擴充功能。|
+|--disable-extra-extensions|None|False|停用所有擴充功能。|
+| **已經無效的選項** |
+|--show-negative-prompt | None | False 				| 無作用 |
+|--deepdanbooru | None | False |無作用 |
+|--unload-gfpgan | None | False   | 無作用 |
 |--gradio-img2img-tool | GRADIO_IMG2IMG_TOOL | None | 無作用 |
 |--gradio-inpaint-tool | GRADIO_INPAINT_TOOL | None | 無作用 |
+|--gradio-queue | None | False | 無作用 |
+|--add-stop-route | None | False | 無作用 |
+|--always-batch-cond-uncond | None | False | 無作用 |

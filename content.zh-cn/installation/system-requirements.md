@@ -22,7 +22,13 @@ weight: 1
     <td>显卡(GPU)</td>
     <td>GTX1050Ti</td>
     <td>RTX3060Ti</td>
-    <td>支持的显卡芯片有Nvidia/AMD/Intel Arc/Apple M。显卡需求看的是VRAM大小，最低要4GB才不会内存不足。</td>
+    <td>支持的显卡芯片有Nvidia/AMD/Intel Arc/Apple M。</td>
+  </tr>
+  <tr>
+    <td>显卡显存(VRAM)</td>
+    <td>4GB</td>
+    <td>8GB</td>
+    <td>显卡的VRAM最低要4GB才不会算到一半内存不足，若要训练模型就得8GB以上了。</td>
   </tr>
   <tr>
     <td>内存(RAM)</td>
@@ -45,11 +51,11 @@ weight: 1
 </tbody>
 </table>
 
-- 显卡VRAM在4GB以下的会很容易遇到内存不足的问题，并且生图速度很慢。
+- 要生成513x512的图，显卡VRAM在4GB以下的很容易遇到内存不足的问题，并且生图速度很慢。
 
-- 尽管可以[用CPU跑Stable Diffusion WebUI](https://ivonblog.com/posts/stable-diffusion-running-on-cpu/)，但是速度会非常慢。一张显卡30秒就能算好的图，CPU要算10分钟。因此用独立显卡跑Stable Diffsuion仍是比较好的选择。
+- 尽管可以[用纯CPU跑Stable Diffusion WebUI](https://ivonblog.com/posts/stable-diffusion-running-on-cpu/)，但是速度会非常慢。一张显卡30秒就能算好的图，CPU要算10分钟。因此用独立显卡跑Stable Diffsuion仍是比较好的选择。
 
-- 硬件不够力的话，用云端服务跑也是可以。
+- 硬件不够力的话，用云端服务跑也是可以，例如Google Colab。
 
 
 # 2. 操作系统需求
@@ -58,7 +64,7 @@ weight: 1
 
 测试可以跑的Linux发行版：
 
-- Debian 11
+- Debian 12
 - Ubuntu 22.04 LTS
 - Fedora 38
 - openSUSE Tumbleweed

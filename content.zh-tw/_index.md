@@ -4,7 +4,7 @@ bookFlatSection: true
 title: "歡迎"
 ---
 
-這本非官方的中文使用手冊是針對AUTOMATIC1111開發的Stable Diffusion WebUI所撰寫，對應版本為**v1.5.1**
+這本非官方的中文使用手冊是針對AUTOMATIC1111開發的Stable Diffusion WebUI所撰寫，對應版本為**v1.6.0**
 
 內容有：介紹如何將Stable Diffusion WebUI安裝至您的電腦，以及講解相關AI繪圖功能用法，最後再介紹模型訓練方式。
 
