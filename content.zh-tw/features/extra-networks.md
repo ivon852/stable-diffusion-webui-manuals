@@ -56,6 +56,6 @@ Hentai Diffusion這類模型內建VAE，SD WebUI在生圖時會自動偵測並�
 
 如果要使用VAE，下載VAE模型後，將其放到`stable-diffusion-webui/models/VAE`資料夾。
 
-接著點選Settings → Stabe Diffusion → SD VAE，選取要使用的VAE，再點選Apply Settings，此後生圖就會一律使用指定的VAE。
+接著點選Settings → Stable Diffusion → SD VAE，選取要使用的VAE，再點選Apply Settings，此後生圖就會一律使用指定的VAE。
 
 

@@ -5,7 +5,7 @@ weight: 1
 
 注意：安装扩充功能可能会导致Stable Diffusion WebUI无法启动，或是启动变慢。
 
-如果遇到bug，您应当优先到扩充功能开发者的保存库回报，而非直接到AUTOMATIC1111的保存库询问。
+如果遇到bug，您应当优先到扩充功能开发者的Github保存库回报，而非直接到AUTOMATIC1111的保存库询问。
 
 
 # 1. 用图形界面安装
@@ -42,15 +42,10 @@ git clone https://github.com/benlisquare/stable-diffusion-webui-localization-zh_
 
 3. 重新启动SD WebUI，即会看到新安装的扩充功能。
 
-未来要一次更新全部扩充功能的话，在`stable-diffusion-webui/extensions`文件夹打开终端机，运行以下指令：
+4. 未来要一次更新全部扩充功能的话，在[命令行参数](../installation/command-line-arguments-and-settings/)加入以下选项，让Stable Diffusion WebUI启动后自动更新所有扩充功能：
 ```bash
-# Linux
-ls | xargs -I{} git -C {} pull
-
-# Windows
-Get-ChildItem | ForEach-Object { git -C $_.FullName pull }
+--update-all-extensions
 ```
-
 
 # 3. 如何移除扩充功能
 

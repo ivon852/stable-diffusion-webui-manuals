@@ -5,7 +5,8 @@ weight: 20
 
 AUTOMATIC1111的Stable Diffusion WebUI项目原代码托管在Github，目前「更新」是以`git pull`指令来操作。
 
-最新版本号码和更新日志可以到[Github Releases](https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases)查看，或者到这里看作者的[commit纪录](https://github.com/AUTOMATIC1111/stable-diffusion-webui/commits)。
+如何确认最新版本？最新版本号码和更新日志可以到[Github Releases](https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases)查看，或者到这里看作者的[commit纪录](https://github.com/AUTOMATIC1111/stable-diffusion-webui/commits)。
+
 
 ## 1. 检查本机程序版本
 
