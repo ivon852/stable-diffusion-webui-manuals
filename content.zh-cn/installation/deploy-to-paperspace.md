@@ -16,7 +16,7 @@ Paperspace是一间位于美国的云端机器学习服务供应商，提供免�
 
 ![](../../../images/deploy-to-paperspace-1.webp)
 
-3. 这个面板就是笔记本的页面了。点击右上角的Run all后，笔记本会安装Stable Diffusion WebUI所需的依赖，并下载Stable Diffusion v2.1的模型。此阶段所下载的文件不会计入帐户的保存空间。
+3. 这个皮肤就是笔记本的页面了。点击右上角的Run all后，笔记本会安装Stable Diffusion WebUI所需的依赖，并下载Stable Diffusion v2.1的模型。此阶段所下载的文件不会计入帐户的保存空间。
 
 ![](../../../images/deploy-to-paperspace-2.webp)
 

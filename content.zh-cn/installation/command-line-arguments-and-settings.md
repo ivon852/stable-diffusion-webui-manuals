@@ -91,7 +91,7 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |--listen  | None | False            					| 以0.0.0.0主机名称启动Gradio，使其能回应连接请求 |
 |--port | PORT | 7860           					| 以给定的通信端口启动Gradio。1024以下的通信端口需要root权限。如果可用的话，缺省使用7860通信端口。 |
 |--hide-ui-dir-config | None | False  					| 在WebUI隐藏设置档目录。|
-|--freeze-settings | None | False | 禁用编辑设置。 |
+|--freeze-settings | None | False | 停用编辑设置。 |
 |--enable-insecure-extension-access | None | False | 无视其他选项，强制激活扩充功能页签。 |
 |--gradio-debug | None | False        					| 使用 --debug选项启动Gradio |
 |--gradio-auth | GRADIO_AUTH | None 				| 设置Gardio授权，例如"username:password"，或是逗号分隔值形式"u1:p1,u2:p2,u3:p3" |
@@ -111,7 +111,7 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |--tls-certfile | TLS_CERTFILE | None | 部份激活TLS，需要配合--tls-keyfile才能正常运作  |
 |--server-name | SERVER_NAME | None | 设置服务器主机名称 |
 |--skip-version-check | None | False | 不检查torch和xformers的版本 |
-|--no-hashing | None | False | 禁用计算存盘点模型的sha256哈希值，加快加载速度 |
+|--no-hashing | None | False | 停用计算存盘点模型的sha256哈希值，加快加载速度 |
 |--skip-version-check|None|False|不检查torch与xformers版本。|
 |--skip-version-check|None|False|不检查Python版本。|
 |--skip-torch-cuda-test|None|False|不检查CUDA是否正常运作。|
@@ -133,7 +133,7 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |--sub-quad-kv-chunk-size | SUB_QUAD_KV_CHUNK_SIZE | None | sub-quadratic cross-attention layer优化使用的kv区块大小|
 |--sub-quad-chunk-threshold | SUB_QUAD_CHUNK_THRESHOLD | None |sub-quadratic cross-attention layer优化过程中，区块化使用的VRAM阈值|
 |--opt-channelslast | None | False    					| 激活4d tensors使用的alternative layout，或许可以加快推理速度 **仅适用搭载Tensor内核的Nvidia显卡(16xx系列以上)** |
-|--disable-opt-split-attention | None | False 			| 强制禁用cross-attention layer的优化 |
+|--disable-opt-split-attention | None | False 			| 强制停用cross-attention layer的优化 |
 |--disable-nan-check | None | False | 不检查生成图像/潜在空间是否有nan。在CI模式无使用存盘点模型的时候很有用。|
 |--use-cpu | {all, sd, interrogate, gfpgan, bsrgan, esrgan, scunet, codeformer} | None | 让部份模块使用CPU作为PyTorch的设备 |
 |--no-half     | None | False         				 |  不将模型转换为半精度浮点数 |
@@ -143,7 +143,7 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |--medvram    | None | False          				 | 激活Stable Diffusion模型优化，牺牲速度，换取较小的VRAM占用。 |
 |--lowvram    | None | False          				 | 激活Stable Diffusion模型优化，大幅牺牲速度，换取更小的VRAM占用。  |
 |--lowram     | None | False         				 | 将Stable Diffusion存盘点模型的权重加载至VRAM，而非RAM |
-|--disable-model-loading-ram-optimization|None|False|禁用模型加载时降低RAM占用的优化。|
+|--disable-model-loading-ram-optimization|None|False|停用模型加载时降低RAM占用的优化。|
 | **功能** |
 |--autolaunch | None | False         					| 启动WebUI后自动打开系统缺省的浏览器 |
 |--theme | None | Unset         					| 使用指定主题启动WebUI (light或dark)，无指定则使用浏览器缺省主题。 |
@@ -158,8 +158,8 @@ set COMMANDLINE_ARGS=--xformers --no-half-vae --medvram
 |--tests|TESTS|False|运行功能测试，确认WebUI正常运作。|
 |--no-tests| None | False | 即使有`--test`参数也不要运行功能测试。 |
 |--dump-sysinfo	| None | False | 倾印系统消息并退出程序（不包括扩充功能） |
-|--disable-all-extensions|None|False|禁用所有扩充功能，包含内置的扩充功能。|
-|--disable-extra-extensions|None|False|禁用所有扩充功能。|
+|--disable-all-extensions|None|False|停用所有扩充功能，包含内置的扩充功能。|
+|--disable-extra-extensions|None|False|停用所有扩充功能。|
 | **已经无效的选项** |
 |--show-negative-prompt | None | False 				| 无作用 |
 |--deepdanbooru | None | False |无作用 |

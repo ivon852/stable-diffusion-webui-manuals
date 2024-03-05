@@ -16,13 +16,13 @@ toreplace="../../../images/"
 find "content.zh-cn" -type f -exec sed -i "s|$tomatch|$toreplace|" {} \;
 
 # 因為隱私因素，故不能提供Giscus真身
-cp ../gohugo-ivonblog/layouts/partials/comments/giscus_sdwebui_manuals.html layouts/partials/comments/giscus.html
+#cp ../gohugo-ivonblog/layouts/partials/comments/giscus_sdwebui_manuals.html layouts/partials/comments/giscus.html
 rm -r ../gohugo-ivonblog/static/posts/stable-diffusion-webui-manuals/*
 rm -r public resources .hugo_build.lock
 hugo --gc --minify --config config_ivonblog.toml
 cp -r public/* ../gohugo-ivonblog/static/posts/stable-diffusion-webui-manuals
 rm -r public resources .hugo_build.lock
-echo "" > layouts/partials/comments/giscus.html
+#echo "" > layouts/partials/comments/giscus.html
 
 git add -A
 git commit -m "網站更新"
