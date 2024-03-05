@@ -53,14 +53,12 @@ weight: 1
 
 - 要生成513x512的图，显卡VRAM在4GB以下的很容易遇到内存不足的问题，并且生图速度很慢。
 
-- 尽管可以[用纯CPU跑Stable Diffusion WebUI](https://ivonblog.com/posts/stable-diffusion-running-on-cpu/)，但是速度会非常慢。一张显卡30秒就能算好的图，CPU要算10分钟。因此用独立显卡跑Stable Diffsuion仍是比较好的选择。
+- 尽管可以[用纯CPU跑Stable Diffusion WebUI](https://ivonblog.com/posts/stable-diffusion-running-on-cpu/)，但是速度会非常慢。一张显卡30秒就能算好的图，CPU要算10分钟。因此用独立显卡跑Stable Diffusion仍是比较好的选择。
 
 - 硬件不够力的话，用云端服务跑也是可以，例如Google Colab。
 
 
 # 2. 操作系统需求
-
-## GNU/Linux
 
 测试可以跑的Linux发行版：
 

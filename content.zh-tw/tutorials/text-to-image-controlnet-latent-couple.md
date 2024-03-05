@@ -3,7 +3,7 @@ title: "用文生圖 ＋ ControlNet ＋ Latent Couple生成指定位置的多個
 weight: 1
 ---
 
-請先閱讀[文生圖用法](../features/text-to-image/)，並安裝[ControlNet](../extensions/controlnet/)、[Latent Couple](../extensions/latent-couple/)、[PoseX](../extensions/posex/)擴充功能。
+請先閱讀[文生圖用法](../features/text-to-image/)，並安裝ControlNet、Latent Couple、PoseX擴充功能。
 
 ![](../../images/text-to-image-controlnet-latent-couple-7.webp)
 

@@ -20,9 +20,8 @@ Stable Diffusion WebUI在初次启动时，若放模型的文件夹(`models/Stab
 
 另一个是[Civitai](https://civitai.com/)，专门用来分享Stable Diffusion相关的资源，特色是模型都有示范缩略图，用户也可以分享彼此使用的提示词，以及分享作品。
 
-{{< hint danger >}}
-Civitai可能包含未成年不宜的图像。
-{{< /hint >}}
+<font color=RED>Civitai可能包含未成年不宜的图像。</font>
+
 
 ## 写实风模型
 
@@ -38,20 +37,18 @@ Civitai可能包含未成年不宜的图像。
 
 [Deliberate](https://civitai.com/models/4823/deliberate)：基于SD-1.5模型，适合生成精致写实风格的人物、动物、自然风景。
 
-[Realistic Vision v1.4](https://civitai.com/models/4201/realistic-vision-v13)：写实风人物与动物模型。
+[Realistic Vision v6.0](https://civitai.com/models/4201/realistic-vision-v60-b1)：写实风人物与动物模型。
 
 
 ## 动漫风模型
 
-[Anything万象熔炉 v4.5](https://huggingface.co/andite/anything-v4.0)适合画动漫图，作者宣称不需要打一堆提示词也能出漂亮的图。
-
-[Waifu Diffusion v1.4](https://huggingface.co/hakurei/waifu-diffusion-v1-4)是纯粹使用Danbooru图库训练而成，适合画动漫图。
-
-[Hentai Diffusion](https://github.com/Delcos/Hentai-Diffusion)适合画动漫图，模型已使用大量负向提示词训练过以排除不良结果，另提供embeddings方便绘图时使用。
+[Anything万象熔炉 v5](https://civitai.com/models/9409/anything-or)适合画动漫图，作者宣称不需要打一堆提示词也能出漂亮的图。
 
 [DreamShaper](https://civitai.com/models/4384/dreamshaper)是基于SD-1.5模型，生成精细动漫人物与油画风格的模型。
 
 [OrangeMix3](https://huggingface.co/WarriorMama777/OrangeMixs)，混合多种风格的动漫绘图模型，偏写实。
+
+[Waifu Diffusion v1.4](https://huggingface.co/hakurei/waifu-diffusion-v1-4)是纯粹使用Danbooru图库训练而成，适合画动漫图。
 
 
 # 2. 如何下载模型
@@ -63,7 +60,6 @@ HuggingFace为保存库 → Files and versions，选择下载扩展名为`.ckpt`
 <img src=../../../images/download-models-1.webp alt=""  width=500 loading="lazy">
 
 Civitai则是点击Download按钮下载模型。
-
 
 如果要用指令下载，可以用wget或git，例如下载`Anything V4.5`的模型到`stable-diffusion-webui/models/Stable-diffusion`文件夹：
 ```bash

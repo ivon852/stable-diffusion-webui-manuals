@@ -51,20 +51,19 @@ enableGitInfo = true
 [menu]
 
 [[menu.before]]
-  name = "【回Ivon的部落格】Back to Ivon's Blog"
+  name = "【回Ivon的部落格】"
   url = "https://ivonblog.com"
   weight = 10
 
 [[menu.before]]
-  name = "【意見回饋】Send feedbacks"
-  url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
+  name = "【看更多Stable Diffusion教學】"
+  url = "https://ivonblog.com/categories/stable-diffusion教學/"
   weight = 20
 
 [[menu.after]]
   name = "© 2023 Ivon Huang. 文章授權：創用CC-姓名標示-相同方式分享"
   url = "https://github.com/ivon852/stable-diffusion-webui-manuals"
-  weight = 10
-
+  weight = 20
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
