@@ -1,4 +1,4 @@
-# Stable Diffusion WebUI中文使用手冊
+# Stable Diffusion WebUI中文使用手冊(舊)
 
 Stable Diffusion WebUI User Manuals in Chinese
 

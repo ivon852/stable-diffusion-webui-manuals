@@ -1,5 +1,5 @@
 baseURL = 'https://ivonblog.com/posts/stable-diffusion-webui-manuals'
-title = 'Stable Diffusion WebUI使用手冊｜Ivon的部落格'
+title = 'Stable Diffusion WebUI使用手冊(舊)｜Ivon的部落格'
 theme = 'hugo-book'
 defaultContentLanguage = "zh-tw"
 
@@ -31,14 +31,14 @@ enableGitInfo = true
   languageCode = 'zh-tw'
   languageName = '目前語言：正體中文'
   contentDir = 'content.zh-tw'
-  title = 'Stable Diffusion WebUI使用手冊(正體中文)｜Ivon的部落格'
+  title = 'Stable Diffusion WebUI使用手冊(舊)(正體中文)｜Ivon的部落格'
   weight = 1
 
 [languages.zh-cn]
   languageCode = 'zh-cn'
   languageName = '当前语言：简体中文'
   contentDir = 'content.zh-cn'
-  title = 'Stable Diffusion WebUI使用手冊(简体中文)｜Ivon的部落格'
+  title = 'Stable Diffusion WebUI使用手冊(旧)(简体中文)｜Ivon的部落格'
   weight = 2
 
 [languages.en-us]
